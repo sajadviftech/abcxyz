@@ -228,7 +228,7 @@ function viftech_filter_page_title() {
 add_filter( 'ot_theme_options_page_title', 'viftech_filter_page_title', 10, 2 );
 
 function viftech_filter_menu_title() {
-	return wp_kses(__('viftech Options', 'viftech'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('Viftech Options', 'viftech'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_theme_options_menu_title', 'viftech_filter_menu_title', 10, 2 );
 
