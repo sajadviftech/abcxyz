@@ -8,6 +8,11 @@ function viftech_filter_radio_images( $array, $field_id ) {
 	      'value'   => 'style1',
 	      'label'   => esc_html__( 'Style 1', 'viftech' ),
 	      'src'     => get_stylesheet_directory_uri() . '/assets/img/admin/header/header1.png'
+      ),
+      array(
+	      'value'   => 'style2',
+	      'label'   => esc_html__( 'Style 2', 'viftech' ),
+	      'src'     => get_stylesheet_directory_uri() . '/assets/img/admin/header/header1.png'
 	    ),
 	    
 	  );
