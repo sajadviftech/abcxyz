@@ -18,31 +18,6 @@ function viftech_filter_radio_images( $array, $field_id ) {
 	  );
 	}
 	
-	if ( $field_id == 'masonry_size' ) {
-	  $array = array(
-	    array(
-	      'value'   => 'large',
-	      'label'   => esc_html__( 'large', 'viftech' ),
-	      'src'     => get_stylesheet_directory_uri() . '/assets/img/admin/masonry/large.png'
-	    ),
-	    array(
-	      'value'   => 'small',
-	      'label'   => esc_html__( 'small', 'viftech' ),
-	      'src'     => get_stylesheet_directory_uri() . '/assets/img/admin/masonry/small.png'
-	    ),
-	    array(
-	      'value'   => 'wide',
-	      'label'   => esc_html__( 'wide', 'viftech' ),
-	      'src'     => get_stylesheet_directory_uri() . '/assets/img/admin/masonry/wide.png'
-	    ),
-	    array(
-	      'value'   => 'tall',
-	      'label'   => esc_html__( 'tall', 'viftech' ),
-	      'src'     => get_stylesheet_directory_uri() . '/assets/img/admin/masonry/tall.png'
-	    )
-	  );
-	}
-	
 	if ( $field_id == 'footer_bar_style' ) {
 	  $array = array(
 	    array(
