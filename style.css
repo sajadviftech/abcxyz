@@ -1,0 +1,16 @@
+/*
+	Theme Name: Viftech
+	Theme URI: https://viftech.com
+	Description: <strong>A Premium theme for magazine, editor, community and more! WordPress Theme by <a href="http://www.viftech.com">viftech</a></strong>
+	Version: 1.0
+	Author: viftechthemes
+	Author URI: https://viftech.com
+	Text Domain: viftech
+	Domain Path: /inc/languages
+	Tags: two-columns, four-columns, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+	License: ThemeForest License
+	License URI: https://viftech.com
+*/
+body {
+	margin: 0;
+}
