@@ -262,17 +262,17 @@ add_filter( 'ot_social_links_settings', 'thb_social_links_settings');
 add_filter( 'ot_type_social_links_load_defaults', '__return_false');
 
 function thb_filter_options_name() {
-	return wp_kses(__('<a href="http://fuelthemes.net">Fuel Themes</a>', 'revolution'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('<a href="http://#/">Viftech Themes</a>', 'revolution'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_header_version_text', 'thb_filter_options_name', 10, 2 );
 
 function thb_filter_page_title() {
-	return wp_kses(__('Revolution Theme Options', 'revolution'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('Viftech Theme Options', 'revolution'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_theme_options_page_title', 'thb_filter_page_title', 10, 2 );
 
 function thb_filter_menu_title() {
-	return wp_kses(__('Revolution Options', 'revolution'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('Viftech Options', 'revolution'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_theme_options_menu_title', 'thb_filter_menu_title', 10, 2 );
 
@@ -281,12 +281,7 @@ function thb_filter_upload_text() {
 }
 add_filter( 'ot_upload_text', 'thb_filter_upload_text', 10, 2 );
 
-function thb_header_list() {
-	echo '<li class="theme_link"><a href="http://fuelthemes.ticksy.com/" target="_blank">Support Forum</a></li>';
-	echo '<li class="theme_link right"><a href="http://wpeng.in/fuelt/" target="_blank">Recommended Hosting</a></li>';
-	echo '<li class="theme_link right"><a href="https://wpml.org/?aid=85928&affiliate_key=PIP3XupfKQOZ" target="_blank">Purchase WPML</a></li>';
-}
-add_filter( 'ot_header_list', 'thb_header_list' );
+
 
 function thb_filter_ot_recognized_font_families( $array, $field_id ) {
 	$array['helveticaneue'] = "'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif";
