@@ -12,7 +12,7 @@
 require get_theme_file_path('/option-tree/init.php');
 
 // Theme Admin
-require get_theme_file_path('/classes/fuelthemes.php');
+require get_theme_file_path('/classes/Theme_Config.php');
 
 // TGM Plugin Activation Class
 require get_theme_file_path('/inc/admin/plugins/plugins.php');
