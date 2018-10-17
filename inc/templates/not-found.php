@@ -1,4 +1,4 @@
 <div class="not-found columns">
 	<figure></figure>
-	<p><?php esc_html_e( 'Sorry, no posts found for your query.', 'revolution' ); ?></p>
+	<p><?php esc_html_e( 'Sorry, no posts found for your query.', 'viftech' ); ?></p>
 </div>

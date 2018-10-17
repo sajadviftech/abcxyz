@@ -3,7 +3,7 @@
 function thb_get_page_templates($template_list) {
 	/* Static Pages */
 	$template_list['page_01'] = array(
-		'name' => esc_html__( 'About - 01', 'revolution' ),
+		'name' => esc_html__( 'About - 01', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/about1.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row thb_full_width="true" css=".vc_custom_1516293999636{padding-top: 35vh !important;padding-bottom: 20vh !important;background-image: url(http://revolution.fuelthemes.net/wp-content/uploads/2018/01/a1_1.jpg?id=123) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" el_class="align-center"][vc_column thb_color="thb-light-column" animation="animation bottom-to-top-3d" el_class="text-center"][vc_row_inner el_class="align-center"][vc_column_inner offset="vc_col-lg-7 vc_col-md-10"][vc_column_text]
@@ -40,7 +40,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_02'] = array(
-		'name' => esc_html__( 'About - 02', 'revolution' ),
+		'name' => esc_html__( 'About - 02', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/about2.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row css=".vc_custom_1517912256922{padding-top: 4vh !important;padding-bottom: 10vh !important;}"][vc_column offset="vc_col-lg-6 vc_col-md-9"][thb_slidetype slide_text="
@@ -129,7 +129,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_03'] = array(
-		'name' => esc_html__( 'About - 03', 'revolution' ),
+		'name' => esc_html__( 'About - 03', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/about3.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" content_placement="middle" thb_scroll_bottom="true" thb_scroll_bottom_style="style3" thb_scroll_bottom_color="light" css=".vc_custom_1517840472388{padding-top: 30vh !important;padding-bottom: 25vh !important;background-image: url(http://revolution.fuelthemes.net/revolution-adventure/wp-content/uploads/sites/2/2018/02/a34.jpg?id=182) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column thb_color="thb-light-column"][vc_row_inner][vc_column_inner offset="vc_col-lg-5 vc_col-md-8"][thb_slidetype slide_text="
@@ -167,7 +167,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_04'] = array(
-		'name' => esc_html__( 'About - 04', 'revolution' ),
+		'name' => esc_html__( 'About - 04', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/about4.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row thb_full_width="true" css=".vc_custom_1518206811469{margin-bottom: 15vh !important;padding-top: 30vh !important;padding-bottom: 30vh !important;background-image: url(http://revolution.fuelthemes.net/revolution-corporate-agency/wp-content/uploads/sites/5/2018/02/a4_1.jpg?id=250) !important;}"][vc_column][thb_image retina="retina_size" animation="animation bottom-to-top-3d" alignment="aligncenter" image="251"][/thb_image][/vc_column][/vc_row][vc_row el_class="align-center"][vc_column offset="vc_col-lg-8 vc_col-md-10"][thb_slidetype slide_text="
@@ -182,7 +182,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_05'] = array(
-		'name' => esc_html__( 'About - 05', 'revolution' ),
+		'name' => esc_html__( 'About - 05', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/about5.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" thb_shape_divider="true" css=".vc_custom_1522316187707{padding-bottom: 100px !important;background: #0a0a0a url(http://revolution.fuelthemes.net/revolution-cryptocurrency/wp-content/uploads/sites/7/2018/02/f25.jpg?id=176) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" divider_shape="tilt_v2" thb_divider_color="#ffffff" thb_divider_height="100"][vc_column][vc_row_inner css=".vc_custom_1522314053191{padding-top: 25vh !important;padding-bottom: 14vh !important;}"][vc_column_inner][thb_autotype typed_text="
@@ -210,7 +210,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_06'] = array(
-		'name' => esc_html__( 'Contact - 01', 'revolution' ),
+		'name' => esc_html__( 'Contact - 01', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/contact1.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true"][vc_column][thb_map_parent height="70" zoom="14" map_controls="zoomControl" map_style="JTVCJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJhZG1pbmlzdHJhdGl2ZS5sYW5kX3BhcmNlbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIyYWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJvZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMmxhbmRzY2FwZS5tYW5fbWFkZSUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIyYWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJvZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnBvaSUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIybGFiZWxzJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJvZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnJvYWQlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmxhYmVscyUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnN0eWxlcnMlMjIlM0ElMjAlNUIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJ2aXNpYmlsaXR5JTIyJTNBJTIwJTIyc2ltcGxpZmllZCUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmxpZ2h0bmVzcyUyMiUzQSUyMDIwJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJyb2FkLmhpZ2h3YXklMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmdlb21ldHJ5JTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmh1ZSUyMiUzQSUyMCUyMiUyM2Y0OTkzNSUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1RCUwQSUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmZlYXR1cmVUeXBlJTIyJTNBJTIwJTIycm9hZC5oaWdod2F5JTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJsYWJlbHMlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIydmlzaWJpbGl0eSUyMiUzQSUyMCUyMnNpbXBsaWZpZWQlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnJvYWQuYXJ0ZXJpYWwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmdlb21ldHJ5JTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmh1ZSUyMiUzQSUyMCUyMiUyM2ZhZDk1OSUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU1RCUwQSUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmZlYXR1cmVUeXBlJTIyJTNBJTIwJTIycm9hZC5hcnRlcmlhbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIybGFiZWxzJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJvZmYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnJvYWQubG9jYWwlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmdlb21ldHJ5JTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnZpc2liaWxpdHklMjIlM0ElMjAlMjJzaW1wbGlmaWVkJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJyb2FkLmxvY2FsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZWxlbWVudFR5cGUlMjIlM0ElMjAlMjJsYWJlbHMlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdHlsZXJzJTIyJTNBJTIwJTVCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIydmlzaWJpbGl0eSUyMiUzQSUyMCUyMnNpbXBsaWZpZWQlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUQlMEElMjAlMjAlMjAlMjAlN0QlMkMlMEElMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJmZWF0dXJlVHlwZSUyMiUzQSUyMCUyMnRyYW5zaXQlMjIlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJlbGVtZW50VHlwZSUyMiUzQSUyMCUyMmFsbCUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnN0eWxlcnMlMjIlM0ElMjAlNUIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJ2aXNpYmlsaXR5JTIyJTNBJTIwJTIyb2ZmJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTJDJTBBJTIwJTIwJTIwJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyZmVhdHVyZVR5cGUlMjIlM0ElMjAlMjJ3YXRlciUyMiUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmVsZW1lbnRUeXBlJTIyJTNBJTIwJTIyYWxsJTIyJTJDJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3R5bGVycyUyMiUzQSUyMCU1QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmh1ZSUyMiUzQSUyMCUyMiUyM2ExY2RmYyUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMnNhdHVyYXRpb24lMjIlM0ElMjAzMCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3RCUyQyUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCU3QiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmxpZ2h0bmVzcyUyMiUzQSUyMDQ5JTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVEJTBBJTIwJTIwJTIwJTIwJTdEJTBBJTVE"][thb_map latitude="42.4555996" longitude="-75.0949027" marker_title="Amsterdam" marker_description="6100 Wilshire Blvd 2nd Floor Los Angeles CA 90048 +1 310 499 7700
@@ -229,7 +229,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_07'] = array(
-		'name' => esc_html__( 'Contact - 02', 'revolution' ),
+		'name' => esc_html__( 'Contact - 02', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/contact2.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row css=".vc_custom_1519212046034{padding-top: 4vh !important;}"][vc_column css=".vc_custom_1517861148855{padding-top: 7vh !important;padding-bottom: 4vh !important;}"][thb_slidetype slide_text="
@@ -245,7 +245,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_08'] = array(
-		'name' => esc_html__( 'Services - 01', 'revolution' ),
+		'name' => esc_html__( 'Services - 01', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/services1.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row el_class="align-center text-center" css=".vc_custom_1517743350320{padding-top: 5vh !important;padding-bottom: 6vh !important;}"][vc_column offset="vc_col-lg-7 vc_col-md-10"][vc_column_text animation="animation bottom-to-top"]
@@ -256,7 +256,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_09'] = array(
-		'name' => esc_html__( 'Services - 02', 'revolution' ),
+		'name' => esc_html__( 'Services - 02', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/services2.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row el_class="align-center" css=".vc_custom_1522329562257{padding-top: 10vh !important;padding-bottom: 8vh !important;}"][vc_column offset="vc_col-lg-8 vc_col-md-11" el_class="text-center"][thb_slidetype slide_text="
@@ -285,7 +285,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_10'] = array(
-		'name' => esc_html__( 'Services - 03', 'revolution' ),
+		'name' => esc_html__( 'Services - 03', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/services3.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" css=".vc_custom_1522400104430{margin-bottom: 15vh !important;padding-top: 25vh !important;padding-bottom: 25vh !important;background: #1c1f45 url(http://revolution.fuelthemes.net/wp-content/uploads/2018/03/f2140.jpg?id=309) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column][vc_row_inner content_placement="middle" el_class="align-center"][vc_column_inner thb_color="thb-light-column" width="1/2" offset="vc_col-lg-6 vc_col-md-8"][thb_slidetype slide_text="
@@ -312,7 +312,7 @@ function thb_get_page_templates($template_list) {
 	);
 	
 	$template_list['page_11'] = array(
-		'name' => esc_html__( 'Services - 04', 'revolution' ),
+		'name' => esc_html__( 'Services - 04', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/misc/services4.jpg",
 		'cat' => array( 'Full Page' ),
 		'sc' => '[vc_row content_placement="middle" el_class="align-justify" css=".vc_custom_1518208399667{padding-top: 10vh !important;}"][vc_column width="5/12" css=".vc_custom_1518257616119{padding-bottom: 8vh !important;}"][thb_slidetype slide_text="

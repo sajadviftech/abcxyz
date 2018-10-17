@@ -74,7 +74,7 @@ function thb_lazy_low_quality( $attr, $attachment, $size ) {
 		}
 		$name = explode( '-', $size );
 	
-		if ( 'revolution' === $name[0] ) {
+		if ( 'viftech' === $name[0] ) {
 			$name[2] = 'mini';
 			$size = implode( '-', $name );
 			$placeholder = wp_get_attachment_image_src( $attachment->ID, $size );

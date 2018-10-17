@@ -45,7 +45,7 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 		<nav class="thb-portfolio-filter <?php echo esc_attr($style); ?>" id="thb-filter-<?php echo esc_attr($id); ?>">
 			<?php if ($style === 'style1') { ?>
 			<ul>
-				<li><a data-filter="*" class="active"><?php esc_html_e('All', 'revolution'); ?></a></li>
+				<li><a data-filter="*" class="active"><?php esc_html_e('All', 'viftech'); ?></a></li>
 				<?php 
 					 foreach ($categories as $cat) {
 					 	$term = get_term($cat);
@@ -67,9 +67,9 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 				?>
 			</ul>
 			<?php } else if ($style === 'style2') { ?>
-			<span class="thb-filter-by"><?php esc_html_e('Filter by', 'revolution'); ?></span>
+			<span class="thb-filter-by"><?php esc_html_e('Filter by', 'viftech'); ?></span>
 			<select class="thb-select2">
-				<option value="*" selected><?php esc_html_e('All', 'revolution'); ?></option>
+				<option value="*" selected><?php esc_html_e('All', 'viftech'); ?></option>
 				<?php 
 					 foreach ($categories as $cat) {
 					 	$term = get_term($cat);
@@ -139,7 +139,7 @@ function thb_social_article_detail() {
 ?>
 <?php if (!empty($sharing_type)) { ?>
 <aside class="share_wrapper">
-	<a href="#" class="share-post-link"><?php get_template_part('assets/img/svg/share.svg'); ?><span><?php esc_html_e('Share', 'revolution'); ?></span></a>
+	<a href="#" class="share-post-link"><?php get_template_part('assets/img/svg/share.svg'); ?><span><?php esc_html_e('Share', 'viftech'); ?></span></a>
 	<?php
 	function thb_add_shareform($id) { 
 		$permalink = get_permalink($id);
@@ -153,7 +153,7 @@ function thb_social_article_detail() {
 			<div class="spacer"></div>
 			<div class="vcenter">
 				<div class="product_share">
-					<h4><?php esc_html_e('Share This', 'revolution'); ?></h4>
+					<h4><?php esc_html_e('Share This', 'viftech'); ?></h4>
 					<?php if (in_array('facebook',$sharing_type)) { ?>
 					<a href="<?php echo 'http://www.facebook.com/sharer.php?u=' . urlencode( esc_url( $permalink ) ).''; ?>" class="social facebook boxed-icon white-fill"><i class="fa fa-facebook"></i></a>
 					<?php } ?>
@@ -184,10 +184,10 @@ function thb_social_article_detail() {
 					<?php } ?>
 				</div>
 				<div class="product_copy">
-					<h4><?php esc_html_e('Copy Link to Clipboard', 'revolution'); ?></h4>
+					<h4><?php esc_html_e('Copy Link to Clipboard', 'viftech'); ?></h4>
 					<form>
 						<input type="text" class="copy-value" value="<?php the_permalink(); ?>" readonly/>
-						<a class="btn"><?php esc_html_e('Copy', 'revolution'); ?></a>
+						<a class="btn"><?php esc_html_e('Copy', 'viftech'); ?></a>
 					</form>
 				</div>
 			</div>
@@ -269,7 +269,7 @@ function thb_portfolio_nav() {
 						<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link prev">
 							<strong>
 								<span class="next">
-									<?php esc_html_e('Next Project', 'revolution'); ?>
+									<?php esc_html_e('Next Project', 'viftech'); ?>
 									<span class="title"><?php echo esc_html($prev->post_title); ?></span>
 								</span>
 							</strong>
@@ -287,11 +287,11 @@ function thb_portfolio_nav() {
 						?>
 						<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link prev">
 							<strong>
-								<?php esc_html_e('(p) Previous', 'revolution'); ?>
+								<?php esc_html_e('(p) Previous', 'viftech'); ?>
 							</strong>
 							<div>
 								<span><?php echo esc_html($prev->post_title); ?></span>
-								<em><?php esc_html_e('View Portfolio', 'revolution'); ?></em>
+								<em><?php esc_html_e('View Portfolio', 'viftech'); ?></em>
 							</div>
 							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'revolution-bloglarge-x2')?></div><?php } ?>
 						</a>
@@ -304,11 +304,11 @@ function thb_portfolio_nav() {
 						?>
 						<a href="<?php echo esc_url(get_permalink($next->ID)); ?>" class="post_nav_link next">
 							<strong>
-								<?php esc_html_e('Next (n)', 'revolution'); ?>
+								<?php esc_html_e('Next (n)', 'viftech'); ?>
 							</strong>
 							<div>
 								<span><?php echo esc_html($next->post_title); ?></span>
-								<em><?php esc_html_e('View Portfolio', 'revolution'); ?></em>
+								<em><?php esc_html_e('View Portfolio', 'viftech'); ?></em>
 							</div>
 							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'revolution-bloglarge-x2')?></div><?php } ?>
 						</a>
@@ -318,7 +318,7 @@ function thb_portfolio_nav() {
 		<?php } else if ('style3' === $portfolio_nav_style) { ?>
 			<div class="row">
 				<div class="small-12 columns">
-					<p><?php esc_html_e('More Works', 'revolution'); ?></p>
+					<p><?php esc_html_e('More Works', 'viftech'); ?></p>
 					<ul>
 					<?php 
 						$count = ot_get_option('portfolio_nav_count', '10');

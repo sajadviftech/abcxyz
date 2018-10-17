@@ -6,52 +6,52 @@ function thb_filter_radio_images( $array, $field_id ) {
 	  $array = array(
 	    array(
 	      'value'   => 'style1',
-	      'label'   => esc_html__( 'Style 1', 'revolution' ),
+	      'label'   => esc_html__( 'Style 1', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style1.png'
 	    ),
 	    array(
 	      'value'   => 'style2',
-	      'label'   => esc_html__( 'Style 2', 'revolution' ),
+	      'label'   => esc_html__( 'Style 2', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style2.png'
 	    ),
 	    array(
 	      'value'   => 'style3',
-	      'label'   => esc_html__( 'Style 3', 'revolution' ),
+	      'label'   => esc_html__( 'Style 3', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style3.png'
 	    ),
 	    array(
 	      'value'   => 'style4',
-	      'label'   => esc_html__( 'Style 4', 'revolution' ),
+	      'label'   => esc_html__( 'Style 4', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style4.png'
 	    ),
 	    array(
 	      'value'   => 'style5',
-	      'label'   => esc_html__( 'Style 5', 'revolution' ),
+	      'label'   => esc_html__( 'Style 5', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style5.png'
 	    ),
 	    array(
 	      'value'   => 'style6',
-	      'label'   => esc_html__( 'Style 6', 'revolution' ),
+	      'label'   => esc_html__( 'Style 6', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style6.png'
 	    ),
 	    array(
 	      'value'   => 'style7',
-	      'label'   => esc_html__( 'Style 7', 'revolution' ),
+	      'label'   => esc_html__( 'Style 7', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style7.png'
 	    ),
 	    array(
 	      'value'   => 'style8',
-	      'label'   => esc_html__( 'Style 8', 'revolution' ),
+	      'label'   => esc_html__( 'Style 8', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style8.png'
 	    ),
 	    array(
 	      'value'   => 'style9',
-	      'label'   => esc_html__( 'Style 9', 'revolution' ),
+	      'label'   => esc_html__( 'Style 9', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style9.png'
 	    ),
 	    array(
 	      'value'   => 'style10',
-	      'label'   => esc_html__( 'Style 10', 'revolution' ),
+	      'label'   => esc_html__( 'Style 10', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style10.png'
 	    )
 	  );
@@ -61,22 +61,22 @@ function thb_filter_radio_images( $array, $field_id ) {
 	  $array = array(
 	    array(
 	      'value'   => 'large',
-	      'label'   => esc_html__( 'large', 'revolution' ),
+	      'label'   => esc_html__( 'large', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/large.png'
 	    ),
 	    array(
 	      'value'   => 'small',
-	      'label'   => esc_html__( 'small', 'revolution' ),
+	      'label'   => esc_html__( 'small', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/small.png'
 	    ),
 	    array(
 	      'value'   => 'wide',
-	      'label'   => esc_html__( 'wide', 'revolution' ),
+	      'label'   => esc_html__( 'wide', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/wide.png'
 	    ),
 	    array(
 	      'value'   => 'tall',
-	      'label'   => esc_html__( 'tall', 'revolution' ),
+	      'label'   => esc_html__( 'tall', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/tall.png'
 	    )
 	  );
@@ -86,12 +86,12 @@ function thb_filter_radio_images( $array, $field_id ) {
 	  $array = array(
 	    array(
 	      'value'   => 'style1',
-	      'label'   => esc_html__( 'Style 1', 'revolution' ),
+	      'label'   => esc_html__( 'Style 1', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/footer_bar/style1.png'
 	    ),
 	    array(
 	      'value'   => 'style2',
-	      'label'   => esc_html__( 'Style 2', 'revolution' ),
+	      'label'   => esc_html__( 'Style 2', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/footer_bar/style2.png'
 	    )
 	  );
@@ -101,17 +101,17 @@ function thb_filter_radio_images( $array, $field_id ) {
 	  $array = array(
 	    array(
 	      'value'   => 'style1',
-	      'label'   => esc_html__( 'Style 1', 'revolution' ),
+	      'label'   => esc_html__( 'Style 1', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style1.png'
 	    ),
 	    array(
 	      'value'   => 'style2',
-	      'label'   => esc_html__( 'Style 2', 'revolution' ),
+	      'label'   => esc_html__( 'Style 2', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style2.png'
 	    ),
 	    array(
 	      'value'   => 'style3',
-	      'label'   => esc_html__( 'Style 3', 'revolution' ),
+	      'label'   => esc_html__( 'Style 3', 'viftech' ),
 	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style3.png'
 	    )
 	  );
@@ -121,42 +121,42 @@ function thb_filter_radio_images( $array, $field_id ) {
     $array = array(
     	array(
     	  'value'   => 'onecolumns',
-    	  'label'   => esc_html__( 'Single Column', 'revolution' ),
+    	  'label'   => esc_html__( 'Single Column', 'viftech' ),
     	  'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/one-columns.png'
     	),
     	array(
     	  'value'   => 'twocolumns',
-    	  'label'   => esc_html__( 'Two Columns', 'revolution' ),
+    	  'label'   => esc_html__( 'Two Columns', 'viftech' ),
     	  'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/two-columns.png'
     	),
     	array(
     	  'value'   => 'threecolumns',
-    	  'label'   => esc_html__( 'Three Columns', 'revolution' ),
+    	  'label'   => esc_html__( 'Three Columns', 'viftech' ),
     	  'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/three-columns.png'
     	),
       array(
         'value'   => 'fourcolumns',
-        'label'   => esc_html__( 'Four Columns', 'revolution' ),
+        'label'   => esc_html__( 'Four Columns', 'viftech' ),
         'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/four-columns.png'
       ),
       array(
         'value'   => 'doubleleft',
-        'label'   => esc_html__( 'Double Left Columns', 'revolution' ),
+        'label'   => esc_html__( 'Double Left Columns', 'viftech' ),
         'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/doubleleft-columns.png'
       ),
       array(
         'value'   => 'doubleright',
-        'label'   => esc_html__( 'Double Right Columns', 'revolution' ),
+        'label'   => esc_html__( 'Double Right Columns', 'viftech' ),
         'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/doubleright-columns.png'
       ),
       array(
         'value'   => 'fivecolumns',
-        'label'   => esc_html__( 'Five Columns', 'revolution' ),
+        'label'   => esc_html__( 'Five Columns', 'viftech' ),
         'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/five-columns.png'
       ),
       array(
         'value'   => 'sixcolumns',
-        'label'   => esc_html__( 'Six Columns', 'revolution' ),
+        'label'   => esc_html__( 'Six Columns', 'viftech' ),
         'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/six-columns.png'
       )
       
@@ -250,7 +250,7 @@ function thb_social_links_settings( $id ) {
     array(
       'id'        => 'href',
       'label'     => 'Link',
-      'desc'      => sprintf( __( 'Enter a link to the profile or page on the social website. Remember to add the %s part to the front of the link.', 'revolution' ), '<code>http://</code>' ),
+      'desc'      => sprintf( __( 'Enter a link to the profile or page on the social website. Remember to add the %s part to the front of the link.', 'viftech' ), '<code>http://</code>' ),
       'type'      => 'text',
     )
   );
@@ -262,22 +262,22 @@ add_filter( 'ot_social_links_settings', 'thb_social_links_settings');
 add_filter( 'ot_type_social_links_load_defaults', '__return_false');
 
 function thb_filter_options_name() {
-	return wp_kses(__('<a href="http://#/">Viftech Themes</a>', 'revolution'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('<a href="#">Viftech Themes</a>', 'viftech'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_header_version_text', 'thb_filter_options_name', 10, 2 );
 
 function thb_filter_page_title() {
-	return wp_kses(__('Viftech Theme Options', 'revolution'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('Viftech Theme Options', 'viftech'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_theme_options_page_title', 'thb_filter_page_title', 10, 2 );
 
 function thb_filter_menu_title() {
-	return wp_kses(__('Viftech Options', 'revolution'), array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('Viftech Options', 'viftech'), array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_theme_options_menu_title', 'thb_filter_menu_title', 10, 2 );
 
 function thb_filter_upload_text() {
-	return wp_kses(__('Send to Theme Options', 'revolution'),array('a' => array('href' => array(),'title' => array())));
+	return wp_kses(__('Send to Theme Options', 'viftech'),array('a' => array('href' => array(),'title' => array())));
 }
 add_filter( 'ot_upload_text', 'thb_filter_upload_text', 10, 2 );
 
@@ -372,8 +372,8 @@ add_filter( 'ot_line_height_range_interval', 'thb_ot_line_height_range_interval'
 
 function thb_filter_ot_recognized_link_color_fields( $array, $field_id ) {
 	$array = array(
-		'link'    => esc_html_x( 'Standard', 'color picker', 'revolution' ),
-	  'hover'   => esc_html_x( 'Hover', 'color picker', 'revolution' )
+		'link'    => esc_html_x( 'Standard', 'color picker', 'viftech' ),
+	  'hover'   => esc_html_x( 'Hover', 'color picker', 'viftech' )
 	);
 	return $array;
 }

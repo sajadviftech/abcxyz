@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div class="thb-page-header">
-	<h1><?php esc_html_e('Checkout', 'revolution'); ?></h1>
+	<h1><?php esc_html_e('Checkout', 'viftech'); ?></h1>
 </div>
 	<?php
 	wc_print_notices();
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	
 	// If checkout registration is disabled and not logged in, the user cannot checkout
 	if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_user_logged_in() ) {
-		echo apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'revolution' ) );
+		echo apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'viftech' ) );
 		return;
 	}
 	
@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php endif; ?>
 
-	<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'revolution' ); ?></h3>
+	<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'viftech' ); ?></h3>
 
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

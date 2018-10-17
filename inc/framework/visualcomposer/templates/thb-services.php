@@ -2,7 +2,7 @@
 
 function thb_get_services_templates($template_list) {
 	$template_list['services_section_01'] = array(
-		'name' => esc_html__( 'Services Section - 01', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 01', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e1.jpg",
 		'cat' => array( 'services', 'maps' ),
 		'sc' => '[vc_row css=".vc_custom_1518258866704{padding-bottom: 8vh !important;}"][vc_column offset="vc_col-lg-5 vc_col-md-8"][thb_slidetype slide_text="
@@ -14,7 +14,7 @@ function thb_get_services_templates($template_list) {
 		info@stylesuite.nlParis"][/thb_map_parent][/vc_column][/vc_row][vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" el_class="text-center" css=".vc_custom_1523028219708{padding-top: 12vh !important;padding-bottom: 12vh !important;background: #66859b url(http://revolution.fuelthemes.net/revolution-corporate-agency/wp-content/uploads/sites/5/2018/04/cta_bg.jpg?id=340) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column][thb_button style="style2" animation="animation bottom-to-top" size="large" color="white" border_radius="pill-radius" link="url:http%3A%2F%2Frevolution.fuelthemes.net%2Frevolution-corporate-agency%2Fcontact%2F|title:Lets%20Work%20Together||"][/vc_column][/vc_row]',
 	);
 	$template_list['services_section_02'] = array(
-		'name' => esc_html__( 'Services Section - 02', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 02', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e2.jpg",
 		'cat' => array( 'services' ),
 		'sc' => '[vc_row el_class="align-center" css=".vc_custom_1522329562257{padding-top: 10vh !important;padding-bottom: 8vh !important;}"][vc_column offset="vc_col-lg-8 vc_col-md-11" el_class="text-center"][thb_slidetype slide_text="
@@ -42,7 +42,7 @@ function thb_get_services_templates($template_list) {
 		<span style="font-size: 14px;">Days own moveth. Seasons which third fruit dont there thing saw. All. Gathering youll set isnt gathering bearing seasons place.</span>[/vc_column_text][thb_button_text style="style2" link="url:%23|title:READ%20MORE|target:%20_blank|"][vc_empty_space height="60px"][/vc_column][/vc_row]',
 	);
 	$template_list['services_section_03'] = array(
-		'name' => esc_html__( 'Services Section - 03', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 03', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e3.jpg",
 		'cat' => array( 'services' ),
 		'sc' => '[vc_row css=".vc_custom_1522322636740{padding-bottom: 12vh !important;}"][vc_column width="1/4"][vc_empty_space height="30px"][vc_column_text]
@@ -58,7 +58,7 @@ function thb_get_services_templates($template_list) {
 		To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on. In views it or meant drift to. Be concern parlors settled or do shyness address. Remainder northward performed out for moonlight. Yet late add name was rent park from rich. He always do do former he highly.[/vc_column_text][/vc_tta_section][/thb_accordion][/vc_column][/vc_row]',
 	);
 	$template_list['services_section_04'] = array(
-		'name' => esc_html__( 'Services Section - 04', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 04', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e4.jpg",
 		'cat' => array( 'services' ),
 		'sc' => '[vc_row css=".vc_custom_1519295700022{padding-top: 15vh !important;}"][vc_column][vc_row_inner thb_max_width=""][vc_column_inner width="2/3"][thb_slidetype slide_text="
@@ -74,7 +74,7 @@ function thb_get_services_templates($template_list) {
 		[/vc_column_text][vc_column_text]Made fruit moved void Good. Hath seed shall years replenish form him sea spirit dont had. Beast. Appear bearing seasons cattle appear earth male moved give midst seed in youll likeness earth herb yielding.[/vc_column_text][thb_button_text style="style5" link="url:http%3A%2F%2Frevolution.fuelthemes.net%2Frevolution-consulting%2Fabout-us%2F|title:Learn%20More||"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]',
 	);
 	$template_list['services_section_05'] = array(
-		'name' => esc_html__( 'Services Section - 05', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 05', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e5.jpg",
 		'cat' => array( 'services' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" css=".vc_custom_1519736204280{padding-top: 15vh !important;padding-bottom: 15vh !important;background-color: #f7f4fe !important;}"][vc_column][vc_row_inner][vc_column_inner][thb_fadetype fade_text="
@@ -101,7 +101,7 @@ function thb_get_services_templates($template_list) {
 		[/thb_pricing_column][/thb_pricing_table][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]',
 	);
 	$template_list['services_section_06'] = array(
-		'name' => esc_html__( 'Services Section - 06', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 06', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e6.jpg",
 		'cat' => array( 'services' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" thb_shape_divider="true" divider_shape="tilt_v2" thb_divider_color="#242651" thb_divider_height="100" css=".vc_custom_1522323804983{padding-bottom: 100px !important;background-color: #e4edf1 !important;}"][vc_column][vc_row_inner el_class="align-center" css=".vc_custom_1522664953482{padding-top: 12vh !important;}"][vc_column_inner el_class="text-center" offset="vc_col-lg-6 vc_col-md-8"][thb_image retina="retina_size" animation="animation scale" alignment="aligncenter" image="161"][/thb_image][vc_empty_space height="40px"][thb_slidetype slide_text="
@@ -123,7 +123,7 @@ function thb_get_services_templates($template_list) {
 		[/vc_column_text][vc_column_text animation="animation right-to-left"]Combining a modified Bitcoin Core infrastructure with intercompatible version of the Ethereum Virtual Machine (EVM), Qtum merges the reliability of Bitcoin’s unfailing blockchain with the endless.[/vc_column_text][thb_button_text style="style3" animation="animation right-to-left" link="url:http%3A%2F%2Frevolution.fuelthemes.net%2Frevolution-cryptocurrency%2Fabout-us%2F|title:Read%20More||"][/vc_column_inner][/vc_row_inner][vc_row_inner css=".vc_custom_1518794302802{padding-top: 8vh !important;padding-bottom: 12vh !important;}"][vc_column_inner el_class="text-center"][thb_button add_arrow="true" animation="animation bottom-to-top" link="url:http%3A%2F%2Frevolution.fuelthemes.net%2Frevolution-cryptocurrency%2Fabout-us%2F|title:View%20All%20Features||"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]',
 	);
 	$template_list['services_section_07'] = array(
-		'name' => esc_html__( 'Services Section - 07', 'revolution' ),
+		'name' => esc_html__( 'Services Section - 07', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/services/services-e7.jpg",
 		'cat' => array( 'services' ),
 		'sc' => '[vc_row css=".vc_custom_1517401641880{padding-top: 16vh !important;padding-bottom: 16vh !important;}"][vc_column][thb_image retina="retina_size" animation="animation bottom-to-top-3d" alignment="aligncenter" image="133"][/thb_image][vc_empty_space height="46px"][vc_column_text animation="animation bottom-to-top" el_class="text-center"]

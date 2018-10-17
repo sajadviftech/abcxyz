@@ -65,7 +65,7 @@ function thb_language_switcher() {
 							}
 						}
 					} else {
-						echo '<li>'.esc_html__('Add Languages', 'revolution').'</li>';	
+						echo '<li>'.esc_html__('Add Languages', 'viftech').'</li>';	
 					}
 				?>
 				</ul>
@@ -125,7 +125,7 @@ function thb_language_switcher_mobile() {
 						}
 					}
 				} else {
-					echo esc_html__('Add Languages', 'revolution');	
+					echo esc_html__('Add Languages', 'viftech');	
 				}
 			?>
 		</div>

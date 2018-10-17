@@ -3,7 +3,7 @@
 			if (is_archive()) {
 				echo single_term_title();
 			} else if (is_search()) {
-				esc_html_e('Search Results for: ', 'revolution');
+				esc_html_e('Search Results for: ', 'viftech');
 				the_search_query();
 			} else {
 				single_post_title();

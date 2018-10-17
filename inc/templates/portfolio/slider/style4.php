@@ -25,7 +25,7 @@
 				<?php if (get_the_excerpt()) { ?>
 					<p class="animation fade-in"><?php echo esc_html(get_the_excerpt()); ?></p>
 				<?php } ?>
-				<a href="<?php echo esc_url($permalink); ?>" class="btn-text style2 white animation fade-in"><?php esc_html_e('Learn More', 'revolution'); ?></a>
+				<a href="<?php echo esc_url($permalink); ?>" class="btn-text style2 white animation fade-in"><?php esc_html_e('Learn More', 'viftech'); ?></a>
 			</div>
 		</div>
 	</div>

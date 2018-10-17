@@ -90,7 +90,7 @@ class ThbTwitterHelper {
   }
   public function thb_getTweetTime($tweet) {
     if(!empty($tweet['created_at'])) {
-        return human_time_diff(strtotime($tweet['created_at']), current_time('timestamp') ).' '.esc_html__('ago', 'revolution');
+        return human_time_diff(strtotime($tweet['created_at']), current_time('timestamp') ).' '.esc_html__('ago', 'viftech');
     } else {
     	return '';
     }

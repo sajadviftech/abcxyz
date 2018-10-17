@@ -19,7 +19,7 @@ if ( class_exists( 'OT_Loader' ) && defined( 'OT_PLUGIN_MODE' ) && OT_PLUGIN_MOD
   
   function ot_conflict_notice() {
     
-    echo '<div class="error"><p>' . __( 'OptionTree is installed as a plugin and also embedded in your current theme. Please deactivate the plugin to load the theme dependent version of OptionTree, and remove this warning.', 'revolution' ) . '</p></div>';
+    echo '<div class="error"><p>' . __( 'OptionTree is installed as a plugin and also embedded in your current theme. Please deactivate the plugin to load the theme dependent version of OptionTree, and remove this warning.', 'viftech' ) . '</p></div>';
     
   }
   
@@ -770,7 +770,7 @@ if ( ! class_exists( 'OT_Loader' ) ) {
         
         // Once is enough.
         remove_filter( 'gettext', array( $this, 'ot_change_image_button' ) );
-        return apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'revolution' ) );
+        return apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'viftech' ) );
         
       }
       

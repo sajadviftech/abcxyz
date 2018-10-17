@@ -206,7 +206,7 @@ class Helpers {
 			return new \WP_Error(
 				'failed_writing_file_to_server',
 				sprintf(
-					__( 'An error occurred while writing file to your server! Tried to write a file to: %s%s.', 'revolution' ),
+					__( 'An error occurred while writing file to your server! Tried to write a file to: %s%s.', 'viftech' ),
 					'<br>',
 					$file_path
 				)
@@ -249,7 +249,7 @@ class Helpers {
 			return new \WP_Error(
 				'failed_writing_file_to_server',
 				sprintf(
-					__( 'An error occurred while writing file to your server! Tried to write a file to: %s%s.', 'revolution' ),
+					__( 'An error occurred while writing file to your server! Tried to write a file to: %s%s.', 'viftech' ),
 					'<br>',
 					$file_path
 				)
@@ -283,7 +283,7 @@ class Helpers {
 			return new \WP_Error(
 				'failed_reading_file_from_server',
 				sprintf(
-					__( 'An error occurred while reading a file from your server! Tried reading file from path: %s%s.', 'revolution' ),
+					__( 'An error occurred while reading a file from your server! Tried reading file from path: %s%s.', 'viftech' ),
 					'<br>',
 					$file_path
 				)
@@ -306,7 +306,7 @@ class Helpers {
 			return new \WP_Error(
 				'no_direct_file_access',
 				sprintf(
-					__( 'This WordPress page does not have %sdirect%s write file access. This plugin needs it in order to save the demo import xml file to the upload directory of your site. You can change this setting with these instructions: %s.', 'revolution' ),
+					__( 'This WordPress page does not have %sdirect%s write file access. This plugin needs it in order to save the demo import xml file to the upload directory of your site. You can change this setting with these instructions: %s.', 'viftech' ),
 					'<strong>',
 					'</strong>',
 					'<a href="http://gregorcapuder.com/wordpress-how-to-set-direct-filesystem-method/" target="_blank">How to set <strong>direct</strong> filesystem method</a>'
@@ -317,8 +317,8 @@ class Helpers {
 		// Get plugin page settings.
 		$plugin_page_setup = apply_filters( 'pt-ocdi/plugin_page_setup', array(
 				'parent_slug' => 'themes.php',
-				'page_title'  => esc_html__( 'One Click Demo Import' , 'revolution' ),
-				'menu_title'  => esc_html__( 'Import Demo Data' , 'revolution' ),
+				'page_title'  => esc_html__( 'One Click Demo Import' , 'viftech' ),
+				'menu_title'  => esc_html__( 'Import Demo Data' , 'viftech' ),
 				'capability'  => 'import',
 				'menu_slug'   => 'pt-one-click-demo-import',
 			)
@@ -330,7 +330,7 @@ class Helpers {
 		if ( false === ( $creds = request_filesystem_credentials( $demo_import_page_url, '', false, false, null ) ) ) {
 			return new \WP_error(
 				'filesystem_credentials_could_not_be_retrieved',
-				__( 'An error occurred while retrieving reading/writing permissions to your server (could not retrieve WP filesystem credentials)!', 'revolution' )
+				__( 'An error occurred while retrieving reading/writing permissions to your server (could not retrieve WP filesystem credentials)!', 'viftech' )
 			);
 		}
 
@@ -338,7 +338,7 @@ class Helpers {
 		if ( ! WP_Filesystem( $creds ) ) {
 			return new \WP_Error(
 				'wrong_login_credentials',
-				__( 'Your WordPress login credentials don\'t allow to use WP_Filesystem!', 'revolution' )
+				__( 'Your WordPress login credentials don\'t allow to use WP_Filesystem!', 'viftech' )
 			);
 		}
 
@@ -378,7 +378,7 @@ class Helpers {
 		$attachment = array(
 			'guid'           => self::get_log_url( $log_path ),
 			'post_mime_type' => $filetype['type'],
-			'post_title'     => apply_filters( 'pt-ocdi/attachment_prefix', esc_html__( 'One Click Demo Import - ', 'revolution' ) ) . preg_replace( '/\.[^.]+$/', '', basename( $log_path ) ),
+			'post_title'     => apply_filters( 'pt-ocdi/attachment_prefix', esc_html__( 'One Click Demo Import - ', 'viftech' ) ) . preg_replace( '/\.[^.]+$/', '', basename( $log_path ) ),
 			'post_content'   => '',
 			'post_status'    => 'inherit',
 		);
@@ -412,7 +412,7 @@ class Helpers {
 		if ( ! current_user_can( 'import' ) ) {
 			wp_die(
 				sprintf(
-					__( '%sYour user role isn\'t high enough. You don\'t have permission to import demo data.%s', 'revolution' ),
+					__( '%sYour user role isn\'t high enough. You don\'t have permission to import demo data.%s', 'viftech' ),
 					'<div class="notice  notice-error"><p>',
 					'</p></div>'
 				)
@@ -458,11 +458,11 @@ class Helpers {
 			// Add this error to log file.
 			$log_added = self::append_to_file(
 				sprintf(
-					__( 'Content file was not uploaded. Error: %s', 'revolution' ),
+					__( 'Content file was not uploaded. Error: %s', 'viftech' ),
 					$widget_file_info['error']
 				),
 				$log_file_path,
-				esc_html__( 'Upload files' , 'revolution' )
+				esc_html__( 'Upload files' , 'viftech' )
 			);
 		}
 
@@ -475,11 +475,11 @@ class Helpers {
 			// Add this error to log file.
 			$log_added = self::append_to_file(
 				sprintf(
-					__( 'Widget file was not uploaded. Error: %s', 'revolution' ),
+					__( 'Widget file was not uploaded. Error: %s', 'viftech' ),
 					$widget_file_info['error']
 				),
 				$log_file_path,
-				esc_html__( 'Upload files' , 'revolution' )
+				esc_html__( 'Upload files' , 'viftech' )
 			);
 		}
 
@@ -492,11 +492,11 @@ class Helpers {
 			// Add this error to log file.
 			$log_added = self::append_to_file(
 				sprintf(
-					__( 'Customizer file was not uploaded. Error: %s', 'revolution' ),
+					__( 'Customizer file was not uploaded. Error: %s', 'viftech' ),
 					$customizer_file_info['error']
 				),
 				$log_file_path,
-				esc_html__( 'Upload files' , 'revolution' )
+				esc_html__( 'Upload files' , 'viftech' )
 			);
 		}
 
@@ -505,9 +505,9 @@ class Helpers {
 			if ( isset( $_POST['redux_option_name'] ) && empty( $_POST['redux_option_name'] ) ) {
 				// Write error to log file and send an AJAX response with the error.
 				self::log_error_and_send_ajax_response(
-					esc_html__( 'Missing Redux option name! Please also enter the Redux option name!', 'revolution' ),
+					esc_html__( 'Missing Redux option name! Please also enter the Redux option name!', 'viftech' ),
 					$log_file_path,
-					esc_html__( 'Upload files', 'revolution' )
+					esc_html__( 'Upload files', 'viftech' )
 				);
 			}
 
@@ -523,19 +523,19 @@ class Helpers {
 			// Add this error to log file.
 			$log_added = self::append_to_file(
 				sprintf(
-					__( 'Redux file was not uploaded. Error: %s', 'revolution' ),
+					__( 'Redux file was not uploaded. Error: %s', 'viftech' ),
 					$redux_file_info['error']
 				),
 				$log_file_path,
-				esc_html__( 'Upload files' , 'revolution' )
+				esc_html__( 'Upload files' , 'viftech' )
 			);
 		}
 
 		// Add this message to log file.
 		$log_added = self::append_to_file(
-			__( 'The import files were successfully uploaded!', 'revolution' ) . self::import_file_info( $selected_import_files ),
+			__( 'The import files were successfully uploaded!', 'viftech' ) . self::import_file_info( $selected_import_files ),
 			$log_file_path,
-			esc_html__( 'Upload files' , 'revolution' )
+			esc_html__( 'Upload files' , 'viftech' )
 		);
 
 		// Return array with paths of uploaded files.
@@ -559,17 +559,17 @@ class Helpers {
 
 		return PHP_EOL .
 		sprintf(
-			__( 'Initial max execution time = %s', 'revolution' ),
+			__( 'Initial max execution time = %s', 'viftech' ),
 			ini_get( 'max_execution_time' )
 		) . PHP_EOL .
 		sprintf(
-			__( 'Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = %4$s%1$sCustomizer file = %5$s%1$sRedux files:%1$s%6$s', 'revolution' ),
+			__( 'Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = %4$s%1$sCustomizer file = %5$s%1$sRedux files:%1$s%6$s', 'viftech' ),
 			PHP_EOL,
 			get_site_url(),
-			empty( $selected_import_files['content'] ) ? esc_html__( 'not defined!', 'revolution' ) : $selected_import_files['content'],
-			empty( $selected_import_files['widgets'] ) ? esc_html__( 'not defined!', 'revolution' ) : $selected_import_files['widgets'],
-			empty( $selected_import_files['customizer'] ) ? esc_html__( 'not defined!', 'revolution' ) : $selected_import_files['customizer'],
-			empty( $redux_file_string ) ? esc_html__( 'not defined!', 'revolution' ) : $redux_file_string
+			empty( $selected_import_files['content'] ) ? esc_html__( 'not defined!', 'viftech' ) : $selected_import_files['content'],
+			empty( $selected_import_files['widgets'] ) ? esc_html__( 'not defined!', 'viftech' ) : $selected_import_files['widgets'],
+			empty( $selected_import_files['customizer'] ) ? esc_html__( 'not defined!', 'viftech' ) : $selected_import_files['customizer'],
+			empty( $redux_file_string ) ? esc_html__( 'not defined!', 'viftech' ) : $redux_file_string
 		);
 	}
 

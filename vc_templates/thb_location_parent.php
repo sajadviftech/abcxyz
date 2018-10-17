@@ -36,7 +36,7 @@
 		<?php if ( $thb_api_key !== '' ) { ?>
 			<?php echo wpb_js_remove_wpautop($content, false); ?>
 		<?php } else { ?>
-			<?php esc_html_e('Please fill out Google Maps Api key inside Theme Options', 'revolution'); ?>
+			<?php esc_html_e('Please fill out Google Maps Api key inside Theme Options', 'viftech'); ?>
 		<?php } ?>
 	</div>
 	<style>

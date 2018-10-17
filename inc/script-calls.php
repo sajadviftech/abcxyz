@@ -66,12 +66,12 @@ function thb_register_js() {
 		wp_localize_script( 'thb-app', 'themeajax', array( 
 			'url' => admin_url( 'admin-ajax.php' ),
 			'l10n' => array (
-				'loading' => esc_html__("Loading", 'revolution'),
-				'nomore' => esc_html__("No More Posts", 'revolution'),
-				'nomore_products' => esc_html__("All Products Loaded", 'revolution'),
-				'loadmore' => esc_html__("Load More", 'revolution'),
-				'added' => esc_html__("Added To Cart", 'revolution'),
-				'copied' => esc_html__("Copied", 'revolution')
+				'loading' => esc_html__("Loading", 'viftech'),
+				'nomore' => esc_html__("No More Posts", 'viftech'),
+				'nomore_products' => esc_html__("All Products Loaded", 'viftech'),
+				'loadmore' => esc_html__("Load More", 'viftech'),
+				'added' => esc_html__("Added To Cart", 'viftech'),
+				'copied' => esc_html__("Copied", 'viftech')
 			),
 			'svg' => array(
 				'prev_arrow' => thb_load_template_part('assets/img/svg/prev_arrow.svg'),

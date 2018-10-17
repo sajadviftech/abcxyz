@@ -124,7 +124,7 @@ class Thb_Theme_Admin {
 		add_theme_support('post-formats', array('image', 'gallery', 'video', 'link'));
 		
 		/* Text Domain */
-		load_theme_textdomain('revolution', Thb_Theme_Admin::$thb_theme_directory . 'inc/languages');
+		load_theme_textdomain('viftech', Thb_Theme_Admin::$thb_theme_directory . 'inc/languages');
 		
 		/* Background Support */
 		add_theme_support( 'custom-background', array( 'default-color' => 'ffffff', 'wp-head-callback' => 'thb_change_custom_background_cb' ) );
@@ -158,8 +158,8 @@ class Thb_Theme_Admin {
 		add_theme_support('nav-menus');
 		register_nav_menus(
 			array(
-				'nav-menu' => esc_html__( 'Navigation Menu', 'revolution' ),
-				'secondary-menu' => esc_html__( 'Secondary Menu', 'revolution' )
+				'nav-menu' => esc_html__( 'Navigation Menu', 'viftech' ),
+				'secondary-menu' => esc_html__( 'Secondary Menu', 'viftech' )
 			)
 		);
 		
@@ -406,14 +406,14 @@ class Thb_Theme_Admin {
 		
 		if ( isset( $updater->skin->theme_info ) && $updater->skin->theme_info['Name'] == self::$thb_theme_name ) {
 			if ( $cond ) {
-				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'revolution' ), admin_url( 'admin.php?page=thb-product-registration' ) ) );
+				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'viftech' ), admin_url( 'admin.php?page=thb-product-registration' ) ) );
 			}
 		}
 		
 		// VisualComposer
 		if ( (isset( $updater->skin->plugin )) && ( $updater->skin->plugin == 'js_composer/js_composer.php') ) {
 			if ( $cond ) {
-				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'revolution' ), admin_url( 'admin.php?page=thb-product-registration' ) ) );
+				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'viftech' ), admin_url( 'admin.php?page=thb-product-registration' ) ) );
 			}
 		}
 		return $reply;

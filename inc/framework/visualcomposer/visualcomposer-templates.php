@@ -24,7 +24,7 @@ function thb_renderTemplateBlock( $category ) {
 		?>
 		<div class="thb_templates_container vc_column vc_col-sm-12">
 			<div class="thb_template_warning">
-				<p><?php esc_html_e('These templates append the Page Builder elements to your page. The added elements still need to be configured from their settings for your content such as images, post sources, etc. as well as page options.', 'revolution'); ?></p>
+				<p><?php esc_html_e('These templates append the Page Builder elements to your page. The added elements still need to be configured from their settings for your content such as images, post sources, etc. as well as page options.', 'viftech'); ?></p>
 			</div>
 			<div class="theme-browser wp-clearfix">
 			<?php foreach ($category['templates'] as $key => $template) { ?>
@@ -34,7 +34,7 @@ function thb_renderTemplateBlock( $category ) {
 					</div>
 					<h2 class="theme-name thb_template_name"><?php echo esc_attr($template['name']); ?></h2>
 					<div class="theme-actions">
-		 					<a class="button button-primary thb_template_import" data-thb-id="<?php echo esc_attr($key); ?>"><?php esc_html_e('Add', 'revolution'); ?></a>
+		 					<a class="button button-primary thb_template_import" data-thb-id="<?php echo esc_attr($key); ?>"><?php esc_html_e('Add', 'viftech'); ?></a>
 		 			</div>
 				</div>
 			<?php } ?>
@@ -72,7 +72,7 @@ function thb_templates( $data ) {
 	$thb_template_category = array(
 		'category' => 'thb_templates',
 		'category_name' => 	Thb_Theme_Admin::$thb_theme_name,
-		'category_description' => esc_html__('Homepage layouts used inside the demos', 'revolution'),
+		'category_description' => esc_html__('Homepage layouts used inside the demos', 'viftech'),
 		'category_weight' => 1,
 		'templates' => thb_template_get_list()
 	);

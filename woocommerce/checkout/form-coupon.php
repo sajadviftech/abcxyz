@@ -23,8 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! WC()->cart->coupons_enabled() )
 	return;
 
-$info_message = apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', 'revolution' ) );
-$info_message .= ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', 'revolution' ) . '</a>';
+$info_message = apply_filters( 'woocommerce_checkout_coupon_message', __( 'Have a coupon?', 'viftech' ) );
+$info_message .= ' <a href="#" class="showcoupon">' . __( 'Click here to enter your code', 'viftech' ) . '</a>';
 
 //wc_print_notice( $info_message, 'notice' );
 ?>
@@ -33,12 +33,12 @@ $info_message .= ' <a href="#" class="showcoupon">' . __( 'Click here to enter y
 	<div class="row align-center">
 		<div class="small-12 medium-7 large-5 text-center columns">
 			<div class="thb-checkout-coupon">
-				<?php esc_html_e("Have a coupon?", 'revolution'); ?> <a class="showcoupon"><?php esc_html_e("Click here to enter your code", 'revolution'); ?></a>
+				<?php esc_html_e("Have a coupon?", 'viftech'); ?> <a class="showcoupon"><?php esc_html_e("Click here to enter your code", 'viftech'); ?></a>
 			</div>
 			<form class="checkout_coupon" method="post" style="display:none">
 				<div class="coupon">
-					<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'revolution' ); ?>" id="coupon_code" value="" />
-					<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'revolution' ); ?>"><?php esc_html_e( 'Apply coupon', 'revolution' ); ?></button>
+					<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'viftech' ); ?>" id="coupon_code" value="" />
+					<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'viftech' ); ?>"><?php esc_html_e( 'Apply coupon', 'viftech' ); ?></button>
 				</div>
 			</form>
 		</div>

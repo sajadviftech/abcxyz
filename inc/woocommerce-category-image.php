@@ -16,16 +16,16 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 
 	?>
 	<tr class="form-field">
-		<th scope="row"><h2><?php esc_html_e( 'revolution Settings', 'revolution' ); ?></h2></th>
+		<th scope="row"><h2><?php esc_html_e( 'revolution Settings', 'viftech' ); ?></h2></th>
 	</tr>
 	<tr class="form-field">
-		<th scope="row" valign="top"><label><?php esc_html_e( 'Header', 'revolution' ); ?></label></th>
+		<th scope="row" valign="top"><label><?php esc_html_e( 'Header', 'viftech' ); ?></label></th>
 		<td>
 			<div id="product_cat_header" style="float:left;margin-right:10px;"><img src="<?php echo esc_url($image); ?>" width="60px" height="60px" /></div>
 			<div style="line-height:60px;">
 				<input type="hidden" id="product_cat_header_id" name="product_cat_header_id" value="<?php echo esc_attr($header_id); ?>" />
-				<button type="submit" class="thb_upload_header button"><?php esc_html_e( 'Upload/Add image', 'revolution' ); ?></button>
-				<button type="submit" class="thb_remove_header button"><?php esc_html_e( 'Remove image', 'revolution' ); ?></button>
+				<button type="submit" class="thb_upload_header button"><?php esc_html_e( 'Upload/Add image', 'viftech' ); ?></button>
+				<button type="submit" class="thb_remove_header button"><?php esc_html_e( 'Remove image', 'viftech' ); ?></button>
 			</div>
 
 			<script type="text/javascript">
@@ -51,9 +51,9 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 
 					// Create the media frame.
 					header_file_frame = wp.media.frames.downloadable_file = wp.media({
-						title: '<?php esc_html_e( 'Choose an image', 'revolution' ); ?>',
+						title: '<?php esc_html_e( 'Choose an image', 'viftech' ); ?>',
 						button: {
-							text: '<?php esc_html_e( 'Use image', 'revolution' ); ?>',
+							text: '<?php esc_html_e( 'Use image', 'viftech' ); ?>',
 						},
 						multiple: false
 					});
@@ -86,12 +86,12 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 
 	</tr>
 	<tr class="form-field">
-		<th scope="row" valign="top"><label><?php esc_html_e( 'Category Header Color', 'revolution' ); ?></label></th>
+		<th scope="row" valign="top"><label><?php esc_html_e( 'Category Header Color', 'viftech' ); ?></label></th>
 		<td>
 			<p><input type="radio" name="shop_menu_color_cat" id="shop_menu_color_cat-1" value="dark-title"  class="radio" <?php if($shop_menu_color_cat === 'dark-title'){ echo 'checked="checked"'; } ?>><label for="shop_menu_color_cat-1">Dark</label></p>
 			<p><input type="radio" name="shop_menu_color_cat" id="shop_menu_color_cat-2" value="light-title"
 				class="radio" <?php if($shop_menu_color_cat === 'light-title'){ echo 'checked="checked"'; } ?>><label for="shop_menu_color_cat-2">Light</label></p>
-			<p class="description"><?php esc_html_e( 'Category header color', 'revolution'); ?></p>
+			<p class="description"><?php esc_html_e( 'Category header color', 'viftech'); ?></p>
 		</td>
 	</tr>
 	<?php
@@ -131,8 +131,8 @@ function thb_woocommerce_product_cat_header_columns( $columns ) {
 
 	$new_columns = array();
 	$new_columns['cb'] = $columns['cb'];
-	$new_columns['thumb'] = esc_html__( 'Image', 'revolution' );
-	$new_columns['header'] = esc_html__( 'Header', 'revolution' );
+	$new_columns['thumb'] = esc_html__( 'Image', 'viftech' );
+	$new_columns['header'] = esc_html__( 'Header', 'viftech' );
 	unset( $columns['cb'] );
 	unset( $columns['thumb'] );
 

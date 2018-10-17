@@ -24,8 +24,8 @@ if ( is_user_logged_in() || 'no' === get_option( 'woocommerce_enable_checkout_lo
 	return;
 }
 
-$info_message  = apply_filters( 'woocommerce_checkout_login_message', esc_html__( 'Returning customer?', 'revolution' ) );
-$info_message .= ' <a href="#" class="showlogin">' . esc_html__( 'Click here to login', 'revolution' ) . '</a>';
+$info_message  = apply_filters( 'woocommerce_checkout_login_message', esc_html__( 'Returning customer?', 'viftech' ) );
+$info_message .= ' <a href="#" class="showlogin">' . esc_html__( 'Click here to login', 'viftech' ) . '</a>';
 // wc_print_notice( $info_message, 'notice' );
 
 ?>
@@ -33,12 +33,12 @@ $info_message .= ' <a href="#" class="showlogin">' . esc_html__( 'Click here to 
 	<div class="row align-center">
 		<div class="small-12 medium-7 large-5 text-center columns">
 			<div class="thb-checkout-login">
-				<?php esc_html_e("Returning customer?", 'revolution'); ?> <a class="showlogin"><?php esc_html_e("Click here to login", 'revolution'); ?></a>
+				<?php esc_html_e("Returning customer?", 'viftech'); ?> <a class="showlogin"><?php esc_html_e("Click here to login", 'viftech'); ?></a>
 			</div>
 			<?php
 				woocommerce_login_form(
 					array(
-						'message'  => esc_html__( 'If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.', 'revolution' ),
+						'message'  => esc_html__( 'If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.', 'viftech' ),
 						'redirect' => get_permalink( wc_get_page_id( 'checkout' ) ),
 						'hidden'   => true
 					)

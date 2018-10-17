@@ -25,7 +25,7 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 	<div class="thb-page-header">
-		<h1><?php esc_html_e('Shopping Cart', 'revolution'); ?></h1>
+		<h1><?php esc_html_e('Shopping Cart', 'viftech'); ?></h1>
 	</div>
 		<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 		
@@ -36,10 +36,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<tr>
 					<th class="product-remove">&nbsp;</th>
 					<th class="product-thumbnail">&nbsp;</th>
-					<th class="product-name"><?php esc_html_e( 'Product', 'revolution' ); ?></th>
-					<th class="product-price"><?php esc_html_e( 'Price', 'revolution' ); ?></th>
-					<th class="product-quantity"><?php esc_html_e( 'Quantity', 'revolution' ); ?></th>
-					<th class="product-subtotal"><?php esc_html_e( 'Total', 'revolution' ); ?></th>
+					<th class="product-name"><?php esc_html_e( 'Product', 'viftech' ); ?></th>
+					<th class="product-price"><?php esc_html_e( 'Price', 'viftech' ); ?></th>
+					<th class="product-quantity"><?php esc_html_e( 'Quantity', 'viftech' ); ?></th>
+					<th class="product-subtotal"><?php esc_html_e( 'Total', 'viftech' ); ?></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -61,7 +61,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 										'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-										__( 'Remove this item', 'revolution' ),
+										__( 'Remove this item', 'viftech' ),
 										esc_attr( $product_id ),
 										esc_attr( $_product->get_sku() )
 									), $cart_item_key );
@@ -92,17 +92,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 		
 								// Backorder notification.
 								if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
-									echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'revolution' ) . '</p>';
+									echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'viftech' ) . '</p>';
 								}
 								?></td>
 	
-							<td class="product-price" data-title="<?php esc_html_e( 'Price', 'revolution' ); ?>">
+							<td class="product-price" data-title="<?php esc_html_e( 'Price', 'viftech' ); ?>">
 								<?php
 									echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 								?>
 							</td>
 	
-							<td class="product-quantity" data-title="<?php esc_html_e( 'Quantity', 'revolution' ); ?>">
+							<td class="product-quantity" data-title="<?php esc_html_e( 'Quantity', 'viftech' ); ?>">
 								<?php
 									if ( $_product->is_sold_individually() ) {
 										$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -119,7 +119,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								?>
 							</td>
 	
-							<td class="product-subtotal" data-title="<?php esc_html_e( 'Total', 'revolution' ); ?>">
+							<td class="product-subtotal" data-title="<?php esc_html_e( 'Total', 'viftech' ); ?>">
 								<?php
 									echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 								?>
@@ -137,13 +137,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 							<div class="small-12 medium-6 columns">
 								<?php if ( wc_coupons_enabled() ) { ?>
 									<div class="coupon">
-										<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'revolution' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'revolution' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'revolution' ); ?>" />
+										<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'viftech' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'viftech' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'viftech' ); ?>" />
 										<?php do_action( 'woocommerce_cart_coupon' ); ?>
 									</div>
 								<?php } ?>
 							</div>
 							<div class="small-12 medium-6 columns">
-								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'revolution' ); ?>"><?php esc_html_e( 'Update cart', 'revolution' ); ?></button>
+								<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'viftech' ); ?>"><?php esc_html_e( 'Update cart', 'viftech' ); ?></button>
 								<?php do_action( 'woocommerce_cart_actions' ); ?>
 							</div>
 						</div>

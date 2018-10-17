@@ -228,7 +228,7 @@ if ( ! class_exists( 'OT_Meta_Box' ) ) {
             $required_setting = array(
               array(
                 'id'        => 'title',
-                'label'     => __( 'Title', 'revolution' ),
+                'label'     => __( 'Title', 'viftech' ),
                 'desc'      => '',
                 'std'       => '',
                 'type'      => 'text',

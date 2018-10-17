@@ -12,7 +12,7 @@ namespace OCDI;
 <div class="ocdi  wrap  about-wrap">
 
 	<?php ob_start(); ?>
-		<h1 class="ocdi__title  dashicons-before  dashicons-upload"><?php esc_html_e( 'One Click Demo Import', 'revolution' ); ?></h1>
+		<h1 class="ocdi__title  dashicons-before  dashicons-upload"><?php esc_html_e( 'One Click Demo Import', 'viftech' ); ?></h1>
 	<?php
 	$plugin_title = ob_get_clean();
 
@@ -22,7 +22,7 @@ namespace OCDI;
 	// Display warrning if PHP safe mode is enabled, since we wont be able to change the max_execution_time.
 	if ( ini_get( 'safe_mode' ) ) {
 		printf(
-			esc_html__( '%sWarning: your server is using %sPHP safe mode%s. This means that you might experience server timeout errors.%s', 'revolution' ),
+			esc_html__( '%sWarning: your server is using %sPHP safe mode%s. This means that you might experience server timeout errors.%s', 'viftech' ),
 			'<div class="notice  notice-warning  is-dismissible"><p>',
 			'<strong>',
 			'</strong>',
@@ -35,23 +35,23 @@ namespace OCDI;
 	?>
 
 	<div class="ocdi__intro-notice  notice  notice-warning  is-dismissible">
-		<p><?php esc_html_e( 'Before you begin, make sure all the required plugins are activated.', 'revolution' ); ?></p>
+		<p><?php esc_html_e( 'Before you begin, make sure all the required plugins are activated.', 'viftech' ); ?></p>
 	</div>
 
 	<div class="ocdi__intro-text">
 		<p class="about-description">
-			<?php esc_html_e( 'Importing demo data (post, pages, images, theme settings, ...) is the easiest way to setup your theme.', 'revolution' ); ?>
-			<?php esc_html_e( 'It will allow you to quickly edit everything instead of creating content from scratch.', 'revolution' ); ?>
+			<?php esc_html_e( 'Importing demo data (post, pages, images, theme settings, ...) is the easiest way to setup your theme.', 'viftech' ); ?>
+			<?php esc_html_e( 'It will allow you to quickly edit everything instead of creating content from scratch.', 'viftech' ); ?>
 		</p>
 
 		<hr>
 
-		<p><?php esc_html_e( 'When you import the data, the following things might happen:', 'revolution' ); ?></p>
+		<p><?php esc_html_e( 'When you import the data, the following things might happen:', 'viftech' ); ?></p>
 
 		<ul>
-			<li><?php esc_html_e( 'No existing posts, pages, categories, images, custom post types or any other data will be deleted or modified.', 'revolution' ); ?></li>
-			<li><?php esc_html_e( 'Posts, pages, images, widgets, menus and other theme settings will get imported.', 'revolution' ); ?></li>
-			<li><?php esc_html_e( 'Please click on the Import button only once and wait, it can take a couple of minutes.', 'revolution' ); ?></li>
+			<li><?php esc_html_e( 'No existing posts, pages, categories, images, custom post types or any other data will be deleted or modified.', 'viftech' ); ?></li>
+			<li><?php esc_html_e( 'Posts, pages, images, widgets, menus and other theme settings will get imported.', 'viftech' ); ?></li>
+			<li><?php esc_html_e( 'Please click on the Import button only once and wait, it can take a couple of minutes.', 'viftech' ); ?></li>
 		</ul>
 
 		<hr>
@@ -68,33 +68,33 @@ namespace OCDI;
 	<?php if ( empty( $this->import_files ) ) : ?>
 
 		<div class="notice  notice-info  is-dismissible">
-			<p><?php esc_html_e( 'There are no predefined import files available in this theme. Please upload the import files manually!', 'revolution' ); ?></p>
+			<p><?php esc_html_e( 'There are no predefined import files available in this theme. Please upload the import files manually!', 'viftech' ); ?></p>
 		</div>
 
 		<div class="ocdi__file-upload-container">
-			<h2><?php esc_html_e( 'Manual demo files upload', 'revolution' ); ?></h2>
+			<h2><?php esc_html_e( 'Manual demo files upload', 'viftech' ); ?></h2>
 
 			<div class="ocdi__file-upload">
-				<h3><label for="content-file-upload"><?php esc_html_e( 'Choose a XML file for content import:', 'revolution' ); ?></label></h3>
+				<h3><label for="content-file-upload"><?php esc_html_e( 'Choose a XML file for content import:', 'viftech' ); ?></label></h3>
 				<input id="ocdi__content-file-upload" type="file" name="content-file-upload">
 			</div>
 
 			<div class="ocdi__file-upload">
-				<h3><label for="widget-file-upload"><?php esc_html_e( 'Choose a WIE or JSON file for widget import:', 'revolution' ); ?></label></h3>
+				<h3><label for="widget-file-upload"><?php esc_html_e( 'Choose a WIE or JSON file for widget import:', 'viftech' ); ?></label></h3>
 				<input id="ocdi__widget-file-upload" type="file" name="widget-file-upload">
 			</div>
 
 			<div class="ocdi__file-upload">
-				<h3><label for="customizer-file-upload"><?php esc_html_e( 'Choose a DAT file for customizer import:', 'revolution' ); ?></label></h3>
+				<h3><label for="customizer-file-upload"><?php esc_html_e( 'Choose a DAT file for customizer import:', 'viftech' ); ?></label></h3>
 				<input id="ocdi__customizer-file-upload" type="file" name="customizer-file-upload">
 			</div>
 
 			<?php if ( class_exists( 'ReduxFramework' ) ) : ?>
 			<div class="ocdi__file-upload">
-				<h3><label for="redux-file-upload"><?php esc_html_e( 'Choose a JSON file for Redux import:', 'revolution' ); ?></label></h3>
+				<h3><label for="redux-file-upload"><?php esc_html_e( 'Choose a JSON file for Redux import:', 'viftech' ); ?></label></h3>
 				<input id="ocdi__redux-file-upload" type="file" name="redux-file-upload">
 				<div>
-					<label for="redux-option-name" class="ocdi__redux-option-name-label"><?php esc_html_e( 'Enter the Redux option name:', 'revolution' ); ?></label>
+					<label for="redux-option-name" class="ocdi__redux-option-name-label"><?php esc_html_e( 'Enter the Redux option name:', 'viftech' ); ?></label>
 					<input id="ocdi__redux-option-name" type="text" name="redux-option-name">
 				</div>
 			</div>
@@ -102,7 +102,7 @@ namespace OCDI;
 		</div>
 
 		<p class="ocdi__button-container">
-			<button class="ocdi__button  button  button-hero  button-primary  js-ocdi-import-data"><?php esc_html_e( 'Import Demo Data', 'revolution' ); ?></button>
+			<button class="ocdi__button  button  button-hero  button-primary  js-ocdi-import-data"><?php esc_html_e( 'Import Demo Data', 'viftech' ); ?></button>
 		</p>
 
 	<?php elseif ( 1 === count( $this->import_files ) ) : ?>
@@ -114,7 +114,7 @@ namespace OCDI;
 		?></div>
 
 		<p class="ocdi__button-container">
-			<button class="ocdi__button  button  button-hero  button-primary  js-ocdi-import-data"><?php esc_html_e( 'Import Demo Data', 'revolution' ); ?></button>
+			<button class="ocdi__button  button  button-hero  button-primary  js-ocdi-import-data"><?php esc_html_e( 'Import Demo Data', 'viftech' ); ?></button>
 		</p>
 
 	<?php else : ?>
@@ -129,14 +129,14 @@ namespace OCDI;
 				<div class="ocdi__gl-header  js-ocdi-gl-header">
 					<nav class="ocdi__gl-navigation">
 						<ul>
-							<li class="active"><a href="#all" class="ocdi__gl-navigation-link  js-ocdi-nav-link"><?php esc_html_e( 'All', 'revolution' ); ?></a></li>
+							<li class="active"><a href="#all" class="ocdi__gl-navigation-link  js-ocdi-nav-link"><?php esc_html_e( 'All', 'viftech' ); ?></a></li>
 							<?php foreach ( $categories as $key => $name ) : ?>
 								<li><a href="#<?php echo esc_attr( $key ); ?>" class="ocdi__gl-navigation-link  js-ocdi-nav-link"><?php echo esc_html( $name ); ?></a></li>
 							<?php endforeach; ?>
 						</ul>
 					</nav>
 					<div clas="ocdi__gl-search">
-						<input type="search" class="ocdi__gl-search-input  js-ocdi-gl-search" name="ocdi-gl-search" value="" placeholder="<?php esc_html_e( 'Search demos...', 'revolution' ); ?>">
+						<input type="search" class="ocdi__gl-search-input  js-ocdi-gl-search" name="ocdi-gl-search" value="" placeholder="<?php esc_html_e( 'Search demos...', 'viftech' ); ?>">
 					</div>
 				</div>
 			<?php endif; ?>
@@ -157,14 +157,14 @@ namespace OCDI;
 							<?php if ( ! empty( $img_src ) ) : ?>
 								<img class="ocdi__gl-item-image" src="<?php echo esc_url( $img_src ) ?>">
 							<?php else : ?>
-								<div class="ocdi__gl-item-image  ocdi__gl-item-image--no-image"><?php esc_html_e( 'No preview image.', 'revolution' ); ?></div>
+								<div class="ocdi__gl-item-image  ocdi__gl-item-image--no-image"><?php esc_html_e( 'No preview image.', 'viftech' ); ?></div>
 							<?php endif; ?>
 						</div>
 						<div class="ocdi__gl-item-footer<?php echo ! empty( $import_file['preview_url'] ) ? '  ocdi__gl-item-footer--with-preview' : ''; ?>">
 							<h4 class="ocdi__gl-item-title" title="<?php echo esc_attr( $import_file['import_file_name'] ); ?>"><?php echo esc_html( $import_file['import_file_name'] ); ?></h4>
-							<button class="ocdi__gl-item-button  button  button-primary  js-ocdi-gl-import-data" value="<?php echo esc_attr( $index ); ?>"><?php esc_html_e( 'Import', 'revolution' ); ?></button>
+							<button class="ocdi__gl-item-button  button  button-primary  js-ocdi-gl-import-data" value="<?php echo esc_attr( $index ); ?>"><?php esc_html_e( 'Import', 'viftech' ); ?></button>
 							<?php if ( ! empty( $import_file['preview_url'] ) ) : ?>
-								<a class="ocdi__gl-item-button  button" href="<?php echo esc_url( $import_file['preview_url'] ); ?>" target="_blank"><?php esc_html_e( 'Preview', 'revolution' ); ?></a>
+								<a class="ocdi__gl-item-button  button" href="<?php echo esc_url( $import_file['preview_url'] ); ?>" target="_blank"><?php esc_html_e( 'Preview', 'viftech' ); ?></a>
 							<?php endif; ?>
 						</div>
 					</div>
@@ -177,7 +177,7 @@ namespace OCDI;
 	<?php endif; ?>
 
 	<p class="ocdi__ajax-loader  js-ocdi-ajax-loader">
-		<span class="spinner"></span> <?php esc_html_e( 'Importing, please wait!', 'revolution' ); ?>
+		<span class="spinner"></span> <?php esc_html_e( 'Importing, please wait!', 'viftech' ); ?>
 	</p>
 
 	<div class="ocdi__response  js-ocdi-ajax-response"></div>

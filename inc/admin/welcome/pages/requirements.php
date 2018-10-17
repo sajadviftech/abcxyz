@@ -18,7 +18,7 @@
 		$go = false;
 	} 
 	// WP Remote Get Check
-	$posting['wp_remote_get']['name'] = esc_html__( 'Remote Get', 'revolution');
+	$posting['wp_remote_get']['name'] = esc_html__( 'Remote Get', 'viftech');
 	$response = wp_safe_remote_get( 'http://www.woothemes.com/wc-api/product-key-api?request=ping&network=' . ( is_multisite() ? '1' : '0' ) );
 
 	if ( !( !is_wp_error( $response ) && $response['response']['code'] >= 200 && $response['response']['code'] < 300 ) )
@@ -36,14 +36,14 @@
 	<thead>
 		<thead>
 			<tr>
-				<td><?php esc_html_e( 'Requirements', 'revolution' ); ?></td>
+				<td><?php esc_html_e( 'Requirements', 'viftech' ); ?></td>
 				<td></td>
 			</tr>
 		</thead>
 		<?php if ( function_exists( 'ini_get' ) ) : ?>
 			<tr>
 				<td data-export-label="Server Memory Limit">
-					<?php esc_html_e( 'Server Memory Limit', 'revolution' ); ?>:
+					<?php esc_html_e( 'Server Memory Limit', 'viftech' ); ?>:
 				</td>
 				<td>
 					<?php
@@ -57,14 +57,14 @@
 					<?php else: ?>
 						<mark class="<?php echo esc_attr($mark); ?>">
 								<span class="dashicons dashicons-warning"></span>  <span><?php echo ini_get('memory_limit'); ?></span>. 
-								<?php esc_html_e('The recommended value is 256M.', 'revolution'); ?>
+								<?php esc_html_e('The recommended value is 256M.', 'viftech'); ?>
 						</mark>
 					<?php endif; ?>
 
 				</td>
 			</tr>
 			<tr>
-				<td data-export-label="PHP Version"><?php esc_html_e( 'PHP Version:', 'revolution' ); ?></td>
+				<td data-export-label="PHP Version"><?php esc_html_e( 'PHP Version:', 'viftech' ); ?></td>
 				<td>
 					<?php 
 						if ( function_exists( 'phpversion' ) ) {
@@ -79,14 +79,14 @@
 						<?php else: ?>
 							<mark class="<?php echo esc_attr($mark); ?>">
 									<span class="dashicons dashicons-warning"></span>  <span><?php echo esc_html($phpversion); ?></span>. 
-									<?php esc_html_e('Required PHP Version is at least 5.6. WordPress <a href="https://wordpress.org/about/requirements/" target="_blank">recommends using at least PHP 7.0.</a> ', 'revolution'); ?>
+									<?php esc_html_e('Required PHP Version is at least 5.6. WordPress <a href="https://wordpress.org/about/requirements/" target="_blank">recommends using at least PHP 7.0.</a> ', 'viftech'); ?>
 							</mark>
 						<?php endif; ?>
 					<?php	} ?>
 				</td>
 			</tr>
 			<tr>
-				<td data-export-label="PHP Time Limit"><?php esc_html_e( 'PHP Time Limit', 'revolution' ); ?>:</td>
+				<td data-export-label="PHP Time Limit"><?php esc_html_e( 'PHP Time Limit', 'viftech' ); ?>:</td>
 				<td>
 					<?php
 						$mark = $exec >= 180 ? 'yes' : 'error'; 
@@ -99,7 +99,7 @@
 					<?php else: ?>
 						<mark class="<?php echo esc_attr($mark); ?>">
 								<span class="dashicons dashicons-warning"></span>  <span><?php echo ini_get('max_execution_time'); ?></span>. 
-								<?php esc_html_e('The recommended value is 180.', 'revolution'); ?>
+								<?php esc_html_e('The recommended value is 180.', 'viftech'); ?>
 						</mark>
 					<?php endif; ?>
 
@@ -107,7 +107,7 @@
 			</tr>
 		<?php endif; ?>
 		<tr>
-			<td data-export-label="Max Upload Size"><?php esc_html_e( 'Max Upload Size', 'revolution' ); ?>:</td>
+			<td data-export-label="Max Upload Size"><?php esc_html_e( 'Max Upload Size', 'viftech' ); ?>:</td>
 			<td>
 				<?php
 					$mark = $upl >= 12 ? 'yes' : 'error'; 
@@ -119,7 +119,7 @@
 				<?php else: ?>
 					<mark class="<?php echo esc_attr($mark); ?>">
 							<span class="dashicons dashicons-warning"></span>  <span><?php echo size_format( wp_max_upload_size() ); ?></span>. 
-							<?php esc_html_e('The recommended value is 12M.' , 'revolution'); ?>
+							<?php esc_html_e('The recommended value is 12M.' , 'viftech'); ?>
 					</mark>
 				<?php endif; ?>
 			</td>
@@ -129,7 +129,7 @@
 
 			// fsockopen/cURL
 			$posting['fsockopen_curl']['name'] = 'fsockopen/cURL';
-			$posting['fsockopen_curl']['help'] = '<a href="#" class="help_tip" data-tip="' . esc_attr__( 'Payment gateways can use cURL to communicate with remote servers to authorize payments, other plugins may also use it when communicating with remote services.', 'revolution' ) . '">[?]</a>';
+			$posting['fsockopen_curl']['help'] = '<a href="#" class="help_tip" data-tip="' . esc_attr__( 'Payment gateways can use cURL to communicate with remote servers to authorize payments, other plugins may also use it when communicating with remote services.', 'viftech' ) . '">[?]</a>';
 
 			if (  (function_exists( 'fsockopen' ) || function_exists( 'curl_init' ) ) ) {
 				$posting['fsockopen_curl']['success'] = true;
@@ -149,7 +149,7 @@
 			}
 
 			// WP Remote Get Check
-			$posting['wp_remote_get']['name'] = esc_html__( 'Remote Get', 'revolution');
+			$posting['wp_remote_get']['name'] = esc_html__( 'Remote Get', 'viftech');
 			$response = wp_safe_remote_get( 'http://www.woothemes.com/wc-api/product-key-api?request=ping&network=' . ( is_multisite() ? '1' : '0' ) );
 
 			if (  !is_wp_error( $response ) && $response['response']['code'] >= 200 && $response['response']['code'] < 300 ) {
@@ -178,7 +178,7 @@
 			}
 		?>
 		<tr>
-			<td data-export-label="XML Reader"><?php esc_html_e( 'XML Reader', 'revolution' ); ?>:</td>
+			<td data-export-label="XML Reader"><?php esc_html_e( 'XML Reader', 'viftech' ); ?>:</td>
 			<td>
 				<?php
 					$get_loaded_extensions = get_loaded_extensions();
@@ -186,12 +186,12 @@
 				?>
 				<?php if ($mark == 'yes'): ?>
 					<mark class="<?php echo esc_attr($mark); ?>">
-							<span class="dashicons dashicons-yes"></span> <?php esc_html_e('Installed' , 'revolution'); ?>
+							<span class="dashicons dashicons-yes"></span> <?php esc_html_e('Installed' , 'viftech'); ?>
 					</mark>
 				<?php else: ?>
 					<mark class="<?php echo esc_attr($mark); ?>">
 							<span class="dashicons dashicons-warning"></span> 
-							<?php esc_html_e('Please install XMLReader extension for your PHP.' , 'revolution'); ?>
+							<?php esc_html_e('Please install XMLReader extension for your PHP.' , 'viftech'); ?>
 					</mark>
 				<?php endif; ?>
 			</td>	

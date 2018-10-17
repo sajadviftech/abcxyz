@@ -41,7 +41,7 @@
 		) );
 	?>
 	<div class="text-center">
-		<a class="<?php echo esc_attr(implode(' ', $btn_classes)); ?>" id="loadmore-<?php echo esc_attr($rand); ?>" data-portfolio-id="<?php echo esc_attr($rand); ?>"><?php esc_html_e( 'Load More', 'revolution' ); ?></a>
+		<a class="<?php echo esc_attr(implode(' ', $btn_classes)); ?>" id="loadmore-<?php echo esc_attr($rand); ?>" data-portfolio-id="<?php echo esc_attr($rand); ?>"><?php esc_html_e( 'Load More', 'viftech' ); ?></a>
 	</div>
 	<?php } ?>
 	 

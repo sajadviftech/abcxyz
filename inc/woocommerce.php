@@ -88,8 +88,8 @@ add_filter( 'woocommerce_breadcrumb_defaults', 'thb_change_breadcrumb_delimiter'
 
 /* Pagination */
 function thb_woocommerce_pagination_args( $defaults ) {
-	$defaults['prev_text'] = '&larr; '.esc_html__( "Prev", 'revolution' );
-	$defaults['next_text'] = esc_html__( "Next", 'revolution' ).' &rarr;';
+	$defaults['prev_text'] = '&larr; '.esc_html__( "Prev", 'viftech' );
+	$defaults['next_text'] = esc_html__( "Next", 'viftech' ).' &rarr;';
 	
 	return $defaults;
 }
@@ -101,8 +101,8 @@ function thb_shop_filters() {
 	 	?>
 	 	<div id="side-filters" class="side-panel">
 			<header>
-				<h6><?php esc_html_e('Filter','revolution'); ?></h6>
-				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'revolution'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
+				<h6><?php esc_html_e('Filter','viftech'); ?></h6>
+				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
 			</header>
 			<div class="side-panel-content custom_scroll">
 				<?php if ( is_active_sidebar( 'thb-shop-filters' ) ) { dynamic_sidebar( 'thb-shop-filters' ); }?>
@@ -119,8 +119,8 @@ function thb_side_cart() {
 	?>
 	 	<nav id="side-cart" class="side-panel">
 	 		<header>
-				<h6><?php esc_html_e('Shopping Bag','revolution'); ?></h6>
-				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'revolution'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
+				<h6><?php esc_html_e('Shopping Bag','viftech'); ?></h6>
+				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
 			</header>
 			<div class="side-panel-content">
 	 			<?php if ( class_exists( 'WC_Widget_Cart' ) ) { the_widget( 'WC_Widget_Cart' ); } ?>
@@ -149,16 +149,16 @@ function thb_quick_shop() {
 		$quick_products = new WP_Query( $args );
 		
 		?>
-		<a href="#" class="quick-shop"><?php esc_html_e('Quick Shop', 'revolution'); ?></a>
+		<a href="#" class="quick-shop"><?php esc_html_e('Quick Shop', 'viftech'); ?></a>
 	 	<nav id="quick-shop" class="side-panel">
 	 		<header>
-				<h6><?php esc_html_e('Quick Shop','revolution'); ?></h6>
-				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'revolution'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
+				<h6><?php esc_html_e('Quick Shop','viftech'); ?></h6>
+				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
 			</header>
 			<div class="side-panel-content">
 				<?php if ($quick_shop_categories === 'on') { ?>
 					<select id="thb-quick-shop-categories">
-						<option value=""><?php echo esc_html_e('Categories', 'revolution'); ?></option>
+						<option value=""><?php echo esc_html_e('Categories', 'viftech'); ?></option>
 						<?php
 							$categories = thb_productCategories();
 							foreach ($categories as $category => $slug) {
@@ -191,7 +191,7 @@ add_action( 'thb_quick_shop', 'thb_quick_shop', 10 );
 function thb_quick_cart() {
 	if ('on' === ot_get_option('header_cart', 'on') ) {
 	?>
-		<div id="quick_cart" data-target="open-cart" title="<?php esc_attr_e('Cart','revolution'); ?>">
+		<div id="quick_cart" data-target="open-cart" title="<?php esc_attr_e('Cart','viftech'); ?>">
 			<?php get_template_part('assets/svg/ecommerce_bag.svg'); ?> <span class="float_count"><?php echo esc_html(WC()->cart->get_cart_contents_count()); ?></span>
 		</div>
 	<?php
@@ -216,7 +216,7 @@ function thb_out_of_stock() {
 function thb_product_badge() {
  global $post, $product;
  	if (thb_out_of_stock()) {
-		echo '<span class="badge out-of-stock">' . esc_html__( 'Out of Stock', 'revolution' ) . '</span>';
+		echo '<span class="badge out-of-stock">' . esc_html__( 'Out of Stock', 'viftech' ) . '</span>';
 	} else if ( $product->is_on_sale() ) {
 		if (ot_get_option('shop_sale_badge', 'text') == 'discount') {
 			if ($product->product_type == 'variable') {
@@ -241,14 +241,14 @@ function thb_product_badge() {
 				echo apply_filters('woocommerce_sale_flash', '<span class="badge onsale perc">&darr; '.$percentage.'%</span>', $post, $product);
 			}
 		} else {
-			echo apply_filters('woocommerce_sale_flash', '<span class="badge onsale">'. esc_html__( 'Sale','revolution' ).'</span>', $post, $product);
+			echo apply_filters('woocommerce_sale_flash', '<span class="badge onsale">'. esc_html__( 'Sale','viftech' ).'</span>', $post, $product);
 		}
 	} else {
 		$postdate 		= get_the_time( 'Y-m-d' );			// Post date
 		$postdatestamp 	= strtotime( $postdate );			// Timestamped post date
 		$newness = ot_get_option('shop_newness', 7);
 		if ( ( time() - ( 60 * 60 * 24 * $newness ) ) < $postdatestamp) { // If the product was published within the newness time frame display the new badge
-			echo '<span class="badge new">' . esc_html__( 'Just Arrived', 'revolution' ) . '</span>';
+			echo '<span class="badge new">' . esc_html__( 'Just Arrived', 'viftech' ) . '</span>';
 		}
 		
 	}
@@ -319,12 +319,12 @@ function thb_wishlist_button() {
     
     $html .= $exists ? ' hide" style="display:none;"' : ' show"';
     
-    $html .= '><a href="' . esc_url( add_query_arg( 'add_to_wishlist', $product->get_id() ) ) . '" data-product-id="' . esc_attr($product->get_id()) . '" data-product-type="' . esc_attr($product_type) . '" class="' . esc_attr($classes) . '"><span class="text">'.esc_html__( "Add To Wishlist", 'revolution' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a>';
+    $html .= '><a href="' . esc_url( add_query_arg( 'add_to_wishlist', $product->get_id() ) ) . '" data-product-id="' . esc_attr($product->get_id()) . '" data-product-type="' . esc_attr($product_type) . '" class="' . esc_attr($classes) . '"><span class="text">'.esc_html__( "Add To Wishlist", 'viftech' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a>';
     $html .= '</div>';
 		
-		$html .= '<div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><a href="' . esc_url(esc_url($url)) . '"><span class="text">'.esc_html__( "Added to Wishlist", 'revolution' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
+		$html .= '<div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><a href="' . esc_url(esc_url($url)) . '"><span class="text">'.esc_html__( "Added to Wishlist", 'viftech' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
 		
-		$html .= '<div class="yith-wcwl-wishlistexistsbrowse ' . ( $exists ? 'show' : 'hide' ) . '" style="display:' . ( $exists ? 'block' : 'none' ) . '"><a href="' . esc_url($url) . '"><span class="text">'.esc_html__( "View Wishlist", 'revolution' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
+		$html .= '<div class="yith-wcwl-wishlistexistsbrowse ' . ( $exists ? 'show' : 'hide' ) . '" style="display:' . ( $exists ? 'block' : 'none' ) . '"><a href="' . esc_url($url) . '"><span class="text">'.esc_html__( "View Wishlist", 'viftech' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
 		
 		$html .= '</div>';
 		
@@ -348,7 +348,7 @@ function thb_sizing_guide() {
 		?>
 		<a href="#sizing-popup" class="sizing_guide mfp-inline">
 			<?php get_template_part('assets/img/svg/sizing_guide.svg'); ?>
-			<?php esc_html_e("Sizing Guide", 'revolution'); ?>
+			<?php esc_html_e("Sizing Guide", 'viftech'); ?>
 		</a>
 		<aside id="sizing-popup" class="mfp-hide theme-popup text-left">
 			<div class="theme-popup-content">
@@ -391,7 +391,7 @@ function thb_before_subcategory_title() {
 }
 add_action( 'woocommerce_before_subcategory_title', 'thb_before_subcategory_title', 15 );
 function thb_subcategory_title() {
-	echo '<span>'.esc_html__('Explore Now','revolution').'</span>';
+	echo '<span>'.esc_html__('Explore Now','viftech').'</span>';
 }
 add_action( 'woocommerce_shop_loop_subcategory_title', 'thb_subcategory_title', 15 );
 function thb_after_subcategory_title() {

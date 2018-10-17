@@ -3,7 +3,7 @@
 function thb_get_portfolio_templates($template_list) {
 	/* Portfolio Pages */
 	$template_list['portfolio_01'] = array(
-		'name' => esc_html__( 'Portfolio - 01', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 01', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p1.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" content_placement="middle" thb_scroll_bottom="true" thb_scroll_bottom_style="style3" thb_scroll_bottom_color="light" css=".vc_custom_1516717832643{padding-top: 30vh !important;padding-bottom: 30vh !important;background-image: url(http://revolution.fuelthemes.net/wp-content/uploads/2018/01/p1_1.jpg?id=189) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" el_class="portfolio-mast-head"][vc_column thb_color="thb-light-column" el_class="text-center"][thb_slidetype slide_text="
@@ -37,7 +37,7 @@ function thb_get_portfolio_templates($template_list) {
 	);
 	
 	$template_list['portfolio_02'] = array(
-		'name' => esc_html__( 'Portfolio - 02', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 02', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p2.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" css=".vc_custom_1516985953895{background-color: #f4f4f4 !important;}"][vc_column][vc_row_inner css=".vc_custom_1516986348297{padding-top: 50vh !important;padding-bottom: 15vh !important;background-image: url(http://revolution.fuelthemes.net/wp-content/uploads/2018/01/p2_17.jpg?id=241) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}" el_class="mast-head"][vc_column_inner width="1/2"][thb_slidetype slide_text="
@@ -60,7 +60,7 @@ function thb_get_portfolio_templates($template_list) {
 	);
 	
 	$template_list['portfolio_03'] = array(
-		'name' => esc_html__( 'Portfolio - 03', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 03', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p3.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row css=".vc_custom_1517307733764{padding-top: 10vh !important;}"][vc_column el_class="portfolio-mast-head"][vc_column_text animation="animation bottom-to-top" el_class="text-center"]
@@ -71,7 +71,7 @@ function thb_get_portfolio_templates($template_list) {
 	);
 	
 	$template_list['portfolio_04'] = array(
-		'name' => esc_html__( 'Portfolio - 01', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 01', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p4.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row css=".vc_custom_1522410376252{padding-top: 10vh !important;padding-bottom: 10vh !important;}"][vc_column width="5/12"][thb_slidetype slide_text="
@@ -88,7 +88,7 @@ function thb_get_portfolio_templates($template_list) {
 	);
 	
 	$template_list['portfolio_05'] = array(
-		'name' => esc_html__( 'Portfolio - 05', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 05', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p5.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row thb_full_width="true" thb_scroll_bottom="true" thb_scroll_bottom_color="light" thb_video_bg="http://werkstatt.fuelthemes.net/werkstatt-agency-digital/wp-content/uploads/sites/19/2016/11/agency-digital-video-bg.mp4" thb_video_overlay_color="rgba(0,0,0,0.6)" css=".vc_custom_1517166748395{padding-bottom: 70vh !important;background-color: #000000 !important;}"][vc_column][/vc_column][/vc_row][vc_row css=".vc_custom_1517164146466{padding-top: 15vh !important;padding-bottom: 15vh !important;}"][vc_column width="1/2"][thb_slidetype slide_text="
@@ -111,7 +111,7 @@ function thb_get_portfolio_templates($template_list) {
 	);
 	
 	$template_list['portfolio_06'] = array(
-		'name' => esc_html__( 'Portfolio - 06', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 06', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p6.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row el_class="align-center" css=".vc_custom_1522408568429{padding-top: 10vh !important;padding-bottom: 2vh !important;}"][vc_column el_class="text-center" offset="vc_col-lg-8 vc_col-md-11"][thb_slidetype slide_text="
@@ -130,7 +130,7 @@ function thb_get_portfolio_templates($template_list) {
 	);
 	
 	$template_list['portfolio_07'] = array(
-		'name' => esc_html__( 'Portfolio - 07', 'revolution' ),
+		'name' => esc_html__( 'Portfolio - 07', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/portfolio/p7.jpg",
 		'cat' => array( 'Portfolio' ),
 		'sc' => '[vc_row thb_full_width="true" thb_scroll_bottom="true" thb_scroll_bottom_style="style2" thb_scroll_bottom_color="light" css=".vc_custom_1517239681592{padding-top: 33vh !important;padding-bottom: 33vh !important;background: #000000 url(http://revolution.fuelthemes.net/wp-content/uploads/2018/01/p3-17.jpg?id=265) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" el_class="portfolio-mast-head"][vc_column thb_color="thb-light-column" el_class="text-center"][thb_fadetype fade_text="

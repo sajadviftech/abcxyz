@@ -21,7 +21,7 @@
 					</aside>
 					<?php the_title('<h1 class="entry-title" itemprop="name headline">', '</h1>'); ?>
 					<aside class="post-meta">
-						<?php the_author_posts_link(); ?> <?php esc_html_e('on', 'revolution'); ?> <?php echo get_the_date(); ?>
+						<?php the_author_posts_link(); ?> <?php esc_html_e('on', 'viftech'); ?> <?php echo get_the_date(); ?>
 					</aside>
 				</header>
 				<?php } ?>

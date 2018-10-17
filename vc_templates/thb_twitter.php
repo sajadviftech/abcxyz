@@ -34,7 +34,7 @@
  		?>
  		<?php if ($style == 'style1') { ?>
  		<div class="thb_follow_us">
- 			<a href="https://twitter.com/<?php echo esc_attr(ot_get_option('twitter_bar_username')); ?>" target="_blank"><i class="fa fa-twitter"></i> <?php esc_html_e('Follow us on Twitter', 'revolution'); ?></a>
+ 			<a href="https://twitter.com/<?php echo esc_attr(ot_get_option('twitter_bar_username')); ?>" target="_blank"><i class="fa fa-twitter"></i> <?php esc_html_e('Follow us on Twitter', 'viftech'); ?></a>
  		</div>
  		<?php } ?>
 	</aside>

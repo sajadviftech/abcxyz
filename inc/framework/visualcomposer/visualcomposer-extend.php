@@ -3,7 +3,7 @@
 // Utilities
 $thb_animation_array = array(
 	"type" => "dropdown",
-	"heading" => esc_html__("Animation", 'revolution'),
+	"heading" => esc_html__("Animation", 'viftech'),
 	"param_name" => "animation",
 	"value" => array(
 		"None" => "",
@@ -87,10 +87,10 @@ $thb_offset_array = array(
 function thb_vc_gradient_color1( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
-		'heading' => esc_html__( 'Background Gradient Color 1', 'revolution' ),
+		'heading' => esc_html__( 'Background Gradient Color 1', 'viftech' ),
 		'param_name' => 'bg_gradient1',
 		"class" => "hidden-label",
-		'description' => esc_html__( 'Choose a first (top) color for the background gradient. Leave blank to disable.', 'revolution' ),
+		'description' => esc_html__( 'Choose a first (top) color for the background gradient. Leave blank to disable.', 'viftech' ),
 		'group' => $group_name,
 		'edit_field_class' => 'vc_col-sm-6',
 	);
@@ -99,10 +99,10 @@ function thb_vc_gradient_color1( $group_name = 'Styling' ) {
 function thb_vc_gradient_color2( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
-		'heading' => esc_html__( 'Background Gradient Color 2', 'revolution' ),
+		'heading' => esc_html__( 'Background Gradient Color 2', 'viftech' ),
 		'param_name' => 'bg_gradient2',
 		"class" => "hidden-label",
-		'description' => esc_html__( 'Choose a second (bottom) color for the background gradient.', 'revolution' ),
+		'description' => esc_html__( 'Choose a second (bottom) color for the background gradient.', 'viftech' ),
 		'group' => $group_name,
 		'edit_field_class' => 'vc_col-sm-6',
 	);
@@ -111,10 +111,10 @@ function thb_vc_gradient_color2( $group_name = 'Styling' ) {
 function thb_vc_gradient_color3( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
-		'heading' => esc_html__( 'Background Gradient Color 1', 'revolution' ),
+		'heading' => esc_html__( 'Background Gradient Color 1', 'viftech' ),
 		'param_name' => 'bg_gradient3',
 		"class" => "hidden-label",
-		'description' => esc_html__( 'Choose a first (top) color for the background gradient. Leave blank to disable.', 'revolution' ),
+		'description' => esc_html__( 'Choose a first (top) color for the background gradient. Leave blank to disable.', 'viftech' ),
 		'group' => $group_name,
 		'edit_field_class' => 'vc_col-sm-6',
 	);
@@ -123,10 +123,10 @@ function thb_vc_gradient_color3( $group_name = 'Styling' ) {
 function thb_vc_gradient_color4( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
-		'heading' => esc_html__( 'Background Gradient Color 2', 'revolution' ),
+		'heading' => esc_html__( 'Background Gradient Color 2', 'viftech' ),
 		'param_name' => 'bg_gradient4',
 		"class" => "hidden-label",
-		'description' => esc_html__( 'Choose a second (bottom) color for the background gradient.', 'revolution' ),
+		'description' => esc_html__( 'Choose a second (bottom) color for the background gradient.', 'viftech' ),
 		'group' => $group_name,
 		'edit_field_class' => 'vc_col-sm-6',
 	);
@@ -151,87 +151,87 @@ vc_remove_param( "vc_row", "parallax_speed_video" );
 
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Enable Full Width", 'revolution'),
+	"heading" => esc_html__("Enable Full Width", 'viftech'),
 	"param_name" => "thb_full_width",
 	"value" => array(
 		"Yes" => "true"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, this row will fill the screen", 'revolution')
+	"description" => esc_html__("If you enable this, this row will fill the screen", 'viftech')
 ));
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Disable Row Padding", 'revolution'),
+	"heading" => esc_html__("Disable Row Padding", 'viftech'),
 	"param_name" => "thb_row_padding",
 	"value" => array(
 		"Yes" => "true"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, this row won't leave padding on the sides", 'revolution')
+	"description" => esc_html__("If you enable this, this row won't leave padding on the sides", 'viftech')
 ));
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Disable Column Padding", 'revolution'),
+	"heading" => esc_html__("Disable Column Padding", 'viftech'),
 	"param_name" => "thb_column_padding",
 	"value" => array(
 		"Yes" => "true"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, the columns inside won't leave padding on the sides", 'revolution')
+	"description" => esc_html__("If you enable this, the columns inside won't leave padding on the sides", 'viftech')
 ));
 
 vc_add_param("vc_row", array(
 	"type" => "textfield",
-	"heading" => esc_html__("Video Background", 'revolution'),
+	"heading" => esc_html__("Video Background", 'viftech'),
 	"param_name" => "thb_video_bg",
 	'weight' => 1,
-	"description" => esc_html__("You can specify a video background file here (mp4). Row Background Image will be used as Poster.", 'revolution')
+	"description" => esc_html__("You can specify a video background file here (mp4). Row Background Image will be used as Poster.", 'viftech')
 ));
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
-	"heading" => esc_html__("Video Overlay Color", 'revolution'),
+	"heading" => esc_html__("Video Overlay Color", 'viftech'),
 	"param_name" => "thb_video_overlay_color",
 	'weight' => 1,
-	"description" => esc_html__("If you want, you can select an overlay color.", 'revolution')
+	"description" => esc_html__("If you want, you can select an overlay color.", 'viftech')
 ));
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Display Scroll to Bottom Arrow?", 'revolution'),
+	"heading" => esc_html__("Display Scroll to Bottom Arrow?", 'viftech'),
 	"param_name" => "thb_scroll_bottom",
 	"value" => array(
 		"Yes" => "true"
 	),
-	"description" => esc_html__("If you enable this, this will show an arrow at the bottom of the row", 'revolution')
+	"description" => esc_html__("If you enable this, this will show an arrow at the bottom of the row", 'viftech')
 ));
 vc_add_param("vc_row", array(
 	"type" => "dropdown",
-	"heading" => esc_html__("Scroll to Bottom Arrow Style", 'revolution'),
+	"heading" => esc_html__("Scroll to Bottom Arrow Style", 'viftech'),
 	"param_name" => "thb_scroll_bottom_style",
 	"value" => array(
 		"Line" => "style1",
 		"Mouse" => "style2",
 		"Arrow" => "style3"
 	),
-	"description" => esc_html__("This changes the shape of the arrow", 'revolution'),
+	"description" => esc_html__("This changes the shape of the arrow", 'viftech'),
 	"dependency" => Array('element' => "thb_scroll_bottom", 'value' => array('true'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "dropdown",
-	"heading" => esc_html__("Scroll to Bottom Arrow Color", 'revolution'),
+	"heading" => esc_html__("Scroll to Bottom Arrow Color", 'viftech'),
 	"param_name" => "thb_scroll_bottom_color",
 	"value" => array(
 		"Dark" => "dark",
 		"Light" => "light"
 	),
-	"description" => esc_html__("Color of the scroll to bottom arrow", 'revolution'),
+	"description" => esc_html__("Color of the scroll to bottom arrow", 'viftech'),
 	"dependency" => Array('element' => "thb_scroll_bottom", 'value' => array('true'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "textfield",
-	"heading" => esc_html__("Border Radius", 'revolution'),
+	"heading" => esc_html__("Border Radius", 'viftech'),
 	"param_name" => "thb_border_radius",
 	'weight' => 1,
-	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'revolution')
+	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 ));
 vc_add_param("vc_row", array(
 	"type" 						=> "dropdown",
@@ -247,8 +247,8 @@ vc_add_param("vc_row", array(
 ));
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
-	"group" => esc_html__("Dividers", 'revolution'),
-	"heading" => esc_html__("Enable Dividers?", 'revolution'),
+	"group" => esc_html__("Dividers", 'viftech'),
+	"heading" => esc_html__("Enable Dividers?", 'viftech'),
 	"param_name" => "thb_shape_divider",
 	"value" => array(
 		"Yes" => "true"
@@ -257,9 +257,9 @@ vc_add_param("vc_row", array(
 ));
 vc_add_param("vc_row", array(
 	"type" => "thb_radio_image",
-	"heading" => esc_html__("Divider Shape", 'revolution'),
+	"heading" => esc_html__("Divider Shape", 'viftech'),
 	"param_name" => "divider_shape",
-	"group" => esc_html__("Dividers", 'revolution'),
+	"group" => esc_html__("Dividers", 'viftech'),
 	"options" => array(
 		'curve' 				=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/curve.png",
 		'tilt_v2' 				=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt_v2.png",
@@ -275,22 +275,22 @@ vc_add_param("vc_row", array(
 
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
-	"heading" => esc_html__("Divider Color", 'revolution'),
+	"heading" => esc_html__("Divider Color", 'viftech'),
 	"param_name" => "thb_divider_color",
-	"group" => esc_html__("Dividers", 'revolution'),
+	"group" => esc_html__("Dividers", 'viftech'),
 ));
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
-	"heading" => esc_html__("Divider 2 Color", 'revolution'),
+	"heading" => esc_html__("Divider 2 Color", 'viftech'),
 	"param_name" => "thb_divider_color_2",
-	"group" => esc_html__("Dividers", 'revolution'),
+	"group" => esc_html__("Dividers", 'viftech'),
 	"dependency" => Array('element' => "thb_divider_position", 'value' => array('both'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "dropdown",
-	"heading" => esc_html__("Divider Position", 'revolution'),
+	"heading" => esc_html__("Divider Position", 'viftech'),
 	"param_name" => "thb_divider_position",
-	"group" => esc_html__("Dividers", 'revolution'),
+	"group" => esc_html__("Dividers", 'viftech'),
 	"value" => array(
 		"Bottom" => "bottom",
 		"Top" => "top",
@@ -299,10 +299,10 @@ vc_add_param("vc_row", array(
 ));
 vc_add_param("vc_row", array(
 	"type" => "textfield",
-	"group" => esc_html__("Dividers", 'revolution'),
-	"heading" => esc_html__("Divider Height", 'revolution'),
+	"group" => esc_html__("Dividers", 'viftech'),
+	"heading" => esc_html__("Divider Height", 'viftech'),
 	"param_name" => "thb_divider_height",
-	"description" => esc_html__('Enter a custom height for your shape divider in pixels without the "px"', 'revolution')
+	"description" => esc_html__('Enter a custom height for your shape divider in pixels without the "px"', 'viftech')
 ));
 
 // Inner Row
@@ -312,32 +312,32 @@ vc_remove_param( "vc_row_inner", "css_animation" );
 
 vc_add_param("vc_row_inner", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Enable Max Width", 'revolution'),
+	"heading" => esc_html__("Enable Max Width", 'viftech'),
 	"param_name" => "thb_max_width",
 	"value" => array(
 		"Yes" => "max_width"
 	),
 	"std" => "max_width",
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, the row won't exceed the max width, especially inside a full-width parent row.", 'revolution')
+	"description" => esc_html__("If you enable this, the row won't exceed the max width, especially inside a full-width parent row.", 'viftech')
 ));
 
 vc_add_param("vc_row_inner", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Disable Column Padding", 'revolution'),
+	"heading" => esc_html__("Disable Column Padding", 'viftech'),
 	"param_name" => "thb_column_padding",
 	"value" => array(
 		"Yes" => "true"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, the columns inside won't leave padding on the sides", 'revolution')
+	"description" => esc_html__("If you enable this, the columns inside won't leave padding on the sides", 'viftech')
 ));
 vc_add_param("vc_row_inner", array(
 	"type" => "textfield",
-	"heading" => esc_html__("Border Radius", 'revolution'),
+	"heading" => esc_html__("Border Radius", 'viftech'),
 	"param_name" => "thb_border_radius",
 	'weight' => 1,
-	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'revolution')
+	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 ));
 vc_add_param("vc_row_inner", array(
 	"type" 						=> "dropdown",
@@ -355,52 +355,52 @@ vc_add_param("vc_row_inner", array(
 vc_remove_param( "vc_column", "css_animation" );
 vc_add_param("vc_column", array(
 	"type" => "dropdown",
-	"heading" => esc_html__("Column Content Color", 'revolution'),
+	"heading" => esc_html__("Column Content Color", 'viftech'),
 	"param_name" => "thb_color",
 	"value" => array(
 		"Dark" => "thb-dark-column",
 		"Light" => "thb-light-column"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'revolution')
+	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'viftech')
 ));
 vc_add_param("vc_column", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Enable Fixed Content", 'revolution'),
+	"heading" => esc_html__("Enable Fixed Content", 'viftech'),
 	"param_name" => "fixed",
 	"value" => array(
 		"Yes" => "thb-fixed"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, this column will be fixed.", 'revolution')
+	"description" => esc_html__("If you enable this, this column will be fixed.", 'viftech')
 ));
 vc_add_param("vc_column_inner", array(
 	"type" => "dropdown",
-	"heading" => esc_html__("Column Content Color", 'revolution'),
+	"heading" => esc_html__("Column Content Color", 'viftech'),
 	"param_name" => "thb_color",
 	"value" => array(
 		"Dark" => "thb-dark-column",
 		"Light" => "thb-light-column"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'revolution')
+	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'viftech')
 ));
 vc_add_param("vc_column_inner", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Enable Fixed Content", 'revolution'),
+	"heading" => esc_html__("Enable Fixed Content", 'viftech'),
 	"param_name" => "fixed",
 	"value" => array(
 		"Yes" => "thb-fixed"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, this column will be fixed.", 'revolution')
+	"description" => esc_html__("If you enable this, this column will be fixed.", 'viftech')
 ));
 vc_add_param("vc_column", array(
 	"type" => "textfield",
-	"heading" => esc_html__("Border Radius", 'revolution'),
+	"heading" => esc_html__("Border Radius", 'viftech'),
 	"param_name" => "thb_border_radius",
 	'weight' => 1,
-	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'revolution')
+	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 ));
 vc_add_param("vc_column", array(
 	"type" 						=> "dropdown",
@@ -423,7 +423,7 @@ vc_add_param("vc_column_text", $thb_animation_array);
 
 // Toggle Accordion
 vc_map( array(
-	"name" => esc_html__("Toggle / Accordion", 'revolution'),
+	"name" => esc_html__("Toggle / Accordion", 'viftech'),
 	"base" => "thb_accordion",
 	"icon" => "thb_vc_ico_accordion",
 	"class" => "thb_vc_sc_accordion wpb_vc_accordion wpb_vc_tta_accordion",
@@ -462,7 +462,7 @@ vc_map( array(
 		         <div class="vc_tta-panel-heading">
 		            <h4 class="vc_tta-panel-title vc_tta-controls-icon-position-left">
 		               <a href="javascript:;" aria-expanded="false" class="vc_tta-backend-add-control">
-		                   <span class="vc_tta-title-text">' . esc_html__( 'Add Section', 'revolution' ) . '</span>
+		                   <span class="vc_tta-title-text">' . esc_html__( 'Add Section', 'viftech' ) . '</span>
 		                    <i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i>
 										</a>
 		            </h4>
@@ -471,7 +471,7 @@ vc_map( array(
 		   </div>
 		</div>
 	</div>',
-		'default_content' => '[vc_tta_section title="' . sprintf( '%s %d', __( 'Section', 'revolution' ), 1 ) . '"][/vc_tta_section][vc_tta_section title="' . sprintf( '%s %d', __( 'Section', 'revolution' ), 2 ) . '"][/vc_tta_section]'
+		'default_content' => '[vc_tta_section title="' . sprintf( '%s %d', __( 'Section', 'viftech' ), 1 ) . '"][/vc_tta_section][vc_tta_section title="' . sprintf( '%s %d', __( 'Section', 'viftech' ), 2 ) . '"][/vc_tta_section]'
 ) );
 
 VcShortcodeAutoloader::getInstance()->includeClass( 'WPBakeryShortCode_VC_Tta_Accordion' );
@@ -480,11 +480,11 @@ class WPBakeryShortCode_thb_accordion extends WPBakeryShortCode_VC_Tta_Accordion
 
 // Attributes
 vc_map( array(
-	"name" => esc_html__( "Attributes", 'revolution'),
+	"name" => esc_html__( "Attributes", 'viftech'),
 	"base" => "thb_portfolio_attribute",
 	"icon" => "thb_vc_ico_portfolio_attribute",
 	"class" => "thb_vc_sc_portfolio_attribute",
-	"category" => esc_html__('by Fuel Themes', 'revolution'),
+	"category" => esc_html__('by Fuel Themes', 'viftech'),
 	"params" => array(
 		array(
 	    "type" => "dropdown",
@@ -502,15 +502,15 @@ vc_map( array(
 // AutoType
 vc_map( array(
 	'base'  => 'thb_autotype',
-	'name' => esc_html__('Auto Type', 'revolution'),
+	'name' => esc_html__('Auto Type', 'viftech'),
 	"description" => esc_html__("Animated text typing", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'revolution'),
+	'category' => esc_html__('by Fuel Themes', 'viftech'),
 	"icon" => "thb_vc_ico_autotype",
 	"class" => "thb_vc_sc_autotype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
-			'heading'    => esc_html__( 'Content', 'revolution' ),
+			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'typed_text',
 			'value'		 => '<h2>Unleash creativity with the powerful tools of *revolution;Developed by Fuel Themes*</h2>',
 			'description'=> '
@@ -560,7 +560,7 @@ vc_map( array(
 
 // Blog Posts
 vc_map( array(
-	"name" => esc_html__("Blog Posts", 'revolution'),
+	"name" => esc_html__("Blog Posts", 'viftech'),
 	"base" => "thb_post",
 	"icon" => "thb_vc_ico_post",
 	"class" => "thb_vc_sc_post",
@@ -671,11 +671,11 @@ vc_map( array(
 ) );
 
 vc_map( array(
-	"name" => esc_html__( "Button", 'revolution'),
+	"name" => esc_html__( "Button", 'viftech'),
 	"base" => "thb_button",
 	"icon" => "thb_vc_ico_button",
 	"class" => "thb_vc_sc_button",
-	"category" => esc_html__('by Fuel Themes', 'revolution'),
+	"category" => esc_html__('by Fuel Themes', 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "dropdown",
@@ -790,11 +790,11 @@ vc_add_param( "thb_button", thb_vc_gradient_color1() );
 vc_add_param( "thb_button", thb_vc_gradient_color2() );
 
 vc_map( array(
-	"name" => esc_html__( "Text Button", 'revolution'),
+	"name" => esc_html__( "Text Button", 'viftech'),
 	"base" => "thb_button_text",
 	"icon" => "thb_vc_ico_button_text",
 	"class" => "thb_vc_sc_button_text",
-	"category" => esc_html__('by Fuel Themes', 'revolution'),
+	"category" => esc_html__('by Fuel Themes', 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "dropdown",
@@ -828,7 +828,7 @@ vc_map( array(
 
 // Cascading Images
 vc_map( array(
-	"name" => esc_html__("Cascading Images", 'revolution'),
+	"name" => esc_html__("Cascading Images", 'viftech'),
 	"base" => "thb_cascading_parent",
 	"icon" => "thb_vc_ico_cascading",
 	"class" => "thb_vc_sc_cascading",
@@ -836,12 +836,12 @@ vc_map( array(
 	"show_settings_on_create" => false,
 	"category" => esc_html__("by Fuel Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_cascading'),
-	"description" => esc_html__("Insert a cascading Image", 'revolution' ),
+	"description" => esc_html__("Insert a cascading Image", 'viftech' ),
 	"js_view" => 'VcColumnView'
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Single Image", 'revolution'),
+	"name" => esc_html__("Single Image", 'viftech'),
 	"base" => "thb_cascading",
 	"icon" => "thb_vc_ico_cascading",
 	"class" => "thb_vc_sc_cascading",
@@ -850,9 +850,9 @@ vc_map( array(
 	"params"           => array(
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Select Image', 'revolution' ),
+			'heading'        => esc_html__( 'Select Image', 'viftech' ),
 			'param_name'     => 'image',
-			'description'    => esc_html__( 'Select Image for the layer', 'revolution' )
+			'description'    => esc_html__( 'Select Image for the layer', 'viftech' )
 		),
 		array(
 		  "type" => "dropdown",
@@ -903,7 +903,7 @@ class WPBakeryShortCode_thb_cascading extends WPBakeryShortCode {}
 
 // Clients Parent
 vc_map( array(
-	"name" => esc_html__("Clients", 'revolution'),
+	"name" => esc_html__("Clients", 'viftech'),
 	"base" => "thb_clients_parent",
 	"icon" => "thb_vc_ico_clients",
 	"class" => "thb_vc_sc_clients",
@@ -992,7 +992,7 @@ vc_map( array(
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Client", 'revolution'),
+	"name" => esc_html__("Client", 'viftech'),
 	"base" => "thb_clients",
 	"icon" => "thb_vc_ico_clients",
 	"class" => "thb_vc_sc_clients",
@@ -1001,17 +1001,17 @@ vc_map( array(
 	"params"	=> array(
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Image', 'revolution' ),
+			'heading'        => esc_html__( 'Image', 'viftech' ),
 			'param_name'     => 'image',
 			'value'          => '',
-			'description'    => esc_html__( 'Add logo image here.', 'revolution' )
+			'description'    => esc_html__( 'Add logo image here.', 'viftech' )
 		),
 		array(
 			'type'           => 'vc_link',
-			'heading'        => esc_html__( 'Link', 'revolution' ),
+			'heading'        => esc_html__( 'Link', 'viftech' ),
 			'param_name'     => 'link',
 			"admin_label" => true,
-			'description'    => esc_html__( 'Add a link to client website if desired.', 'revolution' ),
+			'description'    => esc_html__( 'Add a link to client website if desired.', 'viftech' ),
 		),
 	),
 	"description" => esc_html__("Single Client", "revolution")
@@ -1021,7 +1021,7 @@ class WPBakeryShortCode_thb_clients extends WPBakeryShortCode {}
 
 // Contact Map
 vc_map( array(
-	"name" => esc_html__("Contact Map Parent", 'revolution'),
+	"name" => esc_html__("Contact Map Parent", 'viftech'),
 	"base" => "thb_map_parent",
 	"icon" => "thb_vc_ico_contactmap",
 	"class" => "thb_vc_sc_contactmap",
@@ -1062,51 +1062,51 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Map Zoom', 'revolution' ),
+			'heading'        => esc_html__( 'Map Zoom', 'viftech' ),
 			'param_name'     => 'zoom',
 			'value'			 => '0',
-			'description'    => esc_html__( 'Set map zoom level. Leave 0 to automatically fit to bounds.', 'revolution' )
+			'description'    => esc_html__( 'Set map zoom level. Leave 0 to automatically fit to bounds.', 'viftech' )
 		),
 		array(
 			'type'           => 'checkbox',
-			'heading'        => esc_html__( 'Map Controls', 'revolution' ),
+			'heading'        => esc_html__( 'Map Controls', 'viftech' ),
 			'param_name'     => 'map_controls',
 			'std'            => 'panControl, zoomControl, mapTypeControl, scaleControl',
 			'value'          => array(
-				__('Pan Control', 'revolution')             => 'panControl',
-				__('Zoom Control', 'revolution')            => 'zoomControl',
-				__('Map Type Control', 'revolution')        => 'mapTypeControl',
-				__('Scale Control', 'revolution')           => 'scaleControl',
-				__('Street View Control', 'revolution')     => 'streetViewControl'
+				__('Pan Control', 'viftech')             => 'panControl',
+				__('Zoom Control', 'viftech')            => 'zoomControl',
+				__('Map Type Control', 'viftech')        => 'mapTypeControl',
+				__('Scale Control', 'viftech')           => 'scaleControl',
+				__('Street View Control', 'viftech')     => 'streetViewControl'
 			),
-			'description'    => esc_html__( 'Toggle map options.', 'revolution' )
+			'description'    => esc_html__( 'Toggle map options.', 'viftech' )
 		),
 		array(
 			'type'           => 'dropdown',
-			'heading'        => esc_html__( 'Map Type', 'revolution' ),
+			'heading'        => esc_html__( 'Map Type', 'viftech' ),
 			'param_name'     => 'map_type',
 			'std'            => 'roadmap',
 			'value'          => array(
-				__('Roadmap', 'revolution')   => 'roadmap',
-				__('Satellite', 'revolution') => 'satellite',
-				__('Hybrid', 'revolution')    => 'hybrid',
+				__('Roadmap', 'viftech')   => 'roadmap',
+				__('Satellite', 'viftech') => 'satellite',
+				__('Hybrid', 'viftech')    => 'hybrid',
 			),
-			'description' => esc_html__( 'Choose map style.', 'revolution' )
+			'description' => esc_html__( 'Choose map style.', 'viftech' )
 		),
 		array(
 			'type' => 'textarea_raw_html',
-			'heading' => esc_html__( 'Map Style', 'revolution' ),
+			'heading' => esc_html__( 'Map Style', 'viftech' ),
 			'param_name' => 'map_style',
 			'value' => '',
-			'description' => esc_html__( 'Paste the style code here. Browse map styles in <a href="https://snazzymaps.com/" target="_blank">SnazzyMaps</a>', 'revolution' )
+			'description' => esc_html__( 'Paste the style code here. Browse map styles in <a href="https://snazzymaps.com/" target="_blank">SnazzyMaps</a>', 'viftech' )
 		),
 	),
-	"description" => esc_html__("Insert your Contact Map", 'revolution' ),
+	"description" => esc_html__("Insert your Contact Map", 'viftech' ),
 	"js_view" => 'VcColumnView'
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Contact Map Location", 'revolution'),
+	"name" => esc_html__("Contact Map Location", 'viftech'),
 	"base" => "thb_map",
 	"icon" => "thb_vc_ico_contactmap",
 	"class" => "thb_vc_sc_contactmap",
@@ -1115,41 +1115,41 @@ vc_map( array(
 	"params"           => array(
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Marker Image', 'revolution' ),
+			'heading'        => esc_html__( 'Marker Image', 'viftech' ),
 			'param_name'     => 'marker_image',
-			'description'    => esc_html__( 'Add your Custom marker image or use default one.', 'revolution' )
+			'description'    => esc_html__( 'Add your Custom marker image or use default one.', 'viftech' )
 		),
 		array(
 			'type'           => 'checkbox',
-			'heading'        => esc_html__( 'Retina Marker', 'revolution' ),
+			'heading'        => esc_html__( 'Retina Marker', 'viftech' ),
 			'param_name'     => 'retina_marker',
 			'value'          => array(
-				esc_html__('Yes', 'revolution') => 'yes',
+				esc_html__('Yes', 'viftech') => 'yes',
 			),
-			'description'    => esc_html__( 'Enabling this option will reduce the size of marker for 50%, example if marker is 32x32 it will be 16x16.', 'revolution' )
+			'description'    => esc_html__( 'Enabling this option will reduce the size of marker for 50%, example if marker is 32x32 it will be 16x16.', 'viftech' )
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Latitude', 'revolution' ),
+			'heading'        => esc_html__( 'Latitude', 'viftech' ),
 			'admin_label' 	 => true,
 			'param_name'     => 'latitude',
-			'description'    => esc_html__( 'Enter latitude coordinate. To select map coordinates <a href="http://www.latlong.net/convert-address-to-lat-long.html" target="_blank">click here</a>.', 'revolution' ),
+			'description'    => esc_html__( 'Enter latitude coordinate. To select map coordinates <a href="http://www.latlong.net/convert-address-to-lat-long.html" target="_blank">click here</a>.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Longitude', 'revolution' ),
+			'heading'        => esc_html__( 'Longitude', 'viftech' ),
 			'admin_label' 	 => true,
 			'param_name'     => 'longitude',
-			'description'    => esc_html__( 'Enter longitude coordinate.', 'revolution' ),
+			'description'    => esc_html__( 'Enter longitude coordinate.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Marker Title', 'revolution' ),
+			'heading'        => esc_html__( 'Marker Title', 'viftech' ),
 			'param_name'     => 'marker_title',
 		),
 		array(
 			'type'           => 'textarea',
-			'heading'        => esc_html__( 'Marker Description', 'revolution' ),
+			'heading'        => esc_html__( 'Marker Description', 'viftech' ),
 			'param_name'     => 'marker_description',
 		)
 	)
@@ -1160,12 +1160,12 @@ class WPBakeryShortCode_thb_map extends WPBakeryShortCode {}
 
 // Content Carousel Shortcode
 vc_map( array(
-	"name" => esc_html__("Content Carousel", 'revolution'),
+	"name" => esc_html__("Content Carousel", 'viftech'),
 	"base" => "thb_content_carousel",
 	"icon" => "thb_vc_ico_content_carousel",
 	"class" => "thb_vc_sc_content_carousel",
 	"as_parent" => array('except' => 'thb_content_carousel'),
-	"category" => esc_html__("by Fuel Themes", 'revolution'),
+	"category" => esc_html__("by Fuel Themes", 'viftech'),
 	"show_settings_on_create" => true,
 	"content_element" => true,
 	"params" => array(
@@ -1232,7 +1232,7 @@ vc_map( array(
 		),
 	),
 	"js_view" => 'VcColumnView',
-	"description" => esc_html__("Display your content in a carousel", 'revolution')
+	"description" => esc_html__("Display your content in a carousel", 'viftech')
 ) );
 
 class WPBakeryShortCode_Thb_Content_Carousel extends WPBakeryShortCodesContainer { }
@@ -1240,7 +1240,7 @@ class WPBakeryShortCode_Thb_Content_Carousel extends WPBakeryShortCodesContainer
 
 // Counter shortcode
 vc_map( array(
-	"name" => esc_html__("Counter", 'revolution'),
+	"name" => esc_html__("Counter", 'viftech'),
 	"base" => "thb_counter",
 	"icon" => "thb_vc_ico_counter",
 	"class" => "thb_vc_sc_counter",
@@ -1266,16 +1266,16 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Image As Icon', 'revolution' ),
+			'heading'        => esc_html__( 'Image As Icon', 'viftech' ),
 			'param_name'     => 'icon_image',
-			'description'    => esc_html__( 'You can set an image instead of an icon.', 'revolution' ),
+			'description'    => esc_html__( 'You can set an image instead of an icon.', 'viftech' ),
 			"dependency" => Array('element' => "style", 'value' => array('counter-style1', 'counter-style3')),
 		),
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Image Width", "revolution"),
 			"param_name" => "icon_image_width",
-			'description'    => esc_html__( 'If you are using an image, you can set custom width here. Default is 64 (pixels).', 'revolution' ),
+			'description'    => esc_html__( 'If you are using an image, you can set custom width here. Default is 64 (pixels).', 'viftech' ),
 			"dependency" => Array('element' => "style", 'value' => array('counter-style1', 'counter-style3')),
 		),
 		array(
@@ -1327,9 +1327,9 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'textarea',
-			'heading'        => esc_html__( 'Description', 'revolution' ),
+			'heading'        => esc_html__( 'Description', 'viftech' ),
 			'param_name'     => 'description',
-			'description'    => esc_html__( 'Include a small description for this counter', 'revolution' ),
+			'description'    => esc_html__( 'Include a small description for this counter', 'viftech' ),
 		),
 	),
 	"description" => esc_html__("Counters with icons", "revolution")
@@ -1341,7 +1341,7 @@ vc_map(array(
   "base" => "thb_countdown",
   "icon" => "thb_vc_ico_event_countdown",
   "class" => "thb_vc_sc_event_countdown",
-  'description' => esc_html__('Countdown module for your events.', 'revolution'),
+  'description' => esc_html__('Countdown module for your events.', 'viftech'),
   "category" => esc_html__("by Fuel Themes", "revolution"),
   "params" => array(
     array(
@@ -1389,15 +1389,15 @@ vc_map(array(
 // Fade Type
 vc_map( array(
 	'base'  => 'thb_fadetype',
-	'name' => esc_html__('Fade Type', 'revolution'),
+	'name' => esc_html__('Fade Type', 'viftech'),
 	"description" => esc_html__("Faded letter typing", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'revolution'),
+	'category' => esc_html__('by Fuel Themes', 'viftech'),
 	"icon" => "thb_vc_ico_fadetype",
 	"class" => "thb_vc_sc_fadetype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
-			'heading'    => esc_html__( 'Content', 'revolution' ),
+			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'fade_text',
 			'value'		 => '<h2>*Unleash creativity with the powerful tools of revolution, Developed by Fuel Themes*</h2>',
 			'description'=> 'Enter the content to display with typing text. <br />
@@ -1414,7 +1414,7 @@ vc_map( array(
 
 // Fancy Box
 vc_map( array(
-	"name" => esc_html__("Fancy Box", 'revolution'),
+	"name" => esc_html__("Fancy Box", 'viftech'),
 	"base" => "thb_fancybox",
 	"icon" => "thb_vc_ico_fancybox",
 	"class" => "thb_vc_sc_fancybox",
@@ -1435,33 +1435,33 @@ vc_map( array(
 	  ),
 	  array(
 	  	'type'           => 'vc_link',
-	  	'heading'        => esc_html__( 'Link', 'revolution' ),
+	  	'heading'        => esc_html__( 'Link', 'viftech' ),
 	  	'param_name'     => 'link',
-	  	'description'    => esc_html__( 'If you would like to link this box or show button depending on style, set your link here.', 'revolution' ),
+	  	'description'    => esc_html__( 'If you would like to link this box or show button depending on style, set your link here.', 'viftech' ),
 	  ),
 	  array(
 	  	'type'           => 'attach_image',
-	  	'heading'        => esc_html__( 'Select Background Image', 'revolution' ),
+	  	'heading'        => esc_html__( 'Select Background Image', 'viftech' ),
 	  	'param_name'     => 'image',
-	  	'description'    => esc_html__( 'Select background image from media library.', 'revolution' ),
+	  	'description'    => esc_html__( 'Select background image from media library.', 'viftech' ),
 	  	"dependency" => Array('element' => "style", 'value' => array('fancy-style1', 'fancy-style2', 'fancy-style3', 'fancy-style5', 'fancy-style6')),
 	  ),
 	  array(
 	  	"type" => "dropdown",
 	  	"heading" => esc_html__("Icon", "revolution"),
 	  	"param_name" => "icon",
-	  	'description'    => esc_html__( 'If you would like to include an icon, select it here.', 'revolution' ),
+	  	'description'    => esc_html__( 'If you would like to include an icon, select it here.', 'viftech' ),
 	  	"value" => thb_getIconArray()
 	  ),
 	  array(
 	  	'type'           => 'textarea_html',
-	  	'heading'        => esc_html__( 'Description', 'revolution' ),
+	  	'heading'        => esc_html__( 'Description', 'viftech' ),
 	  	'param_name'     => 'content',
-	  	'description'    => esc_html__( 'Include a small description for this box, this text area supports HTML too.', 'revolution' ),
+	  	'description'    => esc_html__( 'Include a small description for this box, this text area supports HTML too.', 'viftech' ),
 	  ),
 	  array(
 	  	"type" 					 => "dropdown",
-	  	"heading" 			 => esc_html__("Description Alignment", 'revolution'),
+	  	"heading" 			 => esc_html__("Description Alignment", 'viftech'),
 	  	"param_name" 		 => "thb_text_alignment",
 	  	"value" => array(
 	  		"Top Left" 				=> "thb-top-left",
@@ -1469,7 +1469,7 @@ vc_map( array(
 	  		"Bottom Left" 		=> "thb-bottom-left"
 	  	),
 	  	"std" 					 => "thb-top-left",
-	  	"description" 	 => esc_html__("Alignment of the Text.", 'revolution')
+	  	"description" 	 => esc_html__("Alignment of the Text.", 'viftech')
 	  ),
 	  array(
 	    "type" 					=> "textfield",
@@ -1482,7 +1482,7 @@ vc_map( array(
 	  $thb_animation_array,
 	  array(
 	  	"type" 					 => "dropdown",
-	  	"heading" 			 => esc_html__("Text Color", 'revolution'),
+	  	"heading" 			 => esc_html__("Text Color", 'viftech'),
 	  	"param_name" 		 => "thb_text_color",
 	  	"value" => array(
 	  		"Dark" => "fancy-dark",
@@ -1490,7 +1490,7 @@ vc_map( array(
 	  	),
 	  	"group"					 => 'Styling',
 	  	"std" 					 => "fancy-dark",
-	  	"description" 	 => esc_html__("Color of the text.", 'revolution')
+	  	"description" 	 => esc_html__("Color of the text.", 'viftech')
 	  ),
 	  array(
 	  	"type" 						=> "dropdown",
@@ -1507,9 +1507,9 @@ vc_map( array(
 	  ),
 	  array(
 	  	'type'           => 'textfield',
-	  	'heading'        => esc_html__( 'Border Radius', 'revolution' ),
+	  	'heading'        => esc_html__( 'Border Radius', 'viftech' ),
 	  	'param_name'     => 'border_radius',
-	  	'description'    => esc_html__( 'Set border radius of the image. Please add px,em, etc.. as well.', 'revolution' ),
+	  	'description'    => esc_html__( 'Set border radius of the image. Please add px,em, etc.. as well.', 'viftech' ),
 	  	'group' 				=> 'Styling'
 	  ),
 	  array(
@@ -1612,7 +1612,7 @@ vc_add_param( "thb_flipbox", thb_vc_gradient_color4("Back Side") );
 
 /* Food Menu Item */
 vc_map( array(
-	"name" => esc_html__("Food Menu Item", 'revolution'),
+	"name" => esc_html__("Food Menu Item", 'viftech'),
 	"base" => "thb_menu_item",
 	"icon" => "thb_vc_ico_menu_item",
 	"class" => "thb_vc_sc_menu_item",
@@ -1620,22 +1620,22 @@ vc_map( array(
 	"params"	=> array(
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Title', 'revolution' ),
+			'heading'        => esc_html__( 'Title', 'viftech' ),
 			'param_name'     => 'title',
 			'admin_label'	 => true,
-			'description'    => esc_html__( 'Title of this food item', 'revolution' ),
+			'description'    => esc_html__( 'Title of this food item', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Price', 'revolution' ),
+			'heading'        => esc_html__( 'Price', 'viftech' ),
 			'param_name'     => 'price',
-			'description'    => esc_html__( 'Price of this food item.', 'revolution' ),
+			'description'    => esc_html__( 'Price of this food item.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textarea',
-			'heading'        => esc_html__( 'Description', 'revolution' ),
+			'heading'        => esc_html__( 'Description', 'viftech' ),
 			'param_name'     => 'description',
-			'description'    => esc_html__( 'Include a small description for this food item.', 'revolution' ),
+			'description'    => esc_html__( 'Include a small description for this food item.', 'viftech' ),
 		)
 	),
 	"description" => esc_html__("Add a food menu item", "revolution")
@@ -1696,9 +1696,9 @@ vc_map( array(
 		),
 		array(
 		  "type" => "textfield",
-		  "heading" => esc_html__("Number of Photos", 'revolution'),
+		  "heading" => esc_html__("Number of Photos", 'viftech'),
 		  "param_name" => "number",
-		  "description" => esc_html__("Number of Instagram Photos to retrieve", 'revolution'),
+		  "description" => esc_html__("Number of Instagram Photos to retrieve", 'viftech'),
 		  "dependency" => Array('element' => "type", 'value' => array('instagram')),
 		),
 		array(
@@ -1733,15 +1733,15 @@ vc_map( array(
 // Gradient Type
 vc_map( array(
 	'base'  => 'thb_gradienttype',
-	'name' => esc_html__('Gradient Type', 'revolution'),
+	'name' => esc_html__('Gradient Type', 'viftech'),
 	"description" => esc_html__("Text with Gradient Color", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'revolution'),
+	'category' => esc_html__('by Fuel Themes', 'viftech'),
 	"icon" => "thb_vc_ico_gradienttype",
 	"class" => "thb_vc_sc_gradienttype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
-			'heading'    => esc_html__( 'Content', 'revolution' ),
+			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'gradient_text',
 			'value'		 => '<h2>Unleash creativity with the powerful tools of revolution, Developed by Fuel Themes</h2>',
 			'description'=> 'Enter the content to display with gradient.',
@@ -1760,7 +1760,7 @@ vc_add_param( "thb_gradienttype", thb_vc_gradient_color2() );
 
 // Horizontal List
 vc_map( array(
-	"name" => esc_html__("Horizontal List", 'revolution'),
+	"name" => esc_html__("Horizontal List", 'viftech'),
 	"base" => "thb_horizontal_list",
 	"icon" => "thb_vc_ico_horizontal_list",
 	"class" => "thb_vc_sc_horizontal_list",
@@ -1821,7 +1821,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"edit_field_class" => "vc_col-sm-3",
-			"heading" => sprintf( esc_html__( "Text Alignment %s", 'revolution' ), '<span class="thb-row-heading">Column 1</span>' ),
+			"heading" => sprintf( esc_html__( "Text Alignment %s", 'viftech' ), '<span class="thb-row-heading">Column 1</span>' ),
 			"param_name" => "column_1_align",
 			"value" => array(
 				"Left" => "text-left",
@@ -1911,7 +1911,7 @@ vc_map( array(
       "type" => "colorpicker",
       "heading" => esc_html__("Hover Color", "revolution"),
       "param_name" => "hover_color",
-      'description' => esc_html__( 'Hover Color for this item', 'revolution' ),
+      'description' => esc_html__( 'Hover Color for this item', 'viftech' ),
       "group" => "Styling"
     ),
     $thb_animation_array,
@@ -2087,7 +2087,7 @@ vc_add_param("vc_gallery",$thb_animation_array );
 
 // Iconbox
 vc_map( array(
-	"name" => esc_html__("Iconbox", 'revolution'),
+	"name" => esc_html__("Iconbox", 'viftech'),
 	"base" => "thb_iconbox",
 	"icon" => "thb_vc_ico_iconbox",
 	"class" => "thb_vc_sc_iconbox",
@@ -2126,21 +2126,21 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Image As Icon', 'revolution' ),
+			'heading'        => esc_html__( 'Image As Icon', 'viftech' ),
 			'param_name'     => 'icon_image',
-			'description'    => esc_html__( 'You can set an image instead of an icon.', 'revolution' )
+			'description'    => esc_html__( 'You can set an image instead of an icon.', 'viftech' )
 		),
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Image Width", "revolution"),
 			"param_name" => "icon_image_width",
-			'description'    => esc_html__( 'If you are using an image, you can set custom width here. Default is 64 (pixels).', 'revolution' )
+			'description'    => esc_html__( 'If you are using an image, you can set custom width here. Default is 64 (pixels).', 'viftech' )
 		),
 		array(
 			'type'           => 'vc_link',
-			'heading'        => esc_html__( 'Link', 'revolution' ),
+			'heading'        => esc_html__( 'Link', 'viftech' ),
 			'param_name'     => 'link',
-			'description'    => esc_html__( 'Add a link to the iconbox if desired.', 'revolution' ),
+			'description'    => esc_html__( 'Add a link to the iconbox if desired.', 'viftech' ),
 		),
 		array(
 		  "type" => "dropdown",
@@ -2177,17 +2177,17 @@ vc_map( array(
 		),
 		array(
 			"type" => "colorpicker",
-			"heading" 			 => esc_html__("Heading Color", 'revolution'),
+			"heading" 			 => esc_html__("Heading Color", 'viftech'),
 			"param_name" 		 => "thb_heading_color",
 			"group"					 => 'Styling',
-			"description" 	 => esc_html__("Color of the heading", 'revolution')
+			"description" 	 => esc_html__("Color of the heading", 'viftech')
 		),
 		array(
 			"type" => "colorpicker",
-			"heading" 			 => esc_html__("Text Color", 'revolution'),
+			"heading" 			 => esc_html__("Text Color", 'viftech'),
 			"param_name" 		 => "thb_text_color",
 			"group"					 => 'Styling',
-			"description" 	 => esc_html__("Color of the text", 'revolution')
+			"description" 	 => esc_html__("Color of the text", 'viftech')
 		),
 		array(
 			"type" => "colorpicker",
@@ -2197,24 +2197,24 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Hover Image As Icon', 'revolution' ),
+			'heading'        => esc_html__( 'Hover Image As Icon', 'viftech' ),
 			'param_name'     => 'icon_image_hover',
-			'description'    => esc_html__( 'If you are using an image, you can set an hover image.', 'revolution' ),
+			'description'    => esc_html__( 'If you are using an image, you can set an hover image.', 'viftech' ),
 			"group"					 => 'Hover Styling',
 		),
 		array(
 			"type" => "colorpicker",
-			"heading" 			 => esc_html__("Hover Heading Color", 'revolution'),
+			"heading" 			 => esc_html__("Hover Heading Color", 'viftech'),
 			"param_name" 		 => "thb_heading_color_hover",
 			"group"					 => 'Hover Styling',
-			"description" 	 => esc_html__("Color of the heading", 'revolution')
+			"description" 	 => esc_html__("Color of the heading", 'viftech')
 		),
 		array(
 			"type" => "colorpicker",
-			"heading" 			 => esc_html__("Hover Text Color", 'revolution'),
+			"heading" 			 => esc_html__("Hover Text Color", 'viftech'),
 			"param_name" 		 => "thb_text_color_hover",
 			"group"					 => 'Hover Styling',
-			"description" 	 => esc_html__("Color of the text", 'revolution')
+			"description" 	 => esc_html__("Color of the text", 'viftech')
 		),
 		array(
 			"type" 						=> "checkbox",
@@ -2234,7 +2234,7 @@ vc_map( array(
 			"param_name" 		=> "animation_speed",
 			"value" 					=> "1.5",
 			"group"					 => 'Animation',
-			'description'    => esc_html__( 'Speed of the animation in seconds', 'revolution' ),
+			'description'    => esc_html__( 'Speed of the animation in seconds', 'viftech' ),
 			"dependency" => Array('element' => "animation", 'value' => array('true')),
 		),
 		array(
@@ -2252,73 +2252,73 @@ vc_map( array(
 	"base" => "thb_image",
 	"icon" => "thb_vc_ico_image",
 	"class" => "thb_vc_sc_image wpb_vc_single_image",
-	"category" => esc_html__('by Fuel Themes', 'revolution'),
+	"category" => esc_html__('by Fuel Themes', 'viftech'),
 	"params" => array(
 		array(
 			"type" => "attach_image", //attach_images
-			"heading" => esc_html__("Select Image", 'revolution'),
+			"heading" => esc_html__("Select Image", 'viftech'),
 			"param_name" => "image"
 		),
 		array(
 			"type" => "checkbox",
-			"heading" => esc_html__("Display Caption?", 'revolution'),
+			"heading" => esc_html__("Display Caption?", 'viftech'),
 			"param_name" => "caption",
 			"value" => array(
 				"Yes" => "true"
 			),
-			"description" => esc_html__("If selected, the image caption will be displayed.", 'revolution')
+			"description" => esc_html__("If selected, the image caption will be displayed.", 'viftech')
 		),
 		array(
 		  "type" => "dropdown",
-		  "heading" => esc_html__("Caption Style", 'revolution'),
+		  "heading" => esc_html__("Caption Style", 'viftech'),
 		  "param_name" => "caption_style",
 		  "value" => array(
 		  	"Style1" => "style1", 
 		  	"Style2" => "style2"
 		  ),
-		  "description" => esc_html__("Select caption style.", 'revolution'),
+		  "description" => esc_html__("Select caption style.", 'viftech'),
 		  "dependency" => Array('element' => "caption", 'value' => array('true'))
 		),
 		array(
 			'type'           => 'textarea_html',
-			'heading'        => esc_html__( 'Text Below Image', 'revolution' ),
+			'heading'        => esc_html__( 'Text Below Image', 'viftech' ),
 			'param_name'     => 'content'
 		),
 		array(
 			"type" => "checkbox",
-			"heading" => esc_html__("Retina Size?", 'revolution'),
+			"heading" => esc_html__("Retina Size?", 'viftech'),
 			"param_name" => "retina",
 			"value" => array(
 				"Yes" => "retina_size"
 			),
-			"description" => esc_html__("If selected, the image will be display half-size, so it looks crisps on retina screens. Full Width setting will override this.", 'revolution')
+			"description" => esc_html__("If selected, the image will be display half-size, so it looks crisps on retina screens. Full Width setting will override this.", 'viftech')
 		),
 		array(
 			"type" => "checkbox",
-			"heading" => esc_html__("Full Width?", 'revolution'),
+			"heading" => esc_html__("Full Width?", 'viftech'),
 			"param_name" => "full_width",
 			"value" => array(
 				"Yes" => "true"
 			),
-			"description" => esc_html__("If selected, the image will always fill its container", 'revolution')
+			"description" => esc_html__("If selected, the image will always fill its container", 'viftech')
 		),
 		$thb_animation_array,
 		array(
 		  "type" => "textfield",
-		  "heading" => esc_html__("Image size", 'revolution'),
+		  "heading" => esc_html__("Image size", 'viftech'),
 		  "param_name" => "img_size",
-		  "description" => esc_html__("Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height). Leave empty to use 'thumbnail' size.", 'revolution')
+		  "description" => esc_html__("Enter image size. Example: thumbnail, medium, large, full or other sizes defined by current theme. Alternatively enter image size in pixels: 200x100 (Width x Height). Leave empty to use 'thumbnail' size.", 'viftech')
 		),
 		array(
 		  "type" => "dropdown",
-		  "heading" => esc_html__("Image alignment", 'revolution'),
+		  "heading" => esc_html__("Image alignment", 'viftech'),
 		  "param_name" => "alignment",
 		  "value" => array("Align left" => "alignleft", "Align right" => "alignright", "Align center" => "aligncenter"),
-		  "description" => esc_html__("Select image alignment.", 'revolution')
+		  "description" => esc_html__("Select image alignment.", 'viftech')
 		),
 		array(
 			"type" => "checkbox",
-			"heading" => esc_html__("Link to Full-Width Image?", 'revolution'),
+			"heading" => esc_html__("Link to Full-Width Image?", 'viftech'),
 			"param_name" => "lightbox",
 			"value" => array(
 				"Yes" => "true"
@@ -2326,9 +2326,9 @@ vc_map( array(
 		),
 		array(
 		  "type" => "vc_link",
-		  "heading" => esc_html__("Image link", 'revolution'),
+		  "heading" => esc_html__("Image link", 'viftech'),
 		  "param_name" => "img_link",
-		  "description" => esc_html__("Enter url if you want this image to have link.", 'revolution'),
+		  "description" => esc_html__("Enter url if you want this image to have link.", 'viftech'),
 		  "dependency" => Array('element' => "lightbox", 'is_empty' => true)
 		),
 		array(
@@ -2338,10 +2338,10 @@ vc_map( array(
 		),
 		array(
 			"type" => "textfield",
-			"heading" => esc_html__("Border Radius", 'revolution'),
+			"heading" => esc_html__("Border Radius", 'viftech'),
 			"param_name" => "thb_border_radius",
 			'group' 				=> 'Styling',
-			"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'revolution')
+			"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 		),
 		array(
 			"type" 						=> "dropdown",
@@ -2373,10 +2373,10 @@ vc_map( array(
 			),
 			"std" => "size_100",
 			'group' 				=> 'Styling',
-			"description" => esc_html__("By default, image is contained within the columns, by setting this, you can extend the image over the container", 'revolution')
+			"description" => esc_html__("By default, image is contained within the columns, by setting this, you can extend the image over the container", 'viftech')
 		),
 	),
-	"description" => esc_html__("Add an animated image", 'revolution')
+	"description" => esc_html__("Add an animated image", 'viftech')
 ) );
 
 // Image Slider
@@ -2461,44 +2461,44 @@ vc_map( array(
 
 // Instagram
 vc_map( array(
-	"name" => esc_html__("Instagram", 'revolution'),
+	"name" => esc_html__("Instagram", 'viftech'),
 	"base" => "thb_instagram",
 	"icon" => "thb_vc_ico_instagram",
 	"class" => "thb_vc_sc_instagram",
-	"category" => esc_html__("by Fuel Themes", 'revolution'),
+	"category" => esc_html__("by Fuel Themes", 'viftech'),
 	"params"	=> array(
 	  array(
       "type" => "textfield",
-      "heading" => esc_html__("Number of Photos", 'revolution'),
+      "heading" => esc_html__("Number of Photos", 'viftech'),
       "param_name" => "number",
       "admin_label" => true,
-      "description" => esc_html__("Number of Instagram Photos to retrieve", 'revolution')
+      "description" => esc_html__("Number of Instagram Photos to retrieve", 'viftech')
 	  ),
 		array(
 			"type" => "dropdown",
-			"heading" => esc_html__("Columns", 'revolution'),
+			"heading" => esc_html__("Columns", 'viftech'),
 			"param_name" => "columns",
 			"value" => $thb_column_array
 		),
 		array(
 	    "type" => "checkbox",
-	    "heading" => esc_html__("Link Photos to Instagram?", 'revolution'),
+	    "heading" => esc_html__("Link Photos to Instagram?", 'viftech'),
 	    "param_name" => "link",
 	    "value" => array(
 				esc_html__("Yes", "revolution") =>"true"
 			),
-	    "description" => esc_html__("Do you want to link the Instagram photos to instagram.com website?", 'revolution')
+	    "description" => esc_html__("Do you want to link the Instagram photos to instagram.com website?", 'viftech')
 		),
 		array(
 			"type" => "dropdown",
-			"heading" => esc_html__("Column Padding", 'revolution'),
+			"heading" => esc_html__("Column Padding", 'viftech'),
 			"param_name" => "column_padding",
 			"value" => array(
 				'Normal' => "",
 				'Low' => "low-padding",
 				'No-Padding' => "no-padding"
 			),
-			"description" => esc_html__("You can have columns without spaces using this option"	, 'revolution')
+			"description" => esc_html__("You can have columns without spaces using this option"	, 'viftech')
 		)
 	),
 	"description" => esc_html__("Add Instagram Photos", "revolution")
@@ -2506,7 +2506,7 @@ vc_map( array(
 
 // Label
 vc_map( array(
-	"name" => esc_html__("Label", 'revolution'),
+	"name" => esc_html__("Label", 'viftech'),
 	"base" => "thb_label",
 	"icon" => "thb_vc_ico_label",
 	"class" => "thb_vc_sc_label",
@@ -2526,9 +2526,9 @@ vc_map( array(
 		),
 		array(
       'type' => 'css_editor',
-      'heading' => esc_html__( 'Css', 'revolution' ),
+      'heading' => esc_html__( 'Css', 'viftech' ),
       'param_name' => 'css',
-      'group' => esc_html__( 'Design options', 'revolution' ),
+      'group' => esc_html__( 'Design options', 'viftech' ),
   	),
 	),
 	"description" => esc_html__("Display a label box", "revolution")
@@ -2544,7 +2544,7 @@ vc_map( array(
 	"params"	=> array(
 		array(
 			"type" => "dropdown",
-			"heading" => esc_html__("Alignment", 'revolution'),
+			"heading" => esc_html__("Alignment", 'viftech'),
 			"param_name" => "alignment",
 			"value" => array(
 				'Left' => "",
@@ -2552,7 +2552,7 @@ vc_map( array(
 				'Right' => "align-right"
 			),
 			"std" => "",
-			"description" => esc_html__("Change the alignment of the button."	, 'revolution')
+			"description" => esc_html__("Change the alignment of the button."	, 'viftech')
 		)
 	),
 	"description" => esc_html__("Add a Like Button to Your Page", "revolution")
@@ -2560,11 +2560,11 @@ vc_map( array(
 
 // Office Locations Shortcode
 vc_map( array(
-	"name" => esc_html__('Office Locations', 'revolution'),
+	"name" => esc_html__('Office Locations', 'viftech'),
 	"base" => "thb_location_parent",
 	"icon" => "thb_vc_ico_location",
 	"class" => "thb_vc_sc_location",
-	"category" => esc_html__("by Fuel Themes", 'revolution'),
+	"category" => esc_html__("by Fuel Themes", 'viftech'),
 	"as_parent" => array('only' => 'thb_location'),
 	"show_settings_on_create" => true,
 	"params" => array(
@@ -2578,65 +2578,65 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Map Zoom', 'revolution' ),
+			'heading'        => esc_html__( 'Map Zoom', 'viftech' ),
 			'param_name'     => 'zoom',
 			'value'			 		 => '0',
-			'description'    => esc_html__( 'Set map zoom level. Leave 0 to automatically fit to bounds.', 'revolution' )
+			'description'    => esc_html__( 'Set map zoom level. Leave 0 to automatically fit to bounds.', 'viftech' )
 		),
 		array(
 			'type'           => 'checkbox',
-			'heading'        => esc_html__( 'Map Controls', 'revolution' ),
+			'heading'        => esc_html__( 'Map Controls', 'viftech' ),
 			'param_name'     => 'map_controls',
 			'std'            => 'panControl, zoomControl, mapTypeControl, scaleControl',
 			'value'          => array(
-				esc_html__('Pan Control', 'revolution')             => 'panControl',
-				esc_html__('Zoom Control', 'revolution')            => 'zoomControl',
-				esc_html__('Map Type Control', 'revolution')        => 'mapTypeControl',
-				esc_html__('Scale Control', 'revolution')           => 'scaleControl',
-				esc_html__('Street View Control', 'revolution')     => 'streetViewControl'
+				esc_html__('Pan Control', 'viftech')             => 'panControl',
+				esc_html__('Zoom Control', 'viftech')            => 'zoomControl',
+				esc_html__('Map Type Control', 'viftech')        => 'mapTypeControl',
+				esc_html__('Scale Control', 'viftech')           => 'scaleControl',
+				esc_html__('Street View Control', 'viftech')     => 'streetViewControl'
 			),
-			'description'    => esc_html__( 'Toggle map options.', 'revolution' )
+			'description'    => esc_html__( 'Toggle map options.', 'viftech' )
 		),
 		array(
 			'type'           => 'dropdown',
-			'heading'        => esc_html__( 'Map Type', 'revolution' ),
+			'heading'        => esc_html__( 'Map Type', 'viftech' ),
 			'param_name'     => 'map_type',
 			'std'            => 'roadmap',
 			'value'          => array(
-				esc_html__('Roadmap', 'revolution')   => 'roadmap',
-				esc_html__('Satellite', 'revolution') => 'satellite',
-				esc_html__('Hybrid', 'revolution')    => 'hybrid',
+				esc_html__('Roadmap', 'viftech')   => 'roadmap',
+				esc_html__('Satellite', 'viftech') => 'satellite',
+				esc_html__('Hybrid', 'viftech')    => 'hybrid',
 			),
-			'description' => esc_html__( 'Choose map style.', 'revolution' )
+			'description' => esc_html__( 'Choose map style.', 'viftech' )
 		),
 		array(
 			'type' => 'textarea_raw_html',
-			'heading' => esc_html__( 'Map Style', 'revolution' ),
+			'heading' => esc_html__( 'Map Style', 'viftech' ),
 			'param_name' => 'map_style',
-			'description' => esc_html__( 'Paste the style code here. Browse map styles on SnazzyMaps.com', 'revolution' )
+			'description' => esc_html__( 'Paste the style code here. Browse map styles on SnazzyMaps.com', 'viftech' )
 		),
 		array(
 			'type' 					=> 'colorpicker',
-			'heading' 			=> esc_html__( 'Heading Color', 'revolution' ),
+			'heading' 			=> esc_html__( 'Heading Color', 'viftech' ),
 			'param_name' 		=> 'heading_color',
-			'description' 	=> esc_html__( 'Color of the Location Title', 'revolution' ),
+			'description' 	=> esc_html__( 'Color of the Location Title', 'viftech' ),
 			'group' 				=> 'Styling'
 		),
 		array(
 			'type' 					=> 'colorpicker',
-			'heading' 			=> esc_html__( 'Active Location Background Color', 'revolution' ),
+			'heading' 			=> esc_html__( 'Active Location Background Color', 'viftech' ),
 			'param_name' 		=> 'location_bg_color',
-			'description' 	=> esc_html__( 'Changes the background color of the selected location.', 'revolution' ),
+			'description' 	=> esc_html__( 'Changes the background color of the selected location.', 'viftech' ),
 			'group' 				=> 'Styling'
 		),
 	),
 	"content_element" => true,
 	"js_view" => 'VcColumnView',
-	"description" => esc_html__("Display your office locations", 'revolution' )
+	"description" => esc_html__("Display your office locations", 'viftech' )
 ) );
 
 vc_map( array(
-  "name" => esc_html__("Office Location", 'revolution'),
+  "name" => esc_html__("Office Location", 'viftech'),
   "base" => "thb_location",
   "icon" => "thb_vc_ico_location_single",
   "as_child" => array('only' => 'thb_location_parent'),
@@ -2644,44 +2644,44 @@ vc_map( array(
   "params" => array(
     array(
     	'type'           => 'attach_image',
-    	'heading'        => esc_html__( 'Marker Image', 'revolution' ),
+    	'heading'        => esc_html__( 'Marker Image', 'viftech' ),
     	'param_name'     => 'marker_image',
-    	'description'    => esc_html__( 'Add your Custom marker image or use default one.', 'revolution' )
+    	'description'    => esc_html__( 'Add your Custom marker image or use default one.', 'viftech' )
     ),
     array(
     	'type'           => 'checkbox',
-    	'heading'        => esc_html__( 'Retina Marker', 'revolution' ),
+    	'heading'        => esc_html__( 'Retina Marker', 'viftech' ),
     	'param_name'     => 'retina_marker',
     	'value'          => array(
-    		esc_html__('Yes', 'revolution') => 'yes',
+    		esc_html__('Yes', 'viftech') => 'yes',
     	),
-    	'description'    => esc_html__( 'Enabling this option will reduce the size of marker for 50%, example if marker is 32x32 it will be 16x16.', 'revolution' )
+    	'description'    => esc_html__( 'Enabling this option will reduce the size of marker for 50%, example if marker is 32x32 it will be 16x16.', 'viftech' )
     ),
     array(
     	'type'           => 'textfield',
-    	'heading'        => esc_html__( 'Latitude', 'revolution' ),
+    	'heading'        => esc_html__( 'Latitude', 'viftech' ),
     	'param_name'     => 'latitude',
-    	'description'    => esc_html__( 'Enter latitude coordinate. To select map coordinates, use http://www.latlong.net/convert-address-to-lat-long.html', 'revolution' ),
+    	'description'    => esc_html__( 'Enter latitude coordinate. To select map coordinates, use http://www.latlong.net/convert-address-to-lat-long.html', 'viftech' ),
     ),
     array(
     	'type'           => 'textfield',
-    	'heading'        => esc_html__( 'Longitude', 'revolution' ),
+    	'heading'        => esc_html__( 'Longitude', 'viftech' ),
     	'param_name'     => 'longitude',
-    	'description'    => esc_html__( 'Enter longitude coordinate.', 'revolution' ),
+    	'description'    => esc_html__( 'Enter longitude coordinate.', 'viftech' ),
     ),
     array(
     	'type'           => 'textfield',
-    	'heading'        => esc_html__( 'Marker Title', 'revolution' ),
+    	'heading'        => esc_html__( 'Marker Title', 'viftech' ),
     	'admin_label' 	 => true,
     	'param_name'     => 'marker_title'
     ),
     array(
     	'type'           => 'textarea',
-    	'heading'        => esc_html__( 'Marker Description', 'revolution' ),
+    	'heading'        => esc_html__( 'Marker Description', 'viftech' ),
     	'param_name'     => 'marker_description'
     )
   ),
-  "description" => esc_html__("Display your office locations", 'revolution')
+  "description" => esc_html__("Display your office locations", 'viftech')
 ));
 
 class WPBakeryShortCode_thb_location_parent extends WPBakeryShortCodesContainer { }
@@ -2689,7 +2689,7 @@ class WPBakeryShortCode_thb_location extends WPBakeryShortCode { }
 
 // Portfolio Masonry
 vc_map( array(
-	"name" => esc_html__("Portfolio Masonry", 'revolution'),
+	"name" => esc_html__("Portfolio Masonry", 'viftech'),
 	"base" => "thb_portfolio",
 	"icon" => "thb_vc_ico_portfolio",
 	"class" => "thb_vc_sc_portfolio",
@@ -2786,7 +2786,7 @@ vc_map( array(
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Portfolio Grid", 'revolution'),
+	"name" => esc_html__("Portfolio Grid", 'viftech'),
 	"base" => "thb_portfolio_grid",
 	"icon" => "thb_vc_ico_portfolio_grid",
 	"class" => "thb_vc_sc_portfolio_grid",
@@ -2909,7 +2909,7 @@ vc_map( array(
 
 // Portfolio Carousel
 vc_map( array(
-	"name" => esc_html__("Portfolio Carousel", 'revolution'),
+	"name" => esc_html__("Portfolio Carousel", 'viftech'),
 	"base" => "thb_portfolio_carousel",
 	"icon" => "thb_vc_ico_portfolio_carousel",
 	"class" => "thb_vc_sc_portfolio_carousel",
@@ -2992,7 +2992,7 @@ vc_map( array(
 
 // Portfolio Slider
 vc_map( array(
-	"name" => esc_html__("Portfolio Slider", 'revolution'),
+	"name" => esc_html__("Portfolio Slider", 'viftech'),
 	"base" => "thb_portfolio_slider",
 	"icon" => "thb_vc_ico_portfolio_slider",
 	"class" => "thb_vc_sc_portfolio_slider",
@@ -3019,12 +3019,12 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'checkbox',
-			'heading'        => esc_html__( 'Full Height', 'revolution' ),
+			'heading'        => esc_html__( 'Full Height', 'viftech' ),
 			'param_name'     => 'full_height',
 			'value'          => array(
-				esc_html__('Yes', 'revolution') => 'full_height',
+				esc_html__('Yes', 'viftech') => 'full_height',
 			),
-			'description'    => esc_html__( 'Enabling this option will increase the height of the slider to full height of the screen.', 'revolution' ),
+			'description'    => esc_html__( 'Enabling this option will increase the height of the slider to full height of the screen.', 'viftech' ),
 			"dependency" => Array('element' => "style", 'value' => array('style1', 'style2', 'style4'))
 		),
 	  array(
@@ -3050,7 +3050,7 @@ vc_map( array(
 
 // Pricing Table Parent
 vc_map( array(
-	"name" => esc_html__("Pricing Table", 'revolution'),
+	"name" => esc_html__("Pricing Table", 'viftech'),
 	"base" => "thb_pricing_table",
 	"icon" => "thb_vc_ico_pricing_table",
 	"class" => "thb_vc_sc_pricing_table",
@@ -3077,7 +3077,7 @@ vc_map( array(
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Pricing Table Column", 'revolution'),
+	"name" => esc_html__("Pricing Table Column", 'viftech'),
 	"base" => "thb_pricing_column",
 	"icon" => "thb_vc_ico_pricing_table",
 	"class" => "thb_vc_sc_pricing_table",
@@ -3094,40 +3094,40 @@ vc_map( array(
 		),
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Image', 'revolution' ),
+			'heading'        => esc_html__( 'Image', 'viftech' ),
 			'param_name'     => 'image',
-			'description'    => esc_html__( 'Select an image if you would like to display one on top.', 'revolution' )
+			'description'    => esc_html__( 'Select an image if you would like to display one on top.', 'viftech' )
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Title', 'revolution' ),
+			'heading'        => esc_html__( 'Title', 'viftech' ),
 			'param_name'     => 'title',
 			'admin_label'	 => true,
-			'description'    => esc_html__( 'Title of this pricing column', 'revolution' ),
+			'description'    => esc_html__( 'Title of this pricing column', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Price', 'revolution' ),
+			'heading'        => esc_html__( 'Price', 'viftech' ),
 			'param_name'     => 'price',
-			'description'    => esc_html__( 'Price of this pricing column.', 'revolution' ),
+			'description'    => esc_html__( 'Price of this pricing column.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Sub Title', 'revolution' ),
+			'heading'        => esc_html__( 'Sub Title', 'viftech' ),
 			'param_name'     => 'sub_title',
-			'description'    => esc_html__( 'Some information under the price.', 'revolution' ),
+			'description'    => esc_html__( 'Some information under the price.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textarea_html',
-			'heading'        => esc_html__( 'Description', 'revolution' ),
+			'heading'        => esc_html__( 'Description', 'viftech' ),
 			'param_name'     => 'content',
-			'description'    => esc_html__( 'Include a small description for this box, this text area supports HTML too.', 'revolution' ),
+			'description'    => esc_html__( 'Include a small description for this box, this text area supports HTML too.', 'viftech' ),
 		),
 		array(
 			'type'           => 'vc_link',
-			'heading'        => esc_html__( 'Pricing CTA Button', 'revolution' ),
+			'heading'        => esc_html__( 'Pricing CTA Button', 'viftech' ),
 			'param_name'     => 'link',
-			'description'    => esc_html__( 'Button at the end of the pricing table.', 'revolution' ),
+			'description'    => esc_html__( 'Button at the end of the pricing table.', 'viftech' ),
 		),
 	),
 	"description" => esc_html__("Add a pricing table", "revolution")
@@ -3138,7 +3138,7 @@ class WPBakeryShortCode_thb_pricing_column extends WPBakeryShortCode {}
 
 // Products
 vc_map( array(
-	"name" => esc_html__("Products", 'revolution'),
+	"name" => esc_html__("Products", 'viftech'),
 	"base" => "thb_product",
 	"icon" => "thb_vc_ico_product",
 	"class" => "thb_vc_sc_product",
@@ -3231,7 +3231,7 @@ vc_map( array(
 
 // Product List
 vc_map( array(
-	"name" => esc_html__("Product List", 'revolution'),
+	"name" => esc_html__("Product List", 'viftech'),
 	"base" => "thb_product_list",
 	"icon" => "thb_vc_ico_product_list",
 	"class" => "thb_vc_sc_product_list",
@@ -3279,7 +3279,7 @@ vc_map( array(
 
 // Shop Grid
 vc_map( array(
-	"name" => esc_html__("Product Category Grid", 'revolution'),
+	"name" => esc_html__("Product Category Grid", 'viftech'),
 	"base" => "thb_product_category_grid",
 	"icon" => "thb_vc_ico_grid",
 	"class" => "thb_vc_sc_grid",
@@ -3310,7 +3310,7 @@ vc_map( array(
 
 // Product Categories
 vc_map( array(
-	"name" => esc_html__("Product Categories", 'revolution'),
+	"name" => esc_html__("Product Categories", 'viftech'),
 	"base" => "thb_product_categories",
 	"icon" => "thb_vc_ico_product_categories",
 	"class" => "thb_vc_sc_product_categories",
@@ -3341,26 +3341,26 @@ vc_map( array(
 
 // Progress Bar Shortcode
 vc_map( array(
-	"name" => esc_html__("Progress Bar", 'revolution'),
+	"name" => esc_html__("Progress Bar", 'viftech'),
 	"base" => "thb_progressbar",
 	"icon" => "thb_vc_ico_progressbar",
 	"class" => "thb_vc_sc_progressbar",
-	"category" => esc_html__("by Fuel Themes", 'revolution'),
+	"category" => esc_html__("by Fuel Themes", 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "textfield",
-		  "heading" => esc_html__("Title", 'revolution' ),
+		  "heading" => esc_html__("Title", 'viftech' ),
 		  "param_name" => "title",
 		  "admin_label" => true,
-		  "description" => esc_html__('Title of this progress bar', 'revolution' ),
+		  "description" => esc_html__('Title of this progress bar', 'viftech' ),
 		  "value" => "Development"
 		),
 		array(
 		  "type" => "textfield",
-		  "heading" => esc_html__("Progress", 'revolution' ),
+		  "heading" => esc_html__("Progress", 'viftech' ),
 		  "param_name" => "progress",
 		  "admin_label" => true,
-		  "description" => esc_html__('Value for this progress. Should be between 0 and 100', 'revolution' ),
+		  "description" => esc_html__('Value for this progress. Should be between 0 and 100', 'viftech' ),
 		  "value" => "70"
 		),
 		array(
@@ -3370,15 +3370,15 @@ vc_map( array(
 			"description" => esc_html__("Uses the accent color by default", "revolution")
 		),
 	),
-	"description" => esc_html__("Display progress bars in different colors", 'revolution' )
+	"description" => esc_html__("Display progress bars in different colors", 'viftech' )
 ) );
 
 // Search Field
 vc_map( array(
 	'base'  => 'thb_searchfield',
-	'name' => esc_html__('Search Field', 'revolution'),
+	'name' => esc_html__('Search Field', 'viftech'),
 	"description" => esc_html__("Adds a search form with different sizes", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'revolution'),
+	'category' => esc_html__('by Fuel Themes', 'viftech'),
 	"icon" => "thb_vc_ico_searchfield",
 	"class" => "thb_vc_sc_searchfield",
 	'params' => array(
@@ -3468,7 +3468,7 @@ vc_map( array(
 
 // Share shortcode
 vc_map( array(
-	"name" => esc_html__("Share", 'revolution'),
+	"name" => esc_html__("Share", 'viftech'),
 	"base" => "thb_share",
 	"icon" => "thb_vc_ico_share",
 	"class" => "thb_vc_sc_share",
@@ -3476,7 +3476,7 @@ vc_map( array(
 	"params" => array(
 		array(
 			"type" 					 => "dropdown",
-			"heading" 			 => esc_html__("Alignment", 'revolution'),
+			"heading" 			 => esc_html__("Alignment", 'viftech'),
 			"param_name" 		 => "thb_alignment",
 			"value" => array(
 				"Left" 				=> "thb-left",
@@ -3484,7 +3484,7 @@ vc_map( array(
 				"Right" 		=> "thb-right"
 			),
 			"std" 					 => "thb-center",
-			"description" 	 => esc_html__("Alignment of the icons.", 'revolution')
+			"description" 	 => esc_html__("Alignment of the icons.", 'viftech')
 		),
 		array(
 		  "type" => "textfield",
@@ -3571,15 +3571,15 @@ vc_map( array(
 // slidetype
 vc_map( array(
 	'base'  => 'thb_slidetype',
-	'name' => esc_html__('Slide Type', 'revolution'),
+	'name' => esc_html__('Slide Type', 'viftech'),
 	"description" => esc_html__("Animated text scrolling", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'revolution'),
+	'category' => esc_html__('by Fuel Themes', 'viftech'),
 	"icon" => "thb_vc_ico_slidetype",
 	"class" => "thb_vc_sc_slidetype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
-			'heading'    => esc_html__( 'Content', 'revolution' ),
+			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'slide_text',
 			'value'		 => '<h2>*Revolution;Developed by Fuel Themes*</h2>',
 			'description'=> 'Enter the content to display with typing text. <br />
@@ -3615,15 +3615,15 @@ vc_map( array(
 // stroke type
 vc_map( array(
 	'base'  => 'thb_stroketype',
-	'name' => esc_html__('Stroke Type', 'revolution'),
+	'name' => esc_html__('Stroke Type', 'viftech'),
 	"description" => esc_html__("Text with Stroke style", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'revolution'),
+	'category' => esc_html__('by Fuel Themes', 'viftech'),
 	"icon" => "thb_vc_ico_stroketype",
 	"class" => "thb_vc_sc_stroketype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
-			'heading'    => esc_html__( 'Content', 'revolution' ),
+			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'slide_text',
 			'value'		 => '<h1>Revolution</h1>',
 			'description'=> 'Enter the content to display with stroke.',
@@ -3653,7 +3653,7 @@ vc_map( array(
 
 // Tabs
 vc_map( array(
-	"name" => esc_html__("Tabs", 'revolution'),
+	"name" => esc_html__("Tabs", 'viftech'),
 	"base" => "thb_tabs",
 	"icon" => "thb_vc_ico_thb_tabs",
 	"class" => "thb_vc_sc_thb_tabs wpb_vc_tabs wpb_vc_tta_tabs",
@@ -3691,8 +3691,8 @@ vc_map( array(
 		</div>
 	</div>',
 		'default_content' => '
-	[vc_tta_section title="' . sprintf( '%s %d', esc_html__( 'Tab', 'revolution' ), 1 ) . '"][/vc_tta_section]
-	[vc_tta_section title="' . sprintf( '%s %d', esc_html__( 'Tab', 'revolution' ), 2 ) . '"][/vc_tta_section]
+	[vc_tta_section title="' . sprintf( '%s %d', esc_html__( 'Tab', 'viftech' ), 1 ) . '"][/vc_tta_section]
+	[vc_tta_section title="' . sprintf( '%s %d', esc_html__( 'Tab', 'viftech' ), 2 ) . '"][/vc_tta_section]
 		',
 		'admin_enqueue_js' => array(
 			vc_asset_url( 'lib/vc_tabs/vc-tabs.min.js' ),
@@ -3705,7 +3705,7 @@ class WPBakeryShortCode_thb_tabs extends WPBakeryShortCode_VC_Tta_Accordion { }
 
 // Team Member Parent
 vc_map( array(
-	"name" => esc_html__("Team Members", 'revolution'),
+	"name" => esc_html__("Team Members", 'viftech'),
 	"base" => "thb_team_parent",
 	"icon" => "thb_vc_ico_team",
 	"class" => "thb_vc_sc_team",
@@ -3766,7 +3766,7 @@ vc_map( array(
 		$thb_animation_array,
 		array(
 			"type" 					 => "dropdown",
-			"heading" 			 => esc_html__("Text Color", 'revolution'),
+			"heading" 			 => esc_html__("Text Color", 'viftech'),
 			"param_name" 		 => "thb_text_color",
 			"value" => array(
 				"Dark" => "team-dark",
@@ -3774,7 +3774,7 @@ vc_map( array(
 			),
 			"group"					 => 'Styling',
 			"std" 					 => "team-dark",
-			"description" 	 => esc_html__("Color of the text inside hover information", 'revolution')
+			"description" 	 => esc_html__("Color of the text inside hover information", 'viftech')
 		),
 		array(
 			"type" => "checkbox",
@@ -3800,7 +3800,7 @@ vc_map( array(
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Team Member", 'revolution'),
+	"name" => esc_html__("Team Member", 'viftech'),
 	"base" => "thb_team",
 	"icon" => "thb_vc_ico_team",
 	"class" => "thb_vc_sc_team",
@@ -3808,55 +3808,55 @@ vc_map( array(
 	"params"	=> array(
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Image', 'revolution' ),
+			'heading'        => esc_html__( 'Image', 'viftech' ),
 			'param_name'     => 'image',
-			'description'    => esc_html__( 'Add Team Member image here.', 'revolution' )
+			'description'    => esc_html__( 'Add Team Member image here.', 'viftech' )
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Name', 'revolution' ),
+			'heading'        => esc_html__( 'Name', 'viftech' ),
 			'param_name'     => 'name',
 			'admin_label'	 => true,
-			'description'    => esc_html__( 'Name of the member.', 'revolution' ),
+			'description'    => esc_html__( 'Name of the member.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Sub Title', 'revolution' ),
+			'heading'        => esc_html__( 'Sub Title', 'viftech' ),
 			'param_name'     => 'sub_title',
-			'description'    => esc_html__( 'Position or title of the member.', 'revolution' ),
+			'description'    => esc_html__( 'Position or title of the member.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textarea_safe',
-			'heading'        => esc_html__( 'Description', 'revolution' ),
+			'heading'        => esc_html__( 'Description', 'viftech' ),
 			'param_name'     => 'description',
-			'description'    => esc_html__( 'Include a small description for this member, this text area supports HTML too.', 'revolution' ),
+			'description'    => esc_html__( 'Include a small description for this member, this text area supports HTML too.', 'viftech' ),
 		),
 		array(
 		  "type" 					=> "textfield",
 		  "heading" 			=> esc_html__('Facebook', "revolution"),
 		  "param_name" 		=> "facebook",
-		  "group" 				=> esc_html__('Social Icons', 'revolution' ),
+		  "group" 				=> esc_html__('Social Icons', 'viftech' ),
 		  "description" 	=> esc_html__("Enter Facebook Link", "revolution" )
 		),
 		array(
 		  "type" 					=> "textfield",
 		  "heading" 			=> esc_html__("Twitter", "revolution"),
 		  "param_name" 		=> "twitter",
-		  "group" 				=> esc_html__('Social Icons', 'revolution' ),
+		  "group" 				=> esc_html__('Social Icons', 'viftech' ),
 		  "description" 	=> esc_html__("Enter Twitter Link", "revolution" )
 		),
 		array(
 		  "type" 					=> "textfield",
 		  "heading" 			=> esc_html__("Linkedin", "revolution"),
 		  "param_name" 		=> "linkedin",
-		  "group" 				=> esc_html__('Social Icons', 'revolution' ),
+		  "group" 				=> esc_html__('Social Icons', 'viftech' ),
 		  "description" 	=> esc_html__("Enter Linkedin Link", "revolution" )
 		),
 		array(
 		  "type" 					=> "textfield",
 		  "heading" 			=> esc_html__("Instagram", "revolution"),
 		  "param_name" 		=> "instagram",
-		  "group" 				=> esc_html__('Social Icons', 'revolution' ),
+		  "group" 				=> esc_html__('Social Icons', 'viftech' ),
 		  "description" 	=> esc_html__("Enter Instagram Link", "revolution" )
 		)
 	),
@@ -3866,9 +3866,9 @@ vc_add_param( "thb_team_parent", thb_vc_gradient_color1() );
 vc_add_param( "thb_team_parent", thb_vc_gradient_color2() );
 vc_add_param( "thb_team_parent", array(
 	'type' => 'colorpicker',
-	'heading' => esc_html__( 'Shadow Color for Style 3', 'revolution' ),
+	'heading' => esc_html__( 'Shadow Color for Style 3', 'viftech' ),
 	'param_name' => 'box_shadow',
-	'description' => esc_html__( 'Choose a shadow color if needed', 'revolution' ),
+	'description' => esc_html__( 'Choose a shadow color if needed', 'viftech' ),
 	'group' => 'Styling'
 ) );
 
@@ -3877,7 +3877,7 @@ class WPBakeryShortCode_thb_team extends WPBakeryShortCode {}
 
 // Testimonial Parent
 vc_map( array(
-	"name" => esc_html__("Testimonials", 'revolution'),
+	"name" => esc_html__("Testimonials", 'viftech'),
 	"base" => "thb_testimonial_parent",
 	"icon" => "thb_vc_ico_testimonial",
 	"class" => "thb_vc_sc_testimonial",
@@ -3941,7 +3941,7 @@ vc_map( array(
 ) );
 
 vc_map( array(
-	"name" => esc_html__("Testimonial", 'revolution'),
+	"name" => esc_html__("Testimonial", 'viftech'),
 	"base" => "thb_testimonial",
 	"icon" => "thb_vc_ico_testimonial",
 	"class" => "thb_vc_sc_testimonial",
@@ -3950,31 +3950,31 @@ vc_map( array(
 	"params"	=> array(
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Quote Title', 'revolution' ),
+			'heading'        => esc_html__( 'Quote Title', 'viftech' ),
 			'param_name'     => 'quote_title',
-			'group'					 => esc_html__( 'Quote', 'revolution' ),
-			'description'    => esc_html__( 'Title of the Quote', 'revolution' ),
+			'group'					 => esc_html__( 'Quote', 'viftech' ),
+			'description'    => esc_html__( 'Title of the Quote', 'viftech' ),
 		),
 		array(
 			'type'           => 'textarea',
-			'heading'        => esc_html__( 'Quote', 'revolution' ),
+			'heading'        => esc_html__( 'Quote', 'viftech' ),
 			'param_name'     => 'quote',
-			'group'					 => esc_html__( 'Quote', 'revolution' ),
-			'description'    => esc_html__( 'Quote text', 'revolution' ),
+			'group'					 => esc_html__( 'Quote', 'viftech' ),
+			'description'    => esc_html__( 'Quote text', 'viftech' ),
 		),
 		array(
 			"type" 					 => "checkbox",
-			"heading" 			 => esc_html__("Enable Review Stars", 'revolution'),
+			"heading" 			 => esc_html__("Enable Review Stars", 'viftech'),
 			"param_name" 		 => "thb_review",
 			"value" => array(
 				"Yes" => "true"
 			),
-			'group'					 => esc_html__( 'Quote', 'revolution' ),
-			"description" => esc_html__("If you enable this, stars will be shown to display user review.", 'revolution')
+			'group'					 => esc_html__( 'Quote', 'viftech' ),
+			"description" => esc_html__("If you enable this, stars will be shown to display user review.", 'viftech')
 		),
 		array(
 			"type" 					 => "dropdown",
-			"heading" 			 => esc_html__("Review", 'revolution'),
+			"heading" 			 => esc_html__("Review", 'viftech'),
 			"param_name" 		 => "thb_review_stars",
 			"value" => array(
 				"5 Stars" => "5",
@@ -3984,45 +3984,45 @@ vc_map( array(
 				"1 Stars" => "1",
 				"0 Stars" => "0"
 			),
-			'group'					 => esc_html__( 'Quote', 'revolution' ),
-			"description" 		=> esc_html__("Star rating of this review.", 'revolution'),
+			'group'					 => esc_html__( 'Quote', 'viftech' ),
+			"description" 		=> esc_html__("Star rating of this review.", 'viftech'),
 			"dependency" 			=> Array('element' => "thb_review", 'value' => array('true'))
 		),
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Review Image', 'revolution' ),
+			'heading'        => esc_html__( 'Review Image', 'viftech' ),
 			'param_name'     => 'review_image',
-			'group'					 => esc_html__( 'Quote', 'revolution' ),
-			'description'    => esc_html__( 'Set an image for this review. Used for Style 5.', 'revolution' )
+			'group'					 => esc_html__( 'Quote', 'viftech' ),
+			'description'    => esc_html__( 'Set an image for this review. Used for Style 5.', 'viftech' )
 		),
 		array(
 		  "type" => "vc_link",
 		  "heading" => esc_html__("Link", "revolution"),
 		  "param_name" => "link",
-		  'group'					 => esc_html__( 'Quote', 'revolution' ),
+		  'group'					 => esc_html__( 'Quote', 'viftech' ),
 		  "description" => esc_html__("Set a link for this slide. Used for Style 5.", "revolution")
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Author', 'revolution' ),
+			'heading'        => esc_html__( 'Author', 'viftech' ),
 			'param_name'     => 'author_name',
 			'admin_label'	 => true,
-			'group'					 => esc_html__( 'Author', 'revolution' ),
-			'description'    => esc_html__( 'Name of the member.', 'revolution' ),
+			'group'					 => esc_html__( 'Author', 'viftech' ),
+			'description'    => esc_html__( 'Name of the member.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
-			'heading'        => esc_html__( 'Author Title', 'revolution' ),
+			'heading'        => esc_html__( 'Author Title', 'viftech' ),
 			'param_name'     => 'author_title',
-			'group'					 => esc_html__( 'Author', 'revolution' ),
-			'description'    => esc_html__( 'Title that will appear below author name.', 'revolution' ),
+			'group'					 => esc_html__( 'Author', 'viftech' ),
+			'description'    => esc_html__( 'Title that will appear below author name.', 'viftech' ),
 		),
 		array(
 			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Author Image', 'revolution' ),
+			'heading'        => esc_html__( 'Author Image', 'viftech' ),
 			'param_name'     => 'author_image',
-			'group'					 => esc_html__( 'Author', 'revolution' ),
-			'description'    => esc_html__( 'Add Author image here.', 'revolution' )
+			'group'					 => esc_html__( 'Author', 'viftech' ),
+			'description'    => esc_html__( 'Add Author image here.', 'viftech' )
 		)
 	),
 	"description" => esc_html__("Single Testimonial", "revolution")
@@ -4032,7 +4032,7 @@ class WPBakeryShortCode_thb_testimonial extends WPBakeryShortCode {}
 
 // Twitter shortcode
 vc_map( array(
-	"name" => esc_html__("Twitter", 'revolution'),
+	"name" => esc_html__("Twitter", 'viftech'),
 	"base" => "thb_twitter",
 	"icon" => "thb_vc_ico_twitter",
 	"class" => "thb_vc_sc_twitter",
@@ -4060,7 +4060,7 @@ vc_map( array(
 
 // Video Lightbox
 vc_map( array(
-	"name" => esc_html__("Video Lightbox", 'revolution'),
+	"name" => esc_html__("Video Lightbox", 'viftech'),
 	"base" => "thb_video_lightbox",
 	"icon" => "thb_vc_ico_video_lightbox",
 	"class" => "thb_vc_sc_video_lightbox",
@@ -4071,24 +4071,24 @@ vc_map( array(
 	  	"heading" 			=> esc_html__("Style", "revolution"),
 	  	"param_name" 		=> "style",
 	  	"value"					=> array(
-	  		esc_html__('Just Icon', 'revolution' ) 	=> "lightbox-style1",
-	  		esc_html__('With Image', 'revolution' ) 	=> "lightbox-style2",
-	  		esc_html__('With Text', 'revolution' ) 	=> "lightbox-style3",
+	  		esc_html__('Just Icon', 'viftech' ) 	=> "lightbox-style1",
+	  		esc_html__('With Image', 'viftech' ) 	=> "lightbox-style2",
+	  		esc_html__('With Text', 'viftech' ) 	=> "lightbox-style3",
 	  	)
 	  ),
 	  array(
 	  	'type'           => 'textfield',
-	  	'heading'        => esc_html__( 'Video Link', 'revolution' ),
+	  	'heading'        => esc_html__( 'Video Link', 'viftech' ),
 	  	'param_name'     => 'video',
 	  	'admin_label'	 	 => true,
-	  	'description'    => esc_html__( 'URL of the video you want to link to. Youtube, Vimeo, etc.', 'revolution' ),
+	  	'description'    => esc_html__( 'URL of the video you want to link to. Youtube, Vimeo, etc.', 'viftech' ),
 	  ),
 	  array(
 	  	'type'           => 'textfield',
-	  	'heading'        => esc_html__( 'Text for the link', 'revolution' ),
+	  	'heading'        => esc_html__( 'Text for the link', 'viftech' ),
 	  	'param_name'     => 'video_text',
 	  	'admin_label'	 	 => true,
-	  	'description'    => esc_html__( 'Text you want to show next to the icon', 'revolution' ),
+	  	'description'    => esc_html__( 'Text you want to show next to the icon', 'viftech' ),
 	  	"dependency" 		 => Array('element' => "style", 'value' => array('lightbox-style3'))
 	  ),
 	  array(
@@ -4117,16 +4117,16 @@ vc_map( array(
 	  ),
 	  array(
 	  	'type' 					=> 'colorpicker',
-	  	'heading' 			=> esc_html__( 'Icon Color', 'revolution' ),
+	  	'heading' 			=> esc_html__( 'Icon Color', 'viftech' ),
 	  	'param_name' 		=> 'icon_color',
-	  	'description' 	=> esc_html__( 'Color of the Play Icon', 'revolution' ),
+	  	'description' 	=> esc_html__( 'Color of the Play Icon', 'viftech' ),
 	  	'group' 				=> 'Styling'
 	  ),
 	  array(
 	  	'type'           => 'attach_image',
-	  	'heading'        => esc_html__( 'Select Image', 'revolution' ),
+	  	'heading'        => esc_html__( 'Select Image', 'viftech' ),
 	  	'param_name'     => 'image',
-	  	'description'    => esc_html__( 'Select image from media library.', 'revolution' ),
+	  	'description'    => esc_html__( 'Select image from media library.', 'viftech' ),
 	  	"dependency" 		 => Array('element' => "style", 'value' => array('lightbox-style2'))
 	  ),
 	  $thb_animation_array,
@@ -4158,9 +4158,9 @@ vc_map( array(
 	  ),
 	  array(
 	  	'type'           => 'textfield',
-	  	'heading'        => esc_html__( 'Border Radius', 'revolution' ),
+	  	'heading'        => esc_html__( 'Border Radius', 'viftech' ),
 	  	'param_name'     => 'border_radius',
-	  	'description'    => esc_html__( 'Set border radius of the image. Please add px,em, etc.. as well.', 'revolution' ),
+	  	'description'    => esc_html__( 'Set border radius of the image. Please add px,em, etc.. as well.', 'viftech' ),
 	  	"dependency" => Array('element' => "style", 'value' => array('lightbox-style2')),
 	  	'group' 				=> 'Styling'
 	  )

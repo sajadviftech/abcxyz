@@ -2,7 +2,7 @@
 
 function thb_get_homepage_templates($template_list) {
 	$template_list['revolution_01'] = array(
-		'name' => esc_html__( 'Main', 'revolution' ),
+		'name' => esc_html__( 'Main', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h1.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" content_placement="middle" el_class="top-row" css=".vc_custom_1516812051398{margin-bottom: 6vh !important;padding-top: 10vh !important;padding-bottom: 10vh !important;background-image: url(http://revolution.fuelthemes.net/wp-content/uploads/2018/01/circle.png?id=177) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: contain !important;}" el_id="mast-head"][vc_column][vc_row_inner][vc_column_inner width="5/12" css=".vc_custom_1516534381846{margin-top: 8vh !important;}"][thb_slidetype slide_text="
@@ -52,7 +52,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_02'] = array(
-		'name' => esc_html__( 'Creative Agency', 'revolution' ),
+		'name' => esc_html__( 'Creative Agency', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h2.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row css=".vc_custom_1521736109859{padding-top: 5vh !important;}"][vc_column offset="vc_col-lg-8 vc_col-md-10"][vc_column_text]
@@ -75,7 +75,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_03'] = array(
-		'name' => esc_html__( 'Classic Agency', 'revolution' ),
+		'name' => esc_html__( 'Classic Agency', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h3.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" css=".vc_custom_1519040471935{padding-top: 30vh !important;padding-bottom: 30vh !important;background: #393c37 url(http://revolution.fuelthemes.net/revolution-classic/wp-content/uploads/sites/8/2018/02/c2.jpg?id=145) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column][vc_row_inner el_class="align-center"][vc_column_inner thb_color="thb-light-column" el_class="text-center" offset="vc_col-lg-9 vc_col-md-10" css=".vc_custom_1519118430515{padding-right: 5% !important;padding-left: 5% !important;}"][thb_video_lightbox icon_style="style2" animation="animation fade-in" video="https://vimeo.com/252767901" icon_color="#ffffff"][vc_empty_space height="40px"][vc_column_text]</p>
@@ -96,7 +96,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_04'] = array(
-		'name' => esc_html__( 'Corporate Agency', 'revolution' ),
+		'name' => esc_html__( 'Corporate Agency', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h4.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true"][vc_column][thb_portfolio_slider source="size:3|post_type:post"][/vc_column][/vc_row][vc_row content_placement="middle" el_class="align-justify" css=".vc_custom_1518095586514{padding-top: 10vh !important;padding-bottom: 10vh !important;}"][vc_column width="1/2" css=".vc_custom_1518092972683{padding-top: 15vh !important;padding-right: 15% !important;padding-bottom: 15vh !important;}"][vc_empty_space height="92px"][thb_slidetype slide_text="
@@ -129,7 +129,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_05'] = array(
-		'name' => esc_html__( 'Video Agency', 'revolution' ),
+		'name' => esc_html__( 'Video Agency', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h5.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" full_height="yes" columns_placement="bottom" content_placement="bottom" css=".vc_custom_1520014101633{padding-top: 200px !important;padding-bottom: 12vh !important;background-image: url(http://revolution.fuelthemes.net/revolution-agency/wp-content/uploads/sites/12/2018/03/mast_bg.jpg?id=187) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" thb_video_bg="http://revolution.fuelthemes.net/revolution-agency/wp-content/uploads/sites/12/2018/03/agency_edit.mp4"][vc_column][vc_row_inner][vc_column_inner thb_color="thb-light-column"][thb_button_text style="style4" animation="animation left-to-right-3d" link="url:%23start-a-project|title:Start%20a%20Project||"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row][vc_row css=".vc_custom_1520008084366{padding-top: 12vh !important;padding-bottom: 10vh !important;}" el_id="start-a-project"][vc_column thb_color="thb-light-column" width="7/12"][thb_slidetype slide_text="
@@ -187,7 +187,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_06'] = array(
-		'name' => esc_html__( 'Ranchero', 'revolution' ),
+		'name' => esc_html__( 'Ranchero', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h6.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" parallax="content-moving" thb_shape_divider="true" css=".vc_custom_1521199526394{background: #1d2625 url(http://revolution.fuelthemes.net/revolution-ranchero/wp-content/uploads/sites/10/2018/02/rc32.jpg?id=159);background-position: center;background-repeat: no-repeat !important;background-size: cover !important;}" divider_shape="waves_alt" thb_divider_color="#fffceb" thb_divider_height="50"][vc_column][vc_row_inner css=".vc_custom_1519475232739{padding-top: 32vh !important;padding-bottom: 32vh !important;}" el_class="text-center"][vc_column_inner][thb_cascading_parent][thb_cascading retina="retina_size" animation="animation bottom-to-top-3d" image="125"][thb_cascading retina="retina_size" animation="animation fade-in" image="127"][/thb_cascading_parent][vc_empty_space height="46px"][vc_column_text]
@@ -212,7 +212,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_07'] = array(
-		'name' => esc_html__( 'Consulting', 'revolution' ),
+		'name' => esc_html__( 'Consulting', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h7.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" full_height="yes" content_placement="middle" css=".vc_custom_1519379194310{padding-top: 20vh !important;padding-bottom: 15vh !important;background: #93969a url(http://revolution.fuelthemes.net/revolution-consulting/wp-content/uploads/sites/9/2018/02/h1.jpg?id=132) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column][vc_row_inner content_placement="middle"][vc_column_inner thb_color="thb-light-column" width="7/12"][thb_slidetype slide_text="
@@ -268,7 +268,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_08'] = array(
-		'name' => esc_html__( 'Adventure', 'revolution' ),
+		'name' => esc_html__( 'Adventure', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h8.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_shape_divider="true" css=".vc_custom_1517391943110{padding-top: 30vh !important;padding-bottom: 35vh !important;background: #c8d7d6 url(http://revolution.fuelthemes.net/revolution-adventure/wp-content/uploads/sites/2/2018/01/a1.jpg?id=124) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" divider_shape="waves" thb_divider_color="#ffffff" thb_divider_height="100" el_class="mast-head"][vc_column][vc_row_inner el_class="align-center"][vc_column_inner thb_color="thb-light-column" el_class="text-center" offset="vc_col-lg-5 vc_col-md-7"][thb_fadetype fade_text="
@@ -332,7 +332,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_09'] = array(
-		'name' => esc_html__( 'Coraline', 'revolution' ),
+		'name' => esc_html__( 'Coraline', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h9.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" css=".vc_custom_1517852397376{padding-top: 32vh !important;padding-bottom: 22vh !important;background: #181a0b url(http://revolution.fuelthemes.net/revolution-coraline/wp-content/uploads/sites/3/2018/02/c1.jpg?id=120) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column thb_color="thb-light-column"][vc_row_inner][vc_column_inner offset="vc_col-lg-3 vc_col-md-5"][thb_slidetype slide_text="
@@ -386,7 +386,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_10'] = array(
-		'name' => esc_html__( 'Cryptocurrency', 'revolution' ),
+		'name' => esc_html__( 'Cryptocurrency', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h10.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" thb_shape_divider="true" css=".vc_custom_1518781924244{padding-top: 27vh !important;padding-bottom: 200px !important;background: #520998 url(http://revolution.fuelthemes.net/revolution-cryptocurrency/wp-content/uploads/sites/7/2018/02/f-1.png?id=143) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" divider_shape="tilt_v2" thb_divider_color="#f1f5f7" thb_divider_height="220"][vc_column][vc_row_inner css=".vc_custom_1518781930979{margin-bottom: 28vh !important;}"][vc_column_inner thb_color="thb-light-column" offset="vc_col-lg-6 vc_col-md-8"][thb_slidetype slide_text="
@@ -445,7 +445,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_11'] = array(
-		'name' => esc_html__( 'Music / Band', 'revolution' ),
+		'name' => esc_html__( 'Music / Band', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h11.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" thb_scroll_bottom="true" thb_scroll_bottom_style="style3" thb_scroll_bottom_color="light" el_class="align-center" el_id="intro" css=".vc_custom_1518435651697{padding-top: 30vh !important;padding-bottom: 30vh !important;background-image: url(http://revolution.fuelthemes.net/revolution-band/wp-content/uploads/sites/6/2018/02/th2.jpg?id=120) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column thb_color="thb-light-column" el_class="text-center" offset="vc_col-lg-6 vc_col-md-9"][thb_slidetype slide_text="
@@ -481,7 +481,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_12'] = array(
-		'name' => esc_html__( 'Food Magazine', 'revolution' ),
+		'name' => esc_html__( 'Food Magazine', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h12.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" thb_shape_divider="true" css=".vc_custom_1521200030910{padding-top: 32vh !important;padding-bottom: 100px !important;background: #eef7ef url(http://revolution.fuelthemes.net/revolution-milky-tasty/wp-content/uploads/sites/11/2018/02/m17.jpg?id=164) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" thb_divider_color="#ffffff" thb_divider_height="50" divider_shape="waves_alt"][vc_column][vc_row_inner el_class="align-center" css=".vc_custom_1519735465715{padding-bottom: 15vh !important;}"][vc_column_inner el_class="text-center" offset="vc_col-lg-6 vc_col-md-8"][thb_fadetype fade_text="
@@ -518,7 +518,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_13'] = array(
-		'name' => esc_html__( 'Fitness', 'revolution' ),
+		'name' => esc_html__( 'Fitness', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h13.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" content_placement="middle" thb_shape_divider="true" css=".vc_custom_1520948813744{padding-top: 80px !important;padding-bottom: 80px !important;background: #29343d url(http://revolution.fuelthemes.net/revolution-fitness/wp-content/uploads/sites/20/2018/03/ft1.jpg?id=127) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" divider_shape="triangle" thb_divider_color="#ffffff" thb_divider_height="80" el_class="cover-row"][vc_column][vc_row_inner css=".vc_custom_1520948923907{padding-top: 23vh !important;padding-bottom: 18vh !important;}"][vc_column_inner thb_color="thb-light-column" el_class="text-center"][thb_slidetype slide_text="
@@ -686,7 +686,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_14'] = array(
-		'name' => esc_html__( 'Shop', 'revolution' ),
+		'name' => esc_html__( 'Shop', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h14.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" full_height="yes" columns_placement="stretch" content_placement="middle"][vc_column thb_color="thb-light-column" width="1/2" css=".vc_custom_1521639834114{background: #662623 url(http://revolution.fuelthemes.net/revolution-shop/wp-content/uploads/sites/18/2018/03/s_2.jpg?id=445) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}" el_class="text-center"][thb_slidetype slide_text="
@@ -725,14 +725,14 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_15'] = array(
-		'name' => esc_html__( 'Portfolio Slider', 'revolution' ),
+		'name' => esc_html__( 'Portfolio Slider', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h15.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true"][vc_column][thb_portfolio_slider style="style2" full_height="full_height" autoplay="1" source="size:4|post_type:portfolio"][/vc_column][/vc_row]',
 	);
 	
 	$template_list['revolution_16'] = array(
-		'name' => esc_html__( 'Portfolio Minimal', 'revolution' ),
+		'name' => esc_html__( 'Portfolio Minimal', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h16.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row parallax="content-moving-fade" css=".vc_custom_1520267602812{padding-top: 15vh !important;padding-bottom: 15vh !important;}"][vc_column][thb_image retina="retina_size" animation="animation fade-in" alignment="aligncenter" image="130"][/thb_image][/vc_column][/vc_row][vc_row][vc_column][thb_portfolio_grid style="style5" columns="small-12 large-4" true_aspect="true" loadmore="true" source="size:9|post_type:portfolio"][/vc_column][/vc_row][vc_row el_class="align-center" css=".vc_custom_1521803866174{padding-top: 16vh !important;padding-bottom: 14vh !important;}"][vc_column offset="vc_col-lg-6 vc_col-md-8" el_class="text-center"][vc_column_text animation="animation fade-in" el_class="text-center"]
@@ -743,7 +743,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_17'] = array(
-		'name' => esc_html__( 'Portfolio Simple', 'revolution' ),
+		'name' => esc_html__( 'Portfolio Simple', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h17.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row parallax="content-moving-fade" css=".vc_custom_1520594266010{padding-bottom: 12vh !important;}" el_class="align-center"][vc_column offset="vc_col-lg-7 vc_col-md-9" el_class="text-center"][thb_slidetype slide_text="
@@ -754,7 +754,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_18'] = array(
-		'name' => esc_html__( 'Masonry - Dark', 'revolution' ),
+		'name' => esc_html__( 'Masonry - Dark', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h18.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row css=".vc_custom_1521973006442{padding-top: 12vh !important;}"][vc_column offset="vc_col-lg-8"][thb_slidetype slide_text="
@@ -763,7 +763,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_19'] = array(
-		'name' => esc_html__( 'Masonry', 'revolution' ),
+		'name' => esc_html__( 'Masonry', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h19.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" css=".vc_custom_1520674121259{padding-top: 20vh !important;padding-bottom: 12vh !important;background-image: url(http://revolution.fuelthemes.net/revolution-portfolio-masonry/wp-content/uploads/sites/16/2018/03/top_img.jpg?id=285) !important;}"][vc_column][vc_row_inner content_placement="middle"][vc_column_inner thb_color="thb-light-column" width="1/2"][thb_slidetype slide_text="
@@ -772,7 +772,7 @@ function thb_get_homepage_templates($template_list) {
 	);
 	
 	$template_list['revolution_20'] = array(
-		'name' => esc_html__( 'Product Landing', 'revolution' ),
+		'name' => esc_html__( 'Product Landing', 'viftech' ),
 		'thumbnail' => Thb_Theme_Admin::$thb_theme_directory_uri."assets/img/admin/demos/homepages/h20.jpg",
 		'cat' => array( 'Homepage' ),
 		'sc' => '[vc_row thb_full_width="true" thb_row_padding="true" thb_column_padding="true" thb_scroll_bottom="true" thb_scroll_bottom_style="style2" css=".vc_custom_1522073651088{padding-top: 30vh !important;padding-bottom: 30vh !important;background: #f1eee9 url(http://revolution.fuelthemes.net/revolution-product-landing/wp-content/uploads/sites/21/2018/03/b1.jpg?id=116) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}"][vc_column][vc_row_inner][vc_column_inner offset="vc_col-lg-4 vc_col-md-6"][thb_slidetype slide_text="

@@ -169,7 +169,7 @@ class Importer {
 
 			// Add message to log file.
 			$log_added = Helpers::append_to_file(
-				__( 'New AJAX call!' , 'revolution' ) . PHP_EOL . $message,
+				__( 'New AJAX call!' , 'viftech' ) . PHP_EOL . $message,
 				$this->ocdi->get_log_file_path(),
 				''
 			);

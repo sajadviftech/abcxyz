@@ -18,7 +18,7 @@
 	<div class="row max_width">
 		<div class="small-12 medium-7 large-5 columns">
 			<h2 class="animation fade-in"><a href="<?php echo esc_url($permalink); ?>"><?php the_title(); ?></a></h2>
-			<a href="<?php echo esc_url($permalink); ?>" class="btn-text style1 white animation fade-in"><?php esc_html_e('Learn More', 'revolution'); ?></a>
+			<a href="<?php echo esc_url($permalink); ?>" class="btn-text style1 white animation fade-in"><?php esc_html_e('Learn More', 'viftech'); ?></a>
 		</div>
 	</div>
 </div>

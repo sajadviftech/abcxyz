@@ -79,7 +79,7 @@
 				</div>
 			</div>
 			<div class="portfolio-read-more">
-				<?php esc_html_e('Learn More', 'revolution'); ?>
+				<?php esc_html_e('Learn More', 'viftech'); ?>
 			</div>
 		</div>
 	</div>

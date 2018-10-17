@@ -273,8 +273,8 @@ As a theme author you do not like the location of the "Import Demo Data" plugin 
 
 	function ocdi_plugin_page_setup( $default_settings ) {
 		$default_settings['parent_slug'] = 'themes.php';
-		$default_settings['page_title']  = esc_html__( 'One Click Demo Import' , 'revolution' );
-		$default_settings['menu_title']  = esc_html__( 'Import Demo Data' , 'revolution' );
+		$default_settings['page_title']  = esc_html__( 'One Click Demo Import' , 'viftech' );
+		$default_settings['menu_title']  = esc_html__( 'Import Demo Data' , 'viftech' );
 		$default_settings['capability']  = 'import';
 		$default_settings['menu_slug']   = 'pt-one-click-demo-import';
 	

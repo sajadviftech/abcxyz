@@ -11,7 +11,7 @@
 	$link = vc_build_link($link);
 	
 	$link_to = $link['url'];
-	$a_title = $link['title'] ? $link['title'] : esc_html__('Read More', 'revolution');
+	$a_title = $link['title'] ? $link['title'] : esc_html__('Read More', 'viftech');
 	$a_target = $link['target'] ? $link['target'] : '_self';	
 	
 	$el = 'div';

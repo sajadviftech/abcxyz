@@ -47,15 +47,15 @@ if ( ! function_exists( 'ot_register_theme_options_page' ) ) {
               array(
                 'id'              => 'ot_theme_options',
                 'parent_slug'     => apply_filters( 'ot_theme_options_parent_slug', 'themes.php' ),
-                'page_title'      => apply_filters( 'ot_theme_options_page_title', __( 'Theme Options', 'revolution' ) ),
-                'menu_title'      => apply_filters( 'ot_theme_options_menu_title', __( 'Theme Options', 'revolution' ) ),
+                'page_title'      => apply_filters( 'ot_theme_options_page_title', __( 'Theme Options', 'viftech' ) ),
+                'menu_title'      => apply_filters( 'ot_theme_options_menu_title', __( 'Theme Options', 'viftech' ) ),
                 'capability'      => $caps = apply_filters( 'ot_theme_options_capability', 'edit_theme_options' ),
                 'menu_slug'       => apply_filters( 'ot_theme_options_menu_slug', 'ot-theme-options' ),
                 'icon_url'        => apply_filters( 'ot_theme_options_icon_url', null ),
                 'position'        => apply_filters( 'ot_theme_options_position', null ),
-                'updated_message' => apply_filters( 'ot_theme_options_updated_message', __( 'Theme Options updated.', 'revolution' ) ),
-                'reset_message'   => apply_filters( 'ot_theme_options_reset_message', __( 'Theme Options reset.', 'revolution' ) ),
-                'button_text'     => apply_filters( 'ot_theme_options_button_text', __( 'Save Changes', 'revolution' ) ),
+                'updated_message' => apply_filters( 'ot_theme_options_updated_message', __( 'Theme Options updated.', 'viftech' ) ),
+                'reset_message'   => apply_filters( 'ot_theme_options_reset_message', __( 'Theme Options reset.', 'viftech' ) ),
+                'button_text'     => apply_filters( 'ot_theme_options_button_text', __( 'Save Changes', 'viftech' ) ),
                 'contextual_help' => apply_filters( 'ot_theme_options_contextual_help', $contextual_help ),
                 'sections'        => apply_filters( 'ot_theme_options_sections', $sections ),
                 'settings'        => apply_filters( 'ot_theme_options_settings', $settings )
@@ -94,7 +94,7 @@ if ( ! function_exists( 'ot_register_settings_page' ) ) {
       
       function ot_has_custom_theme_options() {
     
-        echo '<div class="error"><p>' . __( 'The Theme Options UI Builder is being overridden by a custom file in your theme. Any changes you make via the UI Builder will not be saved.', 'revolution' ) . '</p></div>';
+        echo '<div class="error"><p>' . __( 'The Theme Options UI Builder is being overridden by a custom file in your theme. Any changes you make via the UI Builder will not be saved.', 'viftech' ) . '</p></div>';
         
       }
       
@@ -106,8 +106,8 @@ if ( ! function_exists( 'ot_register_settings_page' ) ) {
     $ot_register_pages_array =  array( 
       array( 
         'id'              => 'ot',
-        'page_title'      => __( 'OptionTree', 'revolution' ),
-        'menu_title'      => __( 'OptionTree', 'revolution' ),
+        'page_title'      => __( 'OptionTree', 'viftech' ),
+        'menu_title'      => __( 'OptionTree', 'viftech' ),
         'capability'      => 'edit_theme_options',
         'menu_slug'       => 'ot-settings',
         'icon_url'        => null,
@@ -117,92 +117,92 @@ if ( ! function_exists( 'ot_register_settings_page' ) ) {
       array(
         'id'              => 'settings',
         'parent_slug'     => 'ot-settings',
-        'page_title'      => __( 'Settings', 'revolution' ),
-        'menu_title'      => __( 'Settings', 'revolution' ),
+        'page_title'      => __( 'Settings', 'viftech' ),
+        'menu_title'      => __( 'Settings', 'viftech' ),
         'capability'      => 'edit_theme_options',
         'menu_slug'       => 'ot-settings',
         'icon_url'        => null,
         'position'        => null,
-        'updated_message' => __( 'Theme Options updated.', 'revolution' ),
-        'reset_message'   => __( 'Theme Options reset.', 'revolution' ),
-        'button_text'     => __( 'Save Settings', 'revolution' ),
+        'updated_message' => __( 'Theme Options updated.', 'viftech' ),
+        'reset_message'   => __( 'Theme Options reset.', 'viftech' ),
+        'button_text'     => __( 'Save Settings', 'viftech' ),
         'show_buttons'    => false,
         'sections'        => array(
           array(
             'id'          => 'create_setting',
-            'title'       => __( 'Theme Options UI', 'revolution' )
+            'title'       => __( 'Theme Options UI', 'viftech' )
           ),
           array(
             'id'          => 'import',
-            'title'       => __( 'Import', 'revolution' )
+            'title'       => __( 'Import', 'viftech' )
           ),
           array(
             'id'          => 'export',
-            'title'       => __( 'Export', 'revolution' )
+            'title'       => __( 'Export', 'viftech' )
           ),
           array(
             'id'          => 'layouts',
-            'title'       => __( 'Layouts', 'revolution' )
+            'title'       => __( 'Layouts', 'viftech' )
           )
         ),
         'settings'        => array(
           array(
             'id'          => 'theme_options_ui_text',
-            'label'       => __( 'Theme Options UI Builder', 'revolution' ),
+            'label'       => __( 'Theme Options UI Builder', 'viftech' ),
             'type'        => 'theme_options_ui',
             'section'     => 'create_setting'
           ),
           array(
             'id'          => 'import_xml_text',
-            'label'       => __( 'Settings XML', 'revolution' ),
+            'label'       => __( 'Settings XML', 'viftech' ),
             'type'        => 'import-xml',
             'section'     => 'import'
           ),
           array(
             'id'          => 'import_settings_text',
-            'label'       => __( 'Settings', 'revolution' ),
+            'label'       => __( 'Settings', 'viftech' ),
             'type'        => 'import-settings',
             'section'     => 'import'
           ),
           array(
             'id'          => 'import_data_text',
-            'label'       => __( 'Theme Options', 'revolution' ),
+            'label'       => __( 'Theme Options', 'viftech' ),
             'type'        => 'import-data',
             'section'     => 'import'
           ),
 //          array(
 //            'id'          => 'import_layouts_text',
-//            'label'       => __( 'Layouts', 'revolution' ),
+//            'label'       => __( 'Layouts', 'viftech' ),
 //            'type'        => 'import-layouts',
 //            'section'     => 'import'
 //          ),
 //          array(
 //            'id'          => 'export_settings_file_text',
-//            'label'       => __( 'Settings PHP File', 'revolution' ),
+//            'label'       => __( 'Settings PHP File', 'viftech' ),
 //            'type'        => 'export-settings-file',
 //            'section'     => 'export'
 //          ),
 //          array(
 //            'id'          => 'export_settings_text',
-//            'label'       => __( 'Settings', 'revolution' ),
+//            'label'       => __( 'Settings', 'viftech' ),
 //            'type'        => 'export-settings',
 //            'section'     => 'export'
 //          ),
           array(
             'id'          => 'export_data_text',
-            'label'       => __( 'Theme Options', 'revolution' ),
+            'label'       => __( 'Theme Options', 'viftech' ),
             'type'        => 'export-data',
             'section'     => 'export'
           ),
 //          array(
 //            'id'          => 'export_layout_text',
-//            'label'       => __( 'Layouts', 'revolution' ),
+//            'label'       => __( 'Layouts', 'viftech' ),
 //            'type'        => 'export-layouts',
 //            'section'     => 'export'
 //          ),
 //          array(
 //            'id'          => 'modify_layouts_text',
-//            'label'       => __( 'Layout Management', 'revolution' ),
+//            'label'       => __( 'Layout Management', 'viftech' ),
 //            'type'        => 'modify-layouts',
 //            'section'     => 'layouts'
 //          )
@@ -211,92 +211,92 @@ if ( ! function_exists( 'ot_register_settings_page' ) ) {
       array(
         'id'              => 'documentation',
         'parent_slug'     => 'ot-settings',
-        'page_title'      => __( 'Documentation', 'revolution' ),
-        'menu_title'      => __( 'Documentation', 'revolution' ),
+        'page_title'      => __( 'Documentation', 'viftech' ),
+        'menu_title'      => __( 'Documentation', 'viftech' ),
         'capability'      => 'edit_theme_options',
         'menu_slug'       => 'ot-documentation',
         'icon_url'        => null,
         'position'        => null,
-        'updated_message' => __( 'Theme Options updated.', 'revolution' ),
-        'reset_message'   => __( 'Theme Options reset.', 'revolution' ),
-        'button_text'     => __( 'Save Settings', 'revolution' ),
+        'updated_message' => __( 'Theme Options updated.', 'viftech' ),
+        'reset_message'   => __( 'Theme Options reset.', 'viftech' ),
+        'button_text'     => __( 'Save Settings', 'viftech' ),
         'show_buttons'    => false,
         'sections'        => array(
           array(
             'id'          => 'creating_options',
-            'title'       => __( 'Creating Options', 'revolution' )
+            'title'       => __( 'Creating Options', 'viftech' )
           ),
           array(
             'id'          => 'option_types',
-            'title'       => __( 'Option Types', 'revolution' )
+            'title'       => __( 'Option Types', 'viftech' )
           ),
           array(
             'id'          => 'functions',
-            'title'       => __( 'Function References', 'revolution' )
+            'title'       => __( 'Function References', 'viftech' )
           ),
           array(
             'id'          => 'theme_mode',
-            'title'       => __( 'Theme Mode', 'revolution' )
+            'title'       => __( 'Theme Mode', 'viftech' )
           ),
           array(
             'id'          => 'meta_boxes',
-            'title'       => __( 'Meta Boxes', 'revolution' )
+            'title'       => __( 'Meta Boxes', 'viftech' )
           ),
           array(
             'id'          => 'examples',
-            'title'       => __( 'Code Examples', 'revolution' )
+            'title'       => __( 'Code Examples', 'viftech' )
           ),
           array(
             'id'          => 'layouts_overview',
-            'title'       => __( 'Layouts Overview', 'revolution' )
+            'title'       => __( 'Layouts Overview', 'viftech' )
           )
         ),
         'settings'        => array(
           array(
             'id'          => 'creating_options_text',
-            'label'       => __( 'Overview of available Theme Option fields.', 'revolution' ),
+            'label'       => __( 'Overview of available Theme Option fields.', 'viftech' ),
             'type'        => 'creating-options',
             'section'     => 'creating_options'
           ),
           array(
             'id'          => 'option_types_text',
-            'label'       => __( 'Option types in alphabetical order & hooks to filter them.', 'revolution' ),
+            'label'       => __( 'Option types in alphabetical order & hooks to filter them.', 'viftech' ),
             'type'        => 'option-types',
             'section'     => 'option_types'
           ),
           array(
             'id'          => 'functions_ot_get_option',
-            'label'       => __( 'Function Reference:ot_get_option()', 'revolution' ),
+            'label'       => __( 'Function Reference:ot_get_option()', 'viftech' ),
             'type'        => 'ot-get-option',
             'section'     => 'functions'
           ),
           array(
             'id'          => 'functions_get_option_tree',
-            'label'       => __( 'Function Reference:get_option_tree()', 'revolution' ),
+            'label'       => __( 'Function Reference:get_option_tree()', 'viftech' ),
             'type'        => 'get-option-tree',
             'section'     => 'functions'
           ),
           array(
             'id'          => 'theme_mode_text',
-            'label'       => __( 'Theme Mode', 'revolution' ),
+            'label'       => __( 'Theme Mode', 'viftech' ),
             'type'        => 'theme-mode',
             'section'     => 'theme_mode'
           ),
           array(
             'id'          => 'meta_boxes_text',
-            'label'       => __( 'Meta Boxes', 'revolution' ),
+            'label'       => __( 'Meta Boxes', 'viftech' ),
             'type'        => 'meta-boxes',
             'section'     => 'meta_boxes'
           ),
           array(
             'id'          => 'example_text',
-            'label'       => __( 'Code examples for front-end development.', 'revolution' ),
+            'label'       => __( 'Code examples for front-end development.', 'viftech' ),
             'type'        => 'examples',
             'section'     => 'examples'
           ),
           array(
             'id'          => 'layouts_overview_text',
-            'label'       => __( 'What\'s a layout anyhow?', 'revolution' ),
+            'label'       => __( 'What\'s a layout anyhow?', 'viftech' ),
             'type'        => 'layouts-overview',
             'section'     => 'layouts_overview'
           )
@@ -499,7 +499,7 @@ if ( ! function_exists( 'ot_validate_setting' ) ) {
           
           $input[$key] = '0';
           
-          add_settings_error( 'option-tree', 'invalid_border_width', sprintf( __( 'The %s input field for %s only allows numeric values.', 'revolution' ), '<code>width</code>', '<code>' . $field_id . '</code>' ), 'error' );
+          add_settings_error( 'option-tree', 'invalid_border_width', sprintf( __( 'The %s input field for %s only allows numeric values.', 'viftech' ), '<code>width</code>', '<code>' . $field_id . '</code>' ), 'error' );
           
         }
         
@@ -560,7 +560,7 @@ if ( ! function_exists( 'ot_validate_setting' ) ) {
         
         $input = '';
         
-        add_settings_error( 'option-tree', 'invalid_hex', sprintf( __( 'The %s Colorpicker only allows valid hexadecimal or rgba values.', 'revolution' ), '<code>' . $field_id . '</code>' ), 'error' );
+        add_settings_error( 'option-tree', 'invalid_hex', sprintf( __( 'The %s Colorpicker only allows valid hexadecimal or rgba values.', 'viftech' ), '<code>' . $field_id . '</code>' ), 'error' );
       
       }
       
@@ -601,7 +601,7 @@ if ( ! function_exists( 'ot_validate_setting' ) ) {
           
           $input[$error] = '0';
           
-          add_settings_error( 'option-tree', 'invalid_dimension_' . $error, sprintf( __( 'The %s input field for %s only allows numeric values.', 'revolution' ), '<code>' . $error . '</code>', '<code>' . $field_id . '</code>' ), 'error' );
+          add_settings_error( 'option-tree', 'invalid_dimension_' . $error, sprintf( __( 'The %s input field for %s only allows numeric values.', 'viftech' ), '<code>' . $error . '</code>', '<code>' . $field_id . '</code>' ), 'error' );
           
         }
         
@@ -670,7 +670,7 @@ if ( ! function_exists( 'ot_validate_setting' ) ) {
           
           $input[$error] = '0';
           
-          add_settings_error( 'option-tree', 'invalid_spacing_' . $error, sprintf( __( 'The %s input field for %s only allows numeric values.', 'revolution' ), '<code>' . $error . '</code>', '<code>' . $field_id . '</code>' ), 'error' );
+          add_settings_error( 'option-tree', 'invalid_spacing_' . $error, sprintf( __( 'The %s input field for %s only allows numeric values.', 'viftech' ), '<code>' . $error . '</code>', '<code>' . $field_id . '</code>' ), 'error' );
           
         }
         
@@ -844,22 +844,22 @@ if ( ! function_exists( 'ot_admin_scripts' ) ) {
     $localized_array = array( 
       'ajax'                  => admin_url( 'admin-ajax.php' ),
       'nonce'                 => wp_create_nonce( 'option_tree' ),
-      'upload_text'           => apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'revolution' ) ),
-      'remove_media_text'     => __( 'Remove Media', 'revolution' ),
-      'reset_agree'           => __( 'Are you sure you want to reset back to the defaults?', 'revolution' ),
-      'remove_no'             => __( 'You can\'t remove this! But you can edit the values.', 'revolution' ),
-      'remove_agree'          => __( 'Are you sure you want to remove this?', 'revolution' ),
-      'activate_layout_agree' => __( 'Are you sure you want to activate this layout?', 'revolution' ),
-      'setting_limit'         => __( 'Sorry, you can\'t have settings three levels deep.', 'revolution' ),
-      'delete'                => __( 'Delete Gallery', 'revolution' ), 
-      'edit'                  => __( 'Edit Gallery', 'revolution' ), 
-      'create'                => __( 'Create Gallery', 'revolution' ), 
-      'confirm'               => __( 'Are you sure you want to delete this Gallery?', 'revolution' ),
-      'date_current'          => __( 'Today', 'revolution' ),
-      'date_time_current'     => __( 'Now', 'revolution' ),
-      'date_close'            => __( 'Close', 'revolution' ),
-      'replace'               => __( 'Featured Image', 'revolution' ),
-      'with'                  => __( 'Image', 'revolution' )
+      'upload_text'           => apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'viftech' ) ),
+      'remove_media_text'     => __( 'Remove Media', 'viftech' ),
+      'reset_agree'           => __( 'Are you sure you want to reset back to the defaults?', 'viftech' ),
+      'remove_no'             => __( 'You can\'t remove this! But you can edit the values.', 'viftech' ),
+      'remove_agree'          => __( 'Are you sure you want to remove this?', 'viftech' ),
+      'activate_layout_agree' => __( 'Are you sure you want to activate this layout?', 'viftech' ),
+      'setting_limit'         => __( 'Sorry, you can\'t have settings three levels deep.', 'viftech' ),
+      'delete'                => __( 'Delete Gallery', 'viftech' ), 
+      'edit'                  => __( 'Edit Gallery', 'viftech' ), 
+      'create'                => __( 'Create Gallery', 'viftech' ), 
+      'confirm'               => __( 'Are you sure you want to delete this Gallery?', 'viftech' ),
+      'date_current'          => __( 'Today', 'viftech' ),
+      'date_time_current'     => __( 'Now', 'viftech' ),
+      'date_close'            => __( 'Close', 'viftech' ),
+      'replace'               => __( 'Featured Image', 'viftech' ),
+      'with'                  => __( 'Image', 'viftech' )
     );
     
     /* localized script attached to 'option_tree' */
@@ -927,7 +927,7 @@ if ( ! function_exists( 'ot_create_media_post' ) ) {
     
     $regsiter_post_type = 'register_' . 'post_type';
     $regsiter_post_type( 'option-tree', array(
-      'labels'              => array( 'name' => __( 'Option Tree', 'revolution' ) ),
+      'labels'              => array( 'name' => __( 'Option Tree', 'viftech' ) ),
       'public'              => false,
       'show_ui'             => false,
       'capability_type'     => 'post',
@@ -1065,14 +1065,14 @@ if ( ! function_exists( 'ot_default_settings' ) ) {
           'sections' => array(
             array(
               'id'        => 'general',
-              'title'     => __( 'General', 'revolution' )
+              'title'     => __( 'General', 'viftech' )
             )
           ),
           'settings' => array(
             array(
               'id'        => 'sample_text',
-              'label'     => __( 'Sample Text Field Label', 'revolution' ),
-              'desc'      => __( 'Description for the sample text field.', 'revolution' ),
+              'label'     => __( 'Sample Text Field Label', 'viftech' ),
+              'desc'      => __( 'Description for the sample text field.', 'viftech' ),
               'section'   => 'general',
               'type'      => 'text',
               'std'       => '',
@@ -2315,11 +2315,11 @@ if ( ! function_exists( 'ot_alert_message' ) ) {
     
       if ( $message == 'success' ) {
         
-        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Settings updated.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Settings updated.', 'viftech' ) . '</p></div>';
         
       } else if ( $message == 'failed' ) {
         
-        return '<div id="message" class="error fade below-h2"><p>' . __( 'Settings could not be saved.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="error fade below-h2"><p>' . __( 'Settings could not be saved.', 'viftech' ) . '</p></div>';
         
       }
       
@@ -2327,22 +2327,22 @@ if ( ! function_exists( 'ot_alert_message' ) ) {
       
       if ( $message == 'success' ) {
         
-        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Settings Imported.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Settings Imported.', 'viftech' ) . '</p></div>';
         
       } else if ( $message == 'failed' ) {
         
-        return '<div id="message" class="error fade below-h2"><p>' . __( 'Settings could not be imported.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="error fade below-h2"><p>' . __( 'Settings could not be imported.', 'viftech' ) . '</p></div>';
         
       }
     } else if ( $action == 'import-data' ) {
       
       if ( $message == 'success' ) {
         
-        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Data Imported.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Data Imported.', 'viftech' ) . '</p></div>';
         
       } else if ( $message == 'failed' ) {
         
-        return '<div id="message" class="error fade below-h2"><p>' . __( 'Data could not be imported.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="error fade below-h2"><p>' . __( 'Data could not be imported.', 'viftech' ) . '</p></div>';
         
       }
     
@@ -2350,11 +2350,11 @@ if ( ! function_exists( 'ot_alert_message' ) ) {
       
       if ( $message == 'success' ) {
         
-        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layouts Imported.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layouts Imported.', 'viftech' ) . '</p></div>';
         
       } else if ( $message == 'failed' ) {
         
-        return '<div id="message" class="error fade below-h2"><p>' . __( 'Layouts could not be imported.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="error fade below-h2"><p>' . __( 'Layouts could not be imported.', 'viftech' ) . '</p></div>';
         
       }
            
@@ -2362,21 +2362,21 @@ if ( ! function_exists( 'ot_alert_message' ) ) {
       
       if ( $message == 'success' ) {
         
-        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layouts Updated.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layouts Updated.', 'viftech' ) . '</p></div>';
         
       } else if ( $message == 'failed' ) {
         
-        return '<div id="message" class="error fade below-h2"><p>' . __( 'Layouts could not be updated.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="error fade below-h2"><p>' . __( 'Layouts could not be updated.', 'viftech' ) . '</p></div>';
         
       } else if ( $message == 'deleted' ) {
         
-        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layouts have been deleted.', 'revolution' ) . '</p></div>';
+        return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layouts have been deleted.', 'viftech' ) . '</p></div>';
         
       }
     
     } else if ( $updated == 'layout' ) {  
        
-      return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layout activated.', 'revolution' ) . '</p></div>';
+      return '<div id="message" class="updated fade below-h2"><p>' . __( 'Layout activated.', 'viftech' ) . '</p></div>';
         
     } else if ( $action == 'reset' ) {
       
@@ -2415,51 +2415,51 @@ if ( ! function_exists( 'ot_option_types_array' ) ) {
   function ot_option_types_array() {
   
     return apply_filters( 'ot_option_types_array', array( 
-      'background'                => __('Background', 'revolution'),
-      'border'                    => __('Border', 'revolution'),
-      'box-shadow'                => __('Box Shadow', 'revolution'),
-      'category-checkbox'         => __('Category Checkbox', 'revolution'),
-      'category-select'           => __('Category Select', 'revolution'),
-      'checkbox'                  => __('Checkbox', 'revolution'),
-      'colorpicker'               => __('Colorpicker', 'revolution'),
-      'colorpicker-opacity'       => __('Colorpicker Opacity', 'revolution'),
-      'css'                       => __('CSS', 'revolution'),
-      'custom-post-type-checkbox' => __('Custom Post Type Checkbox', 'revolution'),
-      'custom-post-type-select'   => __('Custom Post Type Select', 'revolution'),
-      'date-picker'               => __('Date Picker', 'revolution'),
-      'date-time-picker'          => __('Date Time Picker', 'revolution'),
-      'dimension'                 => __('Dimension', 'revolution'),
-      'gallery'                   => __('Gallery', 'revolution'),
-      'google-fonts'              => __('Google Fonts', 'revolution'),
-      'javascript'                => __('JavaScript', 'revolution'),
-      'link-color'                => __('Link Color', 'revolution'),
-      'list-item'                 => __('List Item', 'revolution'),
-      'measurement'               => __('Measurement', 'revolution'),
-      'numeric-slider'            => __('Numeric Slider', 'revolution'),
-      'on-off'                    => __('On/Off', 'revolution'),
-      'page-checkbox'             => __('Page Checkbox', 'revolution'),
-      'page-select'               => __('Page Select', 'revolution'),
-      'post-checkbox'             => __('Post Checkbox', 'revolution'),
-      'post-select'               => __('Post Select', 'revolution'),
-      'radio'                     => __('Radio', 'revolution'),
-      'radio-image'               => __('Radio Image', 'revolution'),
-      'select'                    => __('Select', 'revolution'),
-      'sidebar-select'            => __('Sidebar Select', 'revolution'),
-      'slider'                    => __('Slider', 'revolution'),
-      'social-links'              => __('Social Links', 'revolution'),
-      'spacing'                   => __('Spacing', 'revolution'),
-      'tab'                       => __('Tab', 'revolution'),
-      'tag-checkbox'              => __('Tag Checkbox', 'revolution'),
-      'tag-select'                => __('Tag Select', 'revolution'),
-      'taxonomy-checkbox'         => __('Taxonomy Checkbox', 'revolution'),
-      'taxonomy-select'           => __('Taxonomy Select', 'revolution'),
-      'text'                      => __('Text', 'revolution'),
-      'textarea'                  => __('Textarea', 'revolution'),
-      'textarea-simple'           => __('Textarea Simple', 'revolution'),
-      'textblock'                 => __('Textblock', 'revolution'),
-      'textblock-titled'          => __('Textblock Titled', 'revolution'),
-      'typography'                => __('Typography', 'revolution'),
-      'upload'                    => __('Upload', 'revolution')
+      'background'                => __('Background', 'viftech'),
+      'border'                    => __('Border', 'viftech'),
+      'box-shadow'                => __('Box Shadow', 'viftech'),
+      'category-checkbox'         => __('Category Checkbox', 'viftech'),
+      'category-select'           => __('Category Select', 'viftech'),
+      'checkbox'                  => __('Checkbox', 'viftech'),
+      'colorpicker'               => __('Colorpicker', 'viftech'),
+      'colorpicker-opacity'       => __('Colorpicker Opacity', 'viftech'),
+      'css'                       => __('CSS', 'viftech'),
+      'custom-post-type-checkbox' => __('Custom Post Type Checkbox', 'viftech'),
+      'custom-post-type-select'   => __('Custom Post Type Select', 'viftech'),
+      'date-picker'               => __('Date Picker', 'viftech'),
+      'date-time-picker'          => __('Date Time Picker', 'viftech'),
+      'dimension'                 => __('Dimension', 'viftech'),
+      'gallery'                   => __('Gallery', 'viftech'),
+      'google-fonts'              => __('Google Fonts', 'viftech'),
+      'javascript'                => __('JavaScript', 'viftech'),
+      'link-color'                => __('Link Color', 'viftech'),
+      'list-item'                 => __('List Item', 'viftech'),
+      'measurement'               => __('Measurement', 'viftech'),
+      'numeric-slider'            => __('Numeric Slider', 'viftech'),
+      'on-off'                    => __('On/Off', 'viftech'),
+      'page-checkbox'             => __('Page Checkbox', 'viftech'),
+      'page-select'               => __('Page Select', 'viftech'),
+      'post-checkbox'             => __('Post Checkbox', 'viftech'),
+      'post-select'               => __('Post Select', 'viftech'),
+      'radio'                     => __('Radio', 'viftech'),
+      'radio-image'               => __('Radio Image', 'viftech'),
+      'select'                    => __('Select', 'viftech'),
+      'sidebar-select'            => __('Sidebar Select', 'viftech'),
+      'slider'                    => __('Slider', 'viftech'),
+      'social-links'              => __('Social Links', 'viftech'),
+      'spacing'                   => __('Spacing', 'viftech'),
+      'tab'                       => __('Tab', 'viftech'),
+      'tag-checkbox'              => __('Tag Checkbox', 'viftech'),
+      'tag-select'                => __('Tag Select', 'viftech'),
+      'taxonomy-checkbox'         => __('Taxonomy Checkbox', 'viftech'),
+      'taxonomy-select'           => __('Taxonomy Select', 'viftech'),
+      'text'                      => __('Text', 'viftech'),
+      'textarea'                  => __('Textarea', 'viftech'),
+      'textarea-simple'           => __('Textarea Simple', 'viftech'),
+      'textblock'                 => __('Textblock', 'viftech'),
+      'textblock-titled'          => __('Textblock Titled', 'viftech'),
+      'typography'                => __('Typography', 'viftech'),
+      'upload'                    => __('Upload', 'viftech')
     ) );
     
   }
@@ -3194,32 +3194,32 @@ if ( ! function_exists( 'ot_radio_images' ) ) {
     return apply_filters( 'ot_radio_images', array(
       array(
         'value'   => 'left-sidebar',
-        'label'   => __( 'Left Sidebar', 'revolution' ),
+        'label'   => __( 'Left Sidebar', 'viftech' ),
         'src'     => OT_URL . 'assets/images/layout/left-sidebar.png'
       ),
       array(
         'value'   => 'right-sidebar',
-        'label'   => __( 'Right Sidebar', 'revolution' ),
+        'label'   => __( 'Right Sidebar', 'viftech' ),
         'src'     => OT_URL . 'assets/images/layout/right-sidebar.png'
       ),
       array(
         'value'   => 'full-width',
-        'label'   => __( 'Full Width (no sidebar)', 'revolution' ),
+        'label'   => __( 'Full Width (no sidebar)', 'viftech' ),
         'src'     => OT_URL . 'assets/images/layout/full-width.png'
       ),
       array(
         'value'   => 'dual-sidebar',
-        'label'   => __( 'Dual Sidebar', 'revolution' ),
+        'label'   => __( 'Dual Sidebar', 'viftech' ),
         'src'     => OT_URL . 'assets/images/layout/dual-sidebar.png'
       ),
       array(
         'value'   => 'left-dual-sidebar',
-        'label'   => __( 'Left Dual Sidebar', 'revolution' ),
+        'label'   => __( 'Left Dual Sidebar', 'viftech' ),
         'src'     => OT_URL . 'assets/images/layout/left-dual-sidebar.png'
       ),
       array(
         'value'   => 'right-dual-sidebar',
-        'label'   => __( 'Right Dual Sidebar', 'revolution' ),
+        'label'   => __( 'Right Dual Sidebar', 'viftech' ),
         'src'     => OT_URL . 'assets/images/layout/right-dual-sidebar.png'
       )
     ), $field_id );
@@ -3249,7 +3249,7 @@ if ( ! function_exists( 'ot_list_item_settings' ) ) {
     $settings = apply_filters( 'ot_list_item_settings', array(
       array(
         'id'        => 'image',
-        'label'     => __( 'Image', 'revolution' ),
+        'label'     => __( 'Image', 'viftech' ),
         'desc'      => '',
         'std'       => '',
         'type'      => 'upload',
@@ -3260,7 +3260,7 @@ if ( ! function_exists( 'ot_list_item_settings' ) ) {
       ),
       array(
         'id'        => 'link',
-        'label'     => __( 'Link', 'revolution' ),
+        'label'     => __( 'Link', 'viftech' ),
         'desc'      => '',
         'std'       => '',
         'type'      => 'text',
@@ -3271,7 +3271,7 @@ if ( ! function_exists( 'ot_list_item_settings' ) ) {
       ),
       array(
         'id'        => 'description',
-        'label'     => __( 'Description', 'revolution' ),
+        'label'     => __( 'Description', 'viftech' ),
         'desc'      => '',
         'std'       => '',
         'type'      => 'textarea-simple',
@@ -3310,19 +3310,19 @@ if ( ! function_exists( 'ot_slider_settings' ) ) {
       array(
         'name'      => 'image',
         'type'      => 'image',
-        'label'     => __( 'Image', 'revolution' ),
+        'label'     => __( 'Image', 'viftech' ),
         'class'     => ''
       ),
       array(
         'name'      => 'link',
         'type'      => 'text',
-        'label'     => __( 'Link', 'revolution' ),
+        'label'     => __( 'Link', 'viftech' ),
         'class'     => ''
       ),
       array(
         'name'      => 'description',
         'type'      => 'textarea',
-        'label'     => __( 'Description', 'revolution' ),
+        'label'     => __( 'Description', 'viftech' ),
         'class'     => ''
       )
     ), $id );
@@ -3386,8 +3386,8 @@ if ( ! function_exists( 'ot_social_links_settings' ) ) {
     $settings = apply_filters( 'ot_social_links_settings', array(
       array(
         'id'        => 'name',
-        'label'     => __( 'Name', 'revolution' ),
-        'desc'      => __( 'Enter the name of the social website.', 'revolution' ),
+        'label'     => __( 'Name', 'viftech' ),
+        'desc'      => __( 'Enter the name of the social website.', 'viftech' ),
         'std'       => '',
         'type'      => 'text',
         'class'     => 'option-tree-setting-title'
@@ -3395,13 +3395,13 @@ if ( ! function_exists( 'ot_social_links_settings' ) ) {
       array(
         'id'        => 'title',
         'label'     => 'Title',
-        'desc'      => __( 'Enter the text shown in the title attribute of the link.', 'revolution' ),
+        'desc'      => __( 'Enter the text shown in the title attribute of the link.', 'viftech' ),
         'type'      => 'text'
       ),
       array(
         'id'        => 'href',
         'label'     => 'Link',
-        'desc'      => sprintf( __( 'Enter a link to the profile or page on the social website. Remember to add the %s part to the front of the link.', 'revolution' ), '<code>http://</code>' ),
+        'desc'      => sprintf( __( 'Enter a link to the profile or page on the social website. Remember to add the %s part to the front of the link.', 'viftech' ), '<code>http://</code>' ),
         'type'      => 'text',
       )
     ), $id );
@@ -3754,7 +3754,7 @@ if ( ! function_exists( 'ot_insert_css_with_markers' ) ) {
 
       // Can't write to the file so we error out
       if ( ! is_writable( $filepath ) ) {
-        add_settings_error( 'option-tree', 'dynamic_css', sprintf( __( 'Unable to write to file %s.', 'revolution' ), '<code>' . $filepath . '</code>' ), 'error' );
+        add_settings_error( 'option-tree', 'dynamic_css', sprintf( __( 'Unable to write to file %s.', 'viftech' ), '<code>' . $filepath . '</code>' ), 'error' );
         return false;
       }
 
@@ -4024,17 +4024,17 @@ if ( ! function_exists( 'ot_sections_view' ) ) {
     <div class="option-tree-setting is-section">
       <div class="open">' . ( isset( $section['title'] ) ? esc_attr( $section['title'] ) : 'Section ' . ( $key + 1 ) ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'edit', 'revolution' ) . '">
-          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'edit', 'viftech' ) . '">
+          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <div class="option-tree-setting-body">
         <div class="format-settings">
           <div class="format-setting type-text">
-            <div class="description">' . __( '<strong>Section Title</strong>: Displayed as a menu item on the Theme Options page.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Section Title</strong>: Displayed as a menu item on the Theme Options page.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][title]" value="' . ( isset( $section['title'] ) ? esc_attr( $section['title'] ) : '' ) . '" class="widefat option-tree-ui-input option-tree-setting-title section-title" autocomplete="off" />
             </div>
@@ -4042,7 +4042,7 @@ if ( ! function_exists( 'ot_sections_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text">
-            <div class="description">' . __( '<strong>Section ID</strong>: A unique lower case alphanumeric string, underscores allowed.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Section ID</strong>: A unique lower case alphanumeric string, underscores allowed.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][id]" value="' . ( isset( $section['id'] ) ? esc_attr( $section['id'] ) : '' ) . '" class="widefat option-tree-ui-input section-id" autocomplete="off" />
             </div>
@@ -4093,17 +4093,17 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
     <div class="option-tree-setting">
       <div class="open">' . ( isset( $setting['label'] ) ? esc_attr( $setting['label'] ) : 'Setting ' . ( $key + 1 ) ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'revolution' ) . '">
-          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'viftech' ) . '">
+          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <div class="option-tree-setting-body">
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>Label</strong>: Displayed as the label of a form element on the Theme Options page.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Label</strong>: Displayed as the label of a form element on the Theme Options page.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][label]" value="' . ( isset( $setting['label'] ) ? esc_attr( $setting['label'] ) : '' ) . '" class="widefat option-tree-ui-input option-tree-setting-title" autocomplete="off" />
             </div>
@@ -4111,7 +4111,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>ID</strong>: A unique lower case alphanumeric string, underscores allowed.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>ID</strong>: A unique lower case alphanumeric string, underscores allowed.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][id]" value="' . ( isset( $setting['id'] ) ? esc_attr( $setting['id'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4119,7 +4119,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-select wide-desc">
-            <div class="description">' . __( '<strong>Type</strong>: Choose one of the available option types from the dropdown.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Type</strong>: Choose one of the available option types from the dropdown.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <select name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][type]" value="' . esc_attr( $type ) . '" class="option-tree-ui-select">
               ' . ot_loop_through_option_types( $type, $child ) . '                     
@@ -4130,7 +4130,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-textarea wide-desc">
-            <div class="description">' . __( '<strong>Description</strong>: Enter a detailed description for the users to read on the Theme Options page, HTML is allowed. This is also where you enter content for both the Textblock & Textblock Titled option types.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Description</strong>: Enter a detailed description for the users to read on the Theme Options page, HTML is allowed. This is also where you enter content for both the Textblock & Textblock Titled option types.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <textarea class="textarea" rows="10" cols="40" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][desc]">' . ( isset( $setting['desc'] ) ? esc_html( $setting['desc'] ) : '' ) . '</textarea>
             </div>
@@ -4138,29 +4138,29 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-textblock wide-desc">
-            <div class="description">' . __( '<strong>Choices</strong>: This will only affect the following option types: Checkbox, Radio, Select & Select Image.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Choices</strong>: This will only affect the following option types: Checkbox, Radio, Select & Select Image.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <ul class="option-tree-setting-wrap option-tree-sortable" data-name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . ']">
                 ' . ( isset( $setting['choices'] ) ? ot_loop_through_choices( $name . '[' . $key . ']', $setting['choices'] ) : '' ) . '
               </ul>
-              <a href="javascript:void(0);" class="option-tree-choice-add option-tree-ui-button button hug-left">' . __( 'Add Choice', 'revolution' ) . '</a>
+              <a href="javascript:void(0);" class="option-tree-choice-add option-tree-ui-button button hug-left">' . __( 'Add Choice', 'viftech' ) . '</a>
             </div>
           </div>
         </div>
         <div class="format-settings">
           <div class="format-setting type-textblock wide-desc">
-            <div class="description">' . __( '<strong>Settings</strong>: This will only affect the List Item option type.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Settings</strong>: This will only affect the List Item option type.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <ul class="option-tree-setting-wrap option-tree-sortable" data-name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . ']">
                 ' . ( isset( $setting['settings'] ) ? ot_loop_through_sub_settings( $name . '[' . $key . '][settings]', $setting['settings'] ) : '' ) . '
               </ul>
-              <a href="javascript:void(0);" class="option-tree-list-item-setting-add option-tree-ui-button button hug-left">' . __( 'Add Setting', 'revolution' ) . '</a>
+              <a href="javascript:void(0);" class="option-tree-list-item-setting-add option-tree-ui-button button hug-left">' . __( 'Add Setting', 'viftech' ) . '</a>
             </div>
           </div>
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>Standard</strong>: Setting the standard value for your option only works for some option types. Read the <code>OptionTree->Documentation</code> for more information on which ones.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Standard</strong>: Setting the standard value for your option only works for some option types. Read the <code>OptionTree->Documentation</code> for more information on which ones.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               ' . $std_form_element . '
             </div>
@@ -4168,7 +4168,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>Rows</strong>: Enter a numeric value for the number of rows in your textarea. This will only affect the following option types: CSS, Textarea, & Textarea Simple.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Rows</strong>: Enter a numeric value for the number of rows in your textarea. This will only affect the following option types: CSS, Textarea, & Textarea Simple.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][rows]" value="' . ( isset( $setting['rows'] ) ? esc_attr( $setting['rows'] ) : '' ) . '" class="widefat option-tree-ui-input" />
             </div>
@@ -4176,7 +4176,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>Post Type</strong>: Add a comma separated list of post type like \'post,page\'. This will only affect the following option types: Custom Post Type Checkbox, & Custom Post Type Select.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Post Type</strong>: Add a comma separated list of post type like \'post,page\'. This will only affect the following option types: Custom Post Type Checkbox, & Custom Post Type Select.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][post_type]" value="' . ( isset( $setting['post_type'] ) ? esc_attr( $setting['post_type'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4184,7 +4184,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>Taxonomy</strong>: Add a comma separated list of any registered taxonomy like \'category,post_tag\'. This will only affect the following option types: Taxonomy Checkbox, & Taxonomy Select.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Taxonomy</strong>: Add a comma separated list of any registered taxonomy like \'category,post_tag\'. This will only affect the following option types: Taxonomy Checkbox, & Taxonomy Select.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][taxonomy]" value="' . ( isset( $setting['taxonomy'] ) ? esc_attr( $setting['taxonomy'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4192,7 +4192,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>Min, Max, & Step</strong>: Add a comma separated list of options in the following format <code>0,100,1</code> (slide from <code>0-100</code> in intervals of <code>1</code>). The three values represent the minimum, maximum, and step options and will only affect the Numeric Slider option type.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Min, Max, & Step</strong>: Add a comma separated list of options in the following format <code>0,100,1</code> (slide from <code>0-100</code> in intervals of <code>1</code>). The three values represent the minimum, maximum, and step options and will only affect the Numeric Slider option type.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][min_max_step]" value="' . ( isset( $setting['min_max_step'] ) ? esc_attr( $setting['min_max_step'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4200,7 +4200,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . __( '<strong>CSS Class</strong>: Add and optional class to this option type.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>CSS Class</strong>: Add and optional class to this option type.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][class]" value="' . ( isset( $setting['class'] ) ? esc_attr( $setting['class'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4208,7 +4208,7 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text wide-desc">
-            <div class="description">' . sprintf( __( '<strong>Condition</strong>: Add a comma separated list (no spaces) of conditions in which the field will be visible, leave this setting empty to always show the field. In these examples, <code>value</code> is a placeholder for your condition, which can be in the form of %s.', 'revolution' ), '<code>field_id:is(value)</code>, <code>field_id:not(value)</code>, <code>field_id:contains(value)</code>, <code>field_id:less_than(value)</code>, <code>field_id:less_than_or_equal_to(value)</code>, <code>field_id:greater_than(value)</code>, or <code>field_id:greater_than_or_equal_to(value)</code>' ) . '</div>
+            <div class="description">' . sprintf( __( '<strong>Condition</strong>: Add a comma separated list (no spaces) of conditions in which the field will be visible, leave this setting empty to always show the field. In these examples, <code>value</code> is a placeholder for your condition, which can be in the form of %s.', 'viftech' ), '<code>field_id:is(value)</code>, <code>field_id:not(value)</code>, <code>field_id:contains(value)</code>, <code>field_id:less_than(value)</code>, <code>field_id:less_than_or_equal_to(value)</code>, <code>field_id:greater_than(value)</code>, or <code>field_id:greater_than_or_equal_to(value)</code>' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][condition]" value="' . ( isset( $setting['condition'] ) ? esc_attr( $setting['condition'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4216,11 +4216,11 @@ if ( ! function_exists( 'ot_settings_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-select wide-desc">
-            <div class="description">' . __( '<strong>Operator</strong>: Choose the logical operator to compute the result of the conditions.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Operator</strong>: Choose the logical operator to compute the result of the conditions.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <select name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][operator]" value="' . $operator . '" class="option-tree-ui-select">
-                <option value="and" ' . selected( $operator, 'and', false ) . '>' . __( 'and', 'revolution' ) . '</option>
-                <option value="or" ' . selected( $operator, 'or', false ) . '>' . __( 'or', 'revolution' ) . '</option>
+                <option value="and" ' . selected( $operator, 'and', false ) . '>' . __( 'and', 'viftech' ) . '</option>
+                <option value="or" ' . selected( $operator, 'or', false ) . '>' . __( 'or', 'viftech' ) . '</option>
               </select>
             </div>
           </div>
@@ -4256,17 +4256,17 @@ if ( ! function_exists( 'ot_choices_view' ) ) {
     <div class="option-tree-setting">
       <div class="open">' . ( isset( $choice['label'] ) ? esc_attr( $choice['label'] ) : 'Choice ' . ( $key + 1 ) ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'revolution' ) . '">
-          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'viftech' ) . '">
+          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <div class="option-tree-setting-body">
         <div class="format-settings">
           <div class="format-setting-label">
-            <h5>' . __( 'Label', 'revolution' ) . '</h5>
+            <h5>' . __( 'Label', 'viftech' ) . '</h5>
           </div>
           <div class="format-setting type-text wide-desc">
             <div class="format-setting-inner">
@@ -4276,7 +4276,7 @@ if ( ! function_exists( 'ot_choices_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting-label">
-            <h5>' . __( 'Value', 'revolution' ) . '</h5>
+            <h5>' . __( 'Value', 'viftech' ) . '</h5>
           </div>
           <div class="format-setting type-text wide-desc">
             <div class="format-setting-inner">
@@ -4286,7 +4286,7 @@ if ( ! function_exists( 'ot_choices_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting-label">
-            <h5>' . __( 'Image Source (Radio Image only)', 'revolution' ) . '</h5>
+            <h5>' . __( 'Image Source (Radio Image only)', 'viftech' ) . '</h5>
           </div>
           <div class="format-setting type-text wide-desc">
             <div class="format-setting-inner">
@@ -4322,17 +4322,17 @@ if ( ! function_exists( 'ot_contextual_help_view' ) ) {
     <div class="option-tree-setting">
       <div class="open">' . ( isset( $content['title'] ) ? esc_attr( $content['title'] ) : 'Content ' . ( $key + 1 ) ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'revolution' ) . '">
-          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'viftech' ) . '">
+          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <div class="option-tree-setting-body">
         <div class="format-settings">
           <div class="format-setting type-text no-desc">
-            <div class="description">' . __( '<strong>Title</strong>: Displayed as a contextual help menu item on the Theme Options page.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Title</strong>: Displayed as a contextual help menu item on the Theme Options page.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][title]" value="' . ( isset( $content['title'] ) ? esc_attr( $content['title'] ) : '' ) . '" class="widefat option-tree-ui-input option-tree-setting-title" autocomplete="off" />
             </div>
@@ -4340,7 +4340,7 @@ if ( ! function_exists( 'ot_contextual_help_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-text no-desc">
-            <div class="description">' . __( '<strong>ID</strong>: A unique lower case alphanumeric string, underscores allowed.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>ID</strong>: A unique lower case alphanumeric string, underscores allowed.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <input type="text" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][id]" value="' . ( isset( $content['id'] ) ? esc_attr( $content['id'] ) : '' ) . '" class="widefat option-tree-ui-input" autocomplete="off" />
             </div>
@@ -4348,7 +4348,7 @@ if ( ! function_exists( 'ot_contextual_help_view' ) ) {
         </div>
         <div class="format-settings">
           <div class="format-setting type-textarea no-desc">
-            <div class="description">' . __( '<strong>Content</strong>: Enter the HTML content about this contextual help item displayed on the Theme Option page for end users to read.', 'revolution' ) . '</div>
+            <div class="description">' . __( '<strong>Content</strong>: Enter the HTML content about this contextual help item displayed on the Theme Option page for end users to read.', 'viftech' ) . '</div>
             <div class="format-setting-inner">
               <textarea class="textarea" rows="15" cols="40" name="' . esc_attr( $name ) . '[' . esc_attr( $key ) . '][content]">' . ( isset( $content['content'] ) ? esc_html( $content['content'] ) : '' ) . '</textarea>
             </div>
@@ -4379,13 +4379,13 @@ if ( ! function_exists( 'ot_layout_view' ) ) {
 
     return '
     <div class="option-tree-setting">
-      <div class="open">' . ( isset( $key ) ? esc_attr( $key ) : __( 'Layout', 'revolution' ) ) . '</div>
+      <div class="open">' . ( isset( $key ) ? esc_attr( $key ) : __( 'Layout', 'viftech' ) ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-layout-activate option-tree-ui-button button left-item' . ( $active_layout == $key ? ' active' : '' ) . '" title="' . __( 'Activate', 'revolution' ) . '">
-          <span class="icon ot-icon-square-o"></span>' . __( 'Activate', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-layout-activate option-tree-ui-button button left-item' . ( $active_layout == $key ? ' active' : '' ) . '" title="' . __( 'Activate', 'viftech' ) . '">
+          <span class="icon ot-icon-square-o"></span>' . __( 'Activate', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="'. __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="'. __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <input type="hidden" name="' . ot_layouts_id() . '[' . esc_attr( $key ) . ']" value="' . $data . '" />
@@ -4418,7 +4418,7 @@ if ( ! function_exists( 'ot_list_item_view' ) ) {
     $required_setting = array(
       array(
         'id'        => 'title',
-        'label'     => __( 'Title', 'revolution' ),
+        'label'     => __( 'Title', 'viftech' ),
         'desc'      => '',
         'std'       => '',
         'type'      => 'text',
@@ -4450,11 +4450,11 @@ if ( ! function_exists( 'ot_list_item_view' ) ) {
     <div class="option-tree-setting">
       <div class="open">' . ( isset( $list_item['title'] ) ? esc_attr( $list_item['title'] ) : '' ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'revolution' ) . '">
-          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'viftech' ) . '">
+          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <div class="option-tree-setting-body">';
@@ -4603,11 +4603,11 @@ if ( ! function_exists( 'ot_social_links_view' ) ) {
     <div class="option-tree-setting">
       <div class="open">' . ( isset( $list_item['name'] ) ? esc_attr( $list_item['name'] ) : '' ) . '</div>
       <div class="button-section">
-        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'revolution' ) . '">
-          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-edit option-tree-ui-button button left-item" title="' . __( 'Edit', 'viftech' ) . '">
+          <span class="icon ot-icon-pencil"></span>' . __( 'Edit', 'viftech' ) . '
         </a>
-        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'revolution' ) . '">
-          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'revolution' ) . '
+        <a href="javascript:void(0);" class="option-tree-setting-remove option-tree-ui-button button button-secondary light right-item" title="' . __( 'Delete', 'viftech' ) . '">
+          <span class="icon ot-icon-trash-o"></span>' . __( 'Delete', 'viftech' ) . '
         </a>
       </div>
       <div class="option-tree-setting-body">';
@@ -4758,7 +4758,7 @@ if ( ! function_exists( 'ot_theme_options_layouts_form' ) ) {
         /* add new layout */
         echo '<input type="text" name="' . ot_layouts_id() . '[_add_new_layout_]" value="" class="widefat option-tree-ui-input" autocomplete="off" />';
         
-        echo '<button type="submit" class="option-tree-ui-button button button-primary save-layout" title="' . __( 'New Layout', 'revolution' ) . '">' . __( 'New Layout', 'revolution' ) . '</button>';
+        echo '<button type="submit" class="option-tree-ui-button button button-primary save-layout" title="' . __( 'New Layout', 'viftech' ) . '">' . __( 'New Layout', 'viftech' ) . '</button>';
       
       echo '</div>';
       
@@ -5464,7 +5464,7 @@ function ot_meta_box_post_format_gallery( $pages = 'post' ) {
   
   return apply_filters( 'ot_meta_box_post_format_gallery', array(
     'id'        => 'ot-post-format-gallery',
-    'title'     => __( 'Gallery', 'revolution' ),
+    'title'     => __( 'Gallery', 'viftech' ),
     'desc'      => '',
     'pages'     => $pages,
     'context'   => 'side',
@@ -5504,7 +5504,7 @@ function ot_meta_box_post_format_link( $pages = 'post' ) {
   
   return apply_filters( 'ot_meta_box_post_format_link', array(
     'id'        => 'ot-post-format-link',
-    'title'     => __( 'Link', 'revolution' ),
+    'title'     => __( 'Link', 'viftech' ),
     'desc'      => '',
     'pages'     => $pages,
     'context'   => 'side',
@@ -5513,14 +5513,14 @@ function ot_meta_box_post_format_link( $pages = 'post' ) {
       array(
         'id'      => '_format_link_url',
         'label'   => '',
-        'desc'    => __( 'Link URL', 'revolution' ),
+        'desc'    => __( 'Link URL', 'viftech' ),
         'std'     => '',
         'type'    => 'text'
       ),
       array(
         'id'      => '_format_link_title',
         'label'   => '',
-        'desc'    => __( 'Link Title', 'revolution' ),
+        'desc'    => __( 'Link Title', 'viftech' ),
         'std'     => '',
         'type'    => 'text'
       )
@@ -5550,7 +5550,7 @@ function ot_meta_box_post_format_quote( $pages = 'post' ) {
 
   return apply_filters( 'ot_meta_box_post_format_quote', array(
     'id'        => 'ot-post-format-quote',
-    'title'     => __( 'Quote', 'revolution' ),
+    'title'     => __( 'Quote', 'viftech' ),
     'desc'      => '',
     'pages'     => $pages,
     'context'   => 'side',
@@ -5559,28 +5559,28 @@ function ot_meta_box_post_format_quote( $pages = 'post' ) {
       array(
         'id'      => '_format_quote_source_name',
         'label'   => '',
-        'desc'    => __( 'Source Name (ex. author, singer, actor)', 'revolution' ),
+        'desc'    => __( 'Source Name (ex. author, singer, actor)', 'viftech' ),
         'std'     => '',
         'type'    => 'text'
       ),
       array(
         'id'      => '_format_quote_source_url',
         'label'   => '',
-        'desc'    => __( 'Source URL', 'revolution' ),
+        'desc'    => __( 'Source URL', 'viftech' ),
         'std'     => '',
         'type'    => 'text'
       ),
       array(
         'id'      => '_format_quote_source_title',
         'label'   => '',
-        'desc'    => __( 'Source Title (ex. book, song, movie)', 'revolution' ),
+        'desc'    => __( 'Source Title (ex. book, song, movie)', 'viftech' ),
         'std'     => '',
         'type'    => 'text'
       ),
       array(
         'id'      => '_format_quote_source_date',
         'label'   => '',
-        'desc'    => __( 'Source Date', 'revolution' ),
+        'desc'    => __( 'Source Date', 'viftech' ),
         'std'     => '',
         'type'    => 'text'
       )
@@ -5610,7 +5610,7 @@ function ot_meta_box_post_format_video( $pages = 'post' ) {
   
   return apply_filters( 'ot_meta_box_post_format_video', array(
     'id'        => 'ot-post-format-video',
-    'title'     => __( 'Video', 'revolution' ),
+    'title'     => __( 'Video', 'viftech' ),
     'desc'      => '',
     'pages'     => $pages,
     'context'   => 'side',
@@ -5619,7 +5619,7 @@ function ot_meta_box_post_format_video( $pages = 'post' ) {
       array(
         'id'      => '_format_video_embed',
         'label'   => '',
-        'desc'    => sprintf( __( 'Embed video from services like Youtube, Vimeo, or Hulu. You can find a list of supported oEmbed sites in the %1$s. Alternatively, you could use the built-in %2$s shortcode.', 'revolution' ), '<a href="http://codex.wordpress.org/Embeds" target="_blank">' . __( 'Wordpress Codex', 'revolution' ) .'</a>', '<code>[video]</code>' ),
+        'desc'    => sprintf( __( 'Embed video from services like Youtube, Vimeo, or Hulu. You can find a list of supported oEmbed sites in the %1$s. Alternatively, you could use the built-in %2$s shortcode.', 'viftech' ), '<a href="http://codex.wordpress.org/Embeds" target="_blank">' . __( 'Wordpress Codex', 'viftech' ) .'</a>', '<code>[video]</code>' ),
         'std'     => '',
         'type'    => 'textarea'
       )
@@ -5649,7 +5649,7 @@ function ot_meta_box_post_format_audio( $pages = 'post' ) {
   
   return apply_filters( 'ot_meta_box_post_format_audio', array(
     'id'        => 'ot-post-format-audio',
-    'title'     => __( 'Audio', 'revolution' ),
+    'title'     => __( 'Audio', 'viftech' ),
     'desc'      => '',
     'pages'     => $pages,
     'context'   => 'side',
@@ -5658,7 +5658,7 @@ function ot_meta_box_post_format_audio( $pages = 'post' ) {
       array(
         'id'      => '_format_audio_embed',
         'label'   => '',
-        'desc'    => sprintf( __( 'Embed audio from services like SoundCloud and Rdio. You can find a list of supported oEmbed sites in the %1$s. Alternatively, you could use the built-in %2$s shortcode.', 'revolution' ), '<a href="http://codex.wordpress.org/Embeds" target="_blank">' . __( 'Wordpress Codex', 'revolution' ) .'</a>', '<code>[audio]</code>' ),
+        'desc'    => sprintf( __( 'Embed audio from services like SoundCloud and Rdio. You can find a list of supported oEmbed sites in the %1$s. Alternatively, you could use the built-in %2$s shortcode.', 'viftech' ), '<a href="http://codex.wordpress.org/Embeds" target="_blank">' . __( 'Wordpress Codex', 'viftech' ) .'</a>', '<code>[audio]</code>' ),
         'std'     => '',
         'type'    => 'textarea'
       )

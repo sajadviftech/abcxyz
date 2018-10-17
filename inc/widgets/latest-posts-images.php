@@ -4,12 +4,12 @@ class widget_latestimages extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
 			'classname'   => 'widget_latestimages',
-			'description' => __('Display latest posts with images','revolution')
+			'description' => __('Display latest posts with images','viftech')
 		);
 		
 		parent::__construct(
 			'thb_latestimages_widget',
-			__( 'Fuel Themes - Latest Posts with Images' , 'revolution' ),
+			__( 'Fuel Themes - Latest Posts with Images' , 'viftech' ),
 			$widget_ops
 		);
 				
@@ -72,11 +72,11 @@ class widget_latestimages extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 		
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e('Widget Title:', 'revolution'); ?></label>
+			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e('Widget Title:', 'viftech'); ?></label>
 			<input id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>" value="<?php echo esc_attr($instance['title']); ?>" class="widefat" />
 		</p>
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'name' )); ?>"><?php esc_html_e('Number of Posts:', 'revolution'); ?></label>
+			<label for="<?php echo esc_attr($this->get_field_id( 'name' )); ?>"><?php esc_html_e('Number of Posts:', 'viftech'); ?></label>
 			<input id="<?php echo esc_attr($this->get_field_id( 'name' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'show' )); ?>" value="<?php echo esc_attr($instance['show']); ?>" class="widefat" />
 		</p>
 	<?php

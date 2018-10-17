@@ -11,7 +11,7 @@
 	$class[] = $thb_border_radius;
 	$class[] = $size;
 	
-	$placeholder = $placeholder ? $placeholder : esc_html_e( 'Type here to search', 'revolution' );
+	$placeholder = $placeholder ? $placeholder : esc_html_e( 'Type here to search', 'viftech' );
 	ob_start();
 	?>
 	<div id="<?php echo esc_attr($element_id); ?>" class="<?php echo esc_attr(implode(' ', $class)); ?>">

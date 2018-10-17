@@ -74,8 +74,8 @@ function thb_blog_pagination() {
 		<div class="row align-center pagination-space">
 			<div class="small-12 columns">
 				<?php the_posts_pagination(array(
-					'prev_text' 	=> '<span>'.esc_html__( "Previous Page", 'revolution' ).'</span>',
-					'next_text' 	=> '<span>'.esc_html__( "Next Page", 'revolution' ).'</span>',
+					'prev_text' 	=> '<span>'.esc_html__( "Previous Page", 'viftech' ).'</span>',
+					'next_text' 	=> '<span>'.esc_html__( "Next Page", 'viftech' ).'</span>',
 					'mid_size'		=> 1
 				)); ?>
 			</div>
@@ -85,7 +85,7 @@ function thb_blog_pagination() {
 	?>
 	<div class="row pagination-space">
 		<div class="small-12 columns text-center">
-			<a href="#" class="thb_load_more masonry_btn" title="<?php esc_html_e('Load More', 'revolution'); ?>"><?php esc_html_e('Load More', 'revolution'); ?></a>
+			<a href="#" class="thb_load_more masonry_btn" title="<?php esc_html_e('Load More', 'viftech'); ?>"><?php esc_html_e('Load More', 'viftech'); ?></a>
 		</div>
 	</div>
 	<?php
@@ -177,7 +177,7 @@ function thb_right_click() {
 		<aside class="share_screen" id="right_click_content">
 			<div class="row align-center">
 				<div class="small-12 medium-8 large-6 columns">
-					<?php echo do_shortcode(ot_get_option('right_click_content', wp_kses_post('<h4 class="text-center">You can toggle right click protection within Theme Options and customize this message as well.</h4><p class="text-center">You can also add shortcodes here.</p>', 'revolution'))); ?>
+					<?php echo do_shortcode(ot_get_option('right_click_content', wp_kses_post('<h4 class="text-center">You can toggle right click protection within Theme Options and customize this message as well.</h4><p class="text-center">You can also add shortcodes here.</p>', 'viftech'))); ?>
 				</div>
 			</div>
 		</aside>
@@ -1044,7 +1044,7 @@ add_action( 'thb_footer_bar', 'thb_footer_bar', 3 );
 function thb_footer_items() {
 	if ('on' === ot_get_option('scroll_to_top', 'on')) {
 	?>
-		<a href="#" title="<?php esc_attr_e('Scroll To Top', 'revolution'); ?>" id="scroll_to_top">
+		<a href="#" title="<?php esc_attr_e('Scroll To Top', 'viftech'); ?>" id="scroll_to_top">
 			<div class="thb-animated-arrow circular arrow-top"><?php get_template_part('assets/img/svg/prev_arrow.svg'); ?></div>
 		</a>
 	<?php
@@ -1073,7 +1073,7 @@ function thb_related_posts() {
 		<aside class="related-posts cf hide-on-print">
 			<div class="row align-center">
 				<div class="small-12 medium-10 large-7 columns">
-					<h4><?php esc_html_e( 'Related News', 'revolution' ); ?></h4>
+					<h4><?php esc_html_e( 'Related News', 'viftech' ); ?></h4>
 					<div class="row">
 				  	<?php 
 				  		while ($related_posts->have_posts()) : $related_posts->the_post(); 
@@ -1204,15 +1204,15 @@ function thb_mobile_toggle() {
 	<div class="mobile-toggle-holder <?php echo esc_attr(ot_get_option('mobile_menu_icon_style', 'style1')); ?>">
 		<?php if (ot_get_option('mobile_menu_text', 'off') === 'on') { ?>
 			<strong>
-				<span class="menu-label"><?php esc_html_e('Menu', 'revolution'); ?></span>
-				<span class="close-label"><?php esc_html_e('Close', 'revolution'); ?></span>
+				<span class="menu-label"><?php esc_html_e('Menu', 'viftech'); ?></span>
+				<span class="close-label"><?php esc_html_e('Close', 'viftech'); ?></span>
 			</strong>
 		<?php } ?>
 		<div class="mobile-toggle">
 			<span></span><span></span><span></span>
 		</div>
 		<?php if ( 'style7' === ot_get_option('header_style')) { ?>
-			<span class="style7-label"><?php esc_html_e('Menu', 'revolution'); ?></span>
+			<span class="style7-label"><?php esc_html_e('Menu', 'viftech'); ?></span>
 		<?php } ?>
 	</div>
 	<?php
@@ -1270,8 +1270,8 @@ add_filter('the_content', 'thb_image_rel');
 /* Custom Password Protect Form */
 function thb_password_form() {
   $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-  <p class="password-text">' . esc_html__( "This is a protected area. Please enter your password:", 'revolution' ) . '</p>
-  <input name="post_password" type="password" class="box" placeholder="' . esc_html__('Password', 'revolution') . '"/><input type="submit" name="Submit" class="btn" value="' . esc_attr__( 'Submit', 'revolution' ) . '" /></form>
+  <p class="password-text">' . esc_html__( "This is a protected area. Please enter your password:", 'viftech' ) . '</p>
+  <input name="post_password" type="password" class="box" placeholder="' . esc_html__('Password', 'viftech') . '"/><input type="submit" name="Submit" class="btn" value="' . esc_attr__( 'Submit', 'viftech' ) . '" /></form>
   ';
   return $o;
 }
@@ -1376,7 +1376,7 @@ function thb_post_nav() {
 					<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link prev">
 						<?php get_template_part( 'assets/img/svg/prev_arrow.svg' ); ?>
 						<strong>
-							<?php esc_html_e('Previous Post (p)', 'revolution'); ?>
+							<?php esc_html_e('Previous Post (p)', 'viftech'); ?>
 						</strong>
 						<span><?php echo esc_html($prev->post_title); ?></span>
 					</a>
@@ -1393,7 +1393,7 @@ function thb_post_nav() {
 				?>
 					<a href="<?php echo esc_url(get_permalink($next->ID)); ?>" class="post_nav_link next">
 						<strong>
-							<?php esc_html_e('Next Post (n)', 'revolution'); ?>
+							<?php esc_html_e('Next Post (n)', 'viftech'); ?>
 						</strong>
 						<span><?php echo esc_html($next->post_title); ?></span>
 						<?php get_template_part( 'assets/img/svg/next_arrow.svg' ); ?>
@@ -1413,11 +1413,11 @@ function thb_post_nav() {
 						?>
 						<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link prev">
 							<strong>
-								<?php esc_html_e('(p) Previous', 'revolution'); ?>
+								<?php esc_html_e('(p) Previous', 'viftech'); ?>
 							</strong>
 							<div>
 								<span><?php echo esc_html($prev->post_title); ?></span>
-								<em><?php esc_html_e('View Post', 'revolution'); ?></em>
+								<em><?php esc_html_e('View Post', 'viftech'); ?></em>
 							</div>
 							<?php if ($image_id) { ?><div class="inner" style="background-image: url(<?php echo esc_attr($image_link[0]); ?>);"></div><?php } ?>
 						</a>
@@ -1431,11 +1431,11 @@ function thb_post_nav() {
 						?>
 						<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link next">
 							<strong>
-								<?php esc_html_e('Next (n)', 'revolution'); ?>
+								<?php esc_html_e('Next (n)', 'viftech'); ?>
 							</strong>
 							<div>
 								<span><?php echo esc_html($next->post_title); ?></span>
-								<em><?php esc_html_e('View Post', 'revolution'); ?></em>
+								<em><?php esc_html_e('View Post', 'viftech'); ?></em>
 							</div>
 							<?php if ($image_id) { ?><div class="inner" style="background-image: url(<?php echo esc_attr($image_link[0]); ?>);"></div><?php } ?>
 						</a>
@@ -1498,7 +1498,7 @@ function thb_add_attachment_field( $form_fields, $post ) {
 	} 
 	
 	$form_fields["thb-masonry-image-size"] = array(
-   	'label' => esc_html__('Masonry Size', 'revolution'),
+   	'label' => esc_html__('Masonry Size', 'viftech'),
    	'input' => 'html',
     'html' => "<select name='attachments[{$post->ID}][thb-masonry-image-size]' id='attachments[{$post->ID}][thb-masonry-image-size]'>".$masonry_image_size_options."</select>",
 		'value' => get_post_meta( $post->ID, 'thb-masonry-image-size', true )

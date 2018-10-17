@@ -34,15 +34,15 @@ class CustomizerImporter {
 			Helpers::append_to_file(
 				$error_message,
 				$log_file_path,
-				esc_html__( 'Importing customizer settings', 'revolution' )
+				esc_html__( 'Importing customizer settings', 'viftech' )
 			);
 		}
 		else {
 			// Add this message to log file.
 			$log_added = Helpers::append_to_file(
-				esc_html__( 'Customizer settings import finished!', 'revolution' ),
+				esc_html__( 'Customizer settings import finished!', 'viftech' ),
 				$log_file_path,
-				esc_html__( 'Importing customizer settings' , 'revolution' )
+				esc_html__( 'Importing customizer settings' , 'viftech' )
 			);
 		}
 	}
@@ -70,7 +70,7 @@ class CustomizerImporter {
 			return new \WP_Error(
 				'missing_cutomizer_import_file',
 				sprintf(
-					esc_html__( 'Error: The customizer import file is missing! File path: %s', 'revolution' ),
+					esc_html__( 'Error: The customizer import file is missing! File path: %s', 'viftech' ),
 					$import_file_path
 				)
 			);
@@ -90,13 +90,13 @@ class CustomizerImporter {
 		if ( ! is_array( $data ) && ( ! isset( $data['template'] ) || ! isset( $data['mods'] ) ) ) {
 			return new \WP_Error(
 				'customizer_import_data_error',
-				esc_html__( 'Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.', 'revolution' )
+				esc_html__( 'Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.', 'viftech' )
 			);
 		}
 		if ( $data['template'] !== $template ) {
 			return new \WP_Error(
 				'customizer_import_wrong_theme',
-				esc_html__( 'Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.', 'revolution' )
+				esc_html__( 'Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.', 'viftech' )
 			);
 		}
 

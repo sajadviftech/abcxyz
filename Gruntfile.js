@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-			theme_slugname: 'revolution',
+			theme_slugname: 'viftech',
       // let us know if our JS is sound
       jshint: {
 	      options: {

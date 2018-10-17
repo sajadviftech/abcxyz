@@ -39,7 +39,7 @@ function thb_register_required_plugins() {
 	}
 	
 	$plugins[] = array(
-		'name'     				=> esc_html__('Contact Form 7', 'revolution'), // The plugin name
+		'name'     				=> esc_html__('Contact Form 7', 'viftech'), // The plugin name
 		'slug'     				=> 'contact-form-7', // The plugin source
 		'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 		'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
@@ -47,7 +47,7 @@ function thb_register_required_plugins() {
 	);
 	$config = array(
 		'id'              => 'thb',
-		'domain'       		=> 'revolution',         	// Text domain - likely want to be the same as your theme.
+		'domain'       		=> 'viftech',         	// Text domain - likely want to be the same as your theme.
 		'default_path' 		=> '',                         	// Default absolute path to pre-packaged plugins
 		'parent_slug'       => 'themes.php',
 		'menu'         		=> 'install-required-plugins', 	// Menu slug
@@ -55,7 +55,7 @@ function thb_register_required_plugins() {
 		'is_automatic'    	=> true,					   	// Automatically activate plugins after installation or not
 		'message' 			=> '',							// Message to output right before the plugins table
 		'strings'      		=> array(
-			'return'       	=> esc_html__( 'Return to Theme Plugins', 'revolution' )
+			'return'       	=> esc_html__( 'Return to Theme Plugins', 'viftech' )
 		)
 	);
 	tgmpa($plugins, $config);

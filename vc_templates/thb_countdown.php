@@ -13,19 +13,19 @@
     <ul class="thb-countdown-ul">
       <li>
         <span class="days timestamp">00</span>
-        <span class="timelabel"><?php esc_html_e( 'days', 'revolution' ); ?></span>
+        <span class="timelabel"><?php esc_html_e( 'days', 'viftech' ); ?></span>
       </li>
       <li>
         <span class="hours timestamp">00</span>
-        <span class="timelabel"><?php esc_html_e( 'hours', 'revolution' ); ?></span>
+        <span class="timelabel"><?php esc_html_e( 'hours', 'viftech' ); ?></span>
       </li>
       <li>
         <span class="minutes timestamp">00</span>
-        <span class="timelabel"><?php esc_html_e( 'minutes', 'revolution' ); ?></span>
+        <span class="timelabel"><?php esc_html_e( 'minutes', 'viftech' ); ?></span>
       </li>
       <li>
         <span class="seconds timestamp">00</span>
-        <span class="timelabel"><?php esc_html_e( 'seconds', 'revolution' ); ?></span>
+        <span class="timelabel"><?php esc_html_e( 'seconds', 'viftech' ); ?></span>
       </li>
     </ul>
 	</div>

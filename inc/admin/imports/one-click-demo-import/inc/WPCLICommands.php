@@ -31,10 +31,10 @@ class WPCLICommands extends \WP_CLI_Command {
 	 */
 	public function list_predefined() {
 		if ( empty( $this->ocdi->import_files ) ) {
-			WP_CLI::error( esc_html__( 'There are no predefined demo imports for currently active theme!', 'revolution' ) );
+			WP_CLI::error( esc_html__( 'There are no predefined demo imports for currently active theme!', 'viftech' ) );
 		}
 
-		WP_CLI::success( esc_html__( 'Here are the predefined demo imports:', 'revolution' ) );
+		WP_CLI::success( esc_html__( 'Here are the predefined demo imports:', 'viftech' ) );
 
 		foreach ( $this->ocdi->import_files as $index => $import_file ) {
 			WP_CLI::log( sprintf(
@@ -68,7 +68,7 @@ class WPCLICommands extends \WP_CLI_Command {
 	 */
 	public function import( $args, $assoc_args ) {
 		if ( ! $this->any_import_options_set( $assoc_args ) ) {
-			WP_CLI::error( esc_html__( 'At least one of the possible options should be set! Check them with --help', 'revolution' ) );
+			WP_CLI::error( esc_html__( 'At least one of the possible options should be set! Check them with --help', 'viftech' ) );
 		}
 
 		if ( isset( $assoc_args['predefined'] ) ) {
@@ -119,38 +119,38 @@ class WPCLICommands extends \WP_CLI_Command {
 	 */
 	private function import_predefined( $predefined_index ) {
 		if ( ! is_numeric( $predefined_index ) ) {
-			WP_CLI::error( esc_html__( 'The "predefined" parameter should be a number (an index of the OCDI predefined demo import)!', 'revolution' ) );
+			WP_CLI::error( esc_html__( 'The "predefined" parameter should be a number (an index of the OCDI predefined demo import)!', 'viftech' ) );
 		}
 
 		$predefined_index = absint( $predefined_index );
 
 		if ( ! array_key_exists( $predefined_index, $this->ocdi->import_files ) ) {
-			WP_CLI::warning( esc_html__( 'The supplied predefined index does not exist! Please take a look at the available predefined demo imports:', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'The supplied predefined index does not exist! Please take a look at the available predefined demo imports:', 'viftech' ) );
 
 			$this->list_predefined();
 
 			return false;
 		}
 
-		WP_CLI::log( esc_html__( 'Predefined demo import started! All other parameters will be ignored!', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Predefined demo import started! All other parameters will be ignored!', 'viftech' ) );
 
 		$selected_files = $this->ocdi->import_files[ $predefined_index ];
 
 		if ( ! empty( $selected_files['import_file_name'] ) ) {
-			WP_CLI::log( sprintf( esc_html__( 'Selected predefined demo import: %s', 'revolution' ), $selected_files['import_file_name'] ) );
+			WP_CLI::log( sprintf( esc_html__( 'Selected predefined demo import: %s', 'viftech' ), $selected_files['import_file_name'] ) );
 		}
 
-		WP_CLI::log( esc_html__( 'Preparing the demo import files...', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Preparing the demo import files...', 'viftech' ) );
 
 		$import_files =	Helpers::download_import_files( $selected_files );
 
 		if ( empty( $import_files ) ) {
-			WP_CLI::error( esc_html__( 'Demo import files could not be retrieved!', 'revolution' ) );
+			WP_CLI::error( esc_html__( 'Demo import files could not be retrieved!', 'viftech' ) );
 		}
 
-		WP_CLI::log( esc_html__( 'Demo import files retrieved successfully!', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Demo import files retrieved successfully!', 'viftech' ) );
 
-		WP_CLI::log( esc_html__( 'Importing...', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Importing...', 'viftech' ) );
 
 		if ( ! empty( $import_files['content'] ) ) {
 			$this->do_action( 'pt-ocdi/before_content_import_execution', $import_files, $this->ocdi->import_files, $predefined_index );
@@ -170,7 +170,7 @@ class WPCLICommands extends \WP_CLI_Command {
 
 		$this->do_action( 'pt-ocdi/after_all_import_execution', $import_files, $this->ocdi->import_files, $predefined_index );
 
-		WP_CLI::log( esc_html__( 'Predefined import finished!', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Predefined import finished!', 'viftech' ) );
 	}
 
 	/**
@@ -182,7 +182,7 @@ class WPCLICommands extends \WP_CLI_Command {
 		$content_import_file_path = realpath( $relative_file_path );
 
 		if ( ! file_exists( $content_import_file_path ) ) {
-			WP_CLI::warning( esc_html__( 'Content import file provided does not exist! Skipping this import!', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'Content import file provided does not exist! Skipping this import!', 'viftech' ) );
 			return false;
 		}
 
@@ -191,17 +191,17 @@ class WPCLICommands extends \WP_CLI_Command {
 			return 3600;
 		} );
 
-		WP_CLI::log( esc_html__( 'Importing content (this might take a while)...', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Importing content (this might take a while)...', 'viftech' ) );
 
-		Helpers::append_to_file( '', $this->ocdi->log_file_path, esc_html__( 'Importing content' , 'revolution' ) );
+		Helpers::append_to_file( '', $this->ocdi->log_file_path, esc_html__( 'Importing content' , 'viftech' ) );
 
 		$this->ocdi->append_to_frontend_error_messages( $this->ocdi->importer->import_content( $content_import_file_path ) );
 
 		if( empty( $this->ocdi->frontend_error_messages ) ) {
-			WP_CLI::success( esc_html__( 'Content import finished!', 'revolution' ) );
+			WP_CLI::success( esc_html__( 'Content import finished!', 'viftech' ) );
 		}
 		else {
-			WP_CLI::warning( esc_html__( 'There were some issues while importing the content!', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'There were some issues while importing the content!', 'viftech' ) );
 
 			foreach ( $this->ocdi->frontend_error_messages as $line ) {
 				WP_CLI::log( $line );
@@ -220,19 +220,19 @@ class WPCLICommands extends \WP_CLI_Command {
 		$widgets_import_file_path = realpath( $relative_file_path );
 
 		if ( ! file_exists( $widgets_import_file_path ) ) {
-			WP_CLI::warning( esc_html__( 'Widgets import file provided does not exist! Skipping this import!', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'Widgets import file provided does not exist! Skipping this import!', 'viftech' ) );
 			return false;
 		}
 
-		WP_CLI::log( esc_html__( 'Importing widgets...', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Importing widgets...', 'viftech' ) );
 
 		WidgetImporter::import( $widgets_import_file_path );
 
 		if( empty( $this->ocdi->frontend_error_messages ) ) {
-			WP_CLI::success( esc_html__( 'Widgets imported successfully!', 'revolution' ) );
+			WP_CLI::success( esc_html__( 'Widgets imported successfully!', 'viftech' ) );
 		}
 		else {
-			WP_CLI::warning( esc_html__( 'There were some issues while importing widgets!', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'There were some issues while importing widgets!', 'viftech' ) );
 
 			foreach ( $this->ocdi->frontend_error_messages as $line ) {
 				WP_CLI::log( $line );
@@ -251,19 +251,19 @@ class WPCLICommands extends \WP_CLI_Command {
 		$customizer_import_file_path = realpath( $relative_file_path );
 
 		if ( ! file_exists( $customizer_import_file_path ) ) {
-			WP_CLI::warning( esc_html__( 'Customizer import file provided does not exist! Skipping this import!', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'Customizer import file provided does not exist! Skipping this import!', 'viftech' ) );
 			return false;
 		}
 
-		WP_CLI::log( esc_html__( 'Importing customizer settings...', 'revolution' ) );
+		WP_CLI::log( esc_html__( 'Importing customizer settings...', 'viftech' ) );
 
 		CustomizerImporter::import( $customizer_import_file_path );
 
 		if( empty( $this->ocdi->frontend_error_messages ) ) {
-			WP_CLI::success( esc_html__( 'Customizer settings imported successfully!', 'revolution' ) );
+			WP_CLI::success( esc_html__( 'Customizer settings imported successfully!', 'viftech' ) );
 		}
 		else {
-			WP_CLI::warning( esc_html__( 'There were some issues while importing customizer settings!', 'revolution' ) );
+			WP_CLI::warning( esc_html__( 'There were some issues while importing customizer settings!', 'viftech' ) );
 
 			foreach ( $this->ocdi->frontend_error_messages as $line ) {
 				WP_CLI::log( $line );
@@ -283,7 +283,7 @@ class WPCLICommands extends \WP_CLI_Command {
 	 */
 	private function do_action( $action, $import_files = array(), $all_import_files = array(), $selected_index = null ) {
 		if ( false !== has_action( $action ) ) {
-			WP_CLI::log( sprintf( esc_html__( 'Executing action: %s ...', 'revolution' ), $action ) );
+			WP_CLI::log( sprintf( esc_html__( 'Executing action: %s ...', 'viftech' ), $action ) );
 
 			ob_start();
 				do_action( $action, $import_files, $all_import_files, $selected_index );

@@ -4,12 +4,12 @@ class widget_thb_twitterwidget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
 			'classname'   => 'widget_thb_twitterwidget',
-			'description' => __('Display your Tweets','revolution')
+			'description' => __('Display your Tweets','viftech')
 		);
 		
 		parent::__construct(
 			'thb_thb_twitterwidget_widget',
-			__( 'Fuel Themes - Twitter' , 'revolution' ),
+			__( 'Fuel Themes - Twitter' , 'viftech' ),
 			$widget_ops
 		);
 				
@@ -59,12 +59,12 @@ class widget_thb_twitterwidget extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 		
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e('Widget Title:', 'revolution'); ?></label>
+			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e('Widget Title:', 'viftech'); ?></label>
 			<input id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>" value="<?php echo esc_attr($instance['title']); ?>" class="widefat" />
 		</p>
 		
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'name' )); ?>"><?php esc_html_e('Number of Tweets:', 'revolution'); ?></label>
+			<label for="<?php echo esc_attr($this->get_field_id( 'name' )); ?>"><?php esc_html_e('Number of Tweets:', 'viftech'); ?></label>
 			<input id="<?php echo esc_attr($this->get_field_id( 'name' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'show' )); ?>" value="<?php echo esc_attr($instance['show']); ?>" class="widefat" />
 		</p>
 	<?php

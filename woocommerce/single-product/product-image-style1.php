@@ -40,7 +40,7 @@ $classes[] = 'thb-carousel-dark';
 				$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
 			} else {
 				$html  = '<div class="first woocommerce-product-gallery__image--placeholder">';
-				$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'revolution' ) );
+				$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'viftech' ) );
 				$html .= '</div>';
 			}
 	

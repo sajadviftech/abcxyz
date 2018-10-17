@@ -38,7 +38,7 @@
 					?>
 				</aside>
 			<h2 class="animation fade-in"><a href="<?php echo esc_url($permalink); ?>"><?php the_title(); ?></a></h2>
-			<a href="<?php echo esc_url($permalink); ?>" class="btn-text style1 animation fade-in"><?php esc_html_e('Learn More', 'revolution'); ?></a>
+			<a href="<?php echo esc_url($permalink); ?>" class="btn-text style1 animation fade-in"><?php esc_html_e('Learn More', 'viftech'); ?></a>
 		</div>
 		<div class="small-12 medium-6 small-order-1 medium-order-2 columns image-side">
 			<a href="<?php echo esc_url($permalink); ?>">

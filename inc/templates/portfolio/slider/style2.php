@@ -21,7 +21,7 @@
 			<h1 class="animation fade-in"><a href="<?php echo esc_url($permalink); ?>"><?php the_title(); ?></a></h1>
 			<div class="animation fade-in excerpt"><p><?php echo esc_html(get_the_excerpt()); ?></p></div>
 			<?php do_action( 'thb_portfolio_attributes', 'style2', 'medium-3', 'animation fade-in'); ?>
-			<a href="<?php echo esc_url($permalink); ?>" class="btn style4 small white animation fade-in"><span><?php esc_html_e('Learn More', 'revolution'); ?></span></a>
+			<a href="<?php echo esc_url($permalink); ?>" class="btn style4 small white animation fade-in"><span><?php esc_html_e('Learn More', 'viftech'); ?></span></a>
 		</div>
 	</div>
 </div>
