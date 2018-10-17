@@ -37,31 +37,7 @@ function thb_register_required_plugins() {
 			'image_url' => Thb_Theme_Admin::$thb_theme_directory_uri .'assets/img/admin/plugins/js_composer.png'
 		);
 	}
-	$plugins[] = array(
-		'name'     				=> esc_html__('WooCommerce', 'revolution'), // The plugin name
-		'slug'     				=> 'woocommerce', // The plugin slug (typically the folder name)
-		'required'			=> true,
-		'force_activation'		=> false,
-		'force_deactivation'	=> false,
-		'image_url' => Thb_Theme_Admin::$thb_theme_directory_uri .'assets/img/admin/plugins/woo.png'
-	);
-	$plugins[] = array(
-		'name'     				=> esc_html__('Revolution - Required Plugin', 'revolution'), // The plugin name
-		'slug'     				=> 'revolution-plugin', // The plugin slug (typically the folder name)
-		'source'				=> Thb_Theme_Admin::$thb_theme_directory_uri . 'inc/plugins/revolution-plugin.zip', // The plugin source
-		'version'				=> '1.0.0',
-		'required'			=> true,
-		'force_activation'		=> false,
-		'force_deactivation'	=> false,
-		'image_url' => Thb_Theme_Admin::$thb_theme_directory_uri .'assets/img/admin/plugins/revolution.png'
-	);
-	$plugins[] = array(
-		'name'     				=> esc_html__('MailChimp for WordPress', 'revolution'), // The plugin name
-		'slug'     				=> 'mailchimp-for-wp', // The plugin source
-		'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-		'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-		'force_deactivation' 	=> false // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-	);
+	
 	$plugins[] = array(
 		'name'     				=> esc_html__('Contact Form 7', 'revolution'), // The plugin name
 		'slug'     				=> 'contact-form-7', // The plugin source

@@ -391,7 +391,7 @@ class Thb_Theme_Admin {
 					$transient->response[self::$thb_theme_slug] = array(
 						"new_version"	=> 		$data->version,
 						"package"		=>	    $data->download_url,
-						"url"			=>		'http://fuelthemes.net'		
+						"url"			=>		'#apiurl'		
 					);
 	
 					update_option("thb_".self::$thb_theme_slug."_remote_ver", $data->version);
@@ -564,7 +564,7 @@ class Thb_Theme_Admin {
 			
 			if ( false == get_option( $revolution_installed, false ) ) {		
 				update_option( $revolution_installed, true );
-				wp_redirect( admin_url( 'admin.php?page=thb-product-registration' ) );
+				wp_redirect( admin_url( 'admin.php?page=thb-plugins' ) );
 				die();
 			} 
 			
@@ -584,11 +584,10 @@ class Thb_Theme_Admin {
 	public function adminSetupMenu() {
 		
 		// Product Registration
-		add_menu_page( Thb_Theme_Admin::$thb_theme_name, Thb_Theme_Admin::$thb_theme_name, 'edit_theme_options', 'thb-product-registration', array( & $this, 'thb_Product_Registration' ), '', 3 );
+		add_menu_page( Thb_Theme_Admin::$thb_theme_name, Thb_Theme_Admin::$thb_theme_name, 'edit_theme_options', 'thb-product-registration', array( & $this, 'thb_Plugins' ), '', 3 );
 		
 		// Product Registration
-		add_submenu_page( 'thb-product-registration', 'Registration', 'Registration', 'edit_theme_options', 'thb-product-registration', array( & $this, 'thb_Product_Registration' ) );
-		
+		/* add Product Regisrtaion*/		
 		// Main Menu Item
 		add_submenu_page( 'thb-product-registration', 'Plugins', 'Plugins', 'edit_theme_options', 'thb-plugins', array( & $this, 'thb_Plugins' ) );
 
@@ -603,7 +602,7 @@ class Thb_Theme_Admin {
 		get_template_part( 'inc/admin/welcome/pages/plugins' );
 	}
 	public function thb_Product_Registration() {
-		get_template_part( 'inc/admin/welcome/pages/registration' );
+		//get_template_part( 'inc/admin/welcome/pages/registration' );
 	}
 	public function thb_Demo_Import() {
 		get_template_part( 'inc/admin/welcome/pages/demo-import' );
@@ -612,7 +611,7 @@ class Thb_Theme_Admin {
 	 *	Inintialize API
 	 */
 	public function dashboardUrl($type = null) {
-		$url = 'https://my.fuelthemes.net';
+		$url = '#API_FETCH';
 		switch ( $type ) {
 			case 'verify':
 				$url .= '/api/verify';

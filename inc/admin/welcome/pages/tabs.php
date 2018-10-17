@@ -1,7 +1,6 @@
 <?php
 
 $thb_links = array(
-	'thb-product-registration' 	=> 'Product Registration',
 	'thb-plugins'			  				=> 'Install Plugins',
 	'thb-demo-import'						=> 'Demo Content Import',
 	'thb-theme-options'     		=> 'Theme Options'

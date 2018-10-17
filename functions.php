@@ -65,3 +65,6 @@ require get_theme_file_path('/inc/wpml.php');
 // WooCommerce Support
 require get_theme_file_path('/inc/woocommerce.php');
 require get_theme_file_path('/inc/woocommerce-category-image.php');
+
+/*Custom Post Types*/
+require get_theme_file_path('post-types.php');
