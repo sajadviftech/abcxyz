@@ -17,9 +17,6 @@ require get_theme_file_path('/inc/admin/welcome/fuelthemes.php');
 // TGM Plugin Activation Class
 require get_theme_file_path('/inc/admin/plugins/plugins.php');
 
-// Imports
-require get_theme_file_path('/inc/admin/imports/import.php');
- 
 // Misc
 require get_theme_file_path('/inc/misc.php');
 
