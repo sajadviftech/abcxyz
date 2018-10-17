@@ -57,9 +57,6 @@ require get_theme_file_path('/inc/framework/thb-twitter-helper.php');
 // Widgets
 require get_theme_file_path('/inc/widgets.php');
 
-// WPML Support
-require get_theme_file_path('/inc/wpml.php');
-
 // WooCommerce Support
 require get_theme_file_path('/inc/woocommerce.php');
 require get_theme_file_path('/inc/woocommerce-category-image.php');

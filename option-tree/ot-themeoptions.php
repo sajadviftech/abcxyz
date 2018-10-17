@@ -959,7 +959,7 @@ function thb_custom_theme_options() {
         'type'        => 'text',
         'desc'        => esc_html__('Call-to-Action Button link', 'viftech' ),
         'section'     => 'header',
-        'std' 				=> esc_html__('https://themeforest.net/item/revolution-creative-portfolio-theme/17870799?ref=fuelthemes', 'viftech'),
+        'std' 				=> esc_html__('#saletheme', 'viftech'),
         'condition'   => 'header_button:is(on)'
       ),
       array(

@@ -12,9 +12,8 @@ function thb_main_styles() {
 	wp_enqueue_style("thb-fa", Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', null, null);
 	wp_enqueue_style("thb-app", Theme_Config::$thb_theme_directory_uri . 'assets/css/app.css', null, esc_attr(Theme_Config::$thb_theme_version));
 	
-	if ( wp_unslash($_SERVER['HTTP_HOST']) !== 'revolution.fuelthemes.net') {
 		wp_enqueue_style('thb-style', get_stylesheet_uri(), null, null);	
-	}
+	
 	wp_enqueue_style( 'thb-google-fonts', thb_google_webfont(), array(), null );
 	wp_add_inline_style( 'thb-app', thb_selection() );
 	
