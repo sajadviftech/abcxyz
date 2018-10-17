@@ -47,8 +47,6 @@ function thb_TheShortcodesForVC() {
 		// Shortcodes 
 		require get_theme_file_path('/inc/framework/visualcomposer/visualcomposer-extend.php');
 		
-		// Templates
-		require get_theme_file_path('/inc/framework/visualcomposer/visualcomposer-templates.php');
 		
 		// Offsets
 		function thb_column_offset_class_merge($class_string, $tag) {

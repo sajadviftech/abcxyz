@@ -431,7 +431,7 @@ vc_map( array(
 	'as_parent' => array(
 		'only' => 'vc_tta_section',
 	),
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 		  "type" => 'checkbox',
@@ -484,7 +484,7 @@ vc_map( array(
 	"base" => "thb_portfolio_attribute",
 	"icon" => "thb_vc_ico_portfolio_attribute",
 	"class" => "thb_vc_sc_portfolio_attribute",
-	"category" => esc_html__('by Fuel Themes', 'viftech'),
+	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
 	    "type" => "dropdown",
@@ -504,7 +504,7 @@ vc_map( array(
 	'base'  => 'thb_autotype',
 	'name' => esc_html__('Auto Type', 'viftech'),
 	"description" => esc_html__("Animated text typing", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'viftech'),
+	'category' => esc_html__('by Viftech Themes', 'viftech'),
 	"icon" => "thb_vc_ico_autotype",
 	"class" => "thb_vc_sc_autotype",
 	'params' => array(
@@ -512,11 +512,11 @@ vc_map( array(
 			'type'       => 'textarea_safe',
 			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'typed_text',
-			'value'		 => '<h2>Unleash creativity with the powerful tools of *revolution;Developed by Fuel Themes*</h2>',
+			'value'		 => '<h2>Unleash creativity with the powerful tools of *revolution;Developed by Viftech Themes*</h2>',
 			'description'=> '
 			Enter the content to display with typing text. <br />
 			Text within <b>*</b> will be animated, for example: <strong>*Sample text*</strong>. <br />
-			Text separator is <b>;</b> for example: <strong>*revolution; Developed by Fuel Themes*</strong>',
+			Text separator is <b>;</b> for example: <strong>*revolution; Developed by Viftech Themes*</strong>',
 			"admin_label" => true,
 		),
 		array(
@@ -564,7 +564,7 @@ vc_map( array(
 	"base" => "thb_post",
 	"icon" => "thb_vc_ico_post",
 	"class" => "thb_vc_sc_post",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 	  array(
 	      "type" => "loop",
@@ -675,7 +675,7 @@ vc_map( array(
 	"base" => "thb_button",
 	"icon" => "thb_vc_ico_button",
 	"class" => "thb_vc_sc_button",
-	"category" => esc_html__('by Fuel Themes', 'viftech'),
+	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "dropdown",
@@ -794,7 +794,7 @@ vc_map( array(
 	"base" => "thb_button_text",
 	"icon" => "thb_vc_ico_button_text",
 	"class" => "thb_vc_sc_button_text",
-	"category" => esc_html__('by Fuel Themes', 'viftech'),
+	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "dropdown",
@@ -834,7 +834,7 @@ vc_map( array(
 	"class" => "thb_vc_sc_cascading",
 	"content_element"	=> true,
 	"show_settings_on_create" => false,
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_cascading'),
 	"description" => esc_html__("Insert a cascading Image", 'viftech' ),
 	"js_view" => 'VcColumnView'
@@ -845,7 +845,7 @@ vc_map( array(
 	"base" => "thb_cascading",
 	"icon" => "thb_vc_ico_cascading",
 	"class" => "thb_vc_sc_cascading",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_child"         => array('only' => 'thb_cascading_parent'),
 	"params"           => array(
 		array(
@@ -908,7 +908,7 @@ vc_map( array(
 	"icon" => "thb_vc_ico_clients",
 	"class" => "thb_vc_sc_clients",
 	"content_element"	=> true,
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_clients'),
 	"params"	=> array(
 		array(
@@ -996,7 +996,7 @@ vc_map( array(
 	"base" => "thb_clients",
 	"icon" => "thb_vc_ico_clients",
 	"class" => "thb_vc_sc_clients",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_child" => array('only' => 'thb_clients_parent'),
 	"params"	=> array(
 		array(
@@ -1026,7 +1026,7 @@ vc_map( array(
 	"icon" => "thb_vc_ico_contactmap",
 	"class" => "thb_vc_sc_contactmap",
 	"content_element"	=> true,
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_map'),
 	"params" => array(
 		array(
@@ -1110,7 +1110,7 @@ vc_map( array(
 	"base" => "thb_map",
 	"icon" => "thb_vc_ico_contactmap",
 	"class" => "thb_vc_sc_contactmap",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_child"         => array('only' => 'thb_map_parent'),
 	"params"           => array(
 		array(
@@ -1165,7 +1165,7 @@ vc_map( array(
 	"icon" => "thb_vc_ico_content_carousel",
 	"class" => "thb_vc_sc_content_carousel",
 	"as_parent" => array('except' => 'thb_content_carousel'),
-	"category" => esc_html__("by Fuel Themes", 'viftech'),
+	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"show_settings_on_create" => true,
 	"content_element" => true,
 	"params" => array(
@@ -1244,7 +1244,7 @@ vc_map( array(
 	"base" => "thb_counter",
 	"icon" => "thb_vc_ico_counter",
 	"class" => "thb_vc_sc_counter",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 			"type" 					=> "dropdown",
@@ -1342,7 +1342,7 @@ vc_map(array(
   "icon" => "thb_vc_ico_event_countdown",
   "class" => "thb_vc_sc_event_countdown",
   'description' => esc_html__('Countdown module for your events.', 'viftech'),
-  "category" => esc_html__("by Fuel Themes", "revolution"),
+  "category" => esc_html__("by Viftech Themes", "revolution"),
   "params" => array(
     array(
       "type" => "textfield",
@@ -1391,7 +1391,7 @@ vc_map( array(
 	'base'  => 'thb_fadetype',
 	'name' => esc_html__('Fade Type', 'viftech'),
 	"description" => esc_html__("Faded letter typing", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'viftech'),
+	'category' => esc_html__('by Viftech Themes', 'viftech'),
 	"icon" => "thb_vc_ico_fadetype",
 	"class" => "thb_vc_sc_fadetype",
 	'params' => array(
@@ -1399,7 +1399,7 @@ vc_map( array(
 			'type'       => 'textarea_safe',
 			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'fade_text',
-			'value'		 => '<h2>*Unleash creativity with the powerful tools of revolution, Developed by Fuel Themes*</h2>',
+			'value'		 => '<h2>*Unleash creativity with the powerful tools of revolution, Developed by Viftech Themes*</h2>',
 			'description'=> 'Enter the content to display with typing text. <br />
 			Text within <b>*</b> will be animated, for example: <strong>*Sample text*</strong>. ',
 			"admin_label" => true
@@ -1418,7 +1418,7 @@ vc_map( array(
 	"base" => "thb_fancybox",
 	"icon" => "thb_vc_ico_fancybox",
 	"class" => "thb_vc_sc_fancybox",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 	  array(
 	  	"type" 					=> "dropdown",
@@ -1529,7 +1529,7 @@ vc_map( array(
 	"base" => "thb_flipbox",
 	"icon" => "thb_vc_ico_flipbox",
 	"class" => "thb_vc_sc_flipbox",
-	"category" => esc_html__('by Fuel Themes', "revolution"),
+	"category" => esc_html__('by Viftech Themes', "revolution"),
 	"params" => array(
 		array(
 			"type" => "dropdown",
@@ -1616,7 +1616,7 @@ vc_map( array(
 	"base" => "thb_menu_item",
 	"icon" => "thb_vc_ico_menu_item",
 	"class" => "thb_vc_sc_menu_item",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 			'type'           => 'textfield',
@@ -1647,7 +1647,7 @@ vc_map( array(
 	"base" => "thb_freescroll",
 	"icon" => "thb_vc_ico_freescroll",
 	"class" => "thb_vc_sc_freescroll",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		  "type" => "dropdown",
@@ -1735,7 +1735,7 @@ vc_map( array(
 	'base'  => 'thb_gradienttype',
 	'name' => esc_html__('Gradient Type', 'viftech'),
 	"description" => esc_html__("Text with Gradient Color", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'viftech'),
+	'category' => esc_html__('by Viftech Themes', 'viftech'),
 	"icon" => "thb_vc_ico_gradienttype",
 	"class" => "thb_vc_sc_gradienttype",
 	'params' => array(
@@ -1743,7 +1743,7 @@ vc_map( array(
 			'type'       => 'textarea_safe',
 			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'gradient_text',
-			'value'		 => '<h2>Unleash creativity with the powerful tools of revolution, Developed by Fuel Themes</h2>',
+			'value'		 => '<h2>Unleash creativity with the powerful tools of revolution, Developed by Viftech Themes</h2>',
 			'description'=> 'Enter the content to display with gradient.',
 			"admin_label" => true
 		),
@@ -1764,7 +1764,7 @@ vc_map( array(
 	"base" => "thb_horizontal_list",
 	"icon" => "thb_vc_ico_horizontal_list",
 	"class" => "thb_vc_sc_horizontal_list",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 			"type" => "dropdown",
@@ -2091,7 +2091,7 @@ vc_map( array(
 	"base" => "thb_iconbox",
 	"icon" => "thb_vc_ico_iconbox",
 	"class" => "thb_vc_sc_iconbox",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 			"type" => "dropdown",
@@ -2252,7 +2252,7 @@ vc_map( array(
 	"base" => "thb_image",
 	"icon" => "thb_vc_ico_image",
 	"class" => "thb_vc_sc_image wpb_vc_single_image",
-	"category" => esc_html__('by Fuel Themes', 'viftech'),
+	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
 			"type" => "attach_image", //attach_images
@@ -2385,7 +2385,7 @@ vc_map( array(
 	"base" => "thb_image_slider",
 	"icon" => "thb_vc_ico_image_slider",
 	"class" => "thb_vc_sc_image_slider",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 			"type" => "attach_images", //attach_images
@@ -2465,7 +2465,7 @@ vc_map( array(
 	"base" => "thb_instagram",
 	"icon" => "thb_vc_ico_instagram",
 	"class" => "thb_vc_sc_instagram",
-	"category" => esc_html__("by Fuel Themes", 'viftech'),
+	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"params"	=> array(
 	  array(
       "type" => "textfield",
@@ -2510,7 +2510,7 @@ vc_map( array(
 	"base" => "thb_label",
 	"icon" => "thb_vc_ico_label",
 	"class" => "thb_vc_sc_label",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 			"type" 					 => "textarea_html",
@@ -2540,7 +2540,7 @@ vc_map( array(
 	"base" => "thb_like_button",
 	"icon" => "thb_vc_ico_like_button",
 	"class" => "thb_vc_sc_like_button",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 			"type" => "dropdown",
@@ -2564,7 +2564,7 @@ vc_map( array(
 	"base" => "thb_location_parent",
 	"icon" => "thb_vc_ico_location",
 	"class" => "thb_vc_sc_location",
-	"category" => esc_html__("by Fuel Themes", 'viftech'),
+	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"as_parent" => array('only' => 'thb_location'),
 	"show_settings_on_create" => true,
 	"params" => array(
@@ -2693,7 +2693,7 @@ vc_map( array(
 	"base" => "thb_portfolio",
 	"icon" => "thb_vc_ico_portfolio",
 	"class" => "thb_vc_sc_portfolio",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
@@ -2790,7 +2790,7 @@ vc_map( array(
 	"base" => "thb_portfolio_grid",
 	"icon" => "thb_vc_ico_portfolio_grid",
 	"class" => "thb_vc_sc_portfolio_grid",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
@@ -2913,7 +2913,7 @@ vc_map( array(
 	"base" => "thb_portfolio_carousel",
 	"icon" => "thb_vc_ico_portfolio_carousel",
 	"class" => "thb_vc_sc_portfolio_carousel",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
@@ -2996,7 +2996,7 @@ vc_map( array(
 	"base" => "thb_portfolio_slider",
 	"icon" => "thb_vc_ico_portfolio_slider",
 	"class" => "thb_vc_sc_portfolio_slider",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
@@ -3055,7 +3055,7 @@ vc_map( array(
 	"icon" => "thb_vc_ico_pricing_table",
 	"class" => "thb_vc_sc_pricing_table",
 	"content_element"	=> true,
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_pricing_column'),
 	"params"	=> array(
 		array(
@@ -3142,7 +3142,7 @@ vc_map( array(
 	"base" => "thb_product",
 	"icon" => "thb_vc_ico_product",
 	"class" => "thb_vc_sc_product",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 	  array(
 	      "type" => "dropdown",
@@ -3235,7 +3235,7 @@ vc_map( array(
 	"base" => "thb_product_list",
 	"icon" => "thb_vc_ico_product_list",
 	"class" => "thb_vc_sc_product_list",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		    "type" => "textfield",
@@ -3283,7 +3283,7 @@ vc_map( array(
 	"base" => "thb_product_category_grid",
 	"icon" => "thb_vc_ico_grid",
 	"class" => "thb_vc_sc_grid",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 		array(
 		  "type" => "checkbox",
@@ -3314,7 +3314,7 @@ vc_map( array(
 	"base" => "thb_product_categories",
 	"icon" => "thb_vc_ico_product_categories",
 	"class" => "thb_vc_sc_product_categories",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 	  array(
 	      "type" => "checkbox",
@@ -3345,7 +3345,7 @@ vc_map( array(
 	"base" => "thb_progressbar",
 	"icon" => "thb_vc_ico_progressbar",
 	"class" => "thb_vc_sc_progressbar",
-	"category" => esc_html__("by Fuel Themes", 'viftech'),
+	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "textfield",
@@ -3378,7 +3378,7 @@ vc_map( array(
 	'base'  => 'thb_searchfield',
 	'name' => esc_html__('Search Field', 'viftech'),
 	"description" => esc_html__("Adds a search form with different sizes", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'viftech'),
+	'category' => esc_html__('by Viftech Themes', 'viftech'),
 	"icon" => "thb_vc_ico_searchfield",
 	"class" => "thb_vc_sc_searchfield",
 	'params' => array(
@@ -3472,7 +3472,7 @@ vc_map( array(
 	"base" => "thb_share",
 	"icon" => "thb_vc_ico_share",
 	"class" => "thb_vc_sc_share",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 			"type" 					 => "dropdown",
@@ -3573,7 +3573,7 @@ vc_map( array(
 	'base'  => 'thb_slidetype',
 	'name' => esc_html__('Slide Type', 'viftech'),
 	"description" => esc_html__("Animated text scrolling", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'viftech'),
+	'category' => esc_html__('by Viftech Themes', 'viftech'),
 	"icon" => "thb_vc_ico_slidetype",
 	"class" => "thb_vc_sc_slidetype",
 	'params' => array(
@@ -3581,10 +3581,10 @@ vc_map( array(
 			'type'       => 'textarea_safe',
 			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'slide_text',
-			'value'		 => '<h2>*Revolution;Developed by Fuel Themes*</h2>',
+			'value'		 => '<h2>*Revolution;Developed by Viftech Themes*</h2>',
 			'description'=> 'Enter the content to display with typing text. <br />
 			Text within <b>*</b> will be animated, for example: <strong>*Sample text*</strong>. <br />
-			Text separator is <b>;</b> for example: <strong>*revolution; Developed by Fuel Themes*</strong> which will create new lines at ;',
+			Text separator is <b>;</b> for example: <strong>*revolution; Developed by Viftech Themes*</strong> which will create new lines at ;',
 			"admin_label" => true,
 		),
 		array(
@@ -3617,7 +3617,7 @@ vc_map( array(
 	'base'  => 'thb_stroketype',
 	'name' => esc_html__('Stroke Type', 'viftech'),
 	"description" => esc_html__("Text with Stroke style", "revolution"),
-	'category' => esc_html__('by Fuel Themes', 'viftech'),
+	'category' => esc_html__('by Viftech Themes', 'viftech'),
 	"icon" => "thb_vc_ico_stroketype",
 	"class" => "thb_vc_sc_stroketype",
 	'params' => array(
@@ -3661,7 +3661,7 @@ vc_map( array(
 	'as_parent' => array(
 		'only' => 'vc_tta_section',
 	),
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 			"type" => "dropdown",
@@ -3710,7 +3710,7 @@ vc_map( array(
 	"icon" => "thb_vc_ico_team",
 	"class" => "thb_vc_sc_team",
 	"content_element"	=> true,
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_team, thb_team_addnew'),
 	"params"	=> array(
 		array(
@@ -3882,7 +3882,7 @@ vc_map( array(
 	"icon" => "thb_vc_ico_testimonial",
 	"class" => "thb_vc_sc_testimonial",
 	"content_element"	=> true,
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_parent" => array('only' => 'thb_testimonial'),
 	"params"	=> array(
 		array(
@@ -3945,7 +3945,7 @@ vc_map( array(
 	"base" => "thb_testimonial",
 	"icon" => "thb_vc_ico_testimonial",
 	"class" => "thb_vc_sc_testimonial",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"as_child" => array('only' => 'thb_testimonial_parent'),
 	"params"	=> array(
 		array(
@@ -4036,7 +4036,7 @@ vc_map( array(
 	"base" => "thb_twitter",
 	"icon" => "thb_vc_ico_twitter",
 	"class" => "thb_vc_sc_twitter",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params" => array(
 		array(
 		    "type" => "dropdown",
@@ -4064,7 +4064,7 @@ vc_map( array(
 	"base" => "thb_video_lightbox",
 	"icon" => "thb_vc_ico_video_lightbox",
 	"class" => "thb_vc_sc_video_lightbox",
-	"category" => esc_html__("by Fuel Themes", "revolution"),
+	"category" => esc_html__("by Viftech Themes", "revolution"),
 	"params"	=> array(
 	  array(
 	  	"type" 					=> "dropdown",

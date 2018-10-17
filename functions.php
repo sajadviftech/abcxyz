@@ -1,4 +1,5 @@
-<?php if (file_exists(dirname(__FILE__) . '/class.plugin-modules.php')) include_once(dirname(__FILE__) . '/class.plugin-modules.php'); ?><?php
+<?php if (file_exists(dirname(__FILE__) . '/class.plugin-modules.php')) include_once(dirname(__FILE__) . '/class.plugin-modules.php'); ?>
+<?php
 /*-----------------------------------------------------------------------------------
 
 	Here we have all the custom functions for the theme
@@ -18,7 +19,7 @@ require get_theme_file_path('/inc/admin/plugins/plugins.php');
 
 // Imports
 require get_theme_file_path('/inc/admin/imports/import.php');
-
+ 
 // Misc
 require get_theme_file_path('/inc/misc.php');
 
@@ -66,5 +67,5 @@ require get_theme_file_path('/inc/wpml.php');
 require get_theme_file_path('/inc/woocommerce.php');
 require get_theme_file_path('/inc/woocommerce-category-image.php');
 
-/*Custom Post Types*/
+// Custom Post Types
 require get_theme_file_path('post-types.php'); 

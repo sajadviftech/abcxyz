@@ -5,9 +5,8 @@
 
 .vc_add-element-container .wpb-elements-list {
     padding: 30px;
-    background-color: #171719 !important;
 }
-
+    
 .iconset,
 .wpb-content-layouts a i.vc_element-icon,
 .wpb_content_element>.wpb_element_wrapper:after,
@@ -84,8 +83,8 @@ ul.wpb-content-layouts-container li .isotope-filter li.active a,
 .wpb-content-layouts a {
     width: 197px !important;
     height: 64px !important;
-    border: 1px dashed #393a3c !important;
-    color: #fff !important;
+    border: 2px solid #393a3c !important;
+    color: #000 !important;
     padding: 95px 25px 25px !important;
     font-size: 14px !important;
     font-weight: 700 !important;
@@ -96,10 +95,11 @@ ul.wpb-content-layouts-container li .isotope-filter li.active a,
 }
 
 .wpb-content-layouts a .vc_element-description {
-    color: #616266 !important;
+    color: #000 !important;
     font-size: 12px !important;
-    font-weight: 300 !important;
+    font-weight: 600 !important;
     margin-top: 10px !important;
+    line-height: normal;
 }
 
 .wpb-content-layouts a i.vc_element-icon {
@@ -118,7 +118,7 @@ ul.wpb-content-layouts-container li .isotope-filter li.active a,
     width: 203px;
     height: 174px;
     background: #137fc4 !important;
-    border: 1px solid #137fc4 !important;
+    border: 2px solid #137fc4 !important;
     color: #fff !important;
 }
 
@@ -129,7 +129,6 @@ ul.wpb-content-layouts-container li .isotope-filter li.active a,
 .wpb-content-layouts li {
     height: 185px !important;
     width: 197px !important;
-    background-color: #171719 !important;
     border: none !important;
     margin: 0 4px 2px 0 !important;
     text-align: center;
