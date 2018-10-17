@@ -7,10 +7,10 @@ add_filter( 'ot_show_settings_import', '__return_false' );
 add_filter( 'ot_show_options_ui', '__return_false' );
 add_filter( 'ot_show_settings_import', '__return_false' );
 add_filter( 'ot_google_fonts_api_key', function() { return 'AIzaSyA_sfIukXUl1YF8tpjXNGOvpYKNDnFKwFM'; } );
-require get_template_directory() .'/inc/admin/option-tree/ot-radioimages.php' ;
-require get_template_directory() .'/inc/admin/option-tree/ot-metaboxes.php' ;
-require get_template_directory() .'/inc/admin/option-tree/ot-themeoptions.php' ;
-require get_template_directory() .'/inc/admin/option-tree/ot-functions.php' ;
+require get_template_directory() .'/option-tree/ot-radioimages.php' ;
+require get_template_directory() .'/option-tree/ot-metaboxes.php' ;
+require get_template_directory() .'/option-tree/ot-themeoptions.php' ;
+require get_template_directory() .'/option-tree/ot-functions.php' ;
 if ( ! class_exists( 'OT_Loader' ) ) {
-	require get_template_directory() .'/inc/admin/option-tree/admin/ot-loader.php';
+	require get_template_directory() .'/option-tree/admin/ot-loader.php';
 }
