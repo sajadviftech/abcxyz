@@ -9,7 +9,7 @@ class widget_thb_twitterwidget extends WP_Widget {
 		
 		parent::__construct(
 			'thb_thb_twitterwidget_widget',
-			__( 'Fuel Themes - Twitter' , 'viftech' ),
+			__( 'Viftech Themes - Twitter' , 'viftech' ),
 			$widget_ops
 		);
 				

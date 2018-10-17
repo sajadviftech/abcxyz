@@ -9,7 +9,7 @@ class widget_latestimages extends WP_Widget {
 		
 		parent::__construct(
 			'thb_latestimages_widget',
-			__( 'Fuel Themes - Latest Posts with Images' , 'viftech' ),
+			__( 'Viftech Themes - Latest Posts with Images' , 'viftech' ),
 			$widget_ops
 		);
 				
