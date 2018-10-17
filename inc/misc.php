@@ -1121,7 +1121,7 @@ function thb_is_woocommerce() {
 
 /* Display Post Bottom Elements */
 function thb_PostMeta() {
-	$logo = ot_get_option('logo', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo.png');
+	$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
 	
 	$image_id = get_post_thumbnail_id();
 	$image_link = wp_get_attachment_image_src($image_id,'full');
@@ -1543,9 +1543,9 @@ function thb_footer_logo($subfooter = false) {
 		
 		
 		if ( $subfooter ) {
-			$footer_logo_upload = ot_get_option('subfooter_logo_upload', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo.png');
+			$footer_logo_upload = ot_get_option('subfooter_logo_upload', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
 		} else {
-			$footer_logo_upload = ot_get_option('footer_logo_upload', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo.png');
+			$footer_logo_upload = ot_get_option('footer_logo_upload', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
 		}
 		?>
 		<div class="footer-logo-holder">

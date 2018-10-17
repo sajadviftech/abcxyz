@@ -133,7 +133,7 @@ function thb_vc_gradient_color4( $group_name = 'Styling' ) {
 }
 
 // Shortcodes 
-$shortcodes = Thb_Theme_Admin::$thb_theme_directory. 'vc_templates/';
+$shortcodes = Theme_Config::$thb_theme_directory. 'vc_templates/';
 $files = glob($shortcodes.'thb_?*.php');
 foreach ($files as $filename) {
 	require get_theme_file_path('vc_templates/'.basename($filename));
@@ -261,14 +261,14 @@ vc_add_param("vc_row", array(
 	"param_name" => "divider_shape",
 	"group" => esc_html__("Dividers", 'viftech'),
 	"options" => array(
-		'curve' 				=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/curve.png",
-		'tilt_v2' 				=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt_v2.png",
-		'tilt' 					=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt.png",
-		'triangle' 			=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/triangle.png",
-		'waves_alt' 			=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_alt.png",
-		'waves_v2' 			=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_v2.png",
-		'waves' 				=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/waves.png",
-		'waves_opacity'	=> Thb_Theme_Admin::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_opacity.png"
+		'curve' 				=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/curve.png",
+		'tilt_v2' 				=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt_v2.png",
+		'tilt' 					=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt.png",
+		'triangle' 			=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/triangle.png",
+		'waves_alt' 			=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_alt.png",
+		'waves_v2' 			=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_v2.png",
+		'waves' 				=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves.png",
+		'waves_opacity'	=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_opacity.png"
 	),
 	"dependency" => Array('element' => "thb_shape_divider", 'value' => array('true'))
 ));

@@ -4,9 +4,9 @@
 <div class="wrap about-wrap">
 	<div class="theme-browser thb-plugins thb-content">
 		<?php
-			$key = Thb_Theme_Admin::$thb_product_key;
-			$expired = Thb_Theme_Admin::$thb_product_key_expired;
-			$thb_envato_hosted = Thb_Theme_Admin::$thb_envato_hosted;
+			$key = Theme_Config::$thb_product_key;
+			$expired = Theme_Config::$thb_product_key_expired;
+			$thb_envato_hosted = Theme_Config::$thb_envato_hosted;
 			
 			$cond = ($key != '' && $expired != 1) || $thb_envato_hosted;
 		?>
@@ -23,7 +23,7 @@
 	
 			$file_path = $plugin['file_path'];
 			
-			$actions = Thb_Theme_Admin()->thb_plugins_install( $plugin );
+			$actions = Theme_Config()->thb_plugins_install( $plugin );
 
 			if( is_plugin_active( $file_path ) ) {
 				$plugin_status = 'active';

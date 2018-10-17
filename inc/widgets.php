@@ -1,6 +1,6 @@
 <?php
-require Thb_Theme_Admin::$thb_theme_directory . 'inc/widgets/twitter-widget.php';
-require Thb_Theme_Admin::$thb_theme_directory .'inc/widgets/latest-posts-images.php';
+require Theme_Config::$thb_theme_directory . 'inc/widgets/twitter-widget.php';
+require Theme_Config::$thb_theme_directory .'inc/widgets/latest-posts-images.php';
 
 /* Widget Filter */
 add_filter( 'widget_nav_menu_args', 'thb_nav_menu_filter', 3, 4 );

@@ -9,8 +9,8 @@ function thb_main_styles() {
 	$i = 0;
 	$self_hosted_fonts = ot_get_option('self_hosted_fonts');
 	// Enqueue
-	wp_enqueue_style("thb-fa", Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', null, null);
-	wp_enqueue_style("thb-app", Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/css/app.css', null, esc_attr(Thb_Theme_Admin::$thb_theme_version));
+	wp_enqueue_style("thb-fa", Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', null, null);
+	wp_enqueue_style("thb-app", Theme_Config::$thb_theme_directory_uri . 'assets/css/app.css', null, esc_attr(Theme_Config::$thb_theme_version));
 	
 	if ( wp_unslash($_SERVER['HTTP_HOST']) !== 'revolution.fuelthemes.net') {
 		wp_enqueue_style('thb-style', get_stylesheet_uri(), null, null);	
@@ -21,7 +21,7 @@ function thb_main_styles() {
 	if ($self_hosted_fonts) {
 		foreach ($self_hosted_fonts as $font) {
 			$i++;
-			wp_enqueue_style("thb-self-hosted-".$i, $font['font_url'], null, esc_attr(Thb_Theme_Admin::$thb_theme_version));
+			wp_enqueue_style("thb-self-hosted-".$i, $font['font_url'], null, esc_attr(Theme_Config::$thb_theme_version));
 		}
 	}
 	
@@ -40,9 +40,9 @@ function thb_register_js() {
 		$thb_api_key = ot_get_option('map_api_key');
 		
 		// Register 
-		wp_enqueue_script('thb-vendor', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/js/vendor.min.js', array('jquery'), esc_attr(Thb_Theme_Admin::$thb_theme_version), TRUE);
+		wp_enqueue_script('thb-vendor', Theme_Config::$thb_theme_directory_uri. 'assets/js/vendor.min.js', array('jquery'), esc_attr(Theme_Config::$thb_theme_version), TRUE);
 		wp_enqueue_script('underscore');
-		wp_enqueue_script('thb-app', Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/js/app.min.js', array('jquery', 'thb-vendor', 'underscore'), esc_attr(Thb_Theme_Admin::$thb_theme_version), TRUE);
+		wp_enqueue_script('thb-app', Theme_Config::$thb_theme_directory_uri . 'assets/js/app.min.js', array('jquery', 'thb-vendor', 'underscore'), esc_attr(Theme_Config::$thb_theme_version), TRUE);
 		
 		if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1) ) {
 			wp_enqueue_script('comment-reply');

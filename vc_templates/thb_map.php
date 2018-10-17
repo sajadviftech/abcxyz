@@ -8,7 +8,7 @@
 		$marker_size = array($marker[1],$marker[2]);
 		$retina_marker = $retina_marker;
 	} else {
-		$marker_image = Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/pin.png';
+		$marker_image = Theme_Config::$thb_theme_directory_uri. 'assets/img/pin.png';
 		$marker_size = array(80,108);
 		$retina_marker = true;
 	}

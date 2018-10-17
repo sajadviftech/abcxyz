@@ -3,8 +3,8 @@
 function thb_center_nav_menu_items($items, $args) {
 	if ( $args->theme_location == 'nav-menu') {
 		if (is_array($items) || is_object($items)) {
-			$logo = ot_get_option('logo', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo.png');
-			$logo_light = ot_get_option('logo_light', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo-light.png');
+			$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
+			$logo_light = ot_get_option('logo_light', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo-light.png');
 			
 			ob_start();
 			?>

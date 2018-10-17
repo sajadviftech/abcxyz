@@ -1,7 +1,7 @@
 <?php 
 	$thb_id = get_queried_object_id();
-	$logo = ot_get_option('logo', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo.png');
-	$logo_light = ot_get_option('logo_light', Thb_Theme_Admin::$thb_theme_directory_uri. 'assets/img/logo-light.png');
+	$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
+	$logo_light = ot_get_option('logo_light', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo-light.png');
 	
 	$fixed_header_color = ot_get_option('fixed_header_color', 'dark-header');
 	$fixed_header_shadow = ot_get_option('fixed_header_shadow');

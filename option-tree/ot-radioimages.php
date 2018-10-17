@@ -7,52 +7,52 @@ function thb_filter_radio_images( $array, $field_id ) {
 	    array(
 	      'value'   => 'style1',
 	      'label'   => esc_html__( 'Style 1', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style1.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style1.png'
 	    ),
 	    array(
 	      'value'   => 'style2',
 	      'label'   => esc_html__( 'Style 2', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style2.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style2.png'
 	    ),
 	    array(
 	      'value'   => 'style3',
 	      'label'   => esc_html__( 'Style 3', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style3.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style3.png'
 	    ),
 	    array(
 	      'value'   => 'style4',
 	      'label'   => esc_html__( 'Style 4', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style4.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style4.png'
 	    ),
 	    array(
 	      'value'   => 'style5',
 	      'label'   => esc_html__( 'Style 5', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style5.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style5.png'
 	    ),
 	    array(
 	      'value'   => 'style6',
 	      'label'   => esc_html__( 'Style 6', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style6.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style6.png'
 	    ),
 	    array(
 	      'value'   => 'style7',
 	      'label'   => esc_html__( 'Style 7', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style7.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style7.png'
 	    ),
 	    array(
 	      'value'   => 'style8',
 	      'label'   => esc_html__( 'Style 8', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style8.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style8.png'
 	    ),
 	    array(
 	      'value'   => 'style9',
 	      'label'   => esc_html__( 'Style 9', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style9.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style9.png'
 	    ),
 	    array(
 	      'value'   => 'style10',
 	      'label'   => esc_html__( 'Style 10', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/header/style10.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/header/style10.png'
 	    )
 	  );
 	}
@@ -62,22 +62,22 @@ function thb_filter_radio_images( $array, $field_id ) {
 	    array(
 	      'value'   => 'large',
 	      'label'   => esc_html__( 'large', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/large.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/masonry/large.png'
 	    ),
 	    array(
 	      'value'   => 'small',
 	      'label'   => esc_html__( 'small', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/small.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/masonry/small.png'
 	    ),
 	    array(
 	      'value'   => 'wide',
 	      'label'   => esc_html__( 'wide', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/wide.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/masonry/wide.png'
 	    ),
 	    array(
 	      'value'   => 'tall',
 	      'label'   => esc_html__( 'tall', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/masonry/tall.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/masonry/tall.png'
 	    )
 	  );
 	}
@@ -87,12 +87,12 @@ function thb_filter_radio_images( $array, $field_id ) {
 	    array(
 	      'value'   => 'style1',
 	      'label'   => esc_html__( 'Style 1', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/footer_bar/style1.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/footer_bar/style1.png'
 	    ),
 	    array(
 	      'value'   => 'style2',
 	      'label'   => esc_html__( 'Style 2', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/footer_bar/style2.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/footer_bar/style2.png'
 	    )
 	  );
 	}
@@ -102,17 +102,17 @@ function thb_filter_radio_images( $array, $field_id ) {
 	    array(
 	      'value'   => 'style1',
 	      'label'   => esc_html__( 'Style 1', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style1.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style1.png'
 	    ),
 	    array(
 	      'value'   => 'style2',
 	      'label'   => esc_html__( 'Style 2', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style2.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style2.png'
 	    ),
 	    array(
 	      'value'   => 'style3',
 	      'label'   => esc_html__( 'Style 3', 'viftech' ),
-	      'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style3.png'
+	      'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/subfooter/style3.png'
 	    )
 	  );
 	}
@@ -122,42 +122,42 @@ function thb_filter_radio_images( $array, $field_id ) {
     	array(
     	  'value'   => 'onecolumns',
     	  'label'   => esc_html__( 'Single Column', 'viftech' ),
-    	  'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/one-columns.png'
+    	  'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/one-columns.png'
     	),
     	array(
     	  'value'   => 'twocolumns',
     	  'label'   => esc_html__( 'Two Columns', 'viftech' ),
-    	  'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/two-columns.png'
+    	  'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/two-columns.png'
     	),
     	array(
     	  'value'   => 'threecolumns',
     	  'label'   => esc_html__( 'Three Columns', 'viftech' ),
-    	  'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/three-columns.png'
+    	  'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/three-columns.png'
     	),
       array(
         'value'   => 'fourcolumns',
         'label'   => esc_html__( 'Four Columns', 'viftech' ),
-        'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/four-columns.png'
+        'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/four-columns.png'
       ),
       array(
         'value'   => 'doubleleft',
         'label'   => esc_html__( 'Double Left Columns', 'viftech' ),
-        'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/doubleleft-columns.png'
+        'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/doubleleft-columns.png'
       ),
       array(
         'value'   => 'doubleright',
         'label'   => esc_html__( 'Double Right Columns', 'viftech' ),
-        'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/doubleright-columns.png'
+        'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/doubleright-columns.png'
       ),
       array(
         'value'   => 'fivecolumns',
         'label'   => esc_html__( 'Five Columns', 'viftech' ),
-        'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/five-columns.png'
+        'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/five-columns.png'
       ),
       array(
         'value'   => 'sixcolumns',
         'label'   => esc_html__( 'Six Columns', 'viftech' ),
-        'src'     => Thb_Theme_Admin::$thb_theme_directory_uri . 'assets/img/admin/columns/six-columns.png'
+        'src'     => Theme_Config::$thb_theme_directory_uri . 'assets/img/admin/columns/six-columns.png'
       )
       
     );
