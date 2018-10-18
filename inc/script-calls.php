@@ -9,8 +9,37 @@ function thb_main_styles() {
 	$i = 0;
 	$self_hosted_fonts = ot_get_option('self_hosted_fonts');
 	// Enqueue
-	wp_enqueue_style("thb-fa", Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', null, null);
-	wp_enqueue_style("thb-gird", Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', null, esc_attr(Theme_Config::$thb_theme_version));
+	
+	//CSS FONTOWESOME
+	wp_enqueue_style("thb-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', 		null, null);
+	// CSS FRAMEWORK
+	wp_enqueue_style("thb-gird", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	//CSS UTILIZATION
+	wp_enqueue_style("thb-utilities", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/utilities.css', 				null, esc_attr(Theme_Config::$thb_theme_version));
+	//CSS structure
+	wp_enqueue_style("thb-structure", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/structure.css', 				null, esc_attr(Theme_Config::$thb_theme_version));
+	//ANIMATIONS
+	wp_enqueue_style("thb-animations", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/theme-animation.css',			null, esc_attr(Theme_Config::$thb_theme_version));
+	//TOYOGROPHY
+	wp_enqueue_style("thb-toyo", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/fonts.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	//HEADER STYLES
+	wp_enqueue_style("thb-headers", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/header-styles.css', 			null, esc_attr(Theme_Config::$thb_theme_version));
+	//MOBILE MENUS
+	wp_enqueue_style("thb-mobiles", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/mobile-menu.css',	 			null, esc_attr(Theme_Config::$thb_theme_version));
+	//BLOGS
+	wp_enqueue_style("thb-blog", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/blog.css',	 					null, esc_attr(Theme_Config::$thb_theme_version));
+	//PORTFOLIO
+	wp_enqueue_style("thb-portfolio", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/portfolios.css',				null, esc_attr(Theme_Config::$thb_theme_version));
+	//WIDGETS
+	wp_enqueue_style("thb-widgets", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/widget.css',					null, esc_attr(Theme_Config::$thb_theme_version));
+	//VC SHORTCODES
+	wp_enqueue_style("thb-shortcodes",	Theme_Config::$thb_theme_directory_uri . 'assets/css/vc_shortcodes.css',			null, esc_attr(Theme_Config::$thb_theme_version));
+	//WOOCOMMERCE
+	wp_enqueue_style("thb-woocommerce",	Theme_Config::$thb_theme_directory_uri . 'assets/css/woocommerce.css',				null, esc_attr(Theme_Config::$thb_theme_version));
+	//FOOTER
+	wp_enqueue_style("thb-footer",		Theme_Config::$thb_theme_directory_uri . 'assets/css/footer.css',					null, esc_attr(Theme_Config::$thb_theme_version));
+	
+	
 	wp_enqueue_style("thb-app", Theme_Config::$thb_theme_directory_uri . 'assets/css/app.css', null, esc_attr(Theme_Config::$thb_theme_version));
 	
 		wp_enqueue_style('thb-style', get_stylesheet_uri(), null, null);	

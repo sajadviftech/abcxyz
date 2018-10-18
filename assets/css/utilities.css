@@ -1,0 +1,927 @@
+.reset,
+.searchform fieldset,
+.widget ul,
+.widget.widget_calendar table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.cf:before,
+.thb-fixed:before,
+.thb-product-detail.thb-product-style2 .summary:before,
+.woocommerce-MyAccount-navigation:before,
+.product_list_widget li:before,
+.woocommerce-checkout h3:before,
+#order_review_heading:before,
+.woocommerce-Address-title h3:before,
+.woocommerce-MyAccount-content h3:before,
+.woocommerce-MyAccount-content legend:before,
+.thb-product-detail .product-information .woocommerce-product-details__short-description:before,
+#customer_details:before,
+.woocommerce-MyAccount-content fieldset:before,
+.cf:after,
+.thb-fixed:after,
+.thb-product-detail.thb-product-style2 .summary:after,
+.woocommerce-MyAccount-navigation:after,
+.product_list_widget li:after,
+.woocommerce-checkout h3:after,
+#order_review_heading:after,
+.woocommerce-Address-title h3:after,
+.woocommerce-MyAccount-content h3:after,
+.woocommerce-MyAccount-content legend:after,
+.thb-product-detail .product-information .woocommerce-product-details__short-description:after,
+#customer_details:after,
+.woocommerce-MyAccount-content fieldset:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after,
+.thb-fixed:after,
+.thb-product-detail.thb-product-style2 .summary:after,
+.woocommerce-MyAccount-navigation:after,
+.product_list_widget li:after,
+.woocommerce-checkout h3:after,
+#order_review_heading:after,
+.woocommerce-Address-title h3:after,
+.woocommerce-MyAccount-content h3:after,
+.woocommerce-MyAccount-content legend:after,
+.thb-product-detail .product-information .woocommerce-product-details__short-description:after,
+#customer_details:after,
+.woocommerce-MyAccount-content fieldset:after {
+    clear: both;
+}
+
+.endcolumn [class*="column"]+[class*="column"]:last-child {
+    float: left;
+}
+
+.transition,
+.thb-video-lightbox.hover-style1 img,
+.thb-video-lightbox.hover-style2 img,
+.thb-video-lightbox svg.thb-play-02 .circle2,
+.thb-tabs,
+.thb-flip-box .thb-flip-box-side,
+.thb-portfolio-slider.thb-portfolio-slider-style4 .portfolio-slide .slide-bg,
+.products .product .product_thumbnail.thb_hover .product_thumbnail_hover,
+.products .product .product_after_title .button:after,
+.products .product.product-category a div span {
+    -moz-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -o-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.transition2 {
+    -moz-transition: all 1s cubic-bezier(0.645, 0.045, 0.095, 1.08);
+    -o-transition: all 1s cubic-bezier(0.645, 0.045, 0.095, 1.08);
+    -webkit-transition: all 1s cubic-bezier(0.645, 0.045, 0.095, 1.08);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.095, 1.08);
+}
+
+.quick-transition,
+.thb-animated-arrow svg path,
+a,
+#wrapper .click-capture,
+.header,
+.header.fixed:before,
+.logolink .logoimg,
+.thb-header-menu>li.menu-item-has-children>a span,
+.thb-header-menu>li.menu-item-has-children>a span:before,
+#mobile-menu .thb-mobile-close div span:before,
+.thb-page-header .thb-blog-categories li a:after,
+.post .post-gallery .post-gallery-overlay,
+.post .post-gallery .post-gallery-overlay svg,
+.post.style3 .post-gallery>a img,
+.post.style5 .post-gallery .post-category,
+.post.style6,
+.scroll-bottom.style1:before,
+.scroll-bottom.style1>div:before,
+.scroll-bottom.style1>div:after,
+.scroll-bottom.style2,
+.scroll-bottom.style3>div:before,
+.scroll-bottom.style3>div:after,
+.share_container .product_copy form,
+.thb_post_nav.style1,
+.thb_post_nav.style2 .post_nav_link .inner,
+.thb_post_nav.style2 .post_nav_link div:not(.inner) span,
+.thb_post_nav.style2 .post_nav_link div:not(.inner) em,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+input[type="submit"],
+.button,
+.btn,
+input[type="submit"].arrow-enabled>svg,
+.button.arrow-enabled>svg,
+.btn.arrow-enabled>svg,
+input[type="submit"].gradient:after,
+.button.gradient:after,
+.btn.gradient:after,
+input[type="submit"].style2.gradient:before,
+.button.style2.gradient:before,
+.btn.style2.gradient:before,
+input[type="submit"].style4:after,
+input[type="submit"].style4:before,
+.button.style4:after,
+.button.style4:before,
+.btn.style4:after,
+.btn.style4:before,
+.btn-text.style1:before,
+.btn-text.style2:before,
+.btn-text.style2:after,
+.btn-text.style3 span:after,
+.btn-text.style4 .arrow>div,
+.thb-portfolio .type-portfolio.style1 .thb-portfolio-hover,
+.thb-portfolio .type-portfolio.style2 .thb-portfolio-image,
+.thb-portfolio .type-portfolio.style2 .thb-portfolio-content,
+.thb-portfolio .type-portfolio.style3.thb-added .portfolio-holder,
+.thb-portfolio .type-portfolio.style3.thb-added .portfolio-holder:after,
+.thb-portfolio .type-portfolio.style3 .thb-portfolio-image,
+.thb-portfolio .type-portfolio.style3 .thb-portfolio-hover,
+.thb-portfolio .type-portfolio.style3 .thb-portfolio-content,
+.thb-portfolio .type-portfolio.style3 .thb-portfolio-content .thb-excerpt,
+.thb-portfolio .type-portfolio.style3 .thb-portfolio-content .portfolio-read-more,
+.thb-portfolio .type-portfolio.style4 .thb-portfolio-image .thb-portfolio-hover,
+.thb-portfolio .type-portfolio.style5 .thb-portfolio-image,
+.thb-portfolio .type-portfolio.style5 .thb-portfolio-image .wp-post-image,
+.thb-portfolio .type-portfolio.style5 .thb-portfolio-image .thb-portfolio-hover,
+.thb-portfolio .type-portfolio.style6 .thb-portfolio-hover,
+.thb-portfolio .type-portfolio.style6 .thb-portfolio-content,
+.thb-portfolio-filter.style1 ul li a:before,
+.thb-portfolio-filter.style2 .select2.select2-container--default:after,
+.thb-portfolio-filter.style2 .select2-dropdown .select2-results__options .select2-results__option span,
+.thb-portfolio-filter.style2 .select2-dropdown .select2-results__options .select2-results__option span:before,
+.thb-portfolio-share,
+.thb-portfolio-share strong span,
+.thb_portfolio_nav .post_nav_link div:not(.inner) span,
+.thb_portfolio_nav .post_nav_link div:not(.inner) em,
+.thb_portfolio_nav.style3 ul li a:before,
+.thb-carousel .slick-dots li .portrait_bullet,
+.mfp-close-btn-in button.mfp-close,
+.mfp-zoom-in .mfp-with-anim,
+.mfp-zoom-in .mfp-iframe-scaler,
+.mfp-zoom-in .mfp-inline-holder,
+.mfp-zoom-in.mfp-bg,
+.mfp-zoom-out .mfp-with-anim,
+.mfp-zoom-out.mfp-bg,
+.thb_image_link img,
+.expand,
+#scroll_to_top svg,
+.instagram-row figure:after,
+.instagram-row figure span,
+.wpb_text_column a:after,
+.thb-tabs.style1 .vc_tta-panel-heading h4 a:before,
+.thb_location_container.row .thb_location,
+.thb-client-row.thb-opacity.with-accent .thb-client,
+.thb-client-row .thb-client img,
+.thb-fancy-box .thb-fancy-hover,
+.thb-fancy-box.fancy-style5 .thb-fancy-image-container,
+.thb-fancy-box.fancy-style5 .thb-fancy-content,
+.thb-fancy-box.fancy-style6 .thb-fancy-content,
+.thb-fancy-box.fancy-style6 .thb-fancy-image,
+.thb-horizontal-list:before,
+.thb-iconbox,
+.thb-iconbox.top.type1 figure,
+.thb-iconbox.top.type2 figure,
+.thb-iconbox.top.type3.has-link .iconbox-content,
+.thb-iconbox.top.type3.has-link .iconbox-content .thb-read-more,
+.thb-iconbox.left.has-link .iconbox-content,
+.thb-iconbox.right.has-link .iconbox-content,
+.thb-iconbox.left.has-link .iconbox-content .thb-read-more,
+.thb-iconbox.right.has-link .iconbox-content .thb-read-more,
+.thb-like-button,
+.thb-team-row .thb-team-member img,
+.thb-team-row .thb-team-member .team-information,
+.thb-team-row .thb-team-member.member_style1 .team-information,
+.thb-team-row .thb-team-member.member_style3 .team-container,
+.thb-testimonials.thb-carousel,
+.side-panel,
+.products .product .product_after_title .product_after_shop_loop_buttons,
+.products .product .product_after_title .product_after_shop_loop_price,
+.products .product.thb-listing-style2 .yith-wcwl-add-to-wishlist,
+.thb-product-detail .product-thumbnails .slick-slide,
+.login-page-form li a:before,
+.thb-form-container,
+.thb-form-container .thb-login-form,
+.thb-form-container .thb-register-form {
+    -moz-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -o-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.mid-transition,
+input[type="submit"].style3:before,
+.button.style3:before,
+.btn.style3:before,
+.thb-video-lightbox svg .back,
+.thb-video-lightbox svg .front {
+    -moz-transition: all .5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -o-transition: all .5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition: all .5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all .5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.linear-transition {
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.linear-quick-transition,
+.mobile-toggle-holder.style2 .mobile-toggle span,
+.post .post-gallery img,
+.post.style5 .post-gallery .wp-post-image,
+.post.style5 .post-gallery .overlay:after,
+.thb_portfolio_nav .inner,
+.thb_portfolio_nav.style1 .post_nav_link strong,
+.thb_portfolio_nav.style1 .post_nav_link strong .title,
+.thb_portfolio_nav.style1 .post_nav_link strong .title:before,
+#scroll_to_top .thb-animated-arrow.circular,
+.thb-accordion .vc_tta-panel-heading h4 a:after,
+.thb-client-row .thb-client .client-title,
+.thb-fancy-box .thb-fancy-link .thb-animated-arrow,
+.thb-fancy-box.fancy-style3,
+.thb-fancy-box.fancy-style3 .thb-fancy-image-container,
+.products .product .product_thumbnail .yith-wcwl-add-to-wishlist,
+.products .product .product_thumbnail .yith-wcwl-add-to-wishlist a,
+.products .product .product_thumbnail .yith-wcwl-add-to-wishlist .text {
+    -moz-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.linear-mid-transition {
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.general-shadow-styles.small-shadow,
+.columns .small-shadow.vc_column-inner,
+.small-shadow.row,
+.thb_image_link img.small-shadow,
+.small-shadow.thb-video-lightbox {
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.general-shadow-styles.medium-shadow,
+.columns .medium-shadow.vc_column-inner,
+.medium-shadow.row,
+.thb_image_link img.medium-shadow,
+.medium-shadow.thb-video-lightbox {
+    -moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+}
+
+.general-shadow-styles.large-shadow,
+.columns .large-shadow.vc_column-inner,
+.large-shadow.row,
+.thb_image_link img.large-shadow,
+.large-shadow.thb-video-lightbox {
+    -moz-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.general-shadow-styles.xlarge-shadow,
+.columns .xlarge-shadow.vc_column-inner,
+.xlarge-shadow.row,
+.thb_image_link img.xlarge-shadow,
+.xlarge-shadow.thb-video-lightbox {
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+}
+
+.admin-bar .admin-style,
+.admin-bar .header,
+.admin-bar .thb-search-popup,
+.admin-bar #mobile-menu,
+.admin-bar .share_container,
+.admin-bar .side-panel {
+    top: 46px;
+}
+
+@media screen and (min-width: 783px) {
+    .admin-bar .admin-style,
+    .admin-bar .header,
+    .admin-bar .thb-search-popup,
+    .admin-bar #mobile-menu,
+    .admin-bar .share_container,
+    .admin-bar .side-panel {
+        top: 32px;
+    }
+}
+
+.custom_scroll {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.flex-video {
+    margin: 0;
+}
+
+.vc_video-aspect-ratio-235 .flex-video.widescreen {
+    padding-bottom: 42.5%;
+}
+
+.center-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-bg,
+.post.style5 .post-gallery,
+.thb_post_nav.style2 .post_nav_link .inner,
+.thb_portfolio_nav .inner,
+.thb-carousel .slick-dots li .portrait_bullet,
+.thb-fancy-box .thb-fancy-content {
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-padding,
+.row .row.no-padding {
+    margin: 0;
+}
+
+.no-padding>.columns,
+.row .row.no-padding>.columns {
+    padding: 0;
+}
+
+@media only screen and (min-width: 640px) {
+    .no-padding,
+    .row .row.no-padding {
+        padding: 0;
+    }
+}
+
+.vc_editor.compose-mode .vc_element>.columns {
+    width: 100%;
+    max-width: 100%;
+}
+
+.columns .vc_column-inner {
+    width: 100%;
+}
+
+.columns:not(.full-height) .vc_column-inner:not(.thb-fixed) {
+    height: 100%;
+}
+
+.columns.thb-light-column {
+    color: #e6e6e6;
+}
+
+.columns.thb-light-column input[type="text"],
+.columns.thb-light-column input[type="password"],
+.columns.thb-light-column input[type="date"],
+.columns.thb-light-column input[type="datetime"],
+.columns.thb-light-column input[type="email"],
+.columns.thb-light-column input[type="number"],
+.columns.thb-light-column input[type="search"],
+.columns.thb-light-column input[type="tel"],
+.columns.thb-light-column input[type="time"],
+.columns.thb-light-column input[type="url"],
+.columns.thb-light-column textarea {
+    background: rgba(255, 255, 255, 0.05);
+    color: #c1c1c1;
+}
+
+.columns.thb-light-column input[type="text"]:not(:focus),
+.columns.thb-light-column input[type="password"]:not(:focus),
+.columns.thb-light-column input[type="date"]:not(:focus),
+.columns.thb-light-column input[type="datetime"]:not(:focus),
+.columns.thb-light-column input[type="email"]:not(:focus),
+.columns.thb-light-column input[type="number"]:not(:focus),
+.columns.thb-light-column input[type="search"]:not(:focus),
+.columns.thb-light-column input[type="tel"]:not(:focus),
+.columns.thb-light-column input[type="time"]:not(:focus),
+.columns.thb-light-column input[type="url"]:not(:focus),
+.columns.thb-light-column textarea:not(:focus) {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.columns.thb-light-column input[type="text"]:focus,
+.columns.thb-light-column input[type="password"]:focus,
+.columns.thb-light-column input[type="date"]:focus,
+.columns.thb-light-column input[type="datetime"]:focus,
+.columns.thb-light-column input[type="email"]:focus,
+.columns.thb-light-column input[type="number"]:focus,
+.columns.thb-light-column input[type="search"]:focus,
+.columns.thb-light-column input[type="tel"]:focus,
+.columns.thb-light-column input[type="time"]:focus,
+.columns.thb-light-column input[type="url"]:focus,
+.columns.thb-light-column textarea:focus {
+    color: #c1c1c1;
+}
+
+.columns.thb-light-column .wp-caption-text {
+    color: #575757;
+}
+
+.columns.thb-light-column .boxed-icon:not(:hover) {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.columns.thb-light-column .boxed-icon:not(:hover) svg {
+    fill: #fff;
+}
+
+.columns.thb-light-column .btn-text.style4 .arrow svg:first-child {
+    fill: #fff;
+}
+
+.columns.thb-light-column .thb-iconbox.has-link {
+    color: #e6e6e6;
+}
+
+.columns.thb-light-column .thb-iconbox.top.type1 figure .thb-iconbox-line,
+.columns.thb-light-column .thb-iconbox.top.type2 figure .thb-iconbox-line,
+.columns.thb-light-column .thb-iconbox.top.type4 {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.columns.thb-light-column .thb-iconbox.top.type1 figure .thb-iconbox-line:hover,
+.columns.thb-light-column .thb-iconbox.top.type2 figure .thb-iconbox-line:hover,
+.columns.thb-light-column .thb-iconbox.top.type4:hover {
+    border-color: #fff;
+}
+
+.columns.thb-light-column .thb-iconbox .thb-read-more svg,
+.columns.thb-light-column .thb-portfolio .type-portfolio.style4:hover svg,
+.columns.thb-light-column .thb-portfolio .type-portfolio.style4 svg,
+.columns.thb-light-column .thb-portfolio .type-portfolio.style4 .thb-portfolio-content svg .bar {
+    fill: #fff;
+}
+
+.columns.thb-light-column .thb-tabs.style2 .vc_tta-panel-heading h4 a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.columns.thb-light-column .thb-tabs.style2 .vc_tta-panel-heading h4 {
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.columns.thb-light-column .thb-tabs.style2 .vc_tta-panel-heading h4 a.active,
+.columns.thb-light-column .thb-portfolio-filter.style1 ul li a:not(.active),
+.columns.thb-light-column .portfolio-attributes a {
+    color: #fff;
+}
+
+.columns.thb-light-column .thb-carousel .slick-dots li button {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.columns.thb-light-column .thb-carousel .slick-dots li.slick-active button,
+.columns.thb-light-column .thb-carousel .slick-dots .select {
+    background: #fff;
+}
+
+.columns.thb-light-column .thb-like-button {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.columns.thb-light-column .thb-like-button .counter {
+    color: #fff;
+}
+
+.columns.thb-light-column .thb-like-button:hover {
+    border-color: #fff;
+}
+
+.columns.thb-light-column .thb-horizontal-list {
+    border-bottom-color: rgba(255, 255, 255, 0.09);
+}
+
+.columns.thb-light-column .thb-tabs.style1 .vc_tta-panel-heading h4 a {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.columns.thb-light-column .thb-tabs.style1 .vc_tta-panel-heading h4 a.active {
+    color: #fff;
+}
+
+.columns.thb-light-column h1,
+.columns.thb-light-column h2,
+.columns.thb-light-column h3,
+.columns.thb-light-column h4,
+.columns.thb-light-column h5,
+.columns.thb-light-column h6,
+.columns.thb-light-column .thb-portfolio .type-portfolio h1,
+.columns.thb-light-column .thb-portfolio .type-portfolio h2,
+.columns.thb-light-column .thb-portfolio .type-portfolio.style6 .portfolio-holder,
+.columns.thb-light-column .thb-awards-parent,
+.columns.thb-light-column .thb-awards .award-container .thb-award-description strong,
+.columns.thb-light-column .thb-awards .award-container .thb-award-description b,
+.columns.thb-light-column .thb-experience .thb-experience-description strong,
+.columns.thb-light-column .thb-experience .thb-experience-position strong,
+.columns.thb-light-column .thb-experience .thb-experience-description b,
+.columns.thb-light-column .thb-experience .thb-experience-position b,
+.columns.thb-light-column .thb-experience,
+.columns.thb-light-column label,
+.columns.thb-light-column .thb-counter,
+.columns.thb-light-column .post .post-title a,
+.columns.thb-light-column .post .post-category a {
+    color: #fff;
+}
+
+.columns.thb-light-column .thb-awards-parent+.thb-awards-parent {
+    border-top-color: rgba(255, 255, 255, 0.6);
+}
+
+.columns.thb-light-column .thb-awards .award-container,
+.columns.thb-light-column .thb-experience {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.columns.thb-light-column .wpb_text_column a {
+    color: #fff;
+}
+
+.columns.thb-light-column .wpb_text_column a:after {
+    border-bottom-color: #fff;
+}
+
+.columns.thb-light-column .thb-awards .award-container .thb-award-description,
+.columns.thb-light-column .thb-experience .experience-date {
+    color: #b8b8b8;
+}
+
+.columns.thb-light-column .thb-iconbox figure svg path,
+.columns.thb-light-column .thb-iconbox figure svg circle,
+.columns.thb-light-column .thb-iconbox figure svg rect,
+.columns.thb-light-column .thb-iconbox figure svg ellipse {
+    stroke: #fff;
+}
+
+.light-button-text,
+.columns.thb-light-column .btn-text,
+.footer.dark .btn-text {
+    color: #fff;
+}
+
+.light-button-text.style1:before,
+.columns.thb-light-column .style1.btn-text:before,
+.footer.dark .style1.btn-text:before {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.light-button-text.style1:hover,
+.columns.thb-light-column .style1.btn-text:hover,
+.footer.dark .style1.btn-text:hover {
+    color: #fff;
+}
+
+.light-button-text.style1:hover:before,
+.columns.thb-light-column .style1.btn-text:hover:before,
+.footer.dark .style1.btn-text:hover:before {
+    background: #fff;
+}
+
+.light-button-text.style2:before,
+.columns.thb-light-column .style2.btn-text:before,
+.footer.dark .style2.btn-text:before {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.light-button-text.style2:after,
+.columns.thb-light-column .style2.btn-text:after,
+.footer.dark .style2.btn-text:after {
+    background: #fff;
+}
+
+.light-button-text.style3:hover,
+.columns.thb-light-column .style3.btn-text:hover,
+.footer.dark .style3.btn-text:hover {
+    color: #fff;
+}
+
+.light-button-text.style3 span:after,
+.columns.thb-light-column .style3.btn-text span:after,
+.footer.dark .style3.btn-text span:after {
+    background: #fff;
+}
+
+.light-button-text.style4:hover,
+.columns.thb-light-column .style4.btn-text:hover,
+.footer.dark .style4.btn-text:hover {
+    color: #fff;
+}
+
+.light-button-text.style4 svg:nth-child(2n),
+.columns.thb-light-column .style4.btn-text svg:nth-child(2n),
+.footer.dark .style4.btn-text svg:nth-child(2n) {
+    fill: #fff;
+}
+
+.light-button-text.style5:hover,
+.columns.thb-light-column .style5.btn-text:hover,
+.footer.dark .style5.btn-text:hover {
+    color: #fff;
+}
+
+.light-button-text.style5 svg,
+.columns.thb-light-column .style5.btn-text svg,
+.footer.dark .style5.btn-text svg,
+.light-button-text.style5 svg .bar,
+.columns.thb-light-column .style5.btn-text svg .bar,
+.footer.dark .style5.btn-text svg .bar {
+    fill: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+    .thb-5 {
+        -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .thb-5-2 {
+        -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+.thb-fixed,
+.thb-product-detail.thb-product-style2 .summary,
+.woocommerce-MyAccount-navigation {
+    will-change: top;
+    -moz-transition: top .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -o-transition: top .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition: top .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: top .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    .thb-fixed,
+    .thb-product-detail.thb-product-style2 .summary,
+    .woocommerce-MyAccount-navigation {
+        position: static !important;
+    }
+}
+
+.thb-padding-sizes.regular-padding .columns,
+.wpb_gallery .regular-padding.row .columns,
+.thb-team-row .regular-padding.row.style1 .columns {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 640px) {
+    .thb-padding-sizes.regular-padding .columns,
+    .wpb_gallery .regular-padding.row .columns,
+    .thb-team-row .regular-padding.row.style1 .columns {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .thb-padding-sizes.regular-padding .columns,
+    .wpb_gallery .regular-padding.row .columns,
+    .thb-team-row .regular-padding.row.style1 .columns {
+        margin-bottom: 40px;
+    }
+}
+
+.thb-padding-sizes.mini-padding,
+.wpb_gallery .mini-padding.row,
+.thb-team-row .mini-padding.row.style1 {
+    margin: 0 -5px;
+}
+
+.thb-padding-sizes.mini-padding .columns,
+.wpb_gallery .mini-padding.row .columns,
+.thb-team-row .mini-padding.row.style1 .columns {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.thb-padding-sizes.pixel-padding,
+.wpb_gallery .pixel-padding.row,
+.thb-team-row .pixel-padding.row.style1 {
+    margin: 0 -1px;
+}
+
+.thb-padding-sizes.pixel-padding .columns,
+.wpb_gallery .pixel-padding.row .columns,
+.thb-team-row .pixel-padding.row.style1 .columns {
+    padding: 0 1px;
+    margin-bottom: 2px;
+}
+
+.thb-padding-sizes.no-padding,
+.row .thb-padding-sizes.row.no-padding,
+.wpb_gallery .no-padding.row,
+.thb-team-row .no-padding.row.style1 {
+    margin: 0;
+}
+
+.thb-padding-sizes.no-padding .columns,
+.wpb_gallery .no-padding.row .columns,
+.thb-team-row .no-padding.row.style1 .columns {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.thb-animated-arrow {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.thb-animated-arrow svg {
+    fill: #fff;
+}
+
+.thb-animated-arrow svg .handle {
+    -moz-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+.thb-animated-arrow svg .bar {
+    opacity: 0;
+    transform-origin: left center;
+    -moz-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    -webkit-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.thb-animated-arrow:hover .handle {
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+.thb-animated-arrow:hover .bar {
+    opacity: 1;
+    -moz-transform: translateX(4px) scale(0.8);
+    -ms-transform: translateX(4px) scale(0.8);
+    -webkit-transform: translateX(4px) scale(0.8);
+    transform: translateX(4px) scale(0.8);
+}
+
+.thb-animated-arrow.dark svg,
+.thb-carousel-dark .thb-animated-arrow svg {
+    fill: #090909;
+}
+
+.thb-animated-arrow.dark.circular,
+.thb-carousel-dark .thb-animated-arrow.circular {
+    border-color: rgba(9, 9, 9, 0.4);
+}
+
+.thb-animated-arrow.arrow-right {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.thb-animated-arrow.circular {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.thb-animated-arrow.circular svg {
+    width: 20px;
+    height: 20px;
+    overflow: visible;
+}
+
+.thb-animated-arrow.circular.slick-next .handle {
+    -moz-transform: translateX(-8px);
+    -ms-transform: translateX(-8px);
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+}
+
+.thb-animated-arrow.circular.slick-next .bar {
+    -moz-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
+    -webkit-transform: translateX(-12px);
+    transform: translateX(-12px);
+}
+
+.thb-animated-arrow.circular.slick-next:hover .handle {
+    -moz-transform: translateX(-4px);
+    -ms-transform: translateX(-4px);
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+}
+
+.thb-animated-arrow.circular.slick-next:hover .bar {
+    -moz-transform: translateX(0px) scale(0.8);
+    -ms-transform: translateX(0px) scale(0.8);
+    -webkit-transform: translateX(0px) scale(0.8);
+    transform: translateX(0px) scale(0.8);
+}
+
+.material-spinner {
+    animation: material-rotator 1.4s linear infinite;
+}
+
+.material-spinner .material-path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: material-dash 1.4s ease-in-out infinite, material-colors 5.6s ease-in-out infinite;
+}
+
+@keyframes material-rotator {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes material-colors {
+    0% {
+        stroke: #4285F4
+    }
+    25% {
+        stroke: #DE3E35
+    }
+    50% {
+        stroke: #F7C223
+    }
+    75% {
+        stroke: #1B9A59
+    }
+    100% {
+        stroke: #4285F4;
+    }
+}
+
+@keyframes material-dash {
+    0% {
+        stroke-dashoffset: 187
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg)
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0.3;
+}
+
+.lazyload.thb_3dimage,
+.lazyloading.thb_3dimage {
+    opacity: 1;
+}
+
+.lazyloaded {
+    opacity: 1;
+    -moz-transition: opacity .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -o-transition: opacity .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition: opacity .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: opacity .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}

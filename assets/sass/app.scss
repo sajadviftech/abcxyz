@@ -50,42 +50,42 @@ $social: (
 /*------------------------------------------------------------------
 Foundation
 */
-@import "foundation.scss";
- 
+@import "foundation.scss"; //done -- gird.css
+  
 /*------------------------------------------------------------------
 Utilities
 */
-@import "utilities.scss";
+@import "utilities.scss"; //done -- same
 
 /*------------------------------------------------------------------
 Structure
 */
-@import "structure.scss";
+@import "structure.scss"; //done --
 
 /*------------------------------------------------------------------
 Page Transitions
 */
-@import "plugin-animsition.scss";
+@import "plugin-animsition.scss"; //done --
 
 /*------------------------------------------------------------------
 Typography
 */
-@import "typography.scss";
+@import "typography.scss"; //fonts.css --
 
 /*------------------------------------------------------------------
 Header
 */
-@import "header.scss";
+@import "header.scss"; //header-styles.css --
 
 /*------------------------------------------------------------------
 Mobile Menu
 */
-@import "mobilemenu.scss";
+@import "mobilemenu.scss"; // mobile-menu.css --
 
 /*------------------------------------------------------------------
 Blog Related
 */
-@import "blog.scss";
+@import "blog.scss"; //blog.css --
 
 /*------------------------------------------------------------------
 Author
@@ -121,7 +121,7 @@ Select2
 /*------------------------------------------------------------------
 Portfolio
 */
-@import "portfolio.scss";
+@import "portfolio.scss"; //portfolio.css
 
 /*------------------------------------------------------------------
 Plugin - Slick
@@ -157,7 +157,7 @@ Plugin - Magnific Popup
 /*------------------------------------------------------------------
 Widgets
 */
-@import "widgets.scss";
+@import "widgets.scss"; // widget.css
 
 /*------------------------------------------------------------------
 Shortcodes
@@ -176,6 +176,9 @@ Shortcodes
 @import "shortcodes/teammembers.scss";
 @import "shortcodes/testimonials.scss";
 
+
+
+
 /*------------------------------------------------------------------
 Side Panels
 */
@@ -183,7 +186,7 @@ Side Panels
 @import "woocommerce-sidecart.scss";
 
 /*------------------------------------------------------------------
-WooCommerce
+WooCommerce woocommerce.css
 */
 @import "woocommerce-general.scss";
 @import "woocommerce-products.scss";
@@ -196,4 +199,4 @@ WooCommerce
 /*------------------------------------------------------------------
 Footer
 */
-@import "footer.scss";
+@import "footer.scss"; //footer.css
