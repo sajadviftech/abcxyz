@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @var $parallax_image
  * @var $css
  * @var $el_id
+ * @var $video_bg_per
  * @var $video_bg
  * @var $video_bg_url
  * @var $video_bg_parallax
@@ -26,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @var $this WPBakeryShortCode_VC_Row
  */
 $el_class = $full_height = $parallax_speed_bg = $parallax_speed_video = $full_width = $equal_height = $flex_row = $columns_placement = $content_placement = $parallax = $parallax_image = $css = $el_id = $video_bg = $video_bg_url = $video_bg_parallax = '';
-$disable_element = $thb_scroll_to_bottom = $thb_color = $thb_video_bg = $bg_video_overlay = $thb_scroll_bottom_style = '';
+$disable_element = $thb_scroll_to_bottom = $thb_color = $thb_video_bg =$video_bg_per = $bg_video_overlay = $thb_scroll_bottom_style = '';
 $output = $after_output = '';
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
@@ -115,7 +116,7 @@ if ( ! empty( $flex_row ) ) {
 	$css_classes[] = 'vc_row-flex';
 }
 
-$has_video_bg = ( ! empty( $video_bg ) && ! empty( $video_bg_url ) && vc_extract_youtube_id( $video_bg_url ) );
+$has_video_bg = ( ! empty( $video_bg ) && ! empty( $video_bg_url ) && vc_extract_youtube_id( $video_bg_url ) && $video_bg_per == true );
 
 $parallax_speed = $parallax_speed_bg;
 if ( $has_video_bg ) {
@@ -155,7 +156,7 @@ if ( ! $parallax && $has_video_bg ) {
 }
 
 /* Video BG */
-if ( $thb_video_bg !== '' ) {
+if ( $thb_video_bg !== ''  && $video_bg_per == true) {
 	$bg_type = '';
 	$video_type = wp_check_filetype( $thb_video_bg, wp_get_mime_types() );
 	$pattern = '/background-image:\s*url\(\s*([\'"]*)(?P<file>[^\1]+)\1\s*\)/i';

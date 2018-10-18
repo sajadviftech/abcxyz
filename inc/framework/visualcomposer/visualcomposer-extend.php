@@ -180,15 +180,35 @@ vc_add_param("vc_row", array(
 	'weight' => 1,
 	"description" => esc_html__("If you enable this, the columns inside won't leave padding on the sides", 'viftech')
 ));
+
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
-	"heading" => esc_html__("Allow Video Background?", 'viftech'),
+	"heading" => esc_html__("Enable Background Overlay?", 'viftech'),
+	"param_name" => "block_overlay",
+	"value" => array(
+		"Yes" => "true"
+	),
+	'weight' => 1,
+	"description" => esc_html__("Enable if background oberlay", 'viftech')
+	
+));
+vc_add_param("vc_row", array(
+	"type" => "colorpicker",
+	"heading" => esc_html__("Background Overlay Color", 'viftech'),
+	"param_name" => "background_overlay",
+	'weight' => 1,
+	"description" => esc_html__("If you want, you can select an overlay color.", 'viftech'),
+	"dependency" => Array('element' => "block_overlay", 'value' => array('true'))
+));
+vc_add_param("vc_row", array(
+	"type" => "checkbox",
+	"heading" => esc_html__("Enable Video Background?", 'viftech'),
 	"param_name" => "video_bg_per",
 	"value" => array(
 		"Yes" => "true"
 	),
 	'weight' => 1,
-	"description" => esc_html__("If you enable this, this will show an arrow at the bottom of the row", 'viftech')
+	"description" => esc_html__("Enable if video background", 'viftech')
 	
 ));
 vc_add_param("vc_row", array(
