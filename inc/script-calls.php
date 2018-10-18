@@ -51,7 +51,7 @@ function thb_main_styles() {
 			$i++;
 			wp_enqueue_style("thb-self-hosted-".$i, $font['font_url'], null, esc_attr(Theme_Config::$thb_theme_version));
 		}
-	}
+	} 
 	
 	if ( $post ) {
 		if ( has_shortcode($post->post_content, 'contact-form-7') && function_exists( 'wpcf7_enqueue_styles' ) ) {
