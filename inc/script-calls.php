@@ -10,6 +10,7 @@ function thb_main_styles() {
 	$self_hosted_fonts = ot_get_option('self_hosted_fonts');
 	// Enqueue
 	wp_enqueue_style("thb-fa", Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', null, null);
+	wp_enqueue_style("thb-gird", Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', null, esc_attr(Theme_Config::$thb_theme_version));
 	wp_enqueue_style("thb-app", Theme_Config::$thb_theme_directory_uri . 'assets/css/app.css', null, esc_attr(Theme_Config::$thb_theme_version));
 	
 		wp_enqueue_style('thb-style', get_stylesheet_uri(), null, null);	
