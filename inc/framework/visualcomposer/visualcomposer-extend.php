@@ -144,6 +144,7 @@ vc_remove_param( "vc_row", "full_width" );
 vc_remove_param( "vc_row", "gap" );
 vc_remove_param( "vc_row", "equal_height" );
 vc_remove_param( "vc_row", "css_animation" );
+vc_remove_param( "vc_row", "video_bg_per" );
 vc_remove_param( "vc_row", "video_bg" );
 vc_remove_param( "vc_row", "video_bg_url" );
 vc_remove_param( "vc_row", "video_bg_parallax" );
@@ -179,20 +180,32 @@ vc_add_param("vc_row", array(
 	'weight' => 1,
 	"description" => esc_html__("If you enable this, the columns inside won't leave padding on the sides", 'viftech')
 ));
-
+vc_add_param("vc_row", array(
+	"type" => "checkbox",
+	"heading" => esc_html__("Allow Video Background?", 'viftech'),
+	"param_name" => "video_bg_per",
+	"value" => array(
+		"Yes" => "true"
+	),
+	'weight' => 1,
+	"description" => esc_html__("If you enable this, this will show an arrow at the bottom of the row", 'viftech')
+	
+));
 vc_add_param("vc_row", array(
 	"type" => "textfield",
 	"heading" => esc_html__("Video Background", 'viftech'),
 	"param_name" => "thb_video_bg",
 	'weight' => 1,
-	"description" => esc_html__("You can specify a video background file here (mp4). Row Background Image will be used as Poster.", 'viftech')
+	"description" => esc_html__("You can specify a video background file here (mp4). Row Background Image will be used as Poster.", 'viftech'),
+	"dependency" => Array('element' => "video_bg_per", 'value' => array('true'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
 	"heading" => esc_html__("Video Overlay Color", 'viftech'),
 	"param_name" => "thb_video_overlay_color",
 	'weight' => 1,
-	"description" => esc_html__("If you want, you can select an overlay color.", 'viftech')
+	"description" => esc_html__("If you want, you can select an overlay color.", 'viftech'),
+	"dependency" => Array('element' => "video_bg_per", 'value' => array('true'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
