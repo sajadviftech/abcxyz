@@ -3,29 +3,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-/**
- * Shortcode attributes
- * @var $atts
- * @var $el_class
- * @var $full_width
- * @var $full_height
- * @var $equal_height
- * @var $columns_placement
- * @var $content_placement
- * @var $parallax
- * @var $parallax_image
- * @var $css
- * @var $el_id
- * @var $video_bg_per
- * @var $video_bg
- * @var $video_bg_url
- * @var $video_bg_parallax
- * @var $parallax_speed_bg
- * @var $parallax_speed_video
- * @var $content - shortcode content
- * Shortcode class
- * @var $this WPBakeryShortCode_VC_Row
- */
+/*
+Shortcode attributes
+	{
+ 		$atts
+ 		$el_class
+ 		$full_width
+ 		$full_height
+ 		$equal_height
+ 		$columns_placement
+ 		$content_placement
+ 		$parallax
+ 		$parallax_image
+ 		$css
+ 		$el_id
+ 		$video_bg_per
+ 		$video_bg
+ 		$video_bg_url
+ 		$video_bg_parallax
+ 		$parallax_speed_bg
+ 		$parallax_speed_video
+ 		$content - shortcode content
+	}
+*/
 $el_class = $full_height = $parallax_speed_bg = $parallax_speed_video = $full_width = $equal_height = $flex_row = $columns_placement = $content_placement = $parallax = $parallax_image = $css = $el_id = $video_bg = $video_bg_url = $video_bg_parallax = '';
 $disable_element = $thb_scroll_to_bottom = $thb_color = $thb_video_bg =$video_bg_per = $bg_video_overlay = $thb_scroll_bottom_style = '';
 $output = $after_output = '';
@@ -176,7 +176,10 @@ if ( $thb_video_bg !== ''  && $video_bg_per == true) {
 	
 	$css_classes[] = 'thb_video_bg';
 }
-
+if(!empty($thb_video_overlay_color)) {
+	$css_classes[] = 'bg-overlay';
+	
+}
 $css_class = preg_replace( '/\s+/', ' ', apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, implode( ' ', array_filter( array_unique( $css_classes ) ) ), $this->settings['base'], $atts ) );
 $wrapper_attributes[] = 'class="' . esc_attr( trim( $css_class ) ) . '"';
 
@@ -184,7 +187,14 @@ if ($thb_border_radius) {
 	$wrapper_attributes[] = 'style="border-radius:'.esc_attr($thb_border_radius).'"';		
 }
 
+
+
+
+
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
+if(!empty($thb_video_overlay_color)) {
+	$output .= '<div class="overlay" style="background: '.$thb_video_overlay_color.'"></div>';
+}
 $output .= wpb_js_remove_wpautop( $content );
 $output .= $bg_video_overlay;
 if ($thb_scroll_bottom == 'true') {

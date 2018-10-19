@@ -915,7 +915,7 @@
 
 .scroll-bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: 50%;
     width: 30px;
     height: 50px;
@@ -1074,15 +1074,28 @@
 .scroll-bottom.style2.light:hover {
     border-color: rgba(255, 255, 255, 0.8);
 }
-
-.scroll-bottom.style3>div {
+.scroll-bottom.style4 {
+    width: 60px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    height: 60px;
+}
+.scroll-bottom.style4 div {
+    padding: 32px 0;
+}
+.scroll-bottom.dark.style4 {
+    border-color: #000;
+}
+.scroll-bottom.style3>div,
+.scroll-bottom.style4>div {
     position: relative;
     display: inline-block;
     height: 50px;
     width: 1px;
 }
 
-.scroll-bottom.style3>div:before {
+.scroll-bottom.style3>div:before,
+.scroll-bottom.style4>div:before {
     content: '';
     width: 16px;
     height: 2px;
@@ -1101,7 +1114,8 @@
     transform-origin: 100% 100%;
 }
 
-.scroll-bottom.style3>div:after {
+.scroll-bottom.style3>div:after,
+.scroll-bottom.style4>div:after {
     content: '';
     width: 16px;
     height: 2px;
@@ -1120,7 +1134,8 @@
     transform-origin: 0 100%;
 }
 
-.scroll-bottom.style3:hover>div:before {
+.scroll-bottom.style3:hover>div:before,
+.scroll-bottom.style4:hover>div:before {
     -moz-transform: rotateZ(45deg) scaleX(1);
     -ms-transform: rotateZ(45deg) scaleX(1);
     -webkit-transform: rotateZ(45deg) scaleX(1);
@@ -1131,7 +1146,8 @@
     transition-delay: 0.1s;
 }
 
-.scroll-bottom.style3:hover>div:after {
+.scroll-bottom.style3:hover>div:after,
+.scroll-bottom.style4:hover>div:after {
     -moz-transform: rotateZ(-45deg) scaleX(1);
     -ms-transform: rotateZ(-45deg) scaleX(1);
     -webkit-transform: rotateZ(-45deg) scaleX(1);
@@ -1143,9 +1159,13 @@
 }
 
 .single-portfolio.light-title .scroll-bottom.style3>div:before,
+.single-portfolio.light-title .scroll-bottom.style4>div:before,
 .single-portfolio.light-title .scroll-bottom.style3>div:after,
+.single-portfolio.light-title .scroll-bottom.style4>div:after,
 .scroll-bottom.style3.light>div:before,
-.scroll-bottom.style3.light>div:after {
+.scroll-bottom.style4.light>div:before,
+.scroll-bottom.style3.light>div:after,
+.scroll-bottom.style4.light>div:after {
     background: #fff;
 }
 

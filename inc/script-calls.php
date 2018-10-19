@@ -39,12 +39,12 @@ function thb_main_styles() {
 	//FOOTER
 	wp_enqueue_style("thb-footer",		Theme_Config::$thb_theme_directory_uri . 'assets/css/footer.css',					null, esc_attr(Theme_Config::$thb_theme_version));
 	//MIXTURE
-	wp_enqueue_style("thb-mixture", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/mixture.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("thb-app", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/mixture.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	
-	wp_enqueue_style('thb-style', get_stylesheet_uri(), null, null);	
+	//wp_enqueue_style('thb-thb-style', get_stylesheet_uri(), null, null);	
 	
 	wp_enqueue_style( 'thb-google-fonts', thb_google_webfont(), array(), null );
-	wp_add_inline_style( 'thb-mixture', thb_selection() );
+	wp_add_inline_style( 'thb-app', thb_selection() );
 	
 	if ($self_hosted_fonts) {
 		foreach ($self_hosted_fonts as $font) {
