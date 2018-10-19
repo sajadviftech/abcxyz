@@ -2,7 +2,7 @@
 require Theme_Config::$thb_theme_directory . 'inc/admin/plugins/class-tgm-plugin-activation.php';
 
 function thb_register_required_plugins() {
-	$data = thb_Theme_Admin()->thb_check_for_update_plugins();
+	$data = Theme_Config()->thb_check_for_update_plugins();
 
 	if (isset($data->plugins)) {
 		foreach ($data->plugins as $plugin) {

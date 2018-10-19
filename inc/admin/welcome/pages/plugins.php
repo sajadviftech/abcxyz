@@ -9,6 +9,9 @@
 			$thb_envato_hosted = Theme_Config::$thb_envato_hosted;
 			
 			$cond = ($key != '' && $expired != 1) || $thb_envato_hosted;
+		
+		
+		
 		?>
 		<?php if (!$cond) { ?>
 			<div class="thb-error">

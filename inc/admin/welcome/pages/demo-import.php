@@ -22,7 +22,7 @@
  	}
 ?>
 <?php 
-	$demos = thb_Theme_Admin()->thbDemos();
+	$demos = Theme_Config()->thbDemos();
 	$i = 0;
  	foreach ($demos as $demo) {
  		?>

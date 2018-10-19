@@ -69,10 +69,10 @@ class Theme_Config {
 	}
 	
 	public static function instance() {
-		global $thb_Theme_Admin;
+		global $Theme_Config;
 		if ( ! self::$_instance ) {
 			self::$_instance = new self();
-			$thb_Theme_Admin = self::$_instance;
+			$Theme_Config = self::$_instance;
 			
 			// Theme Variables
 			$theme = wp_get_theme();
@@ -627,8 +627,8 @@ class Theme_Config {
 	}
 }
 // Main instance shortcut
-function thb_Theme_Admin() {
-	global $thb_Theme_Admin;
-	return $thb_Theme_Admin;
+function Theme_Config() {
+	global $Theme_Config;
+	return $Theme_Config;
 }
 Theme_Config::instance();
