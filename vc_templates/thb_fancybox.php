@@ -43,7 +43,7 @@
 		<?php } ?>
 		<div class="thb-fancy-image-container <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
 			<div class="thb-fancy-image">
-				<?php echo wp_get_attachment_image($image, 'revolution-tall-x3'); ?>
+				<?php echo wp_get_attachment_image($image, 'viftech-tall-x3'); ?>
 			</div>
 		</div>
 		<?php if (in_array($style, array('fancy-style1', 'fancy-style4')) ) { ?>

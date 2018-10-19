@@ -33,7 +33,7 @@
 	<article itemscope itemtype="http://schema.org/Article" <?php post_class('post style5 ' . $thb_animation); ?>>
 		<figure class="post-gallery">
 			<a href="<?php echo esc_url($permalink); ?>" rel="bookmark" title="<?php the_title(); ?>"></a>
-			<?php the_post_thumbnail('revolution-square-x2'); ?>
+			<?php the_post_thumbnail('viftech-square-x2'); ?>
 			<div class="overlay"></div>
 			<?php if ($thb_cat) { ?>
 			<aside class="post-category">

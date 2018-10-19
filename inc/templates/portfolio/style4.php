@@ -46,7 +46,7 @@
 	}
 	
 	// Image sizes
-	$image_size = $thb_aspect ? 'revolution-masonry-x2' : 'revolution-square-x2';
+	$image_size = $thb_aspect ? 'viftech-masonry-x2' : 'viftech-square-x2';
 ?>
 <div <?php post_class($class); ?> id="portfolio-<?php the_ID(); ?>">	
 	<div class="portfolio-holder">

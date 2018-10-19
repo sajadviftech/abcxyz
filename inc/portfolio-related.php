@@ -4,20 +4,20 @@ function thb_get_masonry_size($size = '') {
 	switch($size) {
 		case 'large':
 			$class_image['class'] = 'small-12 medium-6 large-6 masonry-large';
-			$class_image['image_size'] = 'revolution-square-x3';
+			$class_image['image_size'] = 'viftech-square-x3';
 			break;
 		case 'wide':
 			$class_image['class'] = 'small-12 medium-6 large-6 masonry-wide';
-			$class_image['image_size'] = 'revolution-wide-x2';
+			$class_image['image_size'] = 'viftech-wide-x2';
 			break;
 		case 'tall':
 			$class_image['class'] = 'small-12 medium-6 large-3 masonry-tall';
-			$class_image['image_size'] = 'revolution-tall-x2';
+			$class_image['image_size'] = 'viftech-tall-x2';
 			break;
 		case 'small':
 		default:
 			$class_image['class'] = 'small-12 medium-6 large-3 masonry-small';
-			$class_image['image_size'] = 'revolution-square-x2';
+			$class_image['image_size'] = 'viftech-square-x2';
 			break;
 	}
 	return $class_image;
@@ -273,7 +273,7 @@ function thb_portfolio_nav() {
 									<span class="title"><?php echo esc_html($prev->post_title); ?></span>
 								</span>
 							</strong>
-							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'revolution-bloglarge-x2')?></div><?php } ?>
+							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'viftech-bloglarge-x2')?></div><?php } ?>
 						</a>
 					<?php } ?>
 				</div>
@@ -293,7 +293,7 @@ function thb_portfolio_nav() {
 								<span><?php echo esc_html($prev->post_title); ?></span>
 								<em><?php esc_html_e('View Portfolio', 'viftech'); ?></em>
 							</div>
-							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'revolution-bloglarge-x2')?></div><?php } ?>
+							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'viftech-bloglarge-x2')?></div><?php } ?>
 						</a>
 					<?php } ?>
 				</div>
@@ -310,7 +310,7 @@ function thb_portfolio_nav() {
 								<span><?php echo esc_html($next->post_title); ?></span>
 								<em><?php esc_html_e('View Portfolio', 'viftech'); ?></em>
 							</div>
-							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'revolution-bloglarge-x2')?></div><?php } ?>
+							<?php if ($image_id) { ?><div class="inner"><?php echo wp_get_attachment_image($image_id, 'viftech-bloglarge-x2')?></div><?php } ?>
 						</a>
 					<?php } ?>
 				</div>
@@ -333,7 +333,7 @@ function thb_portfolio_nav() {
 						
 						if ($more_posts->have_posts()) :  while ($more_posts->have_posts()) : $more_posts->the_post();
 							$image_id = get_post_thumbnail_id();
-							$image_link = wp_get_attachment_image_src($image_id, 'revolution-bloglarge-x2');
+							$image_link = wp_get_attachment_image_src($image_id, 'viftech-bloglarge-x2');
 							?>
 								<li>
 									<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -348,7 +348,7 @@ function thb_portfolio_nav() {
 				</div>
 			</div>
 			<?php $i = 0; foreach ($images as $image) { ?>
-				<div class="inner <?php if (!$i) { ?>active<?php } ?>"><?php echo wp_get_attachment_image($image, 'revolution-bloglarge-x2')?></div>
+				<div class="inner <?php if (!$i) { ?>active<?php } ?>"><?php echo wp_get_attachment_image($image, 'viftech-bloglarge-x2')?></div>
 			<?php $i++; } ?>
 		<?php } else if ('style4' === $portfolio_nav_style) { ?>
 			<div class="row">

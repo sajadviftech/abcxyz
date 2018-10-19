@@ -749,7 +749,7 @@ function thb_custom_theme_options() {
         'label'       => esc_html__('Header Full Width', 'viftech'),
         'id'          => 'thb_header_full_width',
         'type'        => 'on_off',
-        'desc'        => esc_html__('By default, the header on revolution is limited to the grid, you can make it full width here.', 'viftech'),
+        'desc'        => esc_html__('By default, the header on viftech is limited to the grid, you can make it full width here.', 'viftech'),
         'std'         => 'off',
         'section'     => 'header'
       ),

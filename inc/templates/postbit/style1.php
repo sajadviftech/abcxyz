@@ -23,7 +23,7 @@
 		<?php if ( has_post_thumbnail() ) { ?>
 		<figure class="post-gallery">
 			<a href="<?php echo esc_url($permalink); ?>" rel="bookmark" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail('revolution-rectangle-x2'); ?>
+				<?php the_post_thumbnail('viftech-rectangle-x2'); ?>
 				<div class="post-gallery-overlay"><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div>
 			</a>
 		</figure>

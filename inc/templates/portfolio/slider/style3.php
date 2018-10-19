@@ -42,7 +42,7 @@
 		</div>
 		<div class="small-12 medium-6 small-order-1 medium-order-2 columns image-side">
 			<a href="<?php echo esc_url($permalink); ?>">
-			<?php the_post_thumbnail('revolution-square-x2', array('class' => 'portfolio-slider-image animation fade-in')); ?>
+			<?php the_post_thumbnail('viftech-square-x2', array('class' => 'portfolio-slider-image animation fade-in')); ?>
 			</a>
 		</div>
 	</div>

@@ -48,7 +48,7 @@
 	}
 	
 	// Image sizes
-	$image_size = $thb_aspect ? 'revolution-masonry-x2' : 'revolution-square-x2';
+	$image_size = $thb_aspect ? 'viftech-masonry-x2' : 'viftech-square-x2';
 	if ($thb_masonry) {
 		$masonry_size = get_post_meta($id, 'masonry_size', true);	
 		$thb_masonry_size = thb_get_masonry_size($masonry_size);

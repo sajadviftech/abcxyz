@@ -1409,7 +1409,7 @@ function thb_post_nav() {
 					<?php
 						if ($prev) {
 							$image_id = get_post_thumbnail_id($prev->ID);
-							$image_link = wp_get_attachment_image_src($image_id, 'revolution-bloglarge-x2');
+							$image_link = wp_get_attachment_image_src($image_id, 'viftech-bloglarge-x2');
 						?>
 						<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link prev">
 							<strong>
@@ -1427,7 +1427,7 @@ function thb_post_nav() {
 					<?php
 						if ($next) {
 							$image_id = get_post_thumbnail_id($next->ID);
-							$image_link = wp_get_attachment_image_src($image_id, 'revolution-bloglarge-x2');
+							$image_link = wp_get_attachment_image_src($image_id, 'viftech-bloglarge-x2');
 						?>
 						<a href="<?php echo esc_url(get_permalink($prev->ID)); ?>" class="post_nav_link next">
 							<strong>

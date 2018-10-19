@@ -16,7 +16,7 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 
 	?>
 	<tr class="form-field">
-		<th scope="row"><h2><?php esc_html_e( 'revolution Settings', 'viftech' ); ?></h2></th>
+		<th scope="row"><h2><?php esc_html_e( 'viftech Settings', 'viftech' ); ?></h2></th>
 	</tr>
 	<tr class="form-field">
 		<th scope="row" valign="top"><label><?php esc_html_e( 'Header', 'viftech' ); ?></label></th>

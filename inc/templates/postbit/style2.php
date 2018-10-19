@@ -15,7 +15,7 @@
 		<?php if ( has_post_thumbnail() ) { ?>
 		<figure class="post-gallery">
 			<a href="<?php echo esc_url($permalink); ?>" rel="bookmark" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail('revolution-bloglarge-x2'); ?>
+				<?php the_post_thumbnail('viftech-bloglarge-x2'); ?>
 				<div class="post-gallery-overlay"></div>
 			</a>
 		</figure>

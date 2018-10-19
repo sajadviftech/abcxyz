@@ -19,7 +19,7 @@
 		<div class="small-12 large-5 columns">
 			<figure class="post-gallery">
 				<a href="<?php echo esc_url($permalink); ?>" rel="bookmark" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail('revolutionrevolution-square-x2'); ?>
+					<?php the_post_thumbnail('viftechviftech-square-x2'); ?>
 					<div class="post-gallery-overlay"><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div>
 				</a>
 			</figure>

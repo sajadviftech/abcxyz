@@ -15,7 +15,7 @@
 		$image_url = wp_get_attachment_image_src($image_id, 'full');
 ?>
 	<figure class="thb-overlay-caption">
-		<?php echo wp_get_attachment_image($image_id, 'revolution-wide-3x'); ?>
+		<?php echo wp_get_attachment_image($image_id, 'viftech-wide-3x'); ?>
 		<?php if ($image_caption) { ?>
 			<figcaption><?php echo esc_attr($image_caption); ?></figcaption>
 		<?php } ?>

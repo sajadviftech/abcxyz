@@ -181,43 +181,43 @@ class Theme_Config {
 	public function thb_image_sizes() {
 		$thb_image_sizes = array(
 			array(
-				'slug'   => 'revolution-thumbnail',
+				'slug'   => 'viftech-thumbnail',
 				'width'  => 100,
 				'height' => 100,
 				'crop'   => true,
 			),
 			array(
-				'slug'   => 'revolution-bloglarge',
+				'slug'   => 'viftech-bloglarge',
 				'width'  => 650,
 				'height' => 325,
 				'crop'   => true,
 			),
 			array(
-				'slug'   => 'revolution-square',
+				'slug'   => 'viftech-square',
 				'width'  => 380,
 				'height' => 350,
 				'crop'   => true,
 			),
 			array(
-				'slug'   => 'revolution-rectangle',
+				'slug'   => 'viftech-rectangle',
 				'width'  => 380,
 				'height' => 315,
 				'crop'   => true,
 			),
 			array(
-				'slug'   => 'revolution-masonry',
+				'slug'   => 'viftech-masonry',
 				'width'  => 380,
 				'height' => 9999,
 				'crop'   => false,
 			),
 			array(
-				'slug'   => 'revolution-tall',
+				'slug'   => 'viftech-tall',
 				'width'  => 380,
 				'height' => 700,
 				'crop'   => true,
 			),
 			array(
-				'slug'   => 'revolution-wide',
+				'slug'   => 'viftech-wide',
 				'width'  => 760,
 				'height' => 350,
 				'crop'   => true,
@@ -560,15 +560,15 @@ class Theme_Config {
 	}
 	public function thb_activation_redirect() {
 		if ( ! ( defined( 'WP_CLI' ) && WP_CLI ) ) {
-			$revolution_installed = 'revolution_installed';
+			$viftech_installed = 'viftech_installed';
 			
-			if ( false == get_option( $revolution_installed, false ) ) {		
-				update_option( $revolution_installed, true );
+			if ( false == get_option( $viftech_installed, false ) ) {		
+				update_option( $viftech_installed, true );
 				wp_redirect( admin_url( 'admin.php?page=thb-plugins' ) );
 				die();
 			} 
 			
-			delete_option( $revolution_installed );
+			delete_option( $viftech_installed );
 		}
 	}
 	public function adminPageEnqueue() {

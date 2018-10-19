@@ -10,7 +10,7 @@
 					<?php thb_bgecho($post_header_bg); ?>
 				}
 			</style>
-		<?php } else { the_post_thumbnail('revolution-wide-3x'); }?>
+		<?php } else { the_post_thumbnail('viftech-wide-3x'); }?>
 	</div>
 	<div class="header-spacer-force"></div>
 	<header class="post-title entry-header animation bottom-to-top-3d">
