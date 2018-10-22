@@ -162,6 +162,16 @@ vc_add_param("vc_row", array(
 ));
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
+	"heading" => esc_html__("Enable Center Block", 'viftech'),
+	"param_name" => "center_block",
+	"value" => array(
+		"Yes" => "true"
+	),
+	'weight' => 1,
+	"description" => esc_html__("If you enable this, this each column should margin 0auto", 'viftech')
+));
+vc_add_param("vc_row", array(
+	"type" => "checkbox",
 	"heading" => esc_html__("Disable Row Padding", 'viftech'),
 	"param_name" => "thb_row_padding",
 	"value" => array(
@@ -365,6 +375,16 @@ vc_add_param("vc_column", array(
 	),
 	'weight' => 1,
 	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'viftech')
+));
+vc_add_param("vc_column", array(
+	"type" => "checkbox",
+	"heading" => esc_html__("Enable Center Block", 'viftech'),
+	"param_name" => "columns_center_block",
+	"value" => array(
+		"Yes" => "true"
+	),
+	'weight' => 1,
+	"description" => esc_html__("If you enable this, this each column should margin 0auto", 'viftech')
 ));
 vc_add_param("vc_column", array(
 	"type" => "checkbox",
@@ -3568,50 +3588,6 @@ vc_map( array(
 		)
 	),
 	"description" => esc_html__("Display a Share Button", "viftech" )
-) );
-
-// slidetype
-vc_map( array(
-	'base'  => 'thb_slidetype',
-	'name' => esc_html__('Slide Type', 'viftech'),
-	"description" => esc_html__("Animated text scrolling", "viftech"),
-	'category' => esc_html__('by Viftech Themes', 'viftech'),
-	"icon" => "thb_vc_ico_slidetype",
-	"class" => "thb_vc_sc_slidetype",
-	'params' => array(
-		array(
-			'type'       => 'textarea_safe',
-			'heading'    => esc_html__( 'Content', 'viftech' ),
-			'param_name' => 'slide_text',
-			'value'		 => '<h2>*Revolution;Developed by Viftech Themes*</h2>',
-			'description'=> 'Enter the content to display with typing text. <br />
-			Text within <b>*</b> will be animated, for example: <strong>*Sample text*</strong>. <br />
-			Text separator is <b>;</b> for example: <strong>*viftech; Developed by Viftech Themes*</strong> which will create new lines at ;',
-			"admin_label" => true,
-		),
-		array(
-			"type" => "dropdown",
-			"heading" => esc_html__("Style", "viftech"),
-			"param_name" => "style",
-			"admin_label" => true,
-			"value" => array(
-				'Lines' => "style1",
-				'Words' => "style2",
-				'Characters' => "style3",
-			),
-		),
-		array(
-			"type" => "colorpicker",
-			"heading" => esc_html__("Animated Text Color", "viftech"),
-			"param_name" => "thb_animated_color",
-			"description" => esc_html__("Uses the accent color by default", "viftech")
-		),
-		array(
-			"type" => "textfield",
-			"heading" => esc_html__("Extra Class Name", "viftech"),
-			"param_name" => "extra_class",
-		),
-	)
 ) );
 
 // stroke type

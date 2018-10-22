@@ -66,6 +66,11 @@ if ( ! empty( $parallax ) ) {
 	}
 }
 
+if($columns_center_block ==true){
+	$css_classes[] = 'm-0-auto';
+}
+
+
 if ( ! empty( $parallax_image ) ) {
 	if ( $has_video_bg ) {
 		$parallax_image_src = $parallax_image;

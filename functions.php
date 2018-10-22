@@ -105,3 +105,15 @@ add_action( 'load-network.php', function()
         return $value;
     } );
 } );
+function get_all_icons(){
+    $icons = thb_getIconArray();
+    echo '<div class="row">';
+    foreach($icons as $icon){
+        echo '<div class="columns medium-2 small-12">';
+            get_template_part( 'assets/svg/'.$icon );
+        echo '</div>';
+    }
+    echo '</div>';
+
+}
+add_shortcode('icons','get_all_icons');

@@ -73,6 +73,10 @@ if (!empty($atts['gap'])) {
 	$css_classes[] = 'vc_column-gap-'.$atts['gap'];
 }
 
+if($center_block == true) {
+	$css_classes[] = 'm-auto';
+}
+
 $wrapper_attributes = array();
 // build attributes for wrapper
 if ( ! empty( $el_id ) ) {
