@@ -6,6 +6,8 @@
 	You have been warned!
 
 -------------------------------------------------------------------------------------*/
+// Custom Post Types
+require get_theme_file_path('post-types.php'); 
 
 // Option-Tree Theme Mode
 require get_theme_file_path('/option-tree/init.php');
@@ -60,8 +62,6 @@ require get_theme_file_path('/inc/widgets.php');
 require get_theme_file_path('/inc/woocommerce.php');
 require get_theme_file_path('/inc/woocommerce-category-image.php');
 
-// Custom Post Types
-require get_theme_file_path('post-types.php'); 
 
 
 add_filter( 'sanitize_user', function( $username, $raw_username, $strict )
