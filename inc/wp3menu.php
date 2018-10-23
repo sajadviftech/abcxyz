@@ -69,6 +69,7 @@ class thb_mobileDropdown extends Walker_Nav_Menu {
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		$classes[] = 'menu-item-' . $item->ID;
 		$classes[] = ! empty( $item->menuanchor ) ? 'has-hash' : '';
+
 		/**
 		 * Filter the arguments for a single nav menu item.
 		 *
@@ -209,6 +210,11 @@ class thb_fullmenu extends Walker_Nav_Menu {
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		$classes[] = 'menu-item-' . $item->ID;
 		$classes[] = ! empty( $item->menuanchor ) ? 'has-hash' : '';
+		if(!empty($item->widthclass)) {
+			$classes[] = $item->widthclass;
+		}
+		
+		
 		/**
 		 * Filters the arguments for a single nav menu item.
 		 *
@@ -370,6 +376,7 @@ class thb_custom_menu {
     
       $menu_item->menubg = get_post_meta( $menu_item->ID, '_menu_item_menubg', true );
 			$menu_item->menuanchor = get_post_meta( $menu_item->ID, '_menu_item_menuanchor', true );
+			$menu_item->widthclass = get_post_meta( $menu_item->ID, 'widthclass', true );
       return $menu_item;
         
     }
@@ -386,15 +393,20 @@ class thb_custom_menu {
 	    // Check if element is properly sent
 	    if (!empty($_REQUEST['menu-item-menubg'])) {
 	    	$menubg_value = $_REQUEST['menu-item-menubg'][$menu_item_db_id];
-	      update_post_meta( $menu_item_db_id, '_menu_item_menubg', $menubg_value );
+	      	update_post_meta( $menu_item_db_id, '_menu_item_menubg', $menubg_value );
 	    }
 
-			if (!empty($_REQUEST['menu-item-menuanchor'])) {
+		if (!empty($_REQUEST['menu-item-menuanchor'])) {
 		    $menuanchor_value = $_REQUEST['menu-item-menuanchor'][$menu_item_db_id];
 		    update_post_meta( $menu_item_db_id, '_menu_item_menuanchor', $menuanchor_value );
-			}
-    }
-    
+		}
+
+		if (!empty($_REQUEST['menu-item-widthclass'])) {
+		    $widthclass_value = $_REQUEST['menu-item-widthclass'][$menu_item_db_id];
+		    update_post_meta( $menu_item_db_id, 'widthclass', $widthclass_value );
+		}
+	}
+		
     /**
      * Define new Walker edit
      *
@@ -580,6 +592,16 @@ class thb_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 	                <?php _e( 'Open link in a new window/tab', 'viftech' ); ?>
 	            </label>
 	        </p>
+			
+			<p class="field-menuanchor description-wide thb_menu_options">
+	        	<label for="edit-menu-item-menuanchor-<?php echo esc_attr($item_id); ?>">
+	        		<strong><?php _e( 'Fullwidth Menu Class', 'viftech' ); ?></strong><br />
+	        		<input type="text" id="edit-menu-item-widthclass<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-widthclass" name="menu-item-widthclass[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->widthclass ); ?>" />
+	        		<span class="description"><?php _e('Add your width class i.e "fullwidth large-6 small-12"', 'viftech'); ?></span>
+	        	</label>
+	        </p>
+
+
 	        <p class="field-menubg description-wide thb_menu_options">
 	        	<label for="edit-menu-item-menubg-<?php echo esc_attr($item_id); ?>">
 	        		<strong><?php _e( 'Menu Background', 'viftech' ); ?></strong><br />

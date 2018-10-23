@@ -52,7 +52,8 @@ function thb_create_post_type_portfolios() {
   		array("portfolio"), 
   		array("hierarchical" => true, 
   				'labels' => $category_labels,
-  				'show_ui' => true,
+				  'show_ui' => true,
+				  'show_admin_column'=>true,
       		'query_var' => true,
   				'rewrite' => array( 'slug' => 'portfolio-category' )
   ));

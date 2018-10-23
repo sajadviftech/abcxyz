@@ -1,3 +1,4 @@
+
 .header {
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@
 
 @media only screen and (min-width: 640px) {
     .header {
-        padding: 60px 0;
+        padding:0;
     }
 }
 
@@ -59,7 +60,7 @@
 
 @media only screen and (min-width: 640px) {
     .header.fixed {
-        padding: 20px 0;
+        padding: 0;
     }
 }
 
@@ -884,7 +885,16 @@
     margin-left: 0;
     margin-right: 10px;
 }
+.thb-full-menu li.fulllwidth {
+    position: initial;
+}
 
+.thb-full-menu li.fulllwidth > .sub-menu {
+    display: flex;
+}
+.thb-full-menu li.fulllwidth > .sub-menu .row li a {
+    opacity: 1;
+}
 .thb-full-menu .sub-menu {
     padding: 30px 0;
     margin: 0;

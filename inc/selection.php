@@ -142,14 +142,14 @@ h6 {
 /* Measurements */
 <?php if ($header_padding = ot_get_option('header_padding')) { ?>
 @media only screen and (min-width: 40.0625em) {
-	.header {
+	.thb-full-menu > li{
 		<?php thb_paddingecho($header_padding); ?>;	
 	}
 }
 <?php } ?>
 <?php if ($header_padding_fixed = ot_get_option('header_padding_fixed')) { ?>
 @media only screen and (min-width: 40.0625em) {
-	.header.fixed {
+	.header.fixed .thb-full-menu > li {
 		<?php thb_paddingecho($header_padding_fixed); ?>;	
 	}
 }

@@ -213,7 +213,9 @@ input[type="submit"].style4:before,
 .login-page-form li a:before,
 .thb-form-container,
 .thb-form-container .thb-login-form,
-.thb-form-container .thb-register-form {
+.thb-form-container .thb-register-form,
+ .thb-full-menu li,
+ .logolink .logoimg{
     -moz-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
     -o-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
     -webkit-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
