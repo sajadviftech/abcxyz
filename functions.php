@@ -109,9 +109,10 @@ function get_all_icons(){
     $icons = thb_getIconArray();
     echo '<div class="row">';
     foreach($icons as $icon){
-        echo '<div class="columns medium-2 small-12">';
+        
+        echo '<div class="columns medium-2 small-12 icon-svg">';
             get_template_part( 'assets/svg/'.$icon );
-        echo '</div>';
+        echo '<p>'.$icon.'</p></div>';
     }
     echo '</div>';
 

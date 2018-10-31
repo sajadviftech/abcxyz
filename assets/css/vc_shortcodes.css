@@ -1078,7 +1078,9 @@ table tbody td {
     margin: 0;
     line-height: 1;
 }
-
+.thb-autotype {
+    text-align: center;
+}
 .thb-autotype .thb-autotype-entry {
     display: inline;
     color: #ee9982;
@@ -3220,7 +3222,55 @@ table tbody td {
     display: block;
     visibility: hidden;
 }
+.thb-iconbox.box {
+    background: #eee;
+    padding: 30px 20px 30px 40px;
+    position: relative;
+    box-shadow: 1px 2px 7px -1px #000;
+}
 
+.thb-iconbox.box figure {
+    position: absolute;
+    left: -24px;
+    top: 40px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px 0px #000;
+}
+
+.thb-iconbox.box figure svg {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.thb-iconbox.box .iconbox-content {
+    width: 100%;
+}
+
+.thb-iconbox.box h5 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.thb-iconbox.box p {
+    margin-bottom: 0;
+}
+.thb-iconbox.box.box-style2 {
+    padding: 45px 20px;
+    margin: 40px 0;
+}
+.thb-iconbox.box .iconbox-image img {
+    padding: 7px;
+}
+.thb-iconbox.box.box-style2 figure {
+    left: 0;
+    right: 0;
+    top: -22px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
 .thb-iconbox figure svg path,
 .thb-iconbox figure svg circle,
 .thb-iconbox figure svg rect,
@@ -3258,7 +3308,7 @@ table tbody td {
 }
 
 .thb-iconbox p {
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     -moz-transition: color .25s cubic-bezier(0.25, 0.8, 0.25, 1);
     -o-transition: color .25s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -3330,13 +3380,14 @@ table tbody td {
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding-bottom: 48px;
+    padding-bottom: 20px;
     margin: 0;
 }
 
 .thb-iconbox.top.type3 h5 {
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .thb-iconbox.top.type4 {
@@ -3972,45 +4023,94 @@ table tbody td {
     height: 100%;
     flex-direction: column;
     border-radius: 3px;
-    border: 1px solid rgba(238, 153, 130, 0.2);
     text-align: center;
-    padding: 15px;
 }
-
+.pricing-container .inner {
+    padding: 30px;
+}
 @media only screen and (min-width: 640px) {
     .thb-pricing-table .thb-pricing-column .pricing-container {
-        padding: 40px;
     }
 }
+.thb-pricing-table .as_header .thb_pricing_head .inner h4 {
+    font-size: 60px !important;
+    text-align: left;
+    margin-bottom: 0 !important;
+    padding: 0 30px;
+}
+.thb-pricing-table .as_header .thb_pricing_head .inner h3,.thb-pricing-table .as_header .thb_pricing_head .inner p {
+    display: none;
+}
+.thb-pricing-table .as_header .thb_pricing_head {
+    min-height: 212px;
+    display: table;
+}
 
+.thb-pricing-table .as_header .thb_pricing_head .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.thb-pricing-table .as_header .thb_pricing_head .inner h4 {
+    font-size: 60px;
+    text-align: left;
+}
 .thb-pricing-table .thb-pricing-column .pricing-container img {
     display: block;
     border-radius: 3px;
     margin-bottom: 40px;
     flex-shrink: 0;
 }
-
-.thb-pricing-table .thb-pricing-column .pricing-container .thb_pricing_head {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+.as_header .inner ul li {
+    list-style: none;
+    font-weight: bold;
+}
+.thb-pricing-table .remove-spaces .pricing-container .inner {
+    padding: 30px 0;
 }
 
+.thb-pricing-table .remove-spaces .pricing-container .inner ul li {
+    padding: 6px 30px;
+    border-bottom: 1px solid #ccc;
+        font-size: 16px;
+    list-style: none;
+}
+
+.thb-pricing-table .remove-spaces {
+     padding: 0;
+}
+.thb-pricing-table .thb-pricing-column ul {
+    margin-bottom: 0;
+}
+.thb-pricing-table .light .thb_pricing_head h4, 
+.thb-pricing-table .light .thb_pricing_head h3, 
+.thb-pricing-table .light .thb_pricing_head p, 
+.thb-pricing-table .light .pricinf_footer a {
+    color: #fff;
+}
+.thb-pricing-table .dark .thb_pricing_head h4, 
+.thb-pricing-table .dark .thb_pricing_head h3, 
+.thb-pricing-table .dark .thb_pricing_head p, 
+.thb-pricing-table .dark .pricinf_footer a {
+    color: #000;
+}
 .thb-pricing-table .thb-pricing-column .pricing-container .thb_pricing_head h4 {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 400;
     margin-bottom: 15px;
     line-height: 1;
 }
 
 .thb-pricing-table .thb-pricing-column .pricing-container .thb_pricing_head h3 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 1;
-    margin-bottom: 25px;
+    margin-bottom:15px;
 }
 
 .thb-pricing-table .thb-pricing-column .pricing-container .thb_pricing_head .pricing_sub_title {
-    font-size: 13px;
-    margin-bottom: 39px;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
 
 .thb-pricing-table .thb-pricing-column .pricing-container.has-button {
@@ -4019,10 +4119,11 @@ table tbody td {
 }
 
 .thb-pricing-table .thb-pricing-column .pricing-container .pricing-description {
-    padding-top: 40px;
     text-align: left;
     font-size: 14px;
     color: #0a0a0a;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .thb-pricing-table .thb-pricing-column .pricing-container .pricing-description p {
@@ -4032,6 +4133,8 @@ table tbody td {
 
 .thb-pricing-table .thb-pricing-column .btn {
     width: 100%;
+    background: transparent;
+    padding: 30px 0;
 }
 
 .thb-pricing-table .thb-pricing-column.highlight-true .pricing-container {
@@ -4040,7 +4143,7 @@ table tbody td {
 }
 
 .thb-pricing-table .btn {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0;
 }
 
 .thb-team-row .thb-carousel .thb-team-member.member_style2 {

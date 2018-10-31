@@ -2126,6 +2126,8 @@ vc_map( array(
 				"Top Icon - Border Around" => "top type4",
 				"Left Icon - Style 1" => "left type1",
 				"Right Icon - Style 1" => "right type1",
+				"Box Style 1" => "box box-style1",
+				"Box Style 2" => "box box-style2",
 			)
 		),
 		array(
@@ -2139,6 +2141,19 @@ vc_map( array(
 			),
 			"std" => "text-center",
 			"dependency" => Array('element' => "type", 'value' => array('top type1', 'top type2', 'top type3', 'top type4'))
+		),
+		array(
+			"type" => "colorpicker",
+			"heading" => esc_html__("Box Background", "viftech"),
+			"param_name" => "thb_box_color",
+			"group"					 => 'Styling',
+			"dependency" => Array('element' => "type", 'value' => array('box box-style1', 'box box-style2', 'box box-style3'))
+		),
+		array(
+			"type" => "colorpicker",
+			"heading" => esc_html__("Icon Background", "viftech"),
+			"param_name" => "thb_icon_bgcolor",
+			"group"					 => 'Styling',
 		),
 		array(
 			"type" => "dropdown",
@@ -3106,6 +3121,42 @@ vc_map( array(
 	"as_child" => array('only' => 'thb_pricing_table'),
 	"params"	=> array(
 		array(
+			"type" => "dropdown",
+			"heading" => esc_html__("Styles", "viftech"),
+			"param_name" => "styles",
+			"value" => array(
+				"Style 1" => "style-1",
+				"Style 2" => "style-2",
+				"Style 3" => "style-3"
+			),
+			"description" => esc_html__("Choose Styles", "viftech"),
+		),
+		array(
+			"type" => "checkbox",
+			"heading" => esc_html__("Remove Spaces", "viftech"),
+			"param_name" => "remove_spaces",
+			"value" => array(
+				"Yes" => "true"
+			),
+			"description" => esc_html__("If enabled, this column merged.", "viftech"),
+		),
+		array(
+			"type" => "colorpicker",
+			"heading" => esc_html__("Header & Footer Background", "viftech"),
+			"param_name" => "h_f_bg",
+			"description" => esc_html__("Use header and background color", "viftech")
+		),
+		array(
+			"type" => "dropdown",
+			"heading" => esc_html__("Header & Footer Color", "viftech"),
+			"param_name" => "h_f_color",
+			"value" => array(
+				"Light" => "light",
+				"Dark" => "dark",
+			),
+			"description" => esc_html__("Use header and background color", "viftech")
+		),
+		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Highlight?", "viftech"),
 			"param_name" => "highlight",
@@ -3115,10 +3166,13 @@ vc_map( array(
 			"description" => esc_html__("If enabled, this column will be hightlighted.", "viftech"),
 		),
 		array(
-			'type'           => 'attach_image',
-			'heading'        => esc_html__( 'Image', 'viftech' ),
-			'param_name'     => 'image',
-			'description'    => esc_html__( 'Select an image if you would like to display one on top.', 'viftech' )
+			"type" => "checkbox",
+			"heading" => esc_html__("Make as Header?", "viftech"),
+			"param_name" => "as_header",
+			"value" => array(
+				"Yes" => "true"
+			),
+			"description" => esc_html__("If enabled, this column should be as header.", "viftech"),
 		),
 		array(
 			'type'           => 'textfield',
@@ -3126,6 +3180,12 @@ vc_map( array(
 			'param_name'     => 'title',
 			'admin_label'	 => true,
 			'description'    => esc_html__( 'Title of this pricing column', 'viftech' ),
+		),
+		array(
+			'type'           => 'textfield',
+			'heading'        => esc_html__( 'Currentcy Symbol', 'viftech' ),
+			'param_name'     => 'symbol',
+			'description'    => esc_html__( 'Currentcy Symbol this pricing column.', 'viftech' ),
 		),
 		array(
 			'type'           => 'textfield',
@@ -3603,7 +3663,7 @@ vc_map( array(
 			'type'       => 'textarea_safe',
 			'heading'    => esc_html__( 'Content', 'viftech' ),
 			'param_name' => 'slide_text',
-			'value'		 => '<h1>Revolution</h1>',
+			'value'		 => '<h1>Viftech</h1>',
 			'description'=> 'Enter the content to display with stroke.',
 			"admin_label" => true,
 		),

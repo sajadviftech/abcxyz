@@ -1339,8 +1339,8 @@ function thb_custom_theme_options() {
         'type'        => 'textarea',
         'desc'        => esc_html__('Text Content to be displayed on the subfooter', 'viftech' ),
         'section'     => 'footer',
-        'std' 				=> esc_html__('&copy; 2018 Revolution', 'viftech'),
-        'operator' 		=> 'or',
+        'std' 				=> esc_html__('&copy; 2018 Viftech', 'viftech'),
+        'operator' 		=> 'or', 
         'condition'		=> 'subfooter_style:is(style1),subfooter_style:is(style3)'
       ),
       array(

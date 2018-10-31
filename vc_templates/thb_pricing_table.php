@@ -7,7 +7,7 @@
 	$el_class[] = 'thb-pricing-table';
 	$out ='';
 	ob_start();
-	
+
 	
 	?>
 	<div id="<?php echo esc_attr($element_id); ?>" class="<?php echo esc_attr(implode(' ', $el_class)); ?>">
@@ -15,7 +15,8 @@
 			<?php echo wpb_js_remove_wpautop($content, false); ?>
 		</div>
 	</div>
-	<?php
+	<?php 
+	$count ++;
 	$out = ob_get_clean();
 	return $out;
 }

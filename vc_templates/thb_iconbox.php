@@ -36,10 +36,25 @@
 	if ($icon_image_hover) {
 		$img_hover = wpb_getImageBySize( array( 'attach_id' => $icon_image_hover, 'thumb_size' => 'full', 'class' => 'thb_image_hover' ) );
 	}
+	$bg = '';
+	if(!empty($thb_icon_bgcolor)) {
+		$bg= 'background:'.$thb_icon_bgcolor;
+	}else{
+		$b = '';
+	}
+
+	if(!empty($thb_box_color)) {
+		echo '<style>
+			#'.$element_id.' {
+				background: '.$thb_box_color.';
+			}
+		</style>';
+	}
 	?>
+
 	<<?php echo esc_attr($el); ?> id="<?php echo esc_attr($element_id); ?>" class="<?php echo esc_attr(implode(' ', $el_class)); ?>" href="<?php echo esc_url($link_to); ?>" target="<?php echo esc_attr($a_target); ?>" data-animation_speed="<?php echo esc_attr($animation_speed); ?>">
 		<?php if ($icon_image || $icon) { ?>
-		<figure>
+		<figure style="<?php echo $bg; ?>">
 			<?php if ($icon_image) { ?>
 				<div class="iconbox-image">
 					<?php echo $img['thumbnail']; ?>

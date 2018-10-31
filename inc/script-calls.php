@@ -11,7 +11,7 @@ function thb_main_styles() {
 	// Enqueue
 	
 	//CSS FONTOWESOME
-	wp_enqueue_style("thb-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', 		null, null);
+	wp_enqueue_style("thb-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/fontawesome.css', 		null, null);
 	// CSS FRAMEWORK
 	wp_enqueue_style("thb-gird", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	//CSS UTILIZATION
@@ -39,7 +39,7 @@ function thb_main_styles() {
 	//FOOTER
 	wp_enqueue_style("thb-footer",		Theme_Config::$thb_theme_directory_uri . 'assets/css/footer.css',					null, esc_attr(Theme_Config::$thb_theme_version));
 	//MIXTURE
-	wp_enqueue_style("thb-app", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/mixture.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("thb-app", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/mixture.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	
 	//wp_enqueue_style('thb-thb-style', get_stylesheet_uri(), null, null);	
 	

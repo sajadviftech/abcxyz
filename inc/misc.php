@@ -1159,7 +1159,7 @@ function thb_header_button() {
 	$classes[] = ot_get_option('header_button_color');
 	$classes[] = ot_get_option('header_button_style');
 	?>
-	<a href="<?php echo esc_url(ot_get_option('header_action_button_link')); ?>" class="<?php echo esc_attr(implode(' ', $classes)); ?>" target="_blank" title="<?php echo esc_attr(ot_get_option('header_button_text')); ?>"><?php echo esc_html(ot_get_option('header_button_text')); ?></a>
+	<a href="<?php echo esc_url(ot_get_option('header_action_button_link')); ?>" class="buynow <?php echo esc_attr(implode(' ', $classes)); ?>" target="_blank" title="<?php echo esc_attr(ot_get_option('header_button_text')); ?>"><?php echo esc_html(ot_get_option('header_button_text')); ?></a>
 	<?php
 	}
 }
