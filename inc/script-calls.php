@@ -11,7 +11,8 @@ function thb_main_styles() {
 	// Enqueue
 	
 	//CSS FONTOWESOME
-	wp_enqueue_style("thb-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/fontawesome.css', 		null, null);
+	wp_enqueue_style("thb-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', 		null, null);
+	wp_enqueue_style("thb-fa5", 		Theme_Config::$thb_theme_directory_uri . 'assets/fontawesome/css/all.min.css', 		null, null);
 	// CSS FRAMEWORK
 	wp_enqueue_style("thb-gird", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	//CSS UTILIZATION
