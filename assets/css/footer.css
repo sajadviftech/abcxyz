@@ -91,6 +91,7 @@
 }
 
 .footer .footer-logo-holder .footer-logolink .logoimg {
+    max-height: 80px;
 }
 
 .footer .columns .widget:last-of-type {

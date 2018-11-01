@@ -454,7 +454,7 @@
 
 .star-rating:before,
 .comment-form-rating p.stars:before {
-    font-family: "Font Awesome 5 Free";
+    font-family: FontAwesome;
     content: "\f005 \f005 \f005 \f005 \f005";
 }
 
@@ -473,7 +473,6 @@
 .comment-form-rating p.stars>span:before {
     color: #ffc200;
     content: "\f005 \f005 \f005 \f005 \f005";
-    font-family: "Font Awesome 5 Free"
 }
 
 .star-rating>span strong,

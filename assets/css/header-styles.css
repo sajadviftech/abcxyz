@@ -17,7 +17,7 @@
 
 @media only screen and (min-width: 640px) {
     .header {
-        padding:20px 0;
+        padding:0;
     }
 }
 
@@ -60,7 +60,7 @@
 
 @media only screen and (min-width: 640px) {
     .header.fixed {
-        padding: 10px 0;
+        padding: 0;
     }
 }
 

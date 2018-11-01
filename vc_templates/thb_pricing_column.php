@@ -39,7 +39,7 @@
 	.thb-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] .pricinf_footer {
 		background: <?php echo $h_f_bg; ?>;
 	}
-	.thb-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] .pricing-container {
+	.thb-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] {
 		 border: 1px solid <?php echo  $h_f_bg; ?>
 	}
 	
