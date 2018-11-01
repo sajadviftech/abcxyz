@@ -1,53 +1,53 @@
 
-.thb-page-header {
+.vif-page-header {
     text-align: center;
     margin-bottom: 10vh;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb-page-header {
+    .vif-page-header {
         margin-bottom: 12vh;
     }
 }
 
-.thb-page-header h1 {
+.vif-page-header h1 {
     margin-bottom: 0;
     line-height: 1;
 }
 
 @media only screen and (min-width: 1024px) {
-    .thb-page-header h1 {
+    .vif-page-header h1 {
         font-size: 70px;
     }
 }
 
-.thb-page-header .thb-blog-categories {
+.vif-page-header .vif-blog-categories {
     list-style: none;
     margin: 40px 0 0 0;
     padding: 0;
     text-align: center;
 }
 
-.thb-page-header .thb-blog-categories li {
+.vif-page-header .vif-blog-categories li {
     display: block;
     text-align: center;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb-page-header .thb-blog-categories li {
+    .vif-page-header .vif-blog-categories li {
         display: inline-block;
         padding: 0 14px;
     }
 }
 
-.thb-page-header .thb-blog-categories li a {
+.vif-page-header .vif-blog-categories li a {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
     position: relative;
 }
 
-.thb-page-header .thb-blog-categories li a:after {
+.vif-page-header .vif-blog-categories li a:after {
     content: '';
     display: block;
     position: absolute;
@@ -63,19 +63,19 @@
     transform-origin: 0 0;
 }
 
-.thb-page-header .thb-blog-categories li a:hover:after {
+.vif-page-header .vif-blog-categories li a:hover:after {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
 }
 
-.thb-page-header.style2 {
+.vif-page-header.style2 {
     margin-bottom: 10vh;
     padding-bottom: 10vh;
 }
 
-.header-color-light-header .thb-page-header h1 {
+.header-color-light-header .vif-page-header h1 {
     color: #fff;
 }
 
@@ -628,7 +628,7 @@
     }
 }
 
-.post.style7 .style7-content .thb-post-arrow {
+.post.style7 .style7-content .vif-post-arrow {
     display: none;
     position: absolute;
     top: 50%;
@@ -640,12 +640,12 @@
 }
 
 @media only screen and (min-width: 640px) {
-    .post.style7 .style7-content .thb-post-arrow {
+    .post.style7 .style7-content .vif-post-arrow {
         display: block;
     }
 }
 
-.post.style7 .style7-content .thb-post-arrow svg {
+.post.style7 .style7-content .vif-post-arrow svg {
     fill: rgba(9, 9, 9, 0.2);
     -moz-transform: translateX(-20%);
     -ms-transform: translateX(-20%);
@@ -657,7 +657,7 @@
     transition: all .15s linear;
 }
 
-.post.style7 .style7-content .thb-post-arrow svg .bar {
+.post.style7 .style7-content .vif-post-arrow svg .bar {
     fill: #090909;
     -moz-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
@@ -674,7 +674,7 @@
     padding-bottom: 0;
 }
 
-.post.style7:hover .style7-content .thb-post-arrow svg {
+.post.style7:hover .style7-content .vif-post-arrow svg {
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
     -webkit-transform: translateX(0%);
@@ -682,7 +682,7 @@
     fill: #090909;
 }
 
-.post.style7:hover .style7-content .thb-post-arrow svg .bar {
+.post.style7:hover .style7-content .vif-post-arrow svg .bar {
     opacity: 1;
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -771,12 +771,12 @@
     margin-bottom: 90px;
 }
 
-.post-detail.style1-detail.format-gallery .thb-carousel figure {
+.post-detail.style1-detail.format-gallery .vif-carousel figure {
     height: 75vh;
     max-height: 600px;
 }
 
-.post-detail.style1-detail.format-gallery .thb-carousel figure img {
+.post-detail.style1-detail.format-gallery .vif-carousel figure img {
     height: 100%;
     object-fit: cover;
     -moz-transform: scale(1, 1);
@@ -785,21 +785,21 @@
     transform: scale(1, 1);
 }
 
-.post-detail.style1-detail.format-gallery .thb-carousel .slick-dots-wrapper {
+.post-detail.style1-detail.format-gallery .vif-carousel .slick-dots-wrapper {
     position: absolute;
     bottom: -30px;
     left: 0;
     width: 100%;
 }
 
-.post-detail.style1-detail.format-gallery .thb-overlay-caption figcaption {
+.post-detail.style1-detail.format-gallery .vif-overlay-caption figcaption {
     top: auto;
     bottom: 15px;
     left: 15px;
 }
 
 @media only screen and (min-width: 640px) {
-    .post-detail.style1-detail.format-gallery .thb-overlay-caption figcaption {
+    .post-detail.style1-detail.format-gallery .vif-overlay-caption figcaption {
         top: auto;
         bottom: 40px;
         left: 40px;
@@ -1055,9 +1055,9 @@
     height: 4px;
     background: #343434;
     border-radius: 4px;
-    -moz-animation: thb-scrollanimation 2s infinite;
-    -webkit-animation: thb-scrollanimation 2s infinite;
-    animation: thb-scrollanimation 2s infinite;
+    -moz-animation: vif-scrollanimation 2s infinite;
+    -webkit-animation: vif-scrollanimation 2s infinite;
+    animation: vif-scrollanimation 2s infinite;
 }
 
 .single-portfolio.light-title .scroll-bottom.style2,
@@ -1169,7 +1169,7 @@
     background: #fff;
 }
 
-@-moz-keyframes thb-scrollanimation {
+@-moz-keyframes vif-scrollanimation {
     0% {
         height: 5px
     }
@@ -1181,7 +1181,7 @@
     }
 }
 
-@-webkit-keyframes thb-scrollanimation {
+@-webkit-keyframes vif-scrollanimation {
     0% {
         height: 5px
     }
@@ -1193,7 +1193,7 @@
     }
 }
 
-@keyframes thb-scrollanimation {
+@keyframes vif-scrollanimation {
     0% {
         height: 5px
     }

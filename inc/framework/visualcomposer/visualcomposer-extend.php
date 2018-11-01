@@ -24,7 +24,7 @@ $thb_column_array = array(
 	'2 Columns' => "medium-6",
 	'3 Columns' => "medium-4",
 	'4 Columns' => "medium-3",
-	'5 Columns' => "thb-5",
+	'5 Columns' => "vif-5",
 	'6 Columns' => "medium-2"
 );
 $thb_filter_array = array(
@@ -370,8 +370,8 @@ vc_add_param("vc_column", array(
 	"heading" => esc_html__("Column Content Color", 'viftech'),
 	"param_name" => "thb_color",
 	"value" => array(
-		"Dark" => "thb-dark-column",
-		"Light" => "thb-light-column"
+		"Dark" => "vif-dark-column",
+		"Light" => "vif-light-column"
 	),
 	'weight' => 1,
 	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'viftech')
@@ -391,7 +391,7 @@ vc_add_param("vc_column", array(
 	"heading" => esc_html__("Enable Fixed Content", 'viftech'),
 	"param_name" => "fixed",
 	"value" => array(
-		"Yes" => "thb-fixed"
+		"Yes" => "vif-fixed"
 	),
 	'weight' => 1,
 	"description" => esc_html__("If you enable this, this column will be fixed.", 'viftech')
@@ -401,8 +401,8 @@ vc_add_param("vc_column_inner", array(
 	"heading" => esc_html__("Column Content Color", 'viftech'),
 	"param_name" => "thb_color",
 	"value" => array(
-		"Dark" => "thb-dark-column",
-		"Light" => "thb-light-column"
+		"Dark" => "vif-dark-column",
+		"Light" => "vif-light-column"
 	),
 	'weight' => 1,
 	"description" => esc_html__("If you white-colored contents for this column, select Light.", 'viftech')
@@ -412,7 +412,7 @@ vc_add_param("vc_column_inner", array(
 	"heading" => esc_html__("Enable Fixed Content", 'viftech'),
 	"param_name" => "fixed",
 	"value" => array(
-		"Yes" => "thb-fixed"
+		"Yes" => "vif-fixed"
 	),
 	'weight' => 1,
 	"description" => esc_html__("If you enable this, this column will be fixed.", 'viftech')
@@ -940,7 +940,7 @@ vc_map( array(
 		    "admin_label" => true,
 		    "value" => array(
 		    	'Style 1 (Grid)' => "style1",
-		    	'Style 2 (Carousel)' => "thb-carousel",
+		    	'Style 2 (Carousel)' => "vif-carousel",
 		    	'Style 3 (Grid with Titles)' => "style3"
 		    ),
 		    "description" => esc_html__("This changes the layout style of the client logos", "viftech")
@@ -954,7 +954,7 @@ vc_map( array(
 				'2 Columns' => "small-6 large-6",
 				'3 Columns' => "small-6 large-4",
 				'4 Columns' => "small-6 large-3",
-				'5 Columns' => "small-6 thb-5",
+				'5 Columns' => "small-6 vif-5",
 				'6 Columns' => "small-6 large-2"
 			)
 		),
@@ -967,7 +967,7 @@ vc_map( array(
 				"Yes" => "true"
 			),
 			"description" => esc_html__("If you enable this, the logos will have border", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'thb-carousel'))
+			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'vif-carousel'))
 		),
 		array(
 			"type" => "colorpicker",
@@ -984,11 +984,11 @@ vc_map( array(
 			"admin_label" => true,
 			"value" => array(
 				'None' => "",
-				'Opacity' => "thb-opacity",
-				'Grayscale' => "thb-grayscale",
-				'Opacity with Accent hover' => "thb-opacity with-accent"
+				'Opacity' => "vif-opacity",
+				'Grayscale' => "vif-grayscale",
+				'Opacity with Accent hover' => "vif-opacity with-accent"
 			),
-			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'thb-carousel'))
+			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'vif-carousel'))
 		),
 		array(
 			"type" => "checkbox",
@@ -998,7 +998,7 @@ vc_map( array(
 				"Yes" => "true"
 			),
 			"description" => esc_html__("If enabled, the carousel will autoplay.", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('thb-carousel'))
+			"dependency" => Array('element' => "thb_style", 'value' => array('vif-carousel'))
 		),
 		array(
 			"type" => "textfield",
@@ -1305,8 +1305,8 @@ vc_map( array(
 			"heading" => esc_html__("Alignment", "viftech"),
 			"param_name" => "alignment",
 			"value" => array(
-				"Left" => "thb-side left",
-				"Right" => "thb-side right"
+				"Left" => "vif-side left",
+				"Right" => "vif-side right"
 			),
 			"dependency" => Array('element' => "style", 'value' => array('counter-style2'))
 		),
@@ -1486,11 +1486,11 @@ vc_map( array(
 	  	"heading" 			 => esc_html__("Description Alignment", 'viftech'),
 	  	"param_name" 		 => "thb_text_alignment",
 	  	"value" => array(
-	  		"Top Left" 				=> "thb-top-left",
-	  		"Center" 					=> "thb-center",
-	  		"Bottom Left" 		=> "thb-bottom-left"
+	  		"Top Left" 				=> "vif-top-left",
+	  		"Center" 					=> "vif-center",
+	  		"Bottom Left" 		=> "vif-bottom-left"
 	  	),
-	  	"std" 					 => "thb-top-left",
+	  	"std" 					 => "vif-top-left",
 	  	"description" 	 => esc_html__("Alignment of the Text.", 'viftech')
 	  ),
 	  array(
@@ -1738,7 +1738,7 @@ vc_map( array(
 		  	'Two Columns' => "small-12 medium-6",
 		  	'Three Columns' => "small-12 medium-4",
 		  	'Four Columns' => "small-12 medium-3",
-		  	'Five Columns' => "small-12 thb-5",
+		  	'Five Columns' => "small-12 vif-5",
 		  ),
 		  "description" => esc_html__("Select the layout.", "viftech" ),
 		  "dependency" => Array('element' => "type", 'value' => array('images', 'instagram', 'blog-posts', 'portfolios')),
@@ -1843,7 +1843,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"edit_field_class" => "vc_col-sm-3",
-			"heading" => sprintf( esc_html__( "Text Alignment %s", 'viftech' ), '<span class="thb-row-heading">Column 1</span>' ),
+			"heading" => sprintf( esc_html__( "Text Alignment %s", 'viftech' ), '<span class="vif-row-heading">Column 1</span>' ),
 			"param_name" => "column_1_align",
 			"value" => array(
 				"Left" => "text-left",
@@ -1854,7 +1854,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"edit_field_class" => "vc_col-sm-3",
-			"heading" => '<span class="thb-row-heading">Column 2</span>',
+			"heading" => '<span class="vif-row-heading">Column 2</span>',
 			"param_name" => "column_2_align",
 			"value" => array(
 				"Left" => "text-left",
@@ -1866,7 +1866,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"edit_field_class" => "vc_col-sm-3",
-			"heading" => '<span class="thb-row-heading">Column 3</span>',
+			"heading" => '<span class="vif-row-heading">Column 3</span>',
 			"param_name" => "column_3_align",
 			"value" => array(
 				"Left" => "text-left",
@@ -1878,7 +1878,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"edit_field_class" => "vc_col-sm-3",
-			"heading" => '<span class="thb-row-heading">Column 4</span>',
+			"heading" => '<span class="vif-row-heading">Column 4</span>',
 			"param_name" => "column_4_align",
 			"value" => array(
 				"Left" => "text-left",
@@ -2056,7 +2056,7 @@ vc_add_param("vc_gallery", array(
   "param_name" => "gallery_type",
   "value" => array(
      esc_html__("Regular Grid", "viftech") => "grid",
-     esc_html__("Masonry Grid", "viftech") => "thb-portfolio"
+     esc_html__("Masonry Grid", "viftech") => "vif-portfolio"
    ),
    'weight' => 1,
   "description" => esc_html__("Select gallery style. If you are using Masonry Grid, you can set individual image sizes inside 'Attachment Details > Masonry Size' when adding them to your gallery.", "viftech")
@@ -2071,7 +2071,7 @@ vc_add_param("vc_gallery", array(
 		'2 Columns' => "small-6 large-6",
 		'3 Columns' => "small-6 large-4",
 		'4 Columns' => "small-6 large-3",
-		'5 Columns' => "small-6 thb-5",
+		'5 Columns' => "small-6 vif-5",
 		'6 Columns' => "small-6 large-2"
 	),
 	'weight' => 1,
@@ -2768,14 +2768,14 @@ vc_map( array(
 	      "type" => "dropdown",
 	      "heading" => esc_html__("Animation Style", "viftech"),
 	      "param_name" => "animation_style",
-	      "std" => "thb-animate-from-bottom",
+	      "std" => "vif-animate-from-bottom",
 	      "group" => "Styling",
 	      "value" => array(
-	      	'Slide From Bottom' => "thb-animate-from-bottom",
-	      	'Vertical Flip' => "thb-vertical-flip",
-	      	'Fade' => "thb-fade",
-	      	'Scale' => "thb-scale",
-	      	'No Animation' => "thb-none"
+	      	'Slide From Bottom' => "vif-animate-from-bottom",
+	      	'Vertical Flip' => "vif-vertical-flip",
+	      	'Fade' => "vif-fade",
+	      	'Scale' => "vif-scale",
+	      	'No Animation' => "vif-none"
 	      ),
 	      "description" => esc_html__("You can change how the portfolio elements appear on the screen.", "viftech")
 	  ),
@@ -2850,7 +2850,7 @@ vc_map( array(
 		    "param_name" => "columns",
 		    "value" => array(
 		    	'Six Columns' => "small-12 medium-4 large-2",
-		    	'Five Columns' => "small-12 medium-3 thb-5",
+		    	'Five Columns' => "small-12 medium-3 vif-5",
 		    	'Four Columns' => "small-12 medium-6 large-3",
 		    	'Three Columns' => "small-12 large-4",
 		    	'Two Columns' => "small-12 large-6"
@@ -2890,14 +2890,14 @@ vc_map( array(
 	      "type" => "dropdown",
 	      "heading" => esc_html__("Animation Style", "viftech"),
 	      "param_name" => "animation_style",
-	      "std" => "thb-animate-from-bottom",
+	      "std" => "vif-animate-from-bottom",
 	      "group" => "Styling",
 	      "value" => array(
-	      	'Slide From Bottom' => "thb-animate-from-bottom",
-	      	'Vertical Flip' => "thb-vertical-flip",
-	      	'Fade' => "thb-fade",
-	      	'Scale' => "thb-scale",
-	      	'No Animation' => "thb-none"
+	      	'Slide From Bottom' => "vif-animate-from-bottom",
+	      	'Vertical Flip' => "vif-vertical-flip",
+	      	'Fade' => "vif-fade",
+	      	'Scale' => "vif-scale",
+	      	'No Animation' => "vif-none"
 	      ),
 	      "description" => esc_html__("You can change how the portfolio elements appear on the screen.", "viftech")
 	  ),
@@ -3104,7 +3104,7 @@ vc_map( array(
 				'2 Columns' => "large-6",
 				'3 Columns' => "large-4",
 				'4 Columns' => "medium-4 large-3",
-				'5 Columns' => "medium-6 thb-5",
+				'5 Columns' => "medium-6 vif-5",
 				'6 Columns' => "medium-4 large-2"
 			)
 		)
@@ -3561,11 +3561,11 @@ vc_map( array(
 			"heading" 			 => esc_html__("Alignment", 'viftech'),
 			"param_name" 		 => "thb_alignment",
 			"value" => array(
-				"Left" 				=> "thb-left",
-				"Center" 					=> "thb-center",
-				"Right" 		=> "thb-right"
+				"Left" 				=> "vif-left",
+				"Center" 					=> "vif-center",
+				"Right" 		=> "vif-right"
 			),
-			"std" 					 => "thb-center",
+			"std" 					 => "vif-center",
 			"description" 	 => esc_html__("Alignment of the icons.", 'viftech')
 		),
 		array(
@@ -3758,7 +3758,7 @@ vc_map( array(
 		    "admin_label" => true,
 		    "value" => array(
 		    	'Style 1 (Grid)' => "style1",
-		    	'Style 2 (Carousel)' => "thb-carousel"
+		    	'Style 2 (Carousel)' => "vif-carousel"
 		    ),
 		    "description" => esc_html__("This changes the layout style of the team members", "viftech")
 		),
@@ -3797,7 +3797,7 @@ vc_map( array(
 				'2 Columns' => "large-6",
 				'3 Columns' => "large-4",
 				'4 Columns' => "medium-4 large-3",
-				'5 Columns' => "medium-6 thb-5",
+				'5 Columns' => "medium-6 vif-5",
 				'6 Columns' => "medium-4 large-2"
 			)
 		),
@@ -3822,7 +3822,7 @@ vc_map( array(
 				"Yes" => "true"
 			),
 			"description" => esc_html__("If enabled, the carousel will autoplay.", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('thb-carousel'))
+			"dependency" => Array('element' => "thb_style", 'value' => array('vif-carousel'))
 		),
 		array(
 			"type" => "textfield",

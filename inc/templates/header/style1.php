@@ -27,12 +27,12 @@
 					<div class="header_overlay_menu_holder">
 						<?php 
 							if ( has_nav_menu('nav-menu') ) {
-								wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 2, 'container' => false, 'link_after' => '<span></span>', 'menu_class' => 'thb-header-menu' ) ); 
+								wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 2, 'container' => false, 'link_after' => '<span></span>', 'menu_class' => 'vif-header-menu' ) ); 
 							}
 						?>
 						<?php if ( has_nav_menu('secondary-menu') ) { ?>
-							<div class="thb-secondary-menu-container">
-								<span class="thb-secondary-line"></span>
+							<div class="vif-secondary-menu-container">
+								<span class="vif-secondary-line"></span>
 								<?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'depth' => 1, 'container' => false ) ); ?>
 								<?php do_action( 'thb_social_links', ot_get_option('fullmenu_social_link'), true ); ?>
 							</div>	

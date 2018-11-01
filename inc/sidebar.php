@@ -1,7 +1,7 @@
 <?php
 function thb_register_sidebars() {
 	if ( thb_wc_supported() ) {
-		register_sidebar(array('name' => esc_html__('Shop Sidebar', 'viftech'), 'id' => 'thb-shop-filters', 'description' => esc_html__('Sidebar used for filters on the Shop page', 'viftech'), 'before_widget' => '<div id="%1$s" class="widget woo cf %2$s">', 'after_widget' => '</div></div>', 'before_title' => '<h6>', 'after_title' => '</h6><div class="widget_content">'));
+		register_sidebar(array('name' => esc_html__('Shop Sidebar', 'viftech'), 'id' => 'vif-shop-filters', 'description' => esc_html__('Sidebar used for filters on the Shop page', 'viftech'), 'before_widget' => '<div id="%1$s" class="widget woo cf %2$s">', 'after_widget' => '</div></div>', 'before_title' => '<h6>', 'after_title' => '</h6><div class="widget_content">'));
 	}
 	register_sidebar(array('name' => esc_html__('Blog Sidebar', 'viftech'), 'id' => 'blog', 'description' => esc_html__('Blog', 'viftech'), 'before_widget' => '<div id="%1$s" class="widget cf %2$s">', 'after_widget' => '</div>', 'before_title' => '<h6>', 'after_title' => '</h6>'));
 	

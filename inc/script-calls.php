@@ -11,46 +11,46 @@ function thb_main_styles() {
 	// Enqueue
 	
 	//CSS FONTOWESOME
-	wp_enqueue_style("thb-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', 		null, null);
-	wp_enqueue_style("thb-fa5", 		Theme_Config::$thb_theme_directory_uri . 'assets/fontawesome/css/all.min.css', 		null, null);
+	wp_enqueue_style("vif-fa", 			Theme_Config::$thb_theme_directory_uri . 'assets/css/font-awesome.min.css', 		null, null);
+	wp_enqueue_style("vif-fa5", 		Theme_Config::$thb_theme_directory_uri . 'assets/fontawesome/css/all.min.css', 		null, null);
 	// CSS FRAMEWORK
-	wp_enqueue_style("thb-gird", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-gird", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/grid.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	//CSS UTILIZATION
-	wp_enqueue_style("thb-utilities", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/utilities.css', 				null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-utilities", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/utilities.css', 				null, esc_attr(Theme_Config::$thb_theme_version));
 	//CSS structure
-	wp_enqueue_style("thb-structure", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/structure.css', 				null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-structure", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/structure.css', 				null, esc_attr(Theme_Config::$thb_theme_version));
 	//ANIMATIONS
-	wp_enqueue_style("thb-animations", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/theme-animation.css',			null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-animations", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/theme-animation.css',			null, esc_attr(Theme_Config::$thb_theme_version));
 	//TOYOGROPHY
-	wp_enqueue_style("thb-toyo", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/fonts.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-toyo", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/fonts.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	//HEADER STYLES
-	wp_enqueue_style("thb-headers", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/header-styles.css', 			null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-headers", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/header-styles.css', 			null, esc_attr(Theme_Config::$thb_theme_version));
 	//MOBILE MENUS
-	wp_enqueue_style("thb-mobiles", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/mobile-menu.css',	 			null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-mobiles", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/mobile-menu.css',	 			null, esc_attr(Theme_Config::$thb_theme_version));
 	//BLOGS
-	wp_enqueue_style("thb-blog", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/blog.css',	 					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-blog", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/blog.css',	 					null, esc_attr(Theme_Config::$thb_theme_version));
 	//PORTFOLIO
-	wp_enqueue_style("thb-portfolio", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/portfolios.css',				null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-portfolio", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/portfolios.css',				null, esc_attr(Theme_Config::$thb_theme_version));
 	//WIDGETS
-	wp_enqueue_style("thb-widgets", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/widget.css',					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-widgets", 	Theme_Config::$thb_theme_directory_uri . 'assets/css/widget.css',					null, esc_attr(Theme_Config::$thb_theme_version));
 	//VC SHORTCODES
-	wp_enqueue_style("thb-shortcodes",	Theme_Config::$thb_theme_directory_uri . 'assets/css/vc_shortcodes.css',			null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-shortcodes",	Theme_Config::$thb_theme_directory_uri . 'assets/css/vc_shortcodes.css',			null, esc_attr(Theme_Config::$thb_theme_version));
 	//WOOCOMMERCE
-	wp_enqueue_style("thb-woocommerce",	Theme_Config::$thb_theme_directory_uri . 'assets/css/woocommerce.css',				null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-woocommerce",	Theme_Config::$thb_theme_directory_uri . 'assets/css/woocommerce.css',				null, esc_attr(Theme_Config::$thb_theme_version));
 	//FOOTER
-	wp_enqueue_style("thb-footer",		Theme_Config::$thb_theme_directory_uri . 'assets/css/footer.css',					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-footer",		Theme_Config::$thb_theme_directory_uri . 'assets/css/footer.css',					null, esc_attr(Theme_Config::$thb_theme_version));
 	//MIXTURE
-	wp_enqueue_style("thb-app", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/mixture.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
+	wp_enqueue_style("vif-app", 		Theme_Config::$thb_theme_directory_uri . 'assets/css/mixture.css', 					null, esc_attr(Theme_Config::$thb_theme_version));
 	
-	//wp_enqueue_style('thb-thb-style', get_stylesheet_uri(), null, null);	
+	//wp_enqueue_style('vif-vif-style', get_stylesheet_uri(), null, null);	
 	
-	wp_enqueue_style( 'thb-google-fonts', thb_google_webfont(), array(), null );
-	wp_add_inline_style( 'thb-app', thb_selection() );
+	wp_enqueue_style( 'vif-google-fonts', thb_google_webfont(), array(), null );
+	wp_add_inline_style( 'vif-app', thb_selection() );
 	
 	if ($self_hosted_fonts) {
 		foreach ($self_hosted_fonts as $font) {
 			$i++;
-			wp_enqueue_style("thb-self-hosted-".$i, $font['font_url'], null, esc_attr(Theme_Config::$thb_theme_version));
+			wp_enqueue_style("vif-self-hosted-".$i, $font['font_url'], null, esc_attr(Theme_Config::$thb_theme_version));
 		}
 	} 
 	
@@ -69,9 +69,9 @@ function thb_register_js() {
 		$thb_api_key = ot_get_option('map_api_key');
 		
 		// Register 
-		wp_enqueue_script('thb-vendor', Theme_Config::$thb_theme_directory_uri. 'assets/js/vendor.min.js', array('jquery'), esc_attr(Theme_Config::$thb_theme_version), TRUE);
+		wp_enqueue_script('vif-vendor', Theme_Config::$thb_theme_directory_uri. 'assets/js/vendor.min.js', array('jquery'), esc_attr(Theme_Config::$thb_theme_version), TRUE);
 		wp_enqueue_script('underscore');
-		wp_enqueue_script('thb-app', Theme_Config::$thb_theme_directory_uri . 'assets/js/app.min.js', array('jquery', 'thb-vendor', 'underscore'), esc_attr(Theme_Config::$thb_theme_version), TRUE);
+		wp_enqueue_script('vif-app', Theme_Config::$thb_theme_directory_uri . 'assets/js/app.min.js', array('jquery', 'vif-vendor', 'underscore'), esc_attr(Theme_Config::$thb_theme_version), TRUE);
 		
 		if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1) ) {
 			wp_enqueue_script('comment-reply');
@@ -88,11 +88,11 @@ function thb_register_js() {
 		}
 		// Typekit 
 		if ($typekit_id = ot_get_option('typekit_id')) {
-			wp_enqueue_script('thb-typekit', 'https://use.typekit.net/'.$typekit_id.'.js', array(), NULL, FALSE );
-			wp_add_inline_script( 'thb-typekit', 'try{Typekit.load({ async: true });}catch(e){}' );
+			wp_enqueue_script('vif-typekit', 'https://use.typekit.net/'.$typekit_id.'.js', array(), NULL, FALSE );
+			wp_add_inline_script( 'vif-typekit', 'try{Typekit.load({ async: true });}catch(e){}' );
 		}
 		
-		wp_localize_script( 'thb-app', 'themeajax', array( 
+		wp_localize_script( 'vif-app', 'themeajax', array( 
 			'url' => admin_url( 'admin-ajax.php' ),
 			'l10n' => array (
 				'loading' => esc_html__("Loading", 'viftech'),
@@ -112,7 +112,7 @@ function thb_register_js() {
 				'fixed_header_scroll' => ot_get_option('fixed_header_scroll', 'on'),
 				'fixed_header_padding' => ot_get_option('header_padding_fixed'),
 				'page_transition' => ot_get_option('page_transition', 'on'),
-				'page_transition_style' => ot_get_option('page_transition_style', 'thb-fade'),
+				'page_transition_style' => ot_get_option('page_transition_style', 'vif-fade'),
 				'page_transition_in_speed' => ot_get_option('page_transition_in_speed', 1000),
 				'page_transition_out_speed' => ot_get_option('page_transition_out_speed', 500),
 				'shop_product_listing_pagination' => ot_get_option('shop_product_listing_pagination', 'style1'),

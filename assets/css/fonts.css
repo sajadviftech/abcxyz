@@ -21,7 +21,7 @@ h6 strong {
 
 h1,
 .h1,
-.thb-countdown .thb-countdown-ul li .timestamp {
+.vif-countdown .vif-countdown-ul li .timestamp {
     font-size: 34px;
     line-height: 1.2;
     margin-bottom: 10px;
@@ -31,7 +31,7 @@ h1,
 @media only screen and (min-width: 1024px) {
     h1,
     .h1,
-    .thb-countdown .thb-countdown-ul li .timestamp {
+    .vif-countdown .vif-countdown-ul li .timestamp {
         font-size: 42px;
     }
 }
@@ -39,20 +39,20 @@ h1,
 @media only screen and (min-width: 1440px) {
     h1,
     .h1,
-    .thb-countdown .thb-countdown-ul li .timestamp {
+    .vif-countdown .vif-countdown-ul li .timestamp {
         font-size: 60px;
     }
 }
 
 h1 strong,
 .h1 strong,
-.thb-countdown .thb-countdown-ul li .timestamp strong {
+.vif-countdown .vif-countdown-ul li .timestamp strong {
     font-weight: 400;
 }
 
 h2,
 .h2,
-.thb-accordion.style2 .vc_tta-panel-heading h4 {
+.vif-accordion.style2 .vc_tta-panel-heading h4 {
     font-size: 22px;
     line-height: 1.3;
     margin-bottom: 20px;
@@ -62,7 +62,7 @@ h2,
 @media only screen and (min-width: 1024px) {
     h2,
     .h2,
-    .thb-accordion.style2 .vc_tta-panel-heading h4 {
+    .vif-accordion.style2 .vc_tta-panel-heading h4 {
         font-size: 34px;
     }
 }

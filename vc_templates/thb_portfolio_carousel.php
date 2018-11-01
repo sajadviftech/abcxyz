@@ -10,7 +10,7 @@
  	$rand = rand(0,1000);
  	$i = 0;
  	
- 	$classes[] = 'thb-portfolio thb-carousel';
+ 	$classes[] = 'vif-portfolio vif-carousel';
  	$classes[] = $thb_overflow;
  	ob_start();
 

@@ -3,10 +3,10 @@
   extract( $atts );
   
 	$out = $text = '';
-	$element_id = uniqid('thb-gradienttype-');
+	$element_id = uniqid('vif-gradienttype-');
 	$gradient_text_safe = vc_value_from_safe($gradient_text);
 	$gradient_text_safe = thb_remove_vc_added_p($gradient_text_safe);
-	$class[] = 'thb-gradienttype';
+	$class[] = 'vif-gradienttype';
 	$class[] = $extra_class;
 	$class[] = $animation;
 	ob_start();

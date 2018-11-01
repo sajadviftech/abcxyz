@@ -11,8 +11,8 @@
 <div class="click-capture"></div>
 <!-- End Content Click Capture -->
 <!-- Start Mobile Menu -->
-<nav id="mobile-menu" class="<?php echo esc_attr(implode(' ', $class)); ?>" data-behaviour="<?php echo esc_attr(ot_get_option('submenu_behaviour', 'thb-submenu')); ?>">
-	<a class="thb-mobile-close"><div><span></span><span></span></div></a>
+<nav id="mobile-menu" class="<?php echo esc_attr(implode(' ', $class)); ?>" data-behaviour="<?php echo esc_attr(ot_get_option('submenu_behaviour', 'vif-submenu')); ?>">
+	<a class="vif-mobile-close"><div><span></span><span></span></div></a>
 	<?php if ( 'style8' === $header_style ) { ?>
 		<div class="header-style-8-content">
 			<div class="logo-holder">
@@ -46,13 +46,13 @@
 				<?php do_action( 'thb_language_switcher_mobile' ); ?>
 				<?php 
 					if (has_nav_menu('nav-menu')) {
-						wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 3, 'container' => false, 'menu_class' => 'thb-mobile-menu', 'walker' => new thb_mobileDropdown ) ); 
+						wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 3, 'container' => false, 'menu_class' => 'vif-mobile-menu', 'walker' => new thb_mobileDropdown ) ); 
 					}
 				?>
 				<?php if (has_nav_menu('secondary-menu')) {  ?>
-				<span class="thb-secondary-bar"></span>
+				<span class="vif-secondary-bar"></span>
 				<?php 
-						wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'depth' => 1, 'container' => false, 'menu_class' => 'thb-secondary-menu'  ) ); 
+						wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'depth' => 1, 'container' => false, 'menu_class' => 'vif-secondary-menu'  ) ); 
 					} 
 				?>
 			</div>

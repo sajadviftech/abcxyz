@@ -5,10 +5,10 @@
 	$atts = vc_map_get_attributes( 'thb_testimonial_parent', $atts );
 	extract( $atts );
 	
-	$element_id = uniqid('thb-testimonials-');
-	$el_class[] = 'thb-testimonials';
-	$el_class[] = 'thb-testimonial-'.$thb_style;
-	$el_class[] = $thb_style === 'style6' ? 'row' : 'thb-carousel';
+	$element_id = uniqid('vif-testimonials-');
+	$el_class[] = 'vif-testimonials';
+	$el_class[] = 'vif-testimonial-'.$thb_style;
+	$el_class[] = $thb_style === 'style6' ? 'row' : 'vif-carousel';
 	$el_class[] = $thb_style;
 	$el_class[] = $thb_style === 'style5' ? 'no-padding' : '';
 	

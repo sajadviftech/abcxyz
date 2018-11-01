@@ -43,8 +43,8 @@
     display: block !important;
 }
 
-.about-wrap .button.thb-generate,
-.about-wrap .button.thb-register {
+.about-wrap .button.vif-generate,
+.about-wrap .button.vif-register {
     padding: 0 25px;
     line-height: 46px;
     font-weight: 600;
@@ -70,12 +70,12 @@
     box-shadow: 0 1px 0 #bf461e;
 }
 
-.about-wrap .wp-badge.wp-thb-badge {
+.about-wrap .wp-badge.wp-vif-badge {
     background: #000 url("../img//logo-light.png") center 25px no-repeat;
     background-size: 80px 80px;
 }
 
-.about-wrap .thb-error {
+.about-wrap .vif-error {
     background: #fff;
     border-left: 4px solid #dc3232;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
@@ -85,18 +85,18 @@
     line-height: 20px;
 }
 
-.about-wrap .thb-error p {
+.about-wrap .vif-error p {
     padding: 2px;
     margin: 7px 0;
     line-height: 1.5;
     font-size: 14px;
 }
 
-.about-wrap .thb-error p a {
+.about-wrap .vif-error p a {
     font-weight: 600;
 }
 
-.about-wrap .thb-demo-import .theme .theme-screenshot .loading {
+.about-wrap .vif-demo-import .theme .theme-screenshot .loading {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -111,14 +111,14 @@
     font-size: 14px;
 }
 
-.about-wrap .thb-demo-import .theme .theme-screenshot .loading:before {
+.about-wrap .vif-demo-import .theme .theme-screenshot .loading:before {
     content: "\f463";
     font: 400 30px/1 dashicons;
     animation: rotation 2s infinite linear;
     margin-bottom: 10px;
 }
 
-.about-wrap .thb-demo-import .theme.loading .theme-screenshot .loading {
+.about-wrap .vif-demo-import .theme.loading .theme-screenshot .loading {
     display: flex;
 }
 
@@ -157,27 +157,27 @@
     font-weight: 600;
 }
 
-.thb-registration .postbox {
+.vif-registration .postbox {
     padding: 15px;
 }
 
 @media only screen and (min-width: 40.063em) {
-    .thb-registration .postbox {
+    .vif-registration .postbox {
         padding: 40px
     };
 }
 
-.thb-registration .postbox p {
+.vif-registration .postbox p {
     margin: 0 0 40px;
 }
 
-.thb-registration .steps2 {
+.vif-registration .steps2 {
     display: flex;
     flex-flow: row wrap;
     margin: 0 -20px;
 }
 
-.thb-registration .steps2 .thb-box {
+.vif-registration .steps2 .vif-box {
     display: flex;
     box-sizing: border-box;
     padding: 0 20px;
@@ -186,36 +186,36 @@
 }
 
 @media only screen and (min-width: 40.063em) {
-    .thb-registration .steps2 .thb-box.thb-left {
+    .vif-registration .steps2 .vif-box.vif-left {
         flex: 0 0 40%;
         max-width: 40%
     };
 }
 
-.thb-registration .steps2 .thb-box.thb-left figure img {
+.vif-registration .steps2 .vif-box.vif-left figure img {
     border: 0;
     box-shadow: 0;
     max-width: 100%;
 }
 
-.thb-registration .steps2 .thb-box.thb-right {
+.vif-registration .steps2 .vif-box.vif-right {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
 @media only screen and (min-width: 40.063em) {
-    .thb-registration .steps2 .thb-box.thb-right {
+    .vif-registration .steps2 .vif-box.vif-right {
         flex: 0 0 60%;
         max-width: 60%
     };
 }
 
-.thb-registration .steps2 .thb-box.thb-right h2 {
+.vif-registration .steps2 .vif-box.vif-right h2 {
     margin-top: 0;
 }
 
-.thb-registration .steps2 .thb-box.thb-right strong {
+.vif-registration .steps2 .vif-box.vif-right strong {
     display: block;
     background: #f2f2f2;
     font-size: 18px;
@@ -232,21 +232,21 @@
     white-space: nowrap;
 }
 
-.thb-registration .steps2 .thb-box.thb-right .button {
+.vif-registration .steps2 .vif-box.vif-right .button {
     display: inline-flex;
 }
 
-.thb-registration .steps2 .thb-box.thb-right .button+.button {
+.vif-registration .steps2 .vif-box.vif-right .button+.button {
     margin-left: 10px;
 }
 
-.thb-registration .steps {
+.vif-registration .steps {
     display: flex;
     flex-flow: row wrap;
     margin: 0 -20px;
 }
 
-.thb-registration .steps li {
+.vif-registration .steps li {
     display: flex;
     box-sizing: border-box;
     padding: 0 20px;
@@ -255,17 +255,17 @@
 }
 
 @media only screen and (min-width: 40.063em) {
-    .thb-registration .steps li {
+    .vif-registration .steps li {
         flex: 0 0 50%;
         max-width: 50%
     };
 }
 
-.thb-registration .steps li .thb-form {
+.vif-registration .steps li .vif-form {
     display: flex;
 }
 
-.thb-registration .steps li .thb-form [type="text"] {
+.vif-registration .steps li .vif-form [type="text"] {
     flex: 1;
     height: 46px;
     line-height: 46px;
@@ -274,7 +274,7 @@
     border-radius: 3px;
 }
 
-.thb-registration .steps li .step {
+.vif-registration .steps li .step {
     padding: 20px;
     border: 1px solid #f1f1f1;
     text-align: center;
@@ -283,12 +283,12 @@
 }
 
 @media only screen and (min-width: 40.063em) {
-    .thb-registration .steps li .step {
+    .vif-registration .steps li .step {
         padding: 40px
     };
 }
 
-.thb-registration .steps li .step figure {
+.vif-registration .steps li .step figure {
     display: flex;
     width: 100%;
     padding: 0;
@@ -298,13 +298,13 @@
     justify-content: center;
 }
 
-.thb-registration .steps li .step figure img {
+.vif-registration .steps li .step figure img {
     border: 0;
     box-shadow: none;
     max-width: 100%;
 }
 
-.thb-registration .steps li .step .count {
+.vif-registration .steps li .step .count {
     display: block;
     background: #919493;
     font-size: 11px;
@@ -319,11 +319,11 @@
     left: 20px;
 }
 
-.compat-attachment-fields .compat-field-thb-masonry-image-size .label {
+.compat-attachment-fields .compat-field-vif-masonry-image-size .label {
     margin-right: 0;
 }
 
-.compat-attachment-fields .compat-field-thb-masonry-image-size .field select {
+.compat-attachment-fields .compat-field-vif-masonry-image-size .field select {
     width: 100%;
 }
 
@@ -349,11 +349,11 @@
     text-transform: uppercase;
 }
 
-.menu-item-depth-1 .thb-field-link-mega {
+.menu-item-depth-1 .vif-field-link-mega {
     display: none;
 }
 
-.thb-field-link input[type=text] {
+.vif-field-link input[type=text] {
     height: 28px;
 }
 

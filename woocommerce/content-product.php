@@ -46,7 +46,7 @@ $classes[] = 'small-6';
 $classes[] = $columns;
 $classes[] = 'columns';
 $classes[] = $thb_animation;
-$classes[] = 'thb-listing-'.$shop_product_listing;
+$classes[] = 'vif-listing-'.$shop_product_listing;
 
 ?>
 <?php

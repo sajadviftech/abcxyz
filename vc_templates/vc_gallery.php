@@ -46,9 +46,9 @@ if ( 'grid' === $gallery_type ) {
 	
 	$slides_wrap_start = '<div class="row '.$lightbox.' '.$thb_margins.'">';
 	$slides_wrap_end = '</div>';
-} else if ( 'thb-portfolio' === $gallery_type) {
+} else if ( 'vif-portfolio' === $gallery_type) {
 	
-	$slides_wrap_start = '<div class="thb-portfolio masonry variable-height row '.$lightbox.' '.$thb_margins.'" data-layoutmode="packery" data-thb-animation="thb-vertical-flip">';
+	$slides_wrap_start = '<div class="vif-portfolio masonry variable-height row '.$lightbox.' '.$thb_margins.'" data-layoutmode="packery" data-vif-animation="vif-vertical-flip">';
 	$slides_wrap_end = '</div>';
 
 }
@@ -88,8 +88,8 @@ foreach ( $images as $i => $image ) {
 	$el_end = '</div></div>';
 	$attachment_meta = get_post_custom($image);
 
-	if ( 'thb-portfolio' === $gallery_type) {
-		$masonry_image_size = !empty($attachment_meta['thb-masonry-image-size']) ? $attachment_meta['thb-masonry-image-size'][0] : 'masonry-small';
+	if ( 'vif-portfolio' === $gallery_type) {
+		$masonry_image_size = !empty($attachment_meta['vif-masonry-image-size']) ? $attachment_meta['vif-masonry-image-size'][0] : 'masonry-small';
 		
 		$thb_masonry_size = thb_get_masonry_size($masonry_image_size);
 		$masonry_class = $thb_masonry_size['class'];
@@ -113,7 +113,7 @@ foreach ( $images as $i => $image ) {
 	}
 	
 	// Create Thumbnail
-	$thumbnail_html = '<figure class="thb-overlay-caption">';
+	$thumbnail_html = '<figure class="vif-overlay-caption">';
 	$thumbnail_html .= $thumbnail;
 	if (!empty($attachment_meta['_wp_attachment_image_alt'])) {
 			$thumbnail_html .= '<figcaption>'.$attachment_meta['_wp_attachment_image_alt'][0].'</figcaption>';

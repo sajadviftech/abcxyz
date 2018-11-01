@@ -7,7 +7,7 @@
     
  	$out ='';
 	ob_start();
-	$element_id = uniqid("thb-iconbox-");
+	$element_id = uniqid("vif-iconbox-");
 	$link = vc_build_link($link);
 	
 	$link_to = $link['url'];
@@ -19,7 +19,7 @@
 		$el = 'a';
 		$el_class[] = 'has-link';
 	}
-	$el_class[] = 'thb-iconbox';
+	$el_class[] = 'vif-iconbox';
 	$el_class[] = $type;
 	$el_class[] = $extra_class;
 	$el_class[] = $icon_image_hover ? 'has-hover-image' : '';
@@ -67,7 +67,7 @@
 			<?php if ($heading) { ?><h5><?php echo wp_kses_post($heading); ?></h5><?php } ?>
 			<?php } ?>
 			<?php if (in_array($type, array('top type1', 'top type2'))) {?>
-				<span class="thb-iconbox-line"></span>
+				<span class="vif-iconbox-line"></span>
 			<?php } ?>
 		</figure>
 		<?php } ?>
@@ -75,71 +75,71 @@
 			<?php if ($heading && $type !== 'top type2') { ?><h5><?php echo esc_html($heading); ?></h5><?php } ?>
 			<?php echo wp_kses_post(wpautop($description)); ?>
 			<?php if($link_to) { ?>
-				<span class="thb-read-more btn-text <?php echo esc_attr($style); ?>"><?php if ($style === 'style3') { ?><strong class="circle-btn"></strong><?php } ?><span><?php echo esc_attr($a_title); ?></span><?php if ($style === 'style4') { ?><div class="arrow"><div><?php get_template_part('assets/img/svg/next_arrow.svg'); ?><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div></div><?php } ?><?php if ($style === 'style5') { ?><div class="arrow"><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div><?php } ?></span>
+				<span class="vif-read-more btn-text <?php echo esc_attr($style); ?>"><?php if ($style === 'style3') { ?><strong class="circle-btn"></strong><?php } ?><span><?php echo esc_attr($a_title); ?></span><?php if ($style === 'style4') { ?><div class="arrow"><div><?php get_template_part('assets/img/svg/next_arrow.svg'); ?><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div></div><?php } ?><?php if ($style === 'style5') { ?><div class="arrow"><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div><?php } ?></span>
 			<?php } ?>
 		</div>
 		<style>
 			<?php if ($thb_icon_color) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg path, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg circle, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg rect, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg ellipse {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg path, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg circle, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg rect, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg ellipse {
 				stroke: <?php echo esc_attr($thb_icon_color); ?>;
 			}
 			<?php } ?>
 			<?php if ($icon_image_width && $icon_image) { ?>
-				#<?php echo esc_attr($element_id); ?>.thb-iconbox .iconbox-image img {
+				#<?php echo esc_attr($element_id); ?>.vif-iconbox .iconbox-image img {
 					width: <?php echo esc_attr($icon_image_width); ?>px;
 					height: auto;
 				}
 			<?php } ?>
 			<?php if ($thb_heading_color) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .iconbox-content h5,
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure h5 {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .iconbox-content h5,
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure h5 {
 				color: <?php echo esc_attr($thb_heading_color); ?>;
 			}
 			<?php } ?>
 			<?php if ($thb_text_color) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .iconbox-content p,
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .iconbox-content span {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .iconbox-content p,
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .iconbox-content span {
 				color: <?php echo esc_attr($thb_text_color); ?>;
 			}
 		
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .iconbox-content svg,
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .iconbox-content svg .bar {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .iconbox-content svg,
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .iconbox-content svg .bar {
 				fill: <?php echo esc_attr($thb_text_color); ?>;
 			}
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .btn-text.style2:before, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox .btn-text.style2:after {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .btn-text.style2:before, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox .btn-text.style2:after {
 				background: <?php echo esc_attr($thb_text_color); ?>;
 			}
 			<?php } ?>
 			/* Hover */
 			<?php if ($thb_icon_color_hover) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover figure svg path, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover figure svg circle, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover figure svg rect, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover figure svg ellipse {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover figure svg path, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover figure svg circle, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover figure svg rect, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover figure svg ellipse {
 				stroke: <?php echo esc_attr($thb_icon_color_hover); ?>;
 			}
 			<?php } ?>
 			<?php if ($thb_heading_color_hover) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .iconbox-content h5,
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure h5 {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .iconbox-content h5,
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure h5 {
 				color: <?php echo esc_attr($thb_heading_color_hover); ?>;
 			}
 			<?php } ?>
 			<?php if ($thb_text_color_hover) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .iconbox-content p,
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .iconbox-content span {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .iconbox-content p,
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .iconbox-content span {
 				color: <?php echo esc_attr($thb_text_color_hover); ?>;
 			}
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .iconbox-content svg,
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .iconbox-content svg .bar {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .iconbox-content svg,
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .iconbox-content svg .bar {
 				fill: <?php echo esc_attr($thb_text_color_hover); ?>;
 			}
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .btn-text.style2:before, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox:hover .btn-text.style2:after {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .btn-text.style2:before, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox:hover .btn-text.style2:after {
 				background: <?php echo esc_attr($thb_text_color_hover); ?>;
 			}
 			<?php } ?>

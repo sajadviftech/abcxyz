@@ -19,7 +19,7 @@ function thb_get_product_size($style = 'style2', $i = 0) {
 		$i = in_array($i, array('4','5','6','7','8','13','14','15','16','17','22','23','24','25','26','27')) ? 1 : 2;
 		switch($i) {
 			case 1:
-				$size = 'thb-5';
+				$size = 'vif-5';
 				break;
 			case 2:
 				$size = 'large-3';
@@ -32,7 +32,7 @@ function thb_get_product_size($style = 'style2', $i = 0) {
 				$size = 'large-2';
 				break;
 			case 2:
-				$size = 'thb-5';
+				$size = 'vif-5';
 				break;
 		}
 	} else if ($style == 'style5') {
@@ -49,7 +49,7 @@ function thb_get_product_size($style = 'style2', $i = 0) {
 		$i = in_array($i, array('4','5','6','7','8','13','14','15','16','17','22','23','24','25','26','27')) ? 1 : 2;
 		switch($i) {
 			case 2:
-				$size = 'thb-5';
+				$size = 'vif-5';
 				break;
 			case 1:
 				$size = 'large-3';
@@ -62,7 +62,7 @@ function thb_get_product_size($style = 'style2', $i = 0) {
 				$size = 'large-2';
 				break;
 			case 1:
-				$size = 'thb-5';
+				$size = 'vif-5';
 				break;
 		}
 	} else if ($style == 'style8') {
@@ -102,10 +102,10 @@ function thb_shop_filters() {
 	 	<div id="side-filters" class="side-panel">
 			<header>
 				<h6><?php esc_html_e('Filter','viftech'); ?></h6>
-				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
+				<a href="#" class="vif-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
 			</header>
 			<div class="side-panel-content custom_scroll">
-				<?php if ( is_active_sidebar( 'thb-shop-filters' ) ) { dynamic_sidebar( 'thb-shop-filters' ); }?>
+				<?php if ( is_active_sidebar( 'vif-shop-filters' ) ) { dynamic_sidebar( 'vif-shop-filters' ); }?>
 			</div>
 		</div>
 		<?php
@@ -120,7 +120,7 @@ function thb_side_cart() {
 	 	<nav id="side-cart" class="side-panel">
 	 		<header>
 				<h6><?php esc_html_e('Shopping Bag','viftech'); ?></h6>
-				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
+				<a href="#" class="vif-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
 			</header>
 			<div class="side-panel-content">
 	 			<?php if ( class_exists( 'WC_Widget_Cart' ) ) { the_widget( 'WC_Widget_Cart' ); } ?>
@@ -153,11 +153,11 @@ function thb_quick_shop() {
 	 	<nav id="quick-shop" class="side-panel">
 	 		<header>
 				<h6><?php esc_html_e('Quick Shop','viftech'); ?></h6>
-				<a href="#" class="thb-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
+				<a href="#" class="vif-close" title="<?php esc_attr_e('Close', 'viftech'); ?>"><?php get_template_part('assets/img/svg/close.svg'); ?></a>
 			</header>
 			<div class="side-panel-content">
 				<?php if ($quick_shop_categories === 'on') { ?>
-					<select id="thb-quick-shop-categories">
+					<select id="vif-quick-shop-categories">
 						<option value=""><?php echo esc_html_e('Categories', 'viftech'); ?></option>
 						<?php
 							$categories = thb_productCategories();

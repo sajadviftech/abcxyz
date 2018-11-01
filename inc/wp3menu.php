@@ -167,7 +167,7 @@ class thb_mobileDropdown extends Walker_Nav_Menu {
 		$item_output = $args->before;
 		$item_output .= '<a'. $attributes .'>';
 		$item_output .= $args->link_before . $title . $args->link_after;
-		$item_output .= (!empty($children) ? '<div class="thb-arrow"><div></div><div></div></div>' : ''). '</a>';
+		$item_output .= (!empty($children) ? '<div class="vif-arrow"><div></div><div></div></div>' : ''). '</a>';
 		$item_output .= $args->after;
 
 		/**

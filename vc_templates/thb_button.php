@@ -2,7 +2,7 @@
   $atts = vc_map_get_attributes( 'thb_button', $atts );
   extract( $atts );
 	
-	$element_id = uniqid("thb-button-");
+	$element_id = uniqid("vif-button-");
 	$full_width = $full_width === "true" ? 'full' : '';
 	
 	$link = ( $link == '||' ) ? '' : $link;

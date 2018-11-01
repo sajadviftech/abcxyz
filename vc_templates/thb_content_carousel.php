@@ -5,7 +5,7 @@
  	$rand = rand(0,1000);
  	$i = 0;
  	$classes[] = 'row';
- 	$classes[] = 'thb-content-carousel thb-carousel';
+ 	$classes[] = 'vif-content-carousel vif-carousel';
  	$classes[] = $thb_margins;
  	$classes[] = $thb_overflow;
  	$classes[] = $extra_class;

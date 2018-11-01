@@ -26,7 +26,7 @@ $attachment_ids = $product->get_gallery_image_ids();
 
 if ( $attachment_ids && has_post_thumbnail() ) {
 	?>
-	<div id="product-thumbnails" class="product-thumbnails carousel thb-carousel" data-navigation="false" data-autoplay="false" data-columns="4" data-asnavfor="#product-images" data-infinite="false">
+	<div id="product-thumbnails" class="product-thumbnails carousel vif-carousel" data-navigation="false" data-autoplay="false" data-columns="4" data-asnavfor="#product-images" data-infinite="false">
 	<?php
 	if ( has_post_thumbnail() ) : ?>
 	  <div class="first woocommerce-product-gallery__image">

@@ -5,7 +5,7 @@ function thb_getInstagramPhotos($number = 6) {
 	$username = ot_get_option('instagram_username');
 	$access_token = ot_get_option('instagram_accesstoken');
 	
-	$transient = 'thb-instagram-media-'.$access_token.'-'.$number;
+	$transient = 'vif-instagram-media-'.$access_token.'-'.$number;
 	if (false === ($instagram = get_transient($transient)) && $username && $access_token) {
 		$response = wp_remote_get( 'https://api.instagram.com/v1/users/self/media/recent/?access_token=' . $access_token.'&count='.$number, array( 'sslverify' => false ) );
 		if ( is_wp_error( $response ) ) {

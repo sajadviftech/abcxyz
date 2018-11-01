@@ -2,7 +2,7 @@
 	$atts = vc_map_get_attributes( 'thb_image', $atts );
 	extract( $atts );
 	
-	$element_id = 'thb-image-' . mt_rand(10, 999);
+	$element_id = 'vif-image-' . mt_rand(10, 999);
 	
 	$img_id = preg_replace('/[^\d]/', '', $image);
 	
@@ -46,7 +46,7 @@
 	<?php if (!empty($link_to)) { ?>
 		<a class="<?php echo esc_attr($c_lightbox); ?>" href="<?php echo esc_url($link_to); ?>" target="<?php echo sanitize_text_field( $a_target ); ?>" title="<?php echo esc_attr($a_title); ?>">
 	<?php } ?>
-		<div class="thb-image-inner <?php echo esc_attr($max_width); ?>">
+		<div class="vif-image-inner <?php echo esc_attr($max_width); ?>">
 			<?php echo $img['thumbnail']; ?>
 		</div>
 	<?php if (!empty($link_to)) { ?>
@@ -56,7 +56,7 @@
 		<div class="wp-caption-text"><?php echo esc_html($image_caption); ?></div>
 	<?php } ?>
 	<?php if ($content) { ?>
-		<div class="thb-image-content">
+		<div class="vif-image-content">
 		<?php echo wp_kses_post($content); ?>	
 		</div>
 	<?php } ?>

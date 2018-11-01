@@ -4,8 +4,8 @@
 	extract( $atts );
 	
 	$thb_clients_animation = $animation;
-	$element_id = uniqid('thb-client-logos-');
-	$el_class[] = 'thb-client-row';
+	$element_id = uniqid('vif-client-logos-');
+	$el_class[] = 'vif-client-row';
 	if($thb_style !== 'style3') {
 		$el_class[] = $thb_hover_effect;
 	}

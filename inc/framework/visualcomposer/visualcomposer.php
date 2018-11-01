@@ -89,9 +89,9 @@ function thb_TheShortcodesForVC() {
 			$unique_id = uniqid();
 			$options = isset($param['options']) ? $param['options'] : '';
 	
-			$param_line = '<input type="hidden" id="thb-radio-image-'.esc_attr($unique_id).'" class="wpb_vc_param_value '.esc_attr($param['param_name']).' '.esc_attr($param['type']).'" name="'.esc_attr($param['param_name']).'" value="'.esc_attr($value).'"/>';
-      $param_line .= '<div class="thb-radio-image" data-radio-image-id="' . esc_attr($unique_id) . '">';
-      $param_line .= '<ul class="thb-radio-images-list">';
+			$param_line = '<input type="hidden" id="vif-radio-image-'.esc_attr($unique_id).'" class="wpb_vc_param_value '.esc_attr($param['param_name']).' '.esc_attr($param['type']).'" name="'.esc_attr($param['param_name']).'" value="'.esc_attr($value).'"/>';
+      $param_line .= '<div class="vif-radio-image" data-radio-image-id="' . esc_attr($unique_id) . '">';
+      $param_line .= '<ul class="vif-radio-images-list">';
 			
 			$i = 0;
 			foreach ( $options as $key => $key_value ) {

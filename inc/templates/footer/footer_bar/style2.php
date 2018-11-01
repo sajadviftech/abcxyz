@@ -10,7 +10,7 @@
 						<?php echo wp_kses_post(ot_get_option('footer_bar_content')); ?>
 					</div>
 					<div class="small-12 medium-6 columns">
-						<?php if ($footer_bar_menu) { wp_nav_menu( array( 'menu' => $footer_bar_menu, 'depth' => 1, 'menu_class' => 'thb-footer-bar-menu' ) ); } ?>
+						<?php if ($footer_bar_menu) { wp_nav_menu( array( 'menu' => $footer_bar_menu, 'depth' => 1, 'menu_class' => 'vif-footer-bar-menu' ) ); } ?>
 					</div>
 				</div>
 			</aside>

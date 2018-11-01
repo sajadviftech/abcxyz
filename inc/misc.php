@@ -4,7 +4,7 @@
 function thb_body_classes( $classes ) {
 	$thb_id = get_queried_object_id();
 	$header_style_option = ot_get_option('header_style');
-	$header_style = 'thb-header-style-'.$header_style_option;
+	$header_style = 'vif-header-style-'.$header_style_option;
 	$fixed_header = 'fixed-header-'.ot_get_option('fixed_header', 'on');
 	$footer_effect = 'footer-effect-'.ot_get_option('footer_effect', 'off');
 	$footer_shadow = 'footer-shadow-' . ot_get_option('footer_shadow', 'none');
@@ -92,7 +92,7 @@ function thb_blog_pagination() {
 	} else if ($blog_pagination_style == 'style3') {
 	?>
 	<div class="row pagination-space infinite-scroll">
-		<div class="thb-content-preloader">
+		<div class="vif-content-preloader">
 			<?php get_template_part('assets/img/svg/preloader-material.svg'); ?>
 		</div>
 	</div>
@@ -132,7 +132,7 @@ function thb_translate_columns($size) {
 	if ($size == 6) {
 		return 'large-2';
 	}	else if ($size == 5) {
-		return 'thb-5';
+		return 'vif-5';
 	}	else if ($size == 4) {
 		return 'large-3';
 	}	else if ($size == 3) {
@@ -199,7 +199,7 @@ add_action( 'thb_mobile_menu', 'thb_mobile_menu' );
 function thb_preloader() {
 	if ('preloader' === ot_get_option('thb_preload_type')) {
 	?>
-	<div class="thb-page-preloader">
+	<div class="vif-page-preloader">
 		<?php get_template_part('assets/img/svg/preloader-material.svg'); ?>
 	</div>
 	<?php
@@ -991,7 +991,7 @@ function thb_getIconArray($empty = true){
 function thb_social($socials, $menu = false) {
 	if (sizeof($socials) > 0 && $socials !== '') {
 		if ($menu) {
-			echo '<ul class="socials thb-full-menu">';
+			echo '<ul class="socials vif-full-menu">';
 		} else {
 			echo '<aside class="socials">';
 		}
@@ -1045,7 +1045,7 @@ function thb_footer_items() {
 	if ('on' === ot_get_option('scroll_to_top', 'on')) {
 	?>
 		<a href="#" title="<?php esc_attr_e('Scroll To Top', 'viftech'); ?>" id="scroll_to_top">
-			<div class="thb-animated-arrow circular arrow-top"><?php get_template_part('assets/img/svg/prev_arrow.svg'); ?></div>
+			<div class="vif-animated-arrow circular arrow-top"><?php get_template_part('assets/img/svg/prev_arrow.svg'); ?></div>
 		</a>
 	<?php
 	}
@@ -1154,7 +1154,7 @@ add_action( 'thb_PostMeta', 'thb_PostMeta' );
 function thb_header_button() {
 	if (ot_get_option('header_button', 'off') === 'on') {
 	
-	$classes[] = 'button small thb-header-button';
+	$classes[] = 'button small vif-header-button';
 	$classes[] = ot_get_option('header_button_radius');
 	$classes[] = ot_get_option('header_button_color');
 	$classes[] = ot_get_option('header_button_style');
@@ -1168,11 +1168,11 @@ add_action( 'thb_header_button', 'thb_header_button',3 );
 /* Thb Secondary Menu */
 function thb_secondary_menu() {
 	if (ot_get_option('header_secondary', 'off') === 'on') {
-		$full_menu_hover_style = ot_get_option('full_menu_hover_style', 'thb-standard');
+		$full_menu_hover_style = ot_get_option('full_menu_hover_style', 'vif-standard');
 		$header_secondary_menu = ot_get_option('header_secondary_menu');
 		
 		if ($header_secondary_menu) {
-			wp_nav_menu( array( 'menu' => $header_secondary_menu, 'depth' => 2, 'container' => false, 'menu_class' => 'thb-header-secondary thb-full-menu '.$full_menu_hover_style  ) ); 
+			wp_nav_menu( array( 'menu' => $header_secondary_menu, 'depth' => 2, 'container' => false, 'menu_class' => 'vif-header-secondary vif-full-menu '.$full_menu_hover_style  ) ); 
 		}
 	}
 }
@@ -1224,7 +1224,7 @@ function thb_quick_search() {
 	$header_search = ot_get_option('header_search', 'off');
 	?>
 	<?php if ($header_search == 'on') { ?>
- 	<div class="thb-search-holder">
+ 	<div class="vif-search-holder">
  		<span></span><span></span>
 		<?php get_template_part( 'assets/img/svg/search.svg' ); ?>
 	</div>
@@ -1232,7 +1232,7 @@ function thb_quick_search() {
 	<?php
 		function thb_add_searchform() { 
 		?>
-		<aside class="thb-search-popup">
+		<aside class="vif-search-popup">
 			<div class="search-header-spacer"></div>
 			<div class="row">
 				<div class="small-12 columns">
@@ -1252,7 +1252,7 @@ function thb_menu_anchor_attributes( $atts, $item, $args ) {
 	if (property_exists($item, 'object')) {
 	  if ($item->object === 'portfolio-category') {
 	  	$term = get_term($item->object_id);
-	  	$atts['data-filter'] = '.thb-cat-'.$term->slug;
+	  	$atts['data-filter'] = '.vif-cat-'.$term->slug;
 	  }
 	}
 	return $atts;
@@ -1489,7 +1489,7 @@ function thb_add_attachment_field( $form_fields, $post ) {
 		'tall'  => 'Tall'
 	);
 	
-	$value = get_post_meta( $post->ID, 'thb-masonry-image-size', true );
+	$value = get_post_meta( $post->ID, 'vif-masonry-image-size', true );
 	$masonry_image_size_options = '';
 	
 	foreach( $thb_image_size_options as $key => $option ) {
@@ -1497,11 +1497,11 @@ function thb_add_attachment_field( $form_fields, $post ) {
 		$masonry_image_size_options .= '<option value="' . esc_attr($key) . '" '.$selected.'>'. esc_attr($option) .'</option>';
 	} 
 	
-	$form_fields["thb-masonry-image-size"] = array(
+	$form_fields["vif-masonry-image-size"] = array(
    	'label' => esc_html__('Masonry Size', 'viftech'),
    	'input' => 'html',
-    'html' => "<select name='attachments[{$post->ID}][thb-masonry-image-size]' id='attachments[{$post->ID}][thb-masonry-image-size]'>".$masonry_image_size_options."</select>",
-		'value' => get_post_meta( $post->ID, 'thb-masonry-image-size', true )
+    'html' => "<select name='attachments[{$post->ID}][vif-masonry-image-size]' id='attachments[{$post->ID}][vif-masonry-image-size]'>".$masonry_image_size_options."</select>",
+		'value' => get_post_meta( $post->ID, 'vif-masonry-image-size', true )
 	);
 	
 	return $form_fields;
@@ -1509,9 +1509,9 @@ function thb_add_attachment_field( $form_fields, $post ) {
 add_filter( 'attachment_fields_to_edit', 'thb_add_attachment_field', 10, 2 );
 
 function thb_save_attachment_field( $post, $attachment ) {
-	if ( isset( $attachment['thb-masonry-image-size'] ) ) {
-		$masonry_image_size = sanitize_text_field($attachment['thb-masonry-image-size']);
-	  update_post_meta( $post['ID'], 'thb-masonry-image-size', $masonry_image_size );
+	if ( isset( $attachment['vif-masonry-image-size'] ) ) {
+		$masonry_image_size = sanitize_text_field($attachment['vif-masonry-image-size']);
+	  update_post_meta( $post['ID'], 'vif-masonry-image-size', $masonry_image_size );
 	}
 }
 add_filter( 'attachment_fields_to_save', 'thb_save_attachment_field', 10, 2 );
@@ -1634,19 +1634,19 @@ function thb_footer_columns() {
 		      <?php dynamic_sidebar('footer3'); ?>
 		  </div>
 	  <?php } elseif ($footer_columns == 'fivecolumns') { ?>
-		  <div class="small-12 medium-6 thb-5 columns">
+		  <div class="small-12 medium-6 vif-5 columns">
 		  	<?php dynamic_sidebar('footer1'); ?>
 		  </div>
-		  <div class="small-12 medium-6 thb-5 columns">
+		  <div class="small-12 medium-6 vif-5 columns">
 		  	<?php dynamic_sidebar('footer2'); ?>
 		  </div>
-		  <div class="small-12 medium-6 thb-5 columns">
+		  <div class="small-12 medium-6 vif-5 columns">
 		  	<?php dynamic_sidebar('footer3'); ?>
 		  </div>
-		  <div class="small-12 medium-6 thb-5 columns">
+		  <div class="small-12 medium-6 vif-5 columns">
 		  	<?php dynamic_sidebar('footer4'); ?>
 		  </div>
-		  <div class="small-12 thb-5 columns">
+		  <div class="small-12 vif-5 columns">
 		  	<?php dynamic_sidebar('footer5'); ?>
 		  </div>
 	  <?php } elseif ($footer_columns == 'onecolumns') { ?>

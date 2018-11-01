@@ -11,7 +11,7 @@
 	
 	$cats = '';	
 	if (!empty($terms)) {
-		foreach ($terms as $term) { $cats .= ' thb-cat-'.strtolower($term->slug); }
+		foreach ($terms as $term) { $cats .= ' vif-cat-'.strtolower($term->slug); }
 	}
 	
 	// Listing Type
@@ -28,7 +28,7 @@
 <div class="portfolio-slide portfolio-slide-style3 cover-bg">
 	<div class="row max_width align-middle">
 		<div class="small-12 medium-6 small-order-2 medium-order-1 columns content-side">
-				<aside class="thb-categories animation fade-in">
+				<aside class="vif-categories animation fade-in">
 					<?php 
 						if ( is_singular('portfolio') ) { 
 							echo esc_html($categories); 

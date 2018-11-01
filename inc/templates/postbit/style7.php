@@ -36,7 +36,7 @@
 			<?php echo get_the_date(); ?>
 		</aside>
 		<?php } ?>
-		<div class="thb-post-arrow"><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div>
+		<div class="vif-post-arrow"><?php get_template_part('assets/img/svg/next_arrow.svg'); ?></div>
 	</div>
 	<?php do_action( 'thb_PostMeta' ); ?>
 </article>

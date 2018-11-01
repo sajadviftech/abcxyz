@@ -20,7 +20,7 @@
 		<div class="cover-bg" style="background-image: url(<?php echo esc_url($image_url[0]); ?>);"></div>
 		
 		<div class="row max_width align-center align-middle">
-			<div class="small-12 medium-11 large-8 columns thb-light-column">
+			<div class="small-12 medium-11 large-8 columns vif-light-column">
 				<h1 class="animation fade-in"><a href="<?php echo esc_url($permalink); ?>"><?php the_title(); ?></a></h1>
 				<?php if (get_the_excerpt()) { ?>
 					<p class="animation fade-in"><?php echo esc_html(get_the_excerpt()); ?></p>

@@ -119,7 +119,7 @@
 	   
 		<?php if ($thb_carousel === 'true') { ?>
 			
-		<div class="thb-carousel overflow-visible products row" data-columns="<?php echo esc_attr($columns); ?>" data-autoplay="<?php echo esc_attr($autoplay); ?>" data-autoplay-speed="<?php echo esc_attr($autoplay_speed); ?>" data-pagination="true">				
+		<div class="vif-carousel overflow-visible products row" data-columns="<?php echo esc_attr($columns); ?>" data-autoplay="<?php echo esc_attr($autoplay); ?>" data-autoplay-speed="<?php echo esc_attr($autoplay_speed); ?>" data-pagination="true">				
 			
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 				<div>

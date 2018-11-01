@@ -4,8 +4,8 @@
 	extract( $atts );
 	
 	$thb_team_animation = $animation;
-	$element_id = 'thb-team-' . mt_rand(10, 999);
-	$el_class[] = 'thb-team-row';
+	$element_id = 'vif-team-' . mt_rand(10, 999);
+	$el_class[] = 'vif-team-row';
 	$el_class[] = $thb_text_color;
 	
 	$row_class[] = 'row';

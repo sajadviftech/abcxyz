@@ -28,16 +28,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="small-12 medium-6 large-4 columns">
 <?php do_action( 'woocommerce_before_customer_login_form' ); ?>
 
-<div class="thb-overflow-container">
+<div class="vif-overflow-container">
 		<ul class="login-page-form">
 			<li><a href="#" class="active"><?php esc_html_e('Login', 'viftech'); ?></a></li>
 			<?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
 			<li><a href="#"><?php esc_html_e('Register', 'viftech'); ?></a></li>
 			<?php endif; ?>
 		</ul>
-		<div class="thb-form-container <?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) !== 'yes' ) { ?>no-register<?php } ?>">
+		<div class="vif-form-container <?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) !== 'yes' ) { ?>no-register<?php } ?>">
 		
-	<div class="thb-login-form">
+	<div class="vif-login-form">
 
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
 
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		
 	</div>
 <?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
-	<div class="thb-register-form">
+	<div class="vif-register-form">
 
 		<form method="post" class="register">
 

@@ -10,21 +10,21 @@
 <div class="click-capture"></div>
 <!-- End Content Click Capture -->
 <!-- Start Mobile Menu -->
-<nav id="mobile-menu" class="<?php echo esc_attr(implode(' ', $class)); ?>" data-behaviour="<?php echo esc_attr(ot_get_option('submenu_behaviour', 'thb-submenu')); ?>">
-	<a class="thb-mobile-close"><div><span></span><span></span></div></a>
+<nav id="mobile-menu" class="<?php echo esc_attr(implode(' ', $class)); ?>" data-behaviour="<?php echo esc_attr(ot_get_option('submenu_behaviour', 'vif-submenu')); ?>">
+	<a class="vif-mobile-close"><div><span></span><span></span></div></a>
 	<div class="custom_scroll" id="menu-scroll">
 			<div class="mobile-menu-top">
 				<?php do_action( 'thb_language_switcher_mobile' ); ?>
 				<?php 
 					if (has_nav_menu('nav-menu')) {
-						wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 3, 'container' => false, 'menu_class' => 'thb-mobile-menu', 'walker' => new thb_mobileDropdown ) ); 
+						wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 3, 'container' => false, 'menu_class' => 'vif-mobile-menu', 'walker' => new thb_mobileDropdown ) ); 
 					}
 				?>
 			</div>
 			<div class="mobile-menu-bottom">
 				<?php 
 					if (has_nav_menu('secondary-menu')) { 
-						wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'depth' => 1, 'container' => false, 'menu_class' => 'thb-secondary-menu'  ) ); 
+						wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'depth' => 1, 'container' => false, 'menu_class' => 'vif-secondary-menu'  ) ); 
 					} 
 				?>
 				<?php if ($mobile_menu_footer = ot_get_option('mobile_menu_footer')) { ?>

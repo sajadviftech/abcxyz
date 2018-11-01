@@ -2,8 +2,8 @@
 	$atts = vc_map_get_attributes( 'thb_video_lightbox', $atts );
 	extract( $atts );
 	
-	$element_id = uniqid('thb-video-lightbox-');
-	$el_class[] = 'thb-video-lightbox';
+	$element_id = uniqid('vif-video-lightbox-');
+	$el_class[] = 'vif-video-lightbox';
 	$el_class[] = $style;
 	$el_class[] = $hover_style;
 	$el_class[] = $box_shadow;
@@ -15,7 +15,7 @@
 	
 	?>
 	<div id="<?php echo esc_attr($element_id); ?>" class="<?php echo esc_attr(implode(' ', $el_class)); ?>">
-		<a href="<?php echo esc_url($video); ?>" class="thb-video-link mfp-video"></a>
+		<a href="<?php echo esc_url($video); ?>" class="vif-video-link mfp-video"></a>
 		<?php
 			if ($style == 'lightbox-style2') { 
 				$img = wpb_getImageBySize( array( 'attach_id' => $image, 'thumb_size' => 'full' ) );
@@ -33,14 +33,14 @@
 			}
 		?>
 		<?php if ($style == 'lightbox-style3') { ?>
-		<span class="thb-video-text"><?php echo wp_kses_post($video_text); ?></span>
+		<span class="vif-video-text"><?php echo wp_kses_post($video_text); ?></span>
 		<?php } ?>
 		<style>
 			<?php if ($icon_color) { ?>
 				#<?php echo esc_attr($element_id); ?> svg {
 					fill: <?php echo esc_attr($icon_color); ?>;
 				}
-				#<?php echo esc_attr($element_id); ?> svg.thb-play-02 .circle1 {
+				#<?php echo esc_attr($element_id); ?> svg.vif-play-02 .circle1 {
 					stroke: <?php echo esc_attr($icon_color); ?>;
 				}
 		}

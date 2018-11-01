@@ -7,7 +7,7 @@
 
 	
 	$content = vc_value_from_safe( $content );
-	$el_class[] = 'thb-pricing-column';
+	$el_class[] = 'vif-pricing-column';
 	$el_class[] = 'small-12';
 	$el_class[] = $thb_pricing_columns;
 	$el_class[] = 'columns';
@@ -35,11 +35,11 @@
 	?>
 
 	<style>
-	.thb-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] .thb_pricing_head,
-	.thb-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] .pricinf_footer {
+	.vif-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] .thb_pricing_head,
+	.vif-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] .pricinf_footer {
 		background: <?php echo $h_f_bg; ?>;
 	}
-	.thb-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] {
+	.vif-pricing-table .style-1[data-bg="<?php echo $h_f_bg; ?>"] {
 		 border: 1px solid <?php echo  $h_f_bg; ?>
 	}
 	

@@ -25,8 +25,8 @@ $shop_product_style = isset($_GET['shop_product_style']) ? $_GET['shop_product_s
 if (in_array($shop_product_style, array('style1', 'style2', 'style3', 'style4'))) {
 	$classes[] = 'page-padding';
 }
-$classes[] = 'thb-product-detail';
-$classes[] = 'thb-product-'.$shop_product_style;
+$classes[] = 'vif-product-detail';
+$classes[] = 'vif-product-'.$shop_product_style;
 
 ?>
 

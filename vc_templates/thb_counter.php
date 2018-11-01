@@ -3,10 +3,10 @@
 	extract( $atts );
 	$speed = $speed === '' ? 2000 : $speed;
 	$out = '';
-	$element_id = uniqid('thb-counter-');
+	$element_id = uniqid('vif-counter-');
 	$description = vc_value_from_safe( $description );
 	
-	$el_class[] = 'thb-counter';
+	$el_class[] = 'vif-counter';
 	$el_class[] = $style;
 	$el_class[] = $alignment;
 	
@@ -33,7 +33,7 @@
 			<div class="counter-container">
 				<h6><?php echo esc_attr($heading); ?></h6>
 				<?php if ($description) { ?>
-				<div class="thb-description"><p><?php echo wp_kses_post($description); ?></p></div>
+				<div class="vif-description"><p><?php echo wp_kses_post($description); ?></p></div>
 				<?php } ?>
 				<div class="h1" data-count="<?php echo esc_attr($counter); ?>" data-speed="<?php echo esc_attr($speed); ?>">0</div>
 			</div>
@@ -43,7 +43,7 @@
 				<h6><?php echo esc_attr($heading); ?></h6>
 			</div>
 			<?php if ($description) { ?>
-			<div class="thb-description"><p><?php echo wp_kses_post($description); ?></p></div>
+			<div class="vif-description"><p><?php echo wp_kses_post($description); ?></p></div>
 			<?php } ?>
 			<?php if ($icon || $icon_image) { ?>
 				<figure>
@@ -63,25 +63,25 @@
 				transition: transform <?php echo esc_attr($speed / 1000); ?>s;
 			}
 			<?php if ($thb_counter_color) { ?>
-				#<?php echo esc_attr($element_id); ?>.thb-counter .h1 {
+				#<?php echo esc_attr($element_id); ?>.vif-counter .h1 {
 					color: <?php echo esc_attr($thb_counter_color); ?>;
 				}
 			<?php } ?>
 			<?php if ($thb_heading_color) { ?>
-				#<?php echo esc_attr($element_id); ?>.thb-counter h6 {
+				#<?php echo esc_attr($element_id); ?>.vif-counter h6 {
 					color: <?php echo esc_attr($thb_heading_color); ?>;
 				}
 			<?php } ?>
 			<?php if ($thb_icon_color) { ?>
-				#<?php echo esc_attr($element_id); ?>.thb-counter figure svg path, 
-				#<?php echo esc_attr($element_id); ?>.thb-counter figure svg circle, 
-				#<?php echo esc_attr($element_id); ?>.thb-counter figure svg rect, 
-				#<?php echo esc_attr($element_id); ?>.thb-counter figure svg ellipse {
+				#<?php echo esc_attr($element_id); ?>.vif-counter figure svg path, 
+				#<?php echo esc_attr($element_id); ?>.vif-counter figure svg circle, 
+				#<?php echo esc_attr($element_id); ?>.vif-counter figure svg rect, 
+				#<?php echo esc_attr($element_id); ?>.vif-counter figure svg ellipse {
 					stroke: <?php echo esc_attr($thb_icon_color); ?>;
 				}
 			<?php } ?>
 			<?php if ($icon_image_width && $icon_image) { ?>
-				#<?php echo esc_attr($element_id); ?>.thb-counter .counter-image img {
+				#<?php echo esc_attr($element_id); ?>.vif-counter .counter-image img {
 					width: <?php echo esc_attr($icon_image_width); ?>px;
 					height: auto;
 				}

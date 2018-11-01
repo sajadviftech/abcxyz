@@ -2,9 +2,9 @@
   $atts = vc_map_get_attributes( 'thb_image_slider', $atts );
   extract( $atts );
 
-  $element_id = 'thb-image-slider-' . mt_rand(10, 999);
-  $el_class[] = 'thb-image-slider';
-  $el_class[] = 'thb-carousel';
+  $element_id = 'vif-image-slider-' . mt_rand(10, 999);
+  $el_class[] = 'vif-image-slider';
+  $el_class[] = 'vif-carousel';
   $el_class[] = 'row';
   $el_class[] = $lightbox;
   $el_class[] = $thb_next_slides;

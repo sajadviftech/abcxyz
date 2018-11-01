@@ -10,13 +10,13 @@
   
  	ob_start();
  	
- 	$classes[] = 'thb-portfolio-slider';
- 	$classes[] = 'thb-carousel';
+ 	$classes[] = 'vif-portfolio-slider';
+ 	$classes[] = 'vif-carousel';
  	$classes[] = $full_height;
- 	$classes[] = 'thb-portfolio-slider-'.$style;
+ 	$classes[] = 'vif-portfolio-slider-'.$style;
  	$classes[] = $style === 'style4' ? 'overflow-visible center-arrows' : '';
  	$classes[] = $style !== 'style4' ? 'position-arrows' : '';
- 	$classes[] = $style === 'style3' ? 'thb-carousel-dark' : '';
+ 	$classes[] = $style === 'style3' ? 'vif-carousel-dark' : '';
  	?>
 	<div class="<?php echo esc_attr(implode(' ', $classes)); ?>" id="portfolio-carousel-<?php echo esc_attr($rand); ?>" data-columns="1" data-autoplay="<?php echo esc_attr($autoplay); ?>" data-autoplay-speed="<?php echo esc_attr($autoplay_speed); ?>" data-navigation="true">
 			<?php if ($slider_posts->have_posts()) :  while ($slider_posts->have_posts()) : $slider_posts->the_post(); ?>

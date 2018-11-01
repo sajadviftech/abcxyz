@@ -1,4 +1,4 @@
-<svg class="thb-svg-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 51" preserveAspectRatio="none">
+<svg class="vif-svg-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 51" preserveAspectRatio="none">
 <path d="M1000,5.669V51H0V5.669c11.493,0,22.985,3.41,31.724,10.228l19.87,15.547
 	c17.445,13.648,46.009,13.648,63.451,0l19.89-15.547c17.445-13.638,45.992-13.638,63.434,0l19.903,15.547
 	c17.432,13.648,45.995,13.648,63.438,0l19.887-15.547c17.461-13.638,46.012-13.638,63.454,0l19.887,15.559

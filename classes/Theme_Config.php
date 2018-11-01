@@ -291,7 +291,7 @@ class Theme_Config {
 		
 		// Theme Options Redirect
 		if ( $pagenow ) {
-			if ( 'admin.php' == $pagenow && isset($_GET['page']) && 'thb-theme-options' == wp_unslash($_GET['page']) ) {
+			if ( 'admin.php' == $pagenow && isset($_GET['page']) && 'vif-theme-options' == wp_unslash($_GET['page']) ) {
 				if ( ! ( defined( 'WP_CLI' ) && WP_CLI ) ) {
 					wp_redirect( admin_url( "themes.php?page=ot-theme-options" ) );
 					die();
@@ -325,7 +325,7 @@ class Theme_Config {
 				( self::$thb_product_key && ( self::$thb_product_key_expired == 1 ) && !self::$thb_envato_hosted ) 
 			) {
 				echo '<div class="notice is-dismissible error thb_admin_notices">
-				<p>There is an update available for the <strong>' . esc_html(self::$thb_theme_name) . '</strong> theme. Go to <a href="' . esc_url(admin_url( 'admin.php?page=thb-product-registration' )) . '">Product Registration</a> to enable theme updates.</p>
+				<p>There is an update available for the <strong>' . esc_html(self::$thb_theme_name) . '</strong> theme. Go to <a href="' . esc_url(admin_url( 'admin.php?page=vif-product-registration' )) . '">Product Registration</a> to enable theme updates.</p>
 				</div>';
 			}
 	
@@ -406,14 +406,14 @@ class Theme_Config {
 		
 		if ( isset( $updater->skin->theme_info ) && $updater->skin->theme_info['Name'] == self::$thb_theme_name ) {
 			if ( $cond ) {
-				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'viftech' ), admin_url( 'admin.php?page=thb-product-registration' ) ) );
+				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'viftech' ), admin_url( 'admin.php?page=vif-product-registration' ) ) );
 			}
 		}
 		
 		// VisualComposer
 		if ( (isset( $updater->skin->plugin )) && ( $updater->skin->plugin == 'js_composer/js_composer.php') ) {
 			if ( $cond ) {
-				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'viftech' ), admin_url( 'admin.php?page=thb-product-registration' ) ) );
+				return new WP_Error( 'no_credentials', sprintf( __( 'To receive automatic updates, registration is required. Please visit <a href="%1$s" target="_blank">Product Registration</a> to activate your theme.', 'viftech' ), admin_url( 'admin.php?page=vif-product-registration' ) ) );
 			}
 		}
 		return $reply;
@@ -443,7 +443,7 @@ class Theme_Config {
 								'plugin'        => urlencode( $item['slug'] ),
 								'plugin_name'   => urlencode( $item['sanitized_plugin'] ),
 								'tgmpa-install' => 'install-plugin',
-								'return_url'    => network_admin_url( 'admin.php?page=thb-plugins' )
+								'return_url'    => network_admin_url( 'admin.php?page=vif-plugins' )
 							),
 							TGM_Plugin_Activation::$instance->get_tgmpa_url()
 						),
@@ -463,11 +463,11 @@ class Theme_Config {
 						array(
 							'plugin'               => urlencode( $item['slug'] ),
 							'plugin_name'          => urlencode( $item['sanitized_plugin'] ),
-							'thb-activate'       => 'activate-plugin',
-							'thb-activate-nonce' => wp_create_nonce( 'thb-activate' ),
-							'return_url'    => network_admin_url( 'admin.php?page=thb-plugins' )
+							'vif-activate'       => 'activate-plugin',
+							'vif-activate-nonce' => wp_create_nonce( 'vif-activate' ),
+							'return_url'    => network_admin_url( 'admin.php?page=vif-plugins' )
 						),
-						admin_url( 'admin.php?page=thb-plugins' )
+						admin_url( 'admin.php?page=vif-plugins' )
 					) ),
 					$item['sanitized_plugin']
 				),
@@ -486,7 +486,7 @@ class Theme_Config {
 								'plugin'        => urlencode( $item['slug'] ),
 								'tgmpa-update'  => 'update-plugin',
 								'version'       => urlencode( $item['version'] ),
-								'return_url'    => network_admin_url( 'admin.php?page=thb-plugins' )
+								'return_url'    => network_admin_url( 'admin.php?page=vif-plugins' )
 							),
 							TGM_Plugin_Activation::$instance->get_tgmpa_url()
 						),
@@ -505,10 +505,10 @@ class Theme_Config {
 							'plugin'                 => urlencode( $item['slug'] ),
 							'plugin_name'            => urlencode( $item['sanitized_plugin'] ),
 							// 'plugin_source'          => urlencode( $item['source'] ),
-							'thb-deactivate'       => 'deactivate-plugin',
-							'thb-deactivate-nonce' => wp_create_nonce( 'thb-deactivate' ),
+							'vif-deactivate'       => 'deactivate-plugin',
+							'vif-deactivate-nonce' => wp_create_nonce( 'vif-deactivate' ),
 						),
-						admin_url( 'admin.php?page=thb-plugins' )
+						admin_url( 'admin.php?page=vif-plugins' )
 					) ),
 					$item['sanitized_plugin']
 				),
@@ -520,9 +520,9 @@ class Theme_Config {
 	public function thb_theme_admin_init() {
 		$get_name = isset($_GET['plugin_name']) ? wp_unslash($_GET['plugin_name']) : false;
 		
-		if ( isset( $_GET['thb-deactivate'] ) && $_GET['thb-deactivate'] == 'deactivate-plugin' ) {
+		if ( isset( $_GET['vif-deactivate'] ) && $_GET['vif-deactivate'] == 'deactivate-plugin' ) {
 			
-			check_admin_referer( 'thb-deactivate', 'thb-deactivate-nonce' );
+			check_admin_referer( 'vif-deactivate', 'vif-deactivate-nonce' );
 
 			if ( ! function_exists( 'get_plugins' ) ) {
 				require_once ABSPATH . 'wp-admin/includes/plugin.php';
@@ -539,9 +539,9 @@ class Theme_Config {
 
 		} 
 
-		if ( isset( $_GET['thb-activate'] ) && $_GET['thb-activate'] == 'activate-plugin' ) {
+		if ( isset( $_GET['vif-activate'] ) && $_GET['vif-activate'] == 'activate-plugin' ) {
 			
-			check_admin_referer( 'thb-activate', 'thb-activate-nonce' );
+			check_admin_referer( 'vif-activate', 'vif-activate-nonce' );
 
 			if ( ! function_exists( 'get_plugins' ) ) {
 				require_once ABSPATH . 'wp-admin/includes/plugin.php';
@@ -564,7 +564,7 @@ class Theme_Config {
 			
 			if ( false == get_option( $viftech_installed, false ) ) {		
 				update_option( $viftech_installed, true );
-				wp_redirect( admin_url( 'admin.php?page=thb-plugins' ) );
+				wp_redirect( admin_url( 'admin.php?page=vif-plugins' ) );
 				die();
 			} 
 			
@@ -572,30 +572,30 @@ class Theme_Config {
 		}
 	}
 	public function adminPageEnqueue() {
-		wp_enqueue_script( 'thb-admin-meta', Theme_Config::$thb_theme_directory_uri .'assets/js/admin-meta.min.js', array('jquery'), esc_attr(self::$thb_theme_version));
-		wp_enqueue_style("thb-admin-css", Theme_Config::$thb_theme_directory_uri . "assets/css/admin.css", null, esc_attr(self::$thb_theme_version));
-		wp_enqueue_style( 'thb-admin-vs-css', Theme_Config::$thb_theme_directory_uri . "assets/css/admin_vc.css", null, esc_attr(self::$thb_theme_version));
+		wp_enqueue_script( 'vif-admin-meta', Theme_Config::$thb_theme_directory_uri .'assets/js/admin-meta.min.js', array('jquery'), esc_attr(self::$thb_theme_version));
+		wp_enqueue_style("vif-admin-css", Theme_Config::$thb_theme_directory_uri . "assets/css/admin.css", null, esc_attr(self::$thb_theme_version));
+		wp_enqueue_style( 'vif-admin-vs-css', Theme_Config::$thb_theme_directory_uri . "assets/css/admin_vc.css", null, esc_attr(self::$thb_theme_version));
 		
 		if (class_exists('WPBakeryVisualComposerAbstract')) {
 			wp_enqueue_style( 'vc_extra_css', Theme_Config::$thb_theme_directory_uri . 'assets/css/vc_extra.css' );
-			wp_enqueue_script( 'thb-admin-vc', Theme_Config::$thb_theme_directory_uri .'assets/js/admin-vc.min.js', array('jquery'), esc_attr(self::$thb_theme_version));
+			wp_enqueue_script( 'vif-admin-vc', Theme_Config::$thb_theme_directory_uri .'assets/js/admin-vc.min.js', array('jquery'), esc_attr(self::$thb_theme_version));
 		}
 	}
 	public function adminSetupMenu() {
 		
 		// Product Registration
-		add_menu_page( Theme_Config::$thb_theme_name, Theme_Config::$thb_theme_name, 'edit_theme_options', 'thb-product-registration', array( & $this, 'thb_Plugins' ), '', 3 );
+		add_menu_page( Theme_Config::$thb_theme_name, Theme_Config::$thb_theme_name, 'edit_theme_options', 'vif-product-registration', array( & $this, 'thb_Plugins' ), '', 3 );
 		
 		// Product Registration
 		/* add Product Regisrtaion*/		
 		// Main Menu Item
-		add_submenu_page( 'thb-product-registration', 'Plugins', 'Plugins', 'edit_theme_options', 'thb-plugins', array( & $this, 'thb_Plugins' ) );
+		add_submenu_page( 'vif-product-registration', 'Plugins', 'Plugins', 'edit_theme_options', 'vif-plugins', array( & $this, 'thb_Plugins' ) );
 
 		// Demo Import
-		add_submenu_page( 'thb-product-registration', 'Demo Import', 'Demo Import', 'edit_theme_options', 'thb-demo-import', array( & $this, 'thb_Demo_Import' ) );
+		add_submenu_page( 'vif-product-registration', 'Demo Import', 'Demo Import', 'edit_theme_options', 'vif-demo-import', array( & $this, 'thb_Demo_Import' ) );
 		
 		// Theme Options
-		add_submenu_page( 'thb-product-registration', 'Theme Options', 'Theme Options', 'edit_theme_options', 'thb-theme-options', '__return_false' ); 
+		add_submenu_page( 'vif-product-registration', 'Theme Options', 'Theme Options', 'edit_theme_options', 'vif-theme-options', '__return_false' ); 
 		
 	}
 	public function thb_Plugins() {

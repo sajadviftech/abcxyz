@@ -18,7 +18,7 @@
 		$el_class[] = 'has-link';
 	}
 	
-	$el_class[] = 'thb-client';
+	$el_class[] = 'vif-client';
 	if ($thb_style !== 'slick') {
 	$el_class[] = $thb_columns;
 	}

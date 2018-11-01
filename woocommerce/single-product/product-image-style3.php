@@ -25,9 +25,9 @@ $wrapper_classes[] = 'large-order-2';
 $classes[] = 'woocommerce-product-gallery__wrapper';
 $classes[] = 'product-images';
 $classes[] = 'carousel';	
-$classes[] = 'thb-carousel';
+$classes[] = 'vif-carousel';
 $classes[] = 'center-arrows';
-$classes[] = 'thb-carousel-dark';
+$classes[] = 'vif-carousel-dark';
 ?>
 <div class="row">
 	<div class="large-2 columns small-order-2 large-order-1 product-thumbnail-container">

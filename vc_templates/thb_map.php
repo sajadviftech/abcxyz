@@ -25,7 +25,7 @@
 	
 	ob_start(); ?>
 	
-	<input class="thb-location" type="hidden" data-option="<?php echo esc_attr(json_encode($options)); ?>" />
+	<input class="vif-location" type="hidden" data-option="<?php echo esc_attr(json_encode($options)); ?>" />
 	
 	<?php 
 	$out = ob_get_clean();

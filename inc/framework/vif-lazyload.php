@@ -85,7 +85,7 @@ function thb_lazy_low_quality( $attr, $attachment, $size ) {
 		$attr['data-src']      = $attr['src'];
 		$attr['data-sizes']    = 'auto';
 		$attr['src']           = $placeholder;
-		$attr['class']        .= ' thb-lazyload lazyload';
+		$attr['class']        .= ' vif-lazyload lazyload';
 	
 		// Set Src Set.
 		if ( isset( $attr['srcset'] ) ) {

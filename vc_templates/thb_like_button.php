@@ -6,7 +6,7 @@
 	$likes = thb_get_post_likes($thb_id);
 	
 	
-	$class[] = 'thb-like-button';
+	$class[] = 'vif-like-button';
 	$class[] = $alignment;
 	$class[] = $likes['like'] ? 'active' : '';
 	

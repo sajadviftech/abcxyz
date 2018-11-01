@@ -504,7 +504,7 @@ function thb_custom_theme_options() {
       array(
       	'label'       => esc_html__('Products Per Row', 'viftech' ),
         'id'          => 'products_per_row',
-        'std'         => 'thb-5',
+        'std'         => 'vif-5',
         'type'        => 'radio',
         'choices'     => array(
           array(
@@ -521,7 +521,7 @@ function thb_custom_theme_options() {
           ),
           array(
             'label'       => esc_html__('5 Columns', 'viftech'),
-            'value'       => 'thb-5'
+            'value'       => 'vif-5'
           ),
           array(
             'label'       => esc_html__('6 Columns', 'viftech'),
@@ -800,15 +800,15 @@ function thb_custom_theme_options() {
         	),
           array(
             'label'       => esc_html__('Small', 'viftech'),
-            'value'       => 'thb-fixed-shadow-style1'
+            'value'       => 'vif-fixed-shadow-style1'
           ),
           array(
             'label'       => esc_html__('Medium', 'viftech'),
-            'value'       => 'thb-fixed-shadow-style2'
+            'value'       => 'vif-fixed-shadow-style2'
           ),
           array(
             'label'       => esc_html__('Large', 'viftech'),
-            'value'       => 'thb-fixed-shadow-style3'
+            'value'       => 'vif-fixed-shadow-style3'
           )
         ),
         'std'         => '',
@@ -828,22 +828,22 @@ function thb_custom_theme_options() {
         'choices'     => array(
       		array(
       			'label'       => esc_html__('Standard', 'viftech'),
-      			'value'       => 'thb-standard'
+      			'value'       => 'vif-standard'
       		),
       		array(
       			'label'       => esc_html__('Underline', 'viftech'),
-      			'value'       => 'thb-underline'
+      			'value'       => 'vif-underline'
       		),
       		array(
       			'label'       => esc_html__('Line Through', 'viftech'),
-      			'value'       => 'thb-line-through'
+      			'value'       => 'vif-line-through'
       		),
       		array(
       			'label'       => esc_html__('Line Marker', 'viftech'),
-      			'value'       => 'thb-line-marker'
+      			'value'       => 'vif-line-marker'
       		)
         ),
-        'std'         => 'thb-standard',
+        'std'         => 'vif-standard',
         'section'	  => 'header'
       ),
       array(
@@ -1071,14 +1071,14 @@ function thb_custom_theme_options() {
         'choices'     => array(
           array(
             'label'       => esc_html__('Default - Clickable parent links', 'viftech'),
-            'value'       => 'thb-default'
+            'value'       => 'vif-default'
           ),
           array(
             'label'       => esc_html__('Open Submenu - Parent links open submenus', 'viftech'),
-            'value'       => 'thb-submenu'
+            'value'       => 'vif-submenu'
           )
         ),
-        'std'         => 'thb-submenu',
+        'std'         => 'vif-submenu',
         'section'     => 'header'
       ),
       array(
@@ -2110,18 +2110,18 @@ function thb_custom_theme_options() {
         'choices'     => array(
         	array(
         	  'label'       => esc_html__('Fade', 'viftech'),
-        	  'value'       => 'thb-fade'
+        	  'value'       => 'vif-fade'
         	),
           array(
             'label'       => esc_html__('Fade Up', 'viftech'),
-            'value'       => 'thb-fade-up'
+            'value'       => 'vif-fade-up'
           ),
           array(
             'label'       => esc_html__('Fade Down', 'viftech'),
-            'value'       => 'thb-fade-down'
+            'value'       => 'vif-fade-down'
           )
         ),
-        'std'         => 'thb-fade',
+        'std'         => 'vif-fade',
         'section'     => 'customization'
       ),
       array(

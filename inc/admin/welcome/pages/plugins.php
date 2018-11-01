@@ -2,7 +2,7 @@
 	<?php include 'header.php'; ?>
 </div>
 <div class="wrap about-wrap">
-	<div class="theme-browser thb-plugins thb-content">
+	<div class="theme-browser vif-plugins vif-content">
 		<?php
 			$key = Theme_Config::$thb_product_key;
 			$expired = Theme_Config::$thb_product_key_expired;
@@ -14,8 +14,8 @@
 		
 		?>
 		<?php if (!$cond) { ?>
-			<div class="thb-error">
-				<p><span class="dashicons dashicons-warning"></span> To install premium plugins you must <a href="<?php echo esc_url(admin_url( 'admin.php?page=thb-product-registration' )); ?>">Activate your Theme</a>.</p>
+			<div class="vif-error">
+				<p><span class="dashicons dashicons-warning"></span> To install premium plugins you must <a href="<?php echo esc_url(admin_url( 'admin.php?page=vif-product-registration' )); ?>">Activate your Theme</a>.</p>
 			</div>
 		<?php } ?>
 		<?php

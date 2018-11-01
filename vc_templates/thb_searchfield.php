@@ -4,9 +4,9 @@
   extract( $atts );
   
 	$out = $text = '';
-	$element_id = 'thb-searchfield-' . mt_rand(10, 999);
+	$element_id = 'vif-searchfield-' . mt_rand(10, 999);
 	
-	$class[] = 'thb-searchfield';
+	$class[] = 'vif-searchfield';
 	$class[] = $extra_class;
 	$class[] = $thb_border_radius;
 	$class[] = $size;

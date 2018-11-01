@@ -32,7 +32,7 @@ $info_message .= ' <a href="#" class="showlogin">' . esc_html__( 'Click here to 
 <div class="checkout-login">
 	<div class="row align-center">
 		<div class="small-12 medium-7 large-5 text-center columns">
-			<div class="thb-checkout-login">
+			<div class="vif-checkout-login">
 				<?php esc_html_e("Returning customer?", 'viftech'); ?> <a class="showlogin"><?php esc_html_e("Click here to login", 'viftech'); ?></a>
 			</div>
 			<?php

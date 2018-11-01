@@ -3,10 +3,10 @@
   extract( $atts );
   
 	$out = $text = '';
-	$element_id = uniqid('thb-fadetype-');
+	$element_id = uniqid('vif-fadetype-');
 	$fade_text_safe = vc_value_from_safe($fade_text);
 	$fade_text_safe = thb_remove_vc_added_p($fade_text_safe);
-	$class[] = 'thb-fadetype';
+	$class[] = 'vif-fadetype';
 	$class[] = $extra_class;
 	ob_start();
 	?>
@@ -19,7 +19,7 @@
 			  $fade_text_safe = str_replace($entry, '<placeholder>', $fade_text_safe);
 
 			}
-			echo str_replace('<placeholder>', '<span class="thb-fadetype-entry">'.$text.'</span>', $fade_text_safe);
+			echo str_replace('<placeholder>', '<span class="vif-fadetype-entry">'.$text.'</span>', $fade_text_safe);
 		}
 		
 		?>

@@ -2,15 +2,15 @@
 	$atts = vc_map_get_attributes( 'thb_countdown', $atts );
 	extract( $atts );
 	
-	$el_class[] = 'thb-countdown';
+	$el_class[] = 'vif-countdown';
 
 	$out ='';
 	ob_start();
 	
 	
 	?>
-	<div class="thb-countdown" data-offset="<?php echo esc_attr($offset); ?>" data-date="<?php echo esc_attr($date); ?>">
-    <ul class="thb-countdown-ul">
+	<div class="vif-countdown" data-offset="<?php echo esc_attr($offset); ?>" data-date="<?php echo esc_attr($date); ?>">
+    <ul class="vif-countdown-ul">
       <li>
         <span class="days timestamp">00</span>
         <span class="timelabel"><?php esc_html_e( 'days', 'viftech' ); ?></span>

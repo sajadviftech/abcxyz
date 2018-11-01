@@ -3,9 +3,9 @@
 	$atts = vc_map_get_attributes( 'thb_tabs', $atts );
 	extract( $atts );
 	
-	$element_id = uniqid('thb-tabs-');
+	$element_id = uniqid('vif-tabs-');
 	$out ='';
-	$el_class[] = 'thb-tabs';
+	$el_class[] = 'vif-tabs';
 	$el_class[] = $style;
 	ob_start();
 	

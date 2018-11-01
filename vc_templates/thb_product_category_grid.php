@@ -27,7 +27,7 @@
 	ob_start();
 	$i = 1;
 
-	$classes[] = "row products thb-product-category-grid masonry";
+	$classes[] = "row products vif-product-category-grid masonry";
 	$classes[] = $style;
 
 		if ( $product_categories ) { 

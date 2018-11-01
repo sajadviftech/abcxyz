@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
-	<div class="thb-page-header">
+	<div class="vif-page-header">
 		<h1><?php esc_html_e('Shopping Cart', 'viftech'); ?></h1>
 	</div>
 		<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">

@@ -4,11 +4,11 @@
     
  	$out ='';
 	ob_start();
-	$element_id = uniqid("thb-label-");
+	$element_id = uniqid("vif-label-");
 	
-	$css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), 'thb-label', $atts );
+	$css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), 'vif-label', $atts );
 	
-	$el_class[] = 'thb-label';
+	$el_class[] = 'vif-label';
 	$el_class[] = $animation;
 	$el_class[] = $extra_class;
 	$el_class[] = $css_class;
@@ -20,10 +20,10 @@
 		<?php echo wp_kses_post(wpautop($description)); ?>
 		<style>
 			<?php if ($thb_icon_color) { ?>
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg path, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg circle, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg rect, 
-			#<?php echo esc_attr($element_id); ?>.thb-iconbox figure svg ellipse {
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg path, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg circle, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg rect, 
+			#<?php echo esc_attr($element_id); ?>.vif-iconbox figure svg ellipse {
 				stroke: <?php echo esc_attr($thb_icon_color); ?>;
 			}
 			<?php } ?>

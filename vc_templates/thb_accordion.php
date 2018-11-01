@@ -2,9 +2,9 @@
 	$atts = vc_map_get_attributes( 'thb_accordion', $atts );
 	extract( $atts );
 	
-	$element_id = uniqid('thb-accordion-');
+	$element_id = uniqid('vif-accordion-');
 	$out ='';
-	$el_class[] = 'thb-accordion';
+	$el_class[] = 'vif-accordion';
 	$el_class[] = $style;
 	$el_class[] = $accordion == 'true' ? 'has-accordion' : '';
 	ob_start();

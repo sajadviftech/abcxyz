@@ -17,4 +17,4 @@
  */
 ?>
 
-<ul class="products row thb-main-products">
+<ul class="products row vif-main-products">

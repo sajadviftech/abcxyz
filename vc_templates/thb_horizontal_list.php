@@ -2,9 +2,9 @@
   $atts = vc_map_get_attributes( 'thb_horizontal_list', $atts );
 	extract( $atts );
 	
-	$element_id = 'thb-horizontal-list-' . mt_rand(10, 999);
+	$element_id = 'vif-horizontal-list-' . mt_rand(10, 999);
 	
-	$el_class[] = 'thb-horizontal-list';
+	$el_class[] = 'vif-horizontal-list';
 	$el_class[] = $extra_class;
 	$el_class[] = $animation;
 	

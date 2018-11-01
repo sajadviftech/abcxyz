@@ -17,10 +17,10 @@
 			];
 		}
 	}
-	$element_id = 'thb-office-locations-' . mt_rand(10, 999);
+	$element_id = 'vif-office-locations-' . mt_rand(10, 999);
 	ob_start(); ?>
 	<?php if (sizeof($locations)) { ?>
-		<div id="<?php echo esc_attr($element_id); ?>" class="thb-carousel row max_width thb_location_container" data-columns="4" data-pagination="true" data-infinite="false">
+		<div id="<?php echo esc_attr($element_id); ?>" class="vif-carousel row max_width thb_location_container" data-columns="4" data-pagination="true" data-infinite="false">
 			<?php $i = 1; foreach ($locations as $location) { ?>
 				<div class="columns">
 					<div class="thb_location <?php if ($i === 1) { ?>active<?php } ?>">

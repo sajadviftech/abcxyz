@@ -26,7 +26,7 @@
 			var self = this,
 					obj;
 			
-			win.on('resize.thb-init', function() {
+			win.on('resize.vif-init', function() {
 				var to_header = $('body:not(.header-padding-off) .header-spacer-force').length ? $('.header-spacer-force') : $('body:not(.header-padding-off) .header-spacer'),
 						to_offset = $('.header:not(.fixed)').outerHeight() + ( ( body.hasClass('page') || body.hasClass('single') ) ? 0 : ( win.outerHeight() / 10 ) );
 						
@@ -39,7 +39,7 @@
 				to_header.css({
 					'height': SITE.h_offset
 				});
-			}).trigger('resize.thb-init');
+			}).trigger('resize.vif-init');
 			
 			SITE.headroom.light = header.data('header-color') === 'light-header' ? true : false;
 			
@@ -56,8 +56,8 @@
 				}
 			}
 			function thb_immediate() {
-				if ($('.thb-page-preloader').length) {
-					TweenMax.to($('.thb-page-preloader'), 0.5, { autoAlpha: 0 });
+				if ($('.vif-page-preloader').length) {
+					TweenMax.to($('.vif-page-preloader'), 0.5, { autoAlpha: 0 });
 				}
 				$('.post-gallery.parallax .parallax_bg').addClass('animate-scale-in');
 				
@@ -69,7 +69,7 @@
 			}
 			
 			if (themeajax.settings.page_transition === 'on' && !body.hasClass('compose-mode')) {
-				$('.thb-page-transition-on')
+				$('.vif-page-transition-on')
 					.animsition({
 						inClass : themeajax.settings.page_transition_style +'-in',
 						outClass : themeajax.settings.page_transition_style +'-out',
@@ -143,13 +143,13 @@
 			}
 		},
 		search_toggle: {
-			selector: '.thb-search-holder',
+			selector: '.vif-search-holder',
 			searchTl: false,
 			init: function() {
 				var base = this,
 						container = $(base.selector),
 						close = $('span', container),
-						target = $('.thb-search-popup'),
+						target = $('.vif-search-popup'),
 						fieldset = $('fieldset', target),
 						bar = $('.searchform-bar', target);
 				
@@ -204,7 +204,7 @@
 			mobileTl: new TimelineMax({ paused: true, reversed: true }),
 			init: function() {
 				var base = this,
-						close = $('.thb-mobile-close', base.target),
+						close = $('.vif-mobile-close', base.target),
 						mainTl = new TimelineMax({ paused: true, reversed: true }),
 						toggleAnimation = base.getMobileToggleAni();
 				
@@ -256,12 +256,12 @@
 						}}),
 						logo = $('.logo-holder', this.target),
 						style8content = $('.header-style-8-content .widget', this.target),
-						items = $('.thb-mobile-menu>li', this.target),
-						bar = $('.thb-secondary-bar', this.target),
-						secondary_items = $('.thb-secondary-menu>li', this.target),
+						items = $('.vif-mobile-menu>li', this.target),
+						bar = $('.vif-secondary-bar', this.target),
+						secondary_items = $('.vif-secondary-menu>li', this.target),
 						mobile_footer = $('.menu-footer>*', this.target),
 						icons = $('.socials>a', this.target),
-						close = $('.thb-mobile-close', this.target);
+						close = $('.vif-mobile-close', this.target);
 			
 				if (header.hasClass('style8')) {
 					tl
@@ -330,7 +330,7 @@
 			selector: '.header.style1',
 			animation: function() {
 				var header_overlay_menu = $('.header_overlay_menu', header),
-						bar = $('.thb-secondary-line', header_overlay_menu),
+						bar = $('.vif-secondary-line', header_overlay_menu),
 						baseTL = new TimelineMax({ paused: true, onStart: function() {
 							TweenMax.set( header, { className: '-=fixed' });
 						}, onReverseComplete: function() {
@@ -346,9 +346,9 @@
 					.set( header, { className: '+=hide-secondary-items'})
 					.to( header_overlay_menu, 0.5, { y: 0 }, "header-first")
 					.set( header, { className: '+=light-header' }, "header-first")
-					.staggerFromTo( $('.thb-header-menu>li>a', header), 0.5, { autoAlpha: 0 }, { autoAlpha: 1 }, 0.1, "header-start")
+					.staggerFromTo( $('.vif-header-menu>li>a', header), 0.5, { autoAlpha: 0 }, { autoAlpha: 1 }, 0.1, "header-start")
 					.to( bar, 0.5, { scaleX: 1, opacity: '0.2' }, "header-start" )
-					.staggerFromTo( $('.thb-secondary-menu-container a', header), 0.5, { autoAlpha: 0 }, { autoAlpha: 1 }, 0.1, "header-start" );
+					.staggerFromTo( $('.vif-secondary-menu-container a', header), 0.5, { autoAlpha: 0 }, { autoAlpha: 1 }, 0.1, "header-start" );
 					
 				return baseTL;
 			}
@@ -356,7 +356,7 @@
 		header_style3: {
 			selector: '.header.style3',
 			animation: function() {
-				var hidden_menu_items = $('.thb-full-menu>li', header),
+				var hidden_menu_items = $('.vif-full-menu>li', header),
 						menuTl = new TimelineMax({ paused: true });
 						
 				menuTl
@@ -398,7 +398,7 @@
 				var base = this,
 						container = $(base.selector),
 						behaviour = container.data('behaviour'),
-						arrow = behaviour === 'thb-submenu' ? container.find('.thb-mobile-menu li.menu-item-has-children>a') : container.find('.thb-mobile-menu li.menu-item-has-children>a .thb-arrow');
+						arrow = behaviour === 'vif-submenu' ? container.find('.vif-mobile-menu li.menu-item-has-children>a') : container.find('.vif-mobile-menu li.menu-item-has-children>a .vif-arrow');
 				
 				arrow.on('click', function(e){
 					var that = $(this),
@@ -432,7 +432,7 @@
 			}
 		},
 		fullMenu: {
-			selector: '.thb-full-menu, .thb-header-menu',
+			selector: '.vif-full-menu, .vif-header-menu',
 			init: function() {
 				var base = this,
 					container = $(base.selector),
@@ -482,7 +482,7 @@
 					if (hash && pos) {
 						pos = (hash === 'footer') ? "max" : pos;
 						
-						if (_this.parents('.thb-mobile-menu').length) {
+						if (_this.parents('.vif-mobile-menu').length) {
 							SITE.mobile_toggle.mobileTl.reverse();
 						}
 						if ( !$('#'+hash).hasClass('vc_tta-panel') ) {
@@ -683,7 +683,7 @@
 						page = 2,
 						thb_loading = false,
 						count = container.data('count'),
-						preloader = container.parents('.blog-container').find('.thb-content-preloader');
+						preloader = container.parents('.blog-container').find('.vif-content-preloader');
 				
 				var scrollFunction = _.debounce(function(){
 					if ( (thb_loading === false ) && ( (win.scrollTop() + win.height() + 150) >= (container.offset().top + container.outerHeight()) ) ) {
@@ -768,7 +768,7 @@
 					fixedContentPos: false,
 					gallery: {
 						enabled: true,
-						arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir% mfp-prevent-close thb-animated-arrow circular">'+ themeajax.svg.prev_arrow +'</button>'
+						arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir% mfp-prevent-close vif-animated-arrow circular">'+ themeajax.svg.prev_arrow +'</button>'
 					},
 					image: {
 						verticalFit: true,
@@ -844,7 +844,7 @@
 			}
 		},
 		accordion: {
-			selector: '.thb-accordion',
+			selector: '.vif-accordion',
 			init: function() {
 				var base = this,
 						container = $(base.selector);
@@ -871,7 +871,7 @@
 						
 						parent.find('.vc_tta-panel-body').slideToggle('400', function() {
 							_.delay(function() {
-								win.trigger('scroll.thb-animation');
+								win.trigger('scroll.vif-animation');
 							}, 400);
 						});
 						
@@ -882,7 +882,7 @@
 			}
 		},
 		tabs: {
-			selector: '.thb-tabs',
+			selector: '.vif-tabs',
 			init: function() {
 				var base = this,
 						container = $(base.selector);
@@ -893,7 +893,7 @@
 							index = 0,
 							sections = _this.find('.vc_tta-panel'),
 							active = sections.eq(index),
-							menu = $('<div class="thb-tab-menu" />').prependTo(_this);
+							menu = $('<div class="vif-tab-menu" />').prependTo(_this);
 					
 					sections.each(function() {
 						$(this).find('.vc_tta-panel-heading').appendTo(menu);
@@ -909,7 +909,7 @@
 						sections.not(this_active).fadeOut('300', function() {
 							_.delay(function() {
 								this_active.fadeIn('400', function() {
-									win.trigger('scroll.thb-animation');
+									win.trigger('scroll.vif-animation');
 								});
 							}, 400);
 						});
@@ -926,7 +926,7 @@
 			}
 		},
 		freeScroll: {
-			selector: '.thb-freescroll',
+			selector: '.vif-freescroll',
 			init: function() {
 				var base = this,
 						container = $(base.selector);
@@ -992,7 +992,7 @@
 			}
 		},
 		countdown: {
-			selector: '.thb-countdown',
+			selector: '.vif-countdown',
 			init: function() {
 				var base = this,
 						container = $(base.selector);
@@ -1011,7 +1011,7 @@
 			}
 		},
 		select2: {
-			selector: '.thb-select2',
+			selector: '.vif-select2',
 			init: function() {
 				var base = this,
 						container = $(base.selector);
@@ -1078,10 +1078,10 @@
 					var _this = $(this),
 							layoutMode = _this.data('layoutmode') ? _this.data('layoutmode') : 'masonry',
 							variable_height = _this.hasClass('variable-height'),
-							true_aspect = _this.hasClass('thb-true-aspect-true'),
+							true_aspect = _this.hasClass('vif-true-aspect-true'),
 							el = _this.find('.columns'),
-							animation = _this.data('thb-animation'),
-							animationspeed = _this.data('thb-animation-speed') ? _this.data('thb-animation-speed') : 0.5,
+							animation = _this.data('vif-animation'),
+							animationspeed = _this.data('vif-animation-speed') ? _this.data('vif-animation-speed') : 0.5,
 							loadmore = $(_this.data('loadmore')),
 							page = 2,
 							args = {
@@ -1107,14 +1107,14 @@
 							thb_loading = false;
 					
 					/* Animation Args */
-					if (animation === 'thb-fade') {
+					if (animation === 'vif-fade') {
 						args_in = {
 							opacity:1
 						};
 						args_out = {
 							opacity:0	
 						};
-					} else if (animation === 'thb-scale') {
+					} else if (animation === 'vif-scale') {
 						args_in = {
 							opacity:1,
 							scale:1
@@ -1123,7 +1123,7 @@
 							opacity:0,
 							scale:0
 						};
-					} else if (animation === 'thb-none') {
+					} else if (animation === 'vif-none') {
 						in_speed = out_speed = 0;
 						stagger_speed = 0;
 						args_in = {
@@ -1132,7 +1132,7 @@
 						args_out = {
 							opacity: 0
 						};
-					} else if (animation === 'thb-vertical-flip') {
+					} else if (animation === 'vif-vertical-flip') {
 						args_in = {
 							opacity: 1,
 							y: 0,
@@ -1205,7 +1205,7 @@
 										SITE.thb_panr.init(added);
 										
 										TweenMax.staggerTo(added.find('.portfolio-holder'), in_speed, args_in, stagger_speed, function() {
-											added.addClass('thb-added');
+											added.addClass('vif-added');
 											thb_loading = false;
 										});
 										
@@ -1297,7 +1297,7 @@
 					
 					
 					/* Images Loaded */
-					_this.addClass('thb-loaded');
+					_this.addClass('vif-loaded');
 					
 					if (variable_height) {
 						resizeVariables();
@@ -1321,14 +1321,14 @@
 				  	/* Scroll Animation */
 				  	win.on('scroll.masonry-animation', _.debounce(function(){
 				  		items = $(elms).filter(':in-viewport').filter(function() {
-				  		    return $(this).data('thb-in-viewport') === undefined;
+				  		    return $(this).data('vif-in-viewport') === undefined;
 				  		});
 				  		if (items) {
 				  			var added = items;
-				  			items.data('thb-in-viewport', true);
+				  			items.data('vif-in-viewport', true);
 				  			TweenMax.staggerTo(items.find('.portfolio-holder'), in_speed, args_in, stagger_speed, function() {
-				  				added.addClass('thb-added');
-				  				added.data('thb-in-viewport', true);
+				  				added.addClass('vif-added');
+				  				added.data('vif-in-viewport', true);
 				  			});
 				  		}
 				  	}, 20)).trigger('scroll.masonry-animation');
@@ -1365,7 +1365,7 @@
 				  				a.filter('[data-filter="*"]').addClass('active');
 				  			}
 				  			if (items_out.length) {
-				  				items_out.removeClass('thb-added');
+				  				items_out.removeClass('vif-added');
 				  				TweenMax.staggerTo(items_out, out_speed, args_out, stagger_speed, filter_function);
 				  			} else {
 				  				filter_function();
@@ -1382,7 +1382,7 @@
 				  			
 				  			selector = this.value;	
 				  			if (items_out.length) {
-				  				items_out.removeClass('thb-added');
+				  				items_out.removeClass('vif-added');
 				  				TweenMax.staggerTo(items_out, out_speed, args_out, stagger_speed, filter_function);
 				  			} else {
 				  				filter_function();
@@ -1394,7 +1394,7 @@
 			}
 		},
 		slick: {
-			selector: '.thb-carousel',
+			selector: '.vif-carousel',
 			init: function(el) {
 				var base = this,
 					container = el ? el : $(base.selector);
@@ -1417,7 +1417,7 @@
 						asNavFor = _this.data('asnavfor'),
 						rtl = body.hasClass('rtl');
 					
-					if (!_this.hasClass('thb-testimonial-style1') && pagination) {
+					if (!_this.hasClass('vif-testimonial-style1') && pagination) {
 						_this.append('<div class="slick-dots-wrapper"></div>');
 					}
 					var args = {
@@ -1438,8 +1438,8 @@
 						pauseOnHover: true,
 						accessibility: false,
 						focusOnSelect: true,
-						prevArrow: '<button type="button" class="slick-nav slick-prev thb-animated-arrow circular">'+ themeajax.svg.prev_arrow +'</button>',
-						nextArrow: '<button type="button" class="slick-nav slick-next thb-animated-arrow circular">'+ themeajax.svg.next_arrow +'</button>',
+						prevArrow: '<button type="button" class="slick-nav slick-prev vif-animated-arrow circular">'+ themeajax.svg.prev_arrow +'</button>',
+						nextArrow: '<button type="button" class="slick-nav slick-next vif-animated-arrow circular">'+ themeajax.svg.next_arrow +'</button>',
 						responsive: [
 							{
 								breakpoint: 1441,
@@ -1470,7 +1470,7 @@
 							}
 						]
 					};
-					if (!_this.hasClass('thb-testimonial-style1')) {
+					if (!_this.hasClass('vif-testimonial-style1')) {
 						args.appendDots = _this.find('.slick-dots-wrapper');
 					}
 					if (asNavFor && $(asNavFor).is(':visible')) {
@@ -1531,20 +1531,20 @@
 					_this.on('beforeChange', function(event, slick, currentSlide, nextSlide){
 						if (slick.$slides) {
 							_.delay(function(){
-					  		win.trigger('scroll.thb-animation');
+					  		win.trigger('scroll.vif-animation');
 							}, 150);
 						}
 					});
 					_this.on('breakpoint', function(event, slick, breakpoint){
-						slick.$slides.data('thb-animated', false);
-						win.trigger('scroll.thb-animation');
+						slick.$slides.data('vif-animated', false);
+						win.trigger('scroll.vif-animation');
 					});
 					_this.on('afterChange', function(event, slick, currentSlide, nextSlide){
 						if (slick.$slides) {
-					  	win.trigger('scroll.thb-animation');
+					  	win.trigger('scroll.vif-animation');
 						}
 					});
-					if (_this.hasClass('thb-testimonial-style1')) {
+					if (_this.hasClass('vif-testimonial-style1')) {
 						args.customPaging = function(slider, i) {
 							var portrait = $(slider.$slides[i]).find('.author_image').attr('src'),
 									title = $(slider.$slides[i]).find('.title').text();
@@ -1557,7 +1557,7 @@
 							if (!_this.find('.select').length) {
 								_this.find('.slick-dots').append('<div class="select"></div>');
 							}
-							win.trigger('scroll.thb-animation');
+							win.trigger('scroll.vif-animation');
 						});
 						_this.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 							var dots = _this.find('.slick-dots'),
@@ -1598,7 +1598,7 @@
 								}
 						});
 					}
-					if (_this.hasClass('thb-portfolio-slider') ) {
+					if (_this.hasClass('vif-portfolio-slider') ) {
 						win.on('resize.position_arrows', function() {
 							if (_this.hasClass('position-arrows') ) {
 							var container = $('h1,h2', _this.find('.slick-current')),
@@ -1701,16 +1701,16 @@
 			}
 		},
 		animation: {
-			selector: '.animation, .thb-counter, .thb-iconbox, .portfolio-title:not(.not-activated), .thb-fadetype, .thb-slidetype, .thb-progressbar, .thb-autotype',
+			selector: '.animation, .vif-counter, .vif-iconbox, .portfolio-title:not(.not-activated), .vif-fadetype, .vif-slidetype, .vif-progressbar, .vif-autotype',
 			init: function() {
 				var base = this,
 						container = $(base.selector);
 				
 				$('.animation.bottom-to-top-3d, .animation.top-to-bottom-3d').parent(':not(.slick-track)').addClass('perspective-wrap');
 				
-				win.on('scroll.thb-animation', function(){
+				win.on('scroll.vif-animation', function(){
 					base.control(container, true);
-				}).trigger('scroll.thb-animation');
+				}).trigger('scroll.vif-animation');
 			},
 			container: function(container) {
 				var base = this,
@@ -1727,29 +1727,29 @@
 				el.each(function() {
 					var _this = $(this);
 					
-					if ( _this.hasClass('thb-client') || _this.hasClass('thb-counter') ) {
+					if ( _this.hasClass('vif-client') || _this.hasClass('vif-counter') ) {
 						speed = 0.2;
 						delay = 0.05;
-					} else if ( _this.hasClass('thb-team-member') ) {
+					} else if ( _this.hasClass('vif-team-member') ) {
 						speed = 0.4;
 						delay = 0.1;
 					}
-					if (_this.hasClass('thb-iconbox')) {
+					if (_this.hasClass('vif-iconbox')) {
 						SITE.iconbox.control(_this, t*delay);
-					} else if (_this.hasClass('thb-counter')) {
+					} else if (_this.hasClass('vif-counter')) {
 						SITE.counter.control(_this, t*delay);
 					} else if (_this.hasClass('portfolio-title')) {
 						SITE.portfolioTitle.control(_this, t*delay);
-					} else if (_this.hasClass('thb-autotype')) {
+					} else if (_this.hasClass('vif-autotype')) {
 						SITE.autoType.control(_this, t*delay);
-					} else if (_this.hasClass('thb-fadetype')) {
+					} else if (_this.hasClass('vif-fadetype')) {
 						SITE.fadeType.control(_this, t*delay);
-					} else if (_this.hasClass('thb-slidetype')) {
+					} else if (_this.hasClass('vif-slidetype')) {
 						SITE.slideType.control(_this, t*delay);
-					} else if (_this.hasClass('thb-progressbar')) {
+					} else if (_this.hasClass('vif-progressbar')) {
 						SITE.progressBar.control(_this, t*delay);
-					}  else if (_this.data('thb-animated') !== true ) {
-						_this.data('thb-animated', true);
+					}  else if (_this.data('vif-animated') !== true ) {
+						_this.data('vif-animated', true);
 						TweenMax.to(_this, speed, { autoAlpha: 1, x: 0, y: 0, z:0, rotationZ: '0deg', rotationX: '0deg', rotationY: '0deg', delay: t*delay });
 					}
 					
@@ -1781,7 +1781,7 @@
 			}
 		},
 		fixedMe: {
-			selector: '.thb-fixed, .thb-product-style2 .summary, .thb-product-style4 .summary, .thb-product-style5 .summary',
+			selector: '.vif-fixed, .vif-product-style2 .summary, .vif-product-style4 .summary, .vif-product-style5 .summary',
 			init: function(el) {
 				var base = this,
 						container = el ? el : $(base.selector),
@@ -1809,17 +1809,17 @@
 			}
 		},
 		autoType: {
-			selector: '.thb-autotype',
+			selector: '.vif-autotype',
 			control: function(container, delay, skip) {
-				if ( ( container.data('thb-in-viewport') === undefined ) || skip) {
-					container.data('thb-in-viewport', true);
+				if ( ( container.data('vif-in-viewport') === undefined ) || skip) {
+					container.data('vif-in-viewport', true);
 						
 					var _this = container,
-							entry = _this.find('.thb-autotype-entry'),
+							entry = _this.find('.vif-autotype-entry'),
 							strings = entry.data('strings'),
 							speed = entry.data('speed') ? entry.data('speed') : 50,
-							loop = entry.data('thb-loop') === 1 ? true : false,
-							cursor = entry.data('thb-cursor') === 1 ? true : false;
+							loop = entry.data('vif-loop') === 1 ? true : false,
+							cursor = entry.data('vif-cursor') === 1 ? true : false;
 					
 					entry.typed({
 						strings: strings,
@@ -1834,11 +1834,11 @@
 			}
 		},
 		fadeType: {
-			selector: '.thb-fadetype',
+			selector: '.vif-fadetype',
 			control: function(container, delay, skip) {
-				if( ( container.data('thb-in-viewport') === undefined ) || skip) {
-					container.data('thb-in-viewport', true);
-					var split = new SplitText(container.find('.thb-fadetype-entry')),
+				if( ( container.data('vif-in-viewport') === undefined ) || skip) {
+					container.data('vif-in-viewport', true);
+					var split = new SplitText(container.find('.vif-fadetype-entry')),
 							tl = new TimelineMax();
 						
 					tl
@@ -1856,10 +1856,10 @@
 			}
 		},
 		progressBar: {
-			selector: '.thb-progressbar',
+			selector: '.vif-progressbar',
 			control: function(container, delay, skip) {
-				if( ( container.data('thb-in-viewport') === undefined ) || skip) {
-					var progress = container.find('.thb-progress'),
+				if( ( container.data('vif-in-viewport') === undefined ) || skip) {
+					var progress = container.find('.vif-progress'),
 							value = progress.data('progress');
 						
 					var tl = new TimelineMax();
@@ -1872,10 +1872,10 @@
 			}
 		},
 		slideType: {
-			selector: '.thb-slidetype',
+			selector: '.vif-slidetype',
 			control: function(container, delay, skip) {
-				if( ( container.data('thb-in-viewport') === undefined ) || skip) {
-					container.data('thb-in-viewport', true);
+				if( ( container.data('vif-in-viewport') === undefined ) || skip) {
+					container.data('vif-in-viewport', true);
 					var style = container.data('style'),
 							tl = new TimelineMax(),
 							split,
@@ -1884,16 +1884,16 @@
 							stagger = 0.05;
 					
 					if (style === 'style1') {
-						animated_split = container.find('.thb-slidetype-entry .lines');
+						animated_split = container.find('.vif-slidetype-entry .lines');
 						dur = 0.65;
 						stagger = 0.15;
 					} else if (style === 'style2') {
-						split = new SplitText(container.find('.thb-slidetype-entry'), { type: 'words' });
+						split = new SplitText(container.find('.vif-slidetype-entry'), { type: 'words' });
 						animated_split = split.words;
 						dur = 0.65;
 						stagger = 0.15;
 					} else if (style === 'style3') {
-						split = new SplitText(container.find('.thb-slidetype-entry'));
+						split = new SplitText(container.find('.vif-slidetype-entry'));
 						animated_split = split.chars;
 					}
 
@@ -1940,10 +1940,10 @@
 			}
 		},
 		counter: {
-			selector: '.thb-counter',
+			selector: '.vif-counter',
 			control: function(container, delay) {	
-				if( container.data('thb-in-viewport') === undefined ) {
-					container.data('thb-in-viewport', true);
+				if( container.data('vif-in-viewport') === undefined ) {
+					container.data('vif-in-viewport', true);
 					
 					var _this = container,
 							el = _this.find('.h1'),
@@ -1973,7 +1973,7 @@
 			}
 		},
 		like: {
-			selector: '.thb-like-button',
+			selector: '.vif-like-button',
 			init: function() {	
 				var base = this,
 						container = $(base.selector);
@@ -2024,10 +2024,10 @@
 			}
 		},
 		iconbox: {
-			selector: '.thb-iconbox',
+			selector: '.vif-iconbox',
 			control: function(container, delay) {	
-				if( container.data('thb-in-viewport') === undefined && !container.hasClass('animation-off')) {
-					container.data('thb-in-viewport', true);
+				if( container.data('vif-in-viewport') === undefined && !container.hasClass('animation-off')) {
+					container.data('vif-in-viewport', true);
 					
 					var _this = container,
 							animation_speed = _this.data('animation_speed') !== '' ? _this.data('animation_speed') : '1.5',
@@ -2036,8 +2036,8 @@
 							el = svg.find('path, circle, rect, ellipse'),
 							h = _this.find('h5'),
 							p = _this.find('p'),
-							line = _this.find('.thb-iconbox-line'),
-							dot = _this.find('.thb-iconbox-line em'),
+							line = _this.find('.vif-iconbox-line'),
+							dot = _this.find('.vif-iconbox-line em'),
 							tl = new TimelineMax({
 								delay: delay,
 								paused: true,
@@ -2046,7 +2046,7 @@
 							all = h.add(p).add(img);
 							
 							if ( !( _this.hasClass('left') || _this.hasClass('right') ) ) {
-								all.add(_this.find('.thb-read-more'));
+								all.add(_this.find('.vif-read-more'));
 							}	
 					
 					tl
@@ -2087,7 +2087,7 @@
 						mapTypeControl = _this.data('maptype-control'),
 						scaleControl = _this.data('scale-control'),
 						streetViewControl = _this.data('streetview-control'),
-						locations = _this.find('.thb-location'),
+						locations = _this.find('.vif-location'),
 						once;
 						
 					var bounds = new google.maps.LatLngBounds();
@@ -2194,7 +2194,7 @@
 						mapTypeControl = _this.data('maptype-control'),
 						scaleControl = _this.data('scale-control'),
 						streetViewControl = _this.data('streetview-control'),
-						locations = _this.find('.thb-location'),
+						locations = _this.find('.vif-location'),
 						expand = _this.next('.expand'),
 						tw = _this.width(),
 						once,
@@ -2379,7 +2379,7 @@
 			}
 		},
 		loginForm: {
-			selector: '.thb-overflow-container',
+			selector: '.vif-overflow-container',
 			init: function() {
 				var base = this,
 						container = $(base.selector),
@@ -2392,7 +2392,7 @@
 						links.removeClass('active');
 						_this.addClass('active');
 						
-						$('.thb-form-container', container).toggleClass('register-active');
+						$('.vif-form-container', container).toggleClass('register-active');
 					}
 					return false;
 				});
@@ -2501,7 +2501,7 @@
 					container = $(base.selector),
 					filters = $('#side-filters'),
 					cart = $('#side-cart'),
-					cc_close = $('.thb-close'),
+					cc_close = $('.vif-close'),
 					tlCartNav = new TimelineLite({ paused: true, onStart: function() { container.addClass('open-cart'); }, onReverseComplete: function() {container.removeClass('open-cart'); } }),
 					tlFilterNav = new TimelineLite({ paused: true, onStart: function() { container.addClass('open-filters'); }, onReverseComplete: function() {container.removeClass('open-filters'); } });
 				
@@ -2521,7 +2521,7 @@
 					}
 					return false;
 				});
-				container.on('click', '#thb-shop-filters', function() {
+				container.on('click', '#vif-shop-filters', function() {
 					tlFilterNav.play();
 					return false;
 				});
@@ -2537,7 +2537,7 @@
 					return false;
 				});
 				body.on('wc_fragments_refreshed added_to_cart', function() {
-					$('.thb-close').on('click', function() {
+					$('.vif-close').on('click', function() {
 						tlCartNav.reverse();
 						tlFilterNav.reverse();
 						return false;
@@ -2586,7 +2586,7 @@
 			}
 		},
 		shopLoading: {
-			selector: '.post-type-archive-product ul.products.thb-main-products',
+			selector: '.post-type-archive-product ul.products.vif-main-products',
 			thb_loading: false,
 			scrollInfinite: false,
 			href: false,
@@ -2657,7 +2657,7 @@
 					},
 					success: function(response) {
 						var resp = $(response),
-								products = resp.find('ul.products.thb-main-products li'); 
+								products = resp.find('ul.products.vif-main-products li'); 
 						
 						$('.woocommerce-pagination').html(resp.find('.woocommerce-pagination').html());
 						

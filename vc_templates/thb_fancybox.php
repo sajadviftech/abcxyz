@@ -2,9 +2,9 @@
 	$atts = vc_map_get_attributes( 'thb_fancybox', $atts );
 	extract( $atts );
 	
-	$element_id = uniqid('thb-fancy-box-');
+	$element_id = uniqid('vif-fancy-box-');
 	
-	$el_class[] = 'thb-fancy-box';
+	$el_class[] = 'vif-fancy-box';
 	$el_class[] = $box_shadow;
 	$el_class[] = $thb_text_color;
 	$el_class[] = $style;
@@ -32,47 +32,47 @@
 	?>
 	<div id="<?php echo esc_attr($element_id); ?>" class="<?php echo esc_attr(implode(' ', $el_class)); ?>">
 		<?php if ($link && $link_to) { ?>
-		<a href="<?php echo esc_attr($link_to); ?>" class="thb-fancy-link <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
+		<a href="<?php echo esc_attr($link_to); ?>" class="vif-fancy-link <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
 			<?php if ('fancy-style1' === $style) { ?>
-				<div class="thb-animated-arrow circular arrow-right"><?php get_template_part('assets/img/svg/prev_arrow.svg'); ?></div>
+				<div class="vif-animated-arrow circular arrow-right"><?php get_template_part('assets/img/svg/prev_arrow.svg'); ?></div>
 			<?php } ?>
 			<?php if ('fancy-style6' === $style) { ?>
 				<div class="<?php echo esc_attr(implode(' ', $btn_class)); ?>"><span><?php echo esc_attr($a_title); ?></span></div>
 			<?php } ?>
 		</a>
 		<?php } ?>
-		<div class="thb-fancy-image-container <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
-			<div class="thb-fancy-image">
+		<div class="vif-fancy-image-container <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
+			<div class="vif-fancy-image">
 				<?php echo wp_get_attachment_image($image, 'viftech-tall-x3'); ?>
 			</div>
 		</div>
 		<?php if (in_array($style, array('fancy-style1', 'fancy-style4')) ) { ?>
-		<div class="thb-fancy-hover"></div>
+		<div class="vif-fancy-hover"></div>
 		<?php } ?>
-		<div class="thb-fancy-content <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
+		<div class="vif-fancy-content <?php if (in_array($style, array('fancy-style2')) ) { ?>atvImg-layer<?php } ?>">
 			<?php if ($icon && $style !== 'fancy-style5') { get_template_part( 'assets/svg/'.$icon ); } ?>
 			<?php echo wp_kses_post(force_balance_tags($content)); ?>
 		</div>
 		<style>
 			#<?php echo esc_attr($element_id); ?>,
-			#<?php echo esc_attr($element_id); ?>.fancy-style5 .thb-fancy-image-container,
+			#<?php echo esc_attr($element_id); ?>.fancy-style5 .vif-fancy-image-container,
 			#<?php echo esc_attr($element_id); ?> .atvImg-container,
 			#<?php echo esc_attr($element_id); ?> .atvImg-layers {
 				min-height: <?php echo esc_attr($height); ?>;
 			}
 			<?php if ($border_radius) { ?>
 				#<?php echo esc_attr($element_id); ?>,
-				#<?php echo esc_attr($element_id); ?> .thb-fancy-image-container,
-				#<?php echo esc_attr($element_id); ?> .thb-fancy-image,
-				#<?php echo esc_attr($element_id); ?> .thb-fancy-image img,
-				#<?php echo esc_attr($element_id); ?> .thb-fancy-content,
-				#<?php echo esc_attr($element_id); ?> .thb-fancy-hover {
+				#<?php echo esc_attr($element_id); ?> .vif-fancy-image-container,
+				#<?php echo esc_attr($element_id); ?> .vif-fancy-image,
+				#<?php echo esc_attr($element_id); ?> .vif-fancy-image img,
+				#<?php echo esc_attr($element_id); ?> .vif-fancy-content,
+				#<?php echo esc_attr($element_id); ?> .vif-fancy-hover {
 					border-radius: <?php echo esc_attr($border_radius); ?>;
 				}
 			<?php } ?>
 			<?php if ($style === 'fancy-style1' || $style === 'fancy-style4') { ?>
 				<?php if ($bg_gradient1 && $bg_gradient2) { ?>
-					#<?php echo esc_attr($element_id); ?> .thb-fancy-hover {
+					#<?php echo esc_attr($element_id); ?> .vif-fancy-hover {
 						<?php echo thb_css_gradient($bg_gradient1, $bg_gradient2, "-135", true); ?>
 					}
 				<?php } ?>

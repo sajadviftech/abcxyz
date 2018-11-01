@@ -34,10 +34,10 @@ require get_theme_file_path('/inc/wp3menu.php');
 require get_theme_file_path('/inc/sidebar.php');
 
 // Lazy Loading
-require get_theme_file_path('/inc/framework/thb-lazyload.php');
+require get_theme_file_path('/inc/framework/vif-lazyload.php');
 
 // Post Likes
-require get_theme_file_path('/inc/framework/thb-post-likes.php');
+require get_theme_file_path('/inc/framework/vif-post-likes.php');
 
 // Ajax
 require get_theme_file_path('/inc/ajax.php');
@@ -49,11 +49,11 @@ require get_theme_file_path('/inc/portfolio-related.php');
 require get_theme_file_path('/inc/framework/visualcomposer/visualcomposer.php');
 
 // Instagram
-require get_theme_file_path('/inc/framework/thb-instagram.php');
+require get_theme_file_path('/inc/framework/vif-instagram.php');
 
 // Twitter oAuth
-require get_theme_file_path('/inc/framework/thb-twitter-api.php');
-require get_theme_file_path('/inc/framework/thb-twitter-helper.php');
+require get_theme_file_path('/inc/framework/vif-twitter-api.php');
+require get_theme_file_path('/inc/framework/vif-twitter-helper.php');
 
 // Widgets
 require get_theme_file_path('/inc/widgets.php');

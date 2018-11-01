@@ -3,12 +3,12 @@
   extract( $atts );
   
 	$out = $text = '';
-	$element_id = uniqid('thb-stroketype-');
+	$element_id = uniqid('vif-stroketype-');
 	$stroke_text_safe = vc_value_from_safe($slide_text);
 	
 	$stroke_text_safe = thb_remove_vc_added_p($stroke_text_safe);
 	
-	$class[] = 'thb-stroketype';
+	$class[] = 'vif-stroketype';
 	$class[] = $extra_class;
 	$class[] = $animation;
 	ob_start();

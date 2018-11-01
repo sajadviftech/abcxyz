@@ -11,7 +11,7 @@
 	$description = vc_value_from_safe( $description );
 	$description = nl2br( $description );
 	
-	$el_class[] = 'thb-team-member';
+	$el_class[] = 'vif-team-member';
 	$el_class[] = 'small-12';
 	$el_class[] = $thb_columns;
 	$el_class[] = $thb_team_animation;
@@ -39,10 +39,10 @@
 				<div class="info-container">
 				<?php } ?>
 				<?php if ($description) { ?>
-				<div class="thb-description"><?php echo wp_kses_post($description); ?></div>
+				<div class="vif-description"><?php echo wp_kses_post($description); ?></div>
 				<?php } ?>
 				<?php if ($facebook || $instagram || $twitter || $linkedin) { ?>
-					<div class="thb-icons">
+					<div class="vif-icons">
 						<?php if ($facebook) { ?>
 							<a href="<?php echo esc_url($facebook); ?>" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
 						<?php } ?>

@@ -3,8 +3,8 @@
 	$atts = vc_map_get_attributes( 'thb_pricing_table', $atts );
 	extract( $atts );
 	
-	$element_id = uniqid('thb-pricing-table-');
-	$el_class[] = 'thb-pricing-table';
+	$element_id = uniqid('vif-pricing-table-');
+	$el_class[] = 'vif-pricing-table';
 	$out ='';
 	ob_start();
 

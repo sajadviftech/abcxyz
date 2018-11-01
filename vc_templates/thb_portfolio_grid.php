@@ -14,15 +14,15 @@
  	$rand = rand(0,1000);
  	ob_start();
  	
- 	$classes[] = 'thb-portfolio masonry row';
+ 	$classes[] = 'vif-portfolio masonry row';
  	$classes[] = $thb_margins;
- 	$classes[] = 'thb-portfolio-style-'.$style;
- 	$classes[] = 'thb-true-aspect-'.$true_aspect;
- 	$classes[] = $animation_style === 'thb-vertical-flip' ? 'perspective-enabled' : '';
+ 	$classes[] = 'vif-portfolio-style-'.$style;
+ 	$classes[] = 'vif-true-aspect-'.$true_aspect;
+ 	$classes[] = $animation_style === 'vif-vertical-flip' ? 'perspective-enabled' : '';
  	$btn_classes[] = 'masonry_btn';
  	?>
-	<?php do_action('thb-render-filter', $filter_categories_array, $rand, $filter_style, $portfolio_id_array ); ?>
-	<section class="<?php echo esc_attr(implode(' ', $classes)); ?>" data-loadmore="#loadmore-<?php echo esc_attr($rand); ?>" data-filter="thb-filter-<?php echo esc_attr($rand); ?>" data-layoutmode="packery" data-thb-animation="<?php echo esc_attr($animation_style); ?>">
+	<?php do_action('vif-render-filter', $filter_categories_array, $rand, $filter_style, $portfolio_id_array ); ?>
+	<section class="<?php echo esc_attr(implode(' ', $classes)); ?>" data-loadmore="#loadmore-<?php echo esc_attr($rand); ?>" data-filter="vif-filter-<?php echo esc_attr($rand); ?>" data-layoutmode="packery" data-vif-animation="<?php echo esc_attr($animation_style); ?>">
 		<?php
 			while ( $posts->have_posts() ) : $posts->the_post();
 				set_query_var( 'thb_size', $columns );
@@ -32,7 +32,7 @@
 	 	?>
 	</section>
 	<?php if ($loadmore) { 
-		wp_localize_script( 'thb-app', esc_attr('thb_portfolioajax_'.$rand), array( 
+		wp_localize_script( 'vif-app', esc_attr('thb_portfolioajax_'.$rand), array( 
 			'aspect' => $true_aspect,
 			'columns' => $columns. ' padding-1',
 			'style' => $style,

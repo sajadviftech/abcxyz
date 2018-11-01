@@ -1,9 +1,9 @@
 <?php
 
 $thb_links = array(
-	'thb-plugins'			  				=> 'Install Plugins',
-	'thb-demo-import'						=> 'Demo Content Import',
-	'thb-theme-options'     		=> 'Theme Options'
+	'vif-plugins'			  				=> 'Install Plugins',
+	'vif-demo-import'						=> 'Demo Content Import',
+	'vif-theme-options'     		=> 'Theme Options'
 );
 	
 ?>

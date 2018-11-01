@@ -2,11 +2,11 @@
   $atts = vc_map_get_attributes( 'thb_freescroll', $atts );
   extract( $atts );
 
-  $element_id = 'thb-freescroll-' . mt_rand(10, 999);
-  $el_class[] = 'thb-freescroll';
+  $element_id = 'vif-freescroll-' . mt_rand(10, 999);
+  $el_class[] = 'vif-freescroll';
   $el_class[] = $extra_class;
   $el_class[] = $type === 'instagram' ? 'instagram-row' : '';
-  $el_class[] = $type === 'portfolios' ? 'thb-portfolio' : '';
+  $el_class[] = $type === 'portfolios' ? 'vif-portfolio' : '';
  	$out ='';
 	ob_start();
 	$images = explode(',',$images);

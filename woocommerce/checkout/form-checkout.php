@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="thb-page-header">
+<div class="vif-page-header">
 	<h1><?php esc_html_e('Checkout', 'viftech'); ?></h1>
 </div>
 	<?php

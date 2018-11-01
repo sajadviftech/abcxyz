@@ -2101,7 +2101,7 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     justify-content: center;
 }
 
-.pagination-space.infinite-scroll .thb-content-preloader {
+.pagination-space.infinite-scroll .vif-content-preloader {
     opacity: 0;
     visibility: hidden;
 }
@@ -2920,30 +2920,30 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     display: none;
 }
 
-.thb-carousel:not(.max_width) {
+.vif-carousel:not(.max_width) {
     min-width: 100%;
 }
 
-.thb-carousel img {
+.vif-carousel img {
     width: 100%;
     display: block;
 }
 
-.thb-carousel .slick-track {
+.vif-carousel .slick-track {
     min-width: 100%;
 }
 
-.thb-carousel .slick-nav {
+.vif-carousel .slick-nav {
     outline: none;
 }
 
-.thb-carousel .slick-dots-wrapper {
+.vif-carousel .slick-dots-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.thb-carousel .slick-dots {
+.vif-carousel .slick-dots {
     display: inline-flex;
     margin: 40px 0 0 0;
     text-align: center;
@@ -2951,11 +2951,11 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     position: relative;
 }
 
-.thb-carousel .slick-dots li {
+.vif-carousel .slick-dots li {
     display: inline-block;
 }
 
-.thb-carousel .slick-dots li button {
+.vif-carousel .slick-dots li button {
     display: block;
     width: 6px;
     height: 6px;
@@ -2966,7 +2966,7 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     outline: none;
 }
 
-.thb-carousel .slick-dots li .portrait_bullet {
+.vif-carousel .slick-dots li .portrait_bullet {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -2976,7 +2976,7 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
 }
 
 @media only screen and (min-width: 640px) {
-    .thb-carousel .slick-dots li .portrait_bullet {
+    .vif-carousel .slick-dots li .portrait_bullet {
         width: 60px;
         height: 60px;
         border-radius: 30px;
@@ -2984,15 +2984,15 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     }
 }
 
-.thb-carousel .slick-dots li.slick-active button {
+.vif-carousel .slick-dots li.slick-active button {
     background: #000;
 }
 
-.thb-carousel .slick-dots li.slick-active .portrait_bullet {
+.vif-carousel .slick-dots li.slick-active .portrait_bullet {
     opacity: 1;
 }
 
-.thb-carousel .slick-dots .select {
+.vif-carousel .slick-dots .select {
     display: block;
     width: 6px;
     height: 6px;
@@ -3006,7 +3006,7 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     left: 0;
 }
 
-.thb-carousel.center-arrows .slick-nav {
+.vif-carousel.center-arrows .slick-nav {
     position: absolute;
     top: 50%;
     left: auto;
@@ -3018,31 +3018,31 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     transform: translateY(-50%);
 }
 
-.thb-carousel.center-arrows .slick-nav.slick-prev {
+.vif-carousel.center-arrows .slick-nav.slick-prev {
     left: 15px;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb-carousel.center-arrows .slick-nav.slick-prev {
+    .vif-carousel.center-arrows .slick-nav.slick-prev {
         left: 40px;
     }
 }
 
-.thb-carousel.center-arrows .slick-nav.slick-next {
+.vif-carousel.center-arrows .slick-nav.slick-next {
     right: 15px;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb-carousel.center-arrows .slick-nav.slick-next {
+    .vif-carousel.center-arrows .slick-nav.slick-next {
         right: 40px;
     }
 }
 
-.thb-carousel.overflow-visible .slick-list {
+.vif-carousel.overflow-visible .slick-list {
     overflow: visible;
 }
 
-.thb-carousel.overflow-visible .slick-list .slick-slide {
+.vif-carousel.overflow-visible .slick-list .slick-slide {
     opacity: 0.2;
     pointer-events: none;
     -moz-transition: opacity .25s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -3051,12 +3051,12 @@ table:not(.variations):not(.shop_table) tbody tr:nth-child(even) {
     transition: opacity .25s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.thb-carousel.overflow-visible .slick-list .slick-slide.slick-active {
+.vif-carousel.overflow-visible .slick-list .slick-slide.slick-active {
     opacity: 1;
     pointer-events: auto;
 }
 
-.thb-carousel.overflow-visible-only .slick-list {
+.vif-carousel.overflow-visible-only .slick-list {
     overflow: visible;
 }
 

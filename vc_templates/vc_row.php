@@ -37,8 +37,8 @@ $el_class = $this->getExtraClass( $el_class );
 $thb_column_padding = $thb_column_padding ? 'no-column-padding': '';
 $thb_row_padding = $thb_row_padding ? 'no-row-padding' : ''; 
 $thb_full_width = $thb_full_width ? 'full-width-row' : '';
-$thb_scroll_bottom_class = $thb_scroll_bottom == 'true' ? 'thb-arrow-enabled' : '';
-$thb_shape_divider_class = $thb_shape_divider == 'true' ? 'thb-divider-enabled' : '';
+$thb_scroll_bottom_class = $thb_scroll_bottom == 'true' ? 'vif-arrow-enabled' : '';
+$thb_shape_divider_class = $thb_shape_divider == 'true' ? 'vif-divider-enabled' : '';
 $css_classes = array(
 	'vc_row',
 	'wpb_row', //deprecated
@@ -210,18 +210,18 @@ if ($thb_shape_divider == 'true') {
 	$thb_divider_position = empty($thb_divider_position) ? 'bottom' : $thb_divider_position;
 	$thb_divider_shape = thb_load_template_part('assets/img/svg/dividers/'.$divider_shape.'.svg');
 	
-	$output .= '<div id="thb-divider-id-'.esc_attr($divider_id).'-first" class="thb-divider-container '.esc_attr($divider_shape).'" style="height: '.esc_attr($thb_divider_height).'px;" data-position="'.esc_attr($thb_divider_position).'">'.$thb_divider_shape.'</div>';
+	$output .= '<div id="vif-divider-id-'.esc_attr($divider_id).'-first" class="vif-divider-container '.esc_attr($divider_shape).'" style="height: '.esc_attr($thb_divider_height).'px;" data-position="'.esc_attr($thb_divider_position).'">'.$thb_divider_shape.'</div>';
 	if ($thb_divider_position == 'both') {
-		$output .= '<div id="thb-divider-id-'.esc_attr($divider_id).'-second" class="thb-divider-container '.esc_attr($divider_shape).' second" style="height: '.esc_attr($thb_divider_height).'px;" data-position="'.esc_attr($thb_divider_position).'">'.$thb_divider_shape.'</div>';
+		$output .= '<div id="vif-divider-id-'.esc_attr($divider_id).'-second" class="vif-divider-container '.esc_attr($divider_shape).' second" style="height: '.esc_attr($thb_divider_height).'px;" data-position="'.esc_attr($thb_divider_position).'">'.$thb_divider_shape.'</div>';
 	}
 	if ($thb_divider_color) {
 		$output .= '<style>
-			#thb-divider-id-'.esc_attr($divider_id).'-first .thb-svg-divider {
+			#vif-divider-id-'.esc_attr($divider_id).'-first .vif-svg-divider {
 				fill: '.esc_attr($thb_divider_color).';
 			}';
 		if ($thb_divider_position == 'both') {
 			$output .= '
-				#thb-divider-id-'.esc_attr($divider_id).'-second .thb-svg-divider {
+				#vif-divider-id-'.esc_attr($divider_id).'-second .vif-svg-divider {
 					fill: '.esc_attr($thb_divider_color_2).';
 				}';
 		}

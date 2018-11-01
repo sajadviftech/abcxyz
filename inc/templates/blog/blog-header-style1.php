@@ -1,4 +1,4 @@
-<div class="thb-page-header">
+<div class="vif-page-header">
 	<h1><?php 
 			if (is_archive()) {
 				echo single_term_title();
@@ -14,7 +14,7 @@
 		
 		if ($blog_header_categories) {
 			?>
-			<ul class="thb-blog-categories">
+			<ul class="vif-blog-categories">
 			<?php
 			foreach ($blog_header_categories as $cat) {
 				$category = get_term_by('id', $cat, 'category');

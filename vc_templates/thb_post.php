@@ -13,7 +13,7 @@
  	$classes[] = 'row posts-shortcode';
  	$classes[] = 'posts-'.$style;
  	$classes[] = $style === 'style4' && $thb_carousel !== 'true' ? 'masonry' : '';
- 	$classes[] = $thb_carousel === 'true' ? 'thb-carousel overflow-visible' : '';
+ 	$classes[] = $thb_carousel === 'true' ? 'vif-carousel overflow-visible' : '';
  	$thb_columns = thb_translate_columns($columns);
  	set_query_var('columns', $thb_columns);
  	ob_start();

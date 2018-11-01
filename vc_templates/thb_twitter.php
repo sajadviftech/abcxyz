@@ -9,7 +9,7 @@
 	$classes[] = $style;
 	
 	if ($style == 'style2') {
-		$classes[] = 'thb-carousel text-center';
+		$classes[] = 'vif-carousel text-center';
 	}
  	?>
  	<aside class="<?php echo esc_attr(implode(' ', $classes)); ?>" data-pagination="true" data-columns="1">

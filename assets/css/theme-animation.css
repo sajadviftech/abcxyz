@@ -1,18 +1,18 @@
 
-.thb-page-transition-on {
+.vif-page-transition-on {
     opacity: 0;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
-.vc_editor.compose-mode .thb-page-transition-on {
+.vc_editor.compose-mode .vif-page-transition-on {
     opacity: 1;
     -moz-animation: none;
     -webkit-animation: none;
     animation: none;
 }
 
-@-moz-keyframes thb-fade-in {
+@-moz-keyframes vif-fade-in {
     0% {
         opacity: 0
     }
@@ -21,7 +21,7 @@
     }
 }
 
-@-webkit-keyframes thb-fade-in {
+@-webkit-keyframes vif-fade-in {
     0% {
         opacity: 0
     }
@@ -30,7 +30,7 @@
     }
 }
 
-@keyframes thb-fade-in {
+@keyframes vif-fade-in {
     0% {
         opacity: 0
     }
@@ -39,13 +39,13 @@
     }
 }
 
-.thb-fade-in {
-    -moz-animation-name: thb-fade-in;
-    -webkit-animation-name: thb-fade-in;
-    animation-name: thb-fade-in;
+.vif-fade-in {
+    -moz-animation-name: vif-fade-in;
+    -webkit-animation-name: vif-fade-in;
+    animation-name: vif-fade-in;
 }
 
-@-moz-keyframes thb-fade-out {
+@-moz-keyframes vif-fade-out {
     0% {
         opacity: 1
     }
@@ -54,7 +54,7 @@
     }
 }
 
-@-webkit-keyframes thb-fade-out {
+@-webkit-keyframes vif-fade-out {
     0% {
         opacity: 1
     }
@@ -63,7 +63,7 @@
     }
 }
 
-@keyframes thb-fade-out {
+@keyframes vif-fade-out {
     0% {
         opacity: 1
     }
@@ -72,13 +72,13 @@
     }
 }
 
-.thb-fade-out {
-    -moz-animation-name: thb-fade-out;
-    -webkit-animation-name: thb-fade-out;
-    animation-name: thb-fade-out;
+.vif-fade-out {
+    -moz-animation-name: vif-fade-out;
+    -webkit-animation-name: vif-fade-out;
+    animation-name: vif-fade-out;
 }
 
-@-moz-keyframes thb-fade-up-in {
+@-moz-keyframes vif-fade-up-in {
     0% {
         -moz-transform: translateY(50px);
         transform: translateY(50px);
@@ -91,7 +91,7 @@
     }
 }
 
-@-webkit-keyframes thb-fade-up-in {
+@-webkit-keyframes vif-fade-up-in {
     0% {
         -webkit-transform: translateY(50px);
         transform: translateY(50px);
@@ -104,7 +104,7 @@
     }
 }
 
-@keyframes thb-fade-up-in {
+@keyframes vif-fade-up-in {
     0% {
         -moz-transform: translateY(50px);
         -ms-transform: translateY(50px);
@@ -121,13 +121,13 @@
     }
 }
 
-.thb-fade-up-in {
-    -moz-animation-name: thb-fade-up-in;
-    -webkit-animation-name: thb-fade-up-in;
-    animation-name: thb-fade-up-in;
+.vif-fade-up-in {
+    -moz-animation-name: vif-fade-up-in;
+    -webkit-animation-name: vif-fade-up-in;
+    animation-name: vif-fade-up-in;
 }
 
-@-moz-keyframes thb-fade-up-out {
+@-moz-keyframes vif-fade-up-out {
     0% {
         -moz-transform: translateY(0px);
         transform: translateY(0px);
@@ -140,7 +140,7 @@
     }
 }
 
-@-webkit-keyframes thb-fade-up-out {
+@-webkit-keyframes vif-fade-up-out {
     0% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -153,7 +153,7 @@
     }
 }
 
-@keyframes thb-fade-up-out {
+@keyframes vif-fade-up-out {
     0% {
         -moz-transform: translateY(0px);
         -ms-transform: translateY(0px);
@@ -170,13 +170,13 @@
     }
 }
 
-.thb-fade-up-out {
-    -moz-animation-name: thb-fade-up-out;
-    -webkit-animation-name: thb-fade-up-out;
-    animation-name: thb-fade-up-out;
+.vif-fade-up-out {
+    -moz-animation-name: vif-fade-up-out;
+    -webkit-animation-name: vif-fade-up-out;
+    animation-name: vif-fade-up-out;
 }
 
-@-moz-keyframes thb-fade-down-in {
+@-moz-keyframes vif-fade-down-in {
     0% {
         -moz-transform: translateY(-50px);
         transform: translateY(-50px);
@@ -189,7 +189,7 @@
     }
 }
 
-@-webkit-keyframes thb-fade-down-in {
+@-webkit-keyframes vif-fade-down-in {
     0% {
         -webkit-transform: translateY(-50px);
         transform: translateY(-50px);
@@ -202,7 +202,7 @@
     }
 }
 
-@keyframes thb-fade-down-in {
+@keyframes vif-fade-down-in {
     0% {
         -moz-transform: translateY(-50px);
         -ms-transform: translateY(-50px);
@@ -219,13 +219,13 @@
     }
 }
 
-.thb-fade-down-in {
-    -moz-animation-name: thb-fade-down-in;
-    -webkit-animation-name: thb-fade-down-in;
-    animation-name: thb-fade-down-in;
+.vif-fade-down-in {
+    -moz-animation-name: vif-fade-down-in;
+    -webkit-animation-name: vif-fade-down-in;
+    animation-name: vif-fade-down-in;
 }
 
-@-moz-keyframes thb-fade-down-out {
+@-moz-keyframes vif-fade-down-out {
     0% {
         -moz-transform: translateY(0px);
         transform: translateY(0px);
@@ -238,7 +238,7 @@
     }
 }
 
-@-webkit-keyframes thb-fade-down-out {
+@-webkit-keyframes vif-fade-down-out {
     0% {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
@@ -251,7 +251,7 @@
     }
 }
 
-@keyframes thb-fade-down-out {
+@keyframes vif-fade-down-out {
     0% {
         -moz-transform: translateY(0px);
         -ms-transform: translateY(0px);
@@ -268,8 +268,8 @@
     }
 }
 
-.thb-fade-down-out {
-    -moz-animation-name: thb-fade-down-out;
-    -webkit-animation-name: thb-fade-down-out;
-    animation-name: thb-fade-down-out;
+.vif-fade-down-out {
+    -moz-animation-name: vif-fade-down-out;
+    -webkit-animation-name: vif-fade-down-out;
+    animation-name: vif-fade-down-out;
 }

@@ -23,7 +23,7 @@
 	
 	$cats = '';	
 	if (!empty($terms)) {
-		foreach ($terms as $term) { $cats .= ' thb-cat-'.strtolower($term->slug); }
+		foreach ($terms as $term) { $cats .= ' vif-cat-'.strtolower($term->slug); }
 	}
 	
 	// Classes
@@ -58,17 +58,17 @@
 ?>
 <div <?php post_class($class); ?> id="portfolio-<?php the_ID(); ?>">	
 	<div class="portfolio-holder">
-		<div class="thb-portfolio-image thb_panr"><?php the_post_thumbnail($image_size); ?></div>
-		<a href="<?php echo esc_url($permalink); ?>" class="thb-portfolio-link"></a>
-		<div class="thb-portfolio-hover"></div>
-		<div class="thb-portfolio-content">
+		<div class="vif-portfolio-image thb_panr"><?php the_post_thumbnail($image_size); ?></div>
+		<a href="<?php echo esc_url($permalink); ?>" class="vif-portfolio-link"></a>
+		<div class="vif-portfolio-hover"></div>
+		<div class="vif-portfolio-content">
 				<h3><?php the_title(); ?></h3>
-				<aside class="thb-categories"><span><?php echo esc_html($categories); ?></span></aside>
+				<aside class="vif-categories"><span><?php echo esc_html($categories); ?></span></aside>
 		</div>
 	</div>
 	<?php if ($main_color) { ?>
 	<style>
-		.<?php echo esc_attr($element_class) ?>.style6 .thb-portfolio-hover {
+		.<?php echo esc_attr($element_class) ?>.style6 .vif-portfolio-hover {
 			<?php echo esc_html(thb_css_gradient($main_color[0], $main_color[1], "-135", true)); ?>
 		}
 	</style>

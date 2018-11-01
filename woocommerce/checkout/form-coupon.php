@@ -32,7 +32,7 @@ $info_message .= ' <a href="#" class="showcoupon">' . __( 'Click here to enter y
 <div class="checkout-coupon">
 	<div class="row align-center">
 		<div class="small-12 medium-7 large-5 text-center columns">
-			<div class="thb-checkout-coupon">
+			<div class="vif-checkout-coupon">
 				<?php esc_html_e("Have a coupon?", 'viftech'); ?> <a class="showcoupon"><?php esc_html_e("Click here to enter your code", 'viftech'); ?></a>
 			</div>
 			<form class="checkout_coupon" method="post" style="display:none">

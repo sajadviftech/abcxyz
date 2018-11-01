@@ -42,7 +42,7 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 		$portfolio_id_array = $portfolio_id_array ? $portfolio_id_array : array();
 		
 		?>
-		<nav class="thb-portfolio-filter <?php echo esc_attr($style); ?>" id="thb-filter-<?php echo esc_attr($id); ?>">
+		<nav class="vif-portfolio-filter <?php echo esc_attr($style); ?>" id="vif-filter-<?php echo esc_attr($id); ?>">
 			<?php if ($style === 'style1') { ?>
 			<ul>
 				<li><a data-filter="*" class="active"><?php esc_html_e('All', 'viftech'); ?></a></li>
@@ -62,13 +62,13 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 					 				)
 					 			)
 					 	);
-					 	echo '<li><a data-filter=".thb-cat-' . esc_attr($term->slug) . '">' . esc_html($term->name) . '</a></li>';
+					 	echo '<li><a data-filter=".vif-cat-' . esc_attr($term->slug) . '">' . esc_html($term->name) . '</a></li>';
 					 }
 				?>
 			</ul>
 			<?php } else if ($style === 'style2') { ?>
-			<span class="thb-filter-by"><?php esc_html_e('Filter by', 'viftech'); ?></span>
-			<select class="thb-select2">
+			<span class="vif-filter-by"><?php esc_html_e('Filter by', 'viftech'); ?></span>
+			<select class="vif-select2">
 				<option value="*" selected><?php esc_html_e('All', 'viftech'); ?></option>
 				<?php 
 					 foreach ($categories as $cat) {
@@ -86,7 +86,7 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 					 				)
 					 			)
 					 	);
-					 	echo '<option value=".thb-cat-' . esc_attr($term->slug) . '">' . esc_html($term->name) . '</option>';
+					 	echo '<option value=".vif-cat-' . esc_attr($term->slug) . '">' . esc_html($term->name) . '</option>';
 					 }
 				?>
 			</select>
@@ -95,7 +95,7 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 		<?php
 	}
 }
-add_action( 'thb-render-filter', 'thb_portfolio_categories', 1, 4 );
+add_action( 'vif-render-filter', 'thb_portfolio_categories', 1, 4 );
 
 
 /* Portfolio Attributes */
@@ -211,7 +211,7 @@ function thb_portfolio_share($widget_title,$sharing_type, $thb_alignment) {
 	$image = wp_get_attachment_image_src($image_id,'full');
 	$twitter_user = ot_get_option('twitter_bar_username', 'anteksiler');
 	?>
-	<div class="thb-share-icons <?php echo esc_attr($thb_alignment); ?>">
+	<div class="vif-share-icons <?php echo esc_attr($thb_alignment); ?>">
 		<?php if ($widget_title) { ?><h6><?php echo esc_html($widget_title); ?></h6><?php } ?>
 		<ul>
 			<?php if (in_array('facebook',$sharing_type)) { ?>

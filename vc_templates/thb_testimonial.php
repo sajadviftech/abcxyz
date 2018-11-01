@@ -15,7 +15,7 @@
 	$url_title = $url_btn['title'];
 	$url_target = $url_btn['target'] ? $url_btn['target'] : '_self';	
 	
-	$el_class[] = 'thb-testimonial';
+	$el_class[] = 'vif-testimonial';
 	$el_class[] = $author_image ? 'has-avatar' : '';
 	$thb_testimonial_columns = in_array($thb_style, array('style3', 'style6')) ? $thb_testimonial_columns : '';
 	$out ='';
