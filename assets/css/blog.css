@@ -916,13 +916,14 @@
 .scroll-bottom {
     position: absolute;
     bottom: 100px;
-    left: 50%;
     width: 30px;
     height: 50px;
-    margin-left: -15px;
-    text-align: center;
     z-index: 30;
     cursor: pointer;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .scroll-bottom.style1:before {
