@@ -83,7 +83,7 @@ class Theme_Config {
 			self::$thb_theme_directory_uri = get_template_directory_uri() . '/';
 
 			/* nulled */
-			update_option( "thb_".self::$thb_theme_slug."_key", 'nulled' );
+			update_option( "thb_".self::$thb_theme_slug."_key", 'apikey' );
 			update_option( "thb_".self::$thb_theme_slug."_key_expired", 0 );
 			
 			self::$thb_product_key = get_option("thb_".self::$thb_theme_slug."_key");
