@@ -33,5 +33,5 @@
 		<?php if ($article_sidebar === 'on') { get_sidebar('single'); } ?>
 	</div>
 	<?php get_template_part( 'inc/templates/blog/post-end'); ?>
-	<?php do_action( 'thb_PostMeta' ); ?>
+	<?php do_action( 'vif_PostMeta' ); ?>
 </article>

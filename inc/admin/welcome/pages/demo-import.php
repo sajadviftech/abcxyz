@@ -1,14 +1,14 @@
-<div class="wrap about-wrap thb_welcome thb_product_registration">
+<div class="wrap about-wrap vif_welcome vif_product_registration">
 	<?php include 'header.php'; ?>
 </div>
 <div class="wrap about-wrap">
 
 <?php
-	$key = Theme_Config::$thb_product_key;
-	$expired = Theme_Config::$thb_product_key_expired;
-	$thb_envato_hosted = Theme_Config::$thb_envato_hosted;
+	$key = Theme_Config::$vif_product_key;
+	$expired = Theme_Config::$vif_product_key_expired;
+	$vif_envato_hosted = Theme_Config::$vif_envato_hosted;
 	
-	$cond = ($key != '' && $expired != 1) || $thb_envato_hosted;
+	$cond = ($key != '' && $expired != 1) || $vif_envato_hosted;
 	
 ?>
 <div class="theme-browser vif-demo-import vif-content">
@@ -17,7 +17,7 @@
 		<p><span class="dashicons dashicons-warning"></span> To install any of the demo content sites below you must <a href="<?php echo esc_url(admin_url( 'admin.php?page=vif-product-registration' )); ?>">Activate your Theme</a>.</p>
 	</div>
 <?php 
-	} else if ( !$thb_envato_hosted ) {
+	} else if ( !$vif_envato_hosted ) {
 		include 'requirements.php'; 
  	}
 ?>

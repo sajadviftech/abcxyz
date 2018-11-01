@@ -3,7 +3,7 @@
  * Edit category header field.
  */
 
-function thb_edit_category_header_img( $term, $taxonomy ) {
+function vif_edit_category_header_img( $term, $taxonomy ) {
 	$display_type	= get_woocommerce_term_meta( $term->term_id, 'display_type', true );
 	$image 			= '';
 	$header_id 	= absint( get_woocommerce_term_meta( $term->term_id, 'header_id', true ) );
@@ -24,8 +24,8 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 			<div id="product_cat_header" style="float:left;margin-right:10px;"><img src="<?php echo esc_url($image); ?>" width="60px" height="60px" /></div>
 			<div style="line-height:60px;">
 				<input type="hidden" id="product_cat_header_id" name="product_cat_header_id" value="<?php echo esc_attr($header_id); ?>" />
-				<button type="submit" class="thb_upload_header button"><?php esc_html_e( 'Upload/Add image', 'viftech' ); ?></button>
-				<button type="submit" class="thb_remove_header button"><?php esc_html_e( 'Remove image', 'viftech' ); ?></button>
+				<button type="submit" class="vif_upload_header button"><?php esc_html_e( 'Upload/Add image', 'viftech' ); ?></button>
+				<button type="submit" class="vif_remove_header button"><?php esc_html_e( 'Remove image', 'viftech' ); ?></button>
 			</div>
 
 			<script type="text/javascript">
@@ -34,12 +34,12 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 				 jQuery('.remove_image_button').hide();
 
 			if (jQuery('#product_cat_header_id').val() == 0)
-				 jQuery('.thb_remove_header').hide();
+				 jQuery('.vif_remove_header').hide();
 
 				// Uploading files
 				var header_file_frame;
 
-				jQuery(document).on( 'click', '.thb_upload_header', function( event ){
+				jQuery(document).on( 'click', '.vif_upload_header', function( event ){
 
 					event.preventDefault();
 
@@ -64,17 +64,17 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 						
 						jQuery('#product_cat_header_id').val( attachment.id );
 						jQuery('#product_cat_header img').attr('src', attachment.url );
-						jQuery('.thb_remove_header').show();
+						jQuery('.vif_remove_header').show();
 					});
 
 					// Finally, open the modal.
 					header_file_frame.open();
 				});
 
-				jQuery(document).on( 'click', '.thb_remove_header', function( event ){
+				jQuery(document).on( 'click', '.vif_remove_header', function( event ){
 					jQuery('#product_cat_header img').attr('src', '<?php echo esc_url(wc_placeholder_img_src()); ?>');
 					jQuery('#product_cat_header_id').val('');
-					jQuery('.thb_remove_header').hide();
+					jQuery('.vif_remove_header').hide();
 					return false;
 				});
 
@@ -98,7 +98,7 @@ function thb_edit_category_header_img( $term, $taxonomy ) {
 
 }
 
-add_action( 'product_cat_edit_form_fields', 'thb_edit_category_header_img', 20, 2 );
+add_action( 'product_cat_edit_form_fields', 'vif_edit_category_header_img', 20, 2 );
 
 
 
@@ -107,7 +107,7 @@ add_action( 'product_cat_edit_form_fields', 'thb_edit_category_header_img', 20, 
  * woocommerce_category_header_img_save function.
  */
 
-function thb_category_header_img_save( $term_id, $tt_id, $taxonomy ) {
+function vif_category_header_img_save( $term_id, $tt_id, $taxonomy ) {
 
 	if ( isset( $_POST['product_cat_header_id'] ) )
 		update_woocommerce_term_meta( $term_id, 'header_id', wp_unslash( absint( $_POST['product_cat_header_id'] ) ) );
@@ -118,8 +118,8 @@ function thb_category_header_img_save( $term_id, $tt_id, $taxonomy ) {
 
 }
 
-add_action( 'created_term', 'thb_category_header_img_save', 10,3 );
-add_action( 'edit_term', 'thb_category_header_img_save', 10,3 );
+add_action( 'created_term', 'vif_category_header_img_save', 10,3 );
+add_action( 'edit_term', 'vif_category_header_img_save', 10,3 );
 
 
 
@@ -127,7 +127,7 @@ add_action( 'edit_term', 'thb_category_header_img_save', 10,3 );
  * Header column added to category admin.
  */
 
-function thb_woocommerce_product_cat_header_columns( $columns ) {
+function vif_woocommerce_product_cat_header_columns( $columns ) {
 
 	$new_columns = array();
 	$new_columns['cb'] = $columns['cb'];
@@ -140,14 +140,14 @@ function thb_woocommerce_product_cat_header_columns( $columns ) {
 
 }
 
-add_filter( 'manage_edit-product_cat_columns', 'thb_woocommerce_product_cat_header_columns' );
+add_filter( 'manage_edit-product_cat_columns', 'vif_woocommerce_product_cat_header_columns' );
 
 
 /**
  * Thumbnail column value added to category admin.
  */
 
-function thb_woocommerce_product_cat_header_column( $columns, $column, $id ) {
+function vif_woocommerce_product_cat_header_column( $columns, $column, $id ) {
 
 
 
@@ -169,4 +169,4 @@ function thb_woocommerce_product_cat_header_column( $columns, $column, $id ) {
 
 }
 
-add_filter( 'manage_product_cat_custom_column', 'thb_woocommerce_product_cat_header_column', 10, 3 );
+add_filter( 'manage_product_cat_custom_column', 'vif_woocommerce_product_cat_header_column', 10, 3 );

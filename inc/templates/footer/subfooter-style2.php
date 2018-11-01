@@ -11,11 +11,11 @@
 <div class="<?php echo esc_attr(implode(' ', $subfooter_classes)); ?>">
 	<div class="row align-center">
 		<div class="small-12 medium-10 large-6 text-center">
-			<?php do_action('thb_footer_logo', true); ?>
+			<?php do_action('vif_footer_logo', true); ?>
 			<?php if ($subfooter_menu) { wp_nav_menu( array( 'menu' => $subfooter_menu, 'depth' => 1, 'menu_class' => 'vif-full-menu '. $full_menu_hover_style ) ); } ?>
 			<?php echo wp_kses_post(ot_get_option('subfooter_text')); ?>
-			<?php do_action('thb_social_links', $subfooter_social_link); ?>
-			<?php do_action('thb_footer_payment'); ?>
+			<?php do_action('vif_social_links', $subfooter_social_link); ?>
+			<?php do_action('vif_footer_payment'); ?>
 		</div>
 	</div>
 </div>

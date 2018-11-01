@@ -1,9 +1,9 @@
 <?php
 	$vars = $wp_query->query_vars;
-	$thb_size = array_key_exists('thb_size', $vars) ? $vars['thb_size'] : false;
-	$thb_animation = array_key_exists('thb_animation', $vars) ? $vars['thb_animation'] : false;
-	$thb_aspect = array_key_exists('thb_aspect', $vars) ? $vars['thb_aspect'] : false;
-	$thb_masonry = array_key_exists('thb_masonry', $vars) ? $vars['thb_masonry'] : false;
+	$vif_size = array_key_exists('vif_size', $vars) ? $vars['vif_size'] : false;
+	$vif_animation = array_key_exists('vif_animation', $vars) ? $vars['vif_animation'] : false;
+	$vif_aspect = array_key_exists('vif_aspect', $vars) ? $vars['vif_aspect'] : false;
+	$vif_masonry = array_key_exists('vif_masonry', $vars) ? $vars['vif_masonry'] : false;
 	
 	$id = get_the_ID();
 	$element_class = uniqid('portfolio-id-'.$id.'-');
@@ -30,8 +30,8 @@
 	$class[] = 'columns';
 	$class[] = 'type-portfolio';
 	$class[] = 'style6';
-	$class[] = $thb_size;
-	$class[] = $thb_animation;
+	$class[] = $vif_size;
+	$class[] = $vif_animation;
 	$class[] = $main_color_title;
 	$class[] = $cats;
 	$class[] = $element_class;
@@ -48,17 +48,17 @@
 	}
 	
 	// Image sizes
-	$image_size = $thb_aspect ? 'viftech-masonry-x2' : 'viftech-square-x2';
-	if ($thb_masonry) {
+	$image_size = $vif_aspect ? 'viftech-masonry-x2' : 'viftech-square-x2';
+	if ($vif_masonry) {
 		$masonry_size = get_post_meta($id, 'masonry_size', true);	
-		$thb_masonry_size = thb_get_masonry_size($masonry_size);
-		$class[] = $thb_masonry_size['class'];
-		$image_size = $thb_masonry_size['image_size'];
+		$vif_masonry_size = vif_get_masonry_size($masonry_size);
+		$class[] = $vif_masonry_size['class'];
+		$image_size = $vif_masonry_size['image_size'];
 	}
 ?>
 <div <?php post_class($class); ?> id="portfolio-<?php the_ID(); ?>">	
 	<div class="portfolio-holder">
-		<div class="vif-portfolio-image thb_panr"><?php the_post_thumbnail($image_size); ?></div>
+		<div class="vif-portfolio-image vif_panr"><?php the_post_thumbnail($image_size); ?></div>
 		<a href="<?php echo esc_url($permalink); ?>" class="vif-portfolio-link"></a>
 		<div class="vif-portfolio-hover"></div>
 		<div class="vif-portfolio-content">
@@ -69,7 +69,7 @@
 	<?php if ($main_color) { ?>
 	<style>
 		.<?php echo esc_attr($element_class) ?>.style6 .vif-portfolio-hover {
-			<?php echo esc_html(thb_css_gradient($main_color[0], $main_color[1], "-135", true)); ?>
+			<?php echo esc_html(vif_css_gradient($main_color[0], $main_color[1], "-135", true)); ?>
 		}
 	</style>
 	<?php } ?>

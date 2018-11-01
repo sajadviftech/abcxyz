@@ -1040,17 +1040,17 @@ input[type="submit"].x-large,
     padding: 0 60px;
 }
 
-input[type="submit"].thb_shadow,
-.button.thb_shadow,
-.btn.thb_shadow {
+input[type="submit"].vif_shadow,
+.button.vif_shadow,
+.btn.vif_shadow {
     -moz-box-shadow: 0 6px 20px transparent;
     -webkit-box-shadow: 0 6px 20px transparent;
     box-shadow: 0 6px 20px transparent;
 }
 
-input[type="submit"].thb_shadow:hover,
-.button.thb_shadow:hover,
-.btn.thb_shadow:hover {
+input[type="submit"].vif_shadow:hover,
+.button.vif_shadow:hover,
+.btn.vif_shadow:hover {
     -moz-transform: translateY(-3px) !important;
     -ms-transform: translateY(-3px) !important;
     -webkit-transform: translateY(-3px) !important;
@@ -3888,7 +3888,7 @@ screen and (max-height: 300px) {
     }
 }
 
-.thb_3dimg {
+.vif_3dimg {
     -webkit-tap-highlight-color: transparent;
     position: absolute;
     top: 0;

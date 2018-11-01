@@ -1,6 +1,6 @@
 <?php
 
-function thb_create_post_type_portfolios() {
+function vif_create_post_type_portfolios() {
 	$slug = function_exists('ot_get_option') ? sanitize_title(ot_get_option('portfolio_slug','portfolio')) : 'portfolio';
 	$labels = array(
 		'name' => esc_html__( 'Portfolio','viftech'),
@@ -59,6 +59,6 @@ function thb_create_post_type_portfolios() {
   ));
 }
 /* Initialize post types */
-add_action( 'init', 'thb_create_post_type_portfolios', 10 );
+add_action( 'init', 'vif_create_post_type_portfolios', 10 );
 
 ?>

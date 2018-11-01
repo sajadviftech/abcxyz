@@ -873,11 +873,11 @@
     vertical-align: middle;
 }
 
-.thb_portfolio_nav {
+.vif_portfolio_nav {
     background: #090909;
 }
 
-.thb_portfolio_nav .inner {
+.vif_portfolio_nav .inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -887,14 +887,14 @@
     z-index: 0;
 }
 
-.thb_portfolio_nav .inner img {
+.vif_portfolio_nav .inner img {
     display: block;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.thb_portfolio_nav .post_nav_link {
+.vif_portfolio_nav .post_nav_link {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -905,7 +905,7 @@
     padding: 20% 0 10%;
 }
 
-.thb_portfolio_nav .post_nav_link strong {
+.vif_portfolio_nav .post_nav_link strong {
     position: absolute;
     top: 15px;
     font-weight: 500;
@@ -914,12 +914,12 @@
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav .post_nav_link strong {
+    .vif_portfolio_nav .post_nav_link strong {
         top: 45px;
     }
 }
 
-.thb_portfolio_nav .post_nav_link div:not(.inner) {
+.vif_portfolio_nav .post_nav_link div:not(.inner) {
     display: flex;
     z-index: 1;
     flex-direction: column;
@@ -929,17 +929,17 @@
     padding: 0 20%;
 }
 
-.thb_portfolio_nav .post_nav_link div:not(.inner) span {
+.vif_portfolio_nav .post_nav_link div:not(.inner) span {
     font-weight: 500;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav .post_nav_link div:not(.inner) span {
+    .vif_portfolio_nav .post_nav_link div:not(.inner) span {
         font-size: 26px;
     }
 }
 
-.thb_portfolio_nav .post_nav_link div:not(.inner) em {
+.vif_portfolio_nav .post_nav_link div:not(.inner) em {
     display: block;
     opacity: 0;
     font-size: 14px;
@@ -950,22 +950,22 @@
     transform: translateY(20px);
 }
 
-.thb_portfolio_nav .post_nav_link:hover {
+.vif_portfolio_nav .post_nav_link:hover {
     color: #fff;
 }
 
-.thb_portfolio_nav .post_nav_link:hover .inner {
+.vif_portfolio_nav .post_nav_link:hover .inner {
     opacity: 0.2;
 }
 
-.thb_portfolio_nav .post_nav_link:hover div:not(.inner) span {
+.vif_portfolio_nav .post_nav_link:hover div:not(.inner) span {
     -moz-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
 }
 
-.thb_portfolio_nav .post_nav_link:hover div:not(.inner) em {
+.vif_portfolio_nav .post_nav_link:hover div:not(.inner) em {
     opacity: 1;
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -973,66 +973,66 @@
     transform: translateY(0);
 }
 
-.thb_portfolio_nav .post_nav_link.prev strong {
+.vif_portfolio_nav .post_nav_link.prev strong {
     right: 15px;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav .post_nav_link.prev strong {
+    .vif_portfolio_nav .post_nav_link.prev strong {
         right: 45px;
     }
 }
 
-.thb_portfolio_nav .post_nav_link.prev div {
+.vif_portfolio_nav .post_nav_link.prev div {
     text-align: right;
 }
 
-.thb_portfolio_nav .post_nav_link.next strong {
+.vif_portfolio_nav .post_nav_link.next strong {
     left: 15px;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav .post_nav_link.next strong {
+    .vif_portfolio_nav .post_nav_link.next strong {
         left: 45px;
     }
 }
 
-.thb_portfolio_nav.style1 .post_nav_link {
+.vif_portfolio_nav.style1 .post_nav_link {
     padding: 0 0 20%;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style1 .post_nav_link {
+    .vif_portfolio_nav.style1 .post_nav_link {
         font-size: 26px;
     }
 }
 
-.thb_portfolio_nav.style1 .post_nav_link .inner {
+.vif_portfolio_nav.style1 .post_nav_link .inner {
     opacity: 0;
 }
 
-.thb_portfolio_nav.style1 .post_nav_link:hover .inner {
+.vif_portfolio_nav.style1 .post_nav_link:hover .inner {
     opacity: 0.8;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style1 .post_nav_link:hover .title {
+    .vif_portfolio_nav.style1 .post_nav_link:hover .title {
         opacity: 1;
         -moz-transform: translate3d(0, -50%, 0);
         -webkit-transform: translate3d(0, -50%, 0);
         transform: translate3d(0, -50%, 0)
     }
-    .thb_portfolio_nav.style1 .post_nav_link:hover .title:before {
+    .vif_portfolio_nav.style1 .post_nav_link:hover .title:before {
         width: 50px
     }
-    .thb_portfolio_nav.style1 .post_nav_link:hover strong {
+    .vif_portfolio_nav.style1 .post_nav_link:hover strong {
         -moz-transform: translate3d(-100%, -50%, 0);
         -webkit-transform: translate3d(-100%, -50%, 0);
         transform: translate3d(-100%, -50%, 0);
     }
 }
 
-.thb_portfolio_nav.style1 .post_nav_link strong {
+.vif_portfolio_nav.style1 .post_nav_link strong {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1044,11 +1044,11 @@
     font-size: inherit;
 }
 
-.thb_portfolio_nav.style1 .post_nav_link strong .next {
+.vif_portfolio_nav.style1 .post_nav_link strong .next {
     position: relative;
 }
 
-.thb_portfolio_nav.style1 .post_nav_link strong .title {
+.vif_portfolio_nav.style1 .post_nav_link strong .title {
     position: absolute;
     top: 50%;
     left: 100%;
@@ -1061,7 +1061,7 @@
     white-space: nowrap;
 }
 
-.thb_portfolio_nav.style1 .post_nav_link strong .title:before {
+.vif_portfolio_nav.style1 .post_nav_link strong .title:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -1072,61 +1072,61 @@
     transform-origin: 100% 0;
 }
 
-.thb_portfolio_nav.style3 {
+.vif_portfolio_nav.style3 {
     padding: 7% 0 5%;
     position: relative;
     overflow: hidden;
 }
 
-.thb_portfolio_nav.style3 .row {
+.vif_portfolio_nav.style3 .row {
     position: relative;
     z-index: 5;
 }
 
-.thb_portfolio_nav.style3 p {
+.vif_portfolio_nav.style3 p {
     font-size: 16px;
     color: #fff;
     font-weight: 600;
     margin-bottom: 60px;
 }
 
-.thb_portfolio_nav.style3 ul {
+.vif_portfolio_nav.style3 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.thb_portfolio_nav.style3 ul li {
+.vif_portfolio_nav.style3 ul li {
     display: inline-flex;
     margin-right: 15px;
     margin-bottom: 15px;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style3 ul li {
+    .vif_portfolio_nav.style3 ul li {
         margin-right: 35px;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style3 ul li {
+    .vif_portfolio_nav.style3 ul li {
         margin-right: 75px;
         margin-bottom: 45px;
     }
 }
 
-.thb_portfolio_nav.style3 ul li h4 {
+.vif_portfolio_nav.style3 ul li h4 {
     font-size: 26px;
     margin: 0;
 }
 
-.thb_portfolio_nav.style3 ul li a {
+.vif_portfolio_nav.style3 ul li a {
     color: #fff;
     position: relative;
 }
 
-.thb_portfolio_nav.style3 ul li a:before {
+.vif_portfolio_nav.style3 ul li a:before {
     content: '';
     display: block;
     height: 2px;
@@ -1142,14 +1142,14 @@
     transform: scale(0, 1);
 }
 
-.thb_portfolio_nav.style3 ul li a:hover:before {
+.vif_portfolio_nav.style3 ul li a:hover:before {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
 }
 
-.thb_portfolio_nav.style3 .inner {
+.vif_portfolio_nav.style3 .inner {
     display: none;
     background-attachment: fixed;
     -moz-transition-duration: 0s;
@@ -1158,26 +1158,26 @@
     transition-duration: 0s;
 }
 
-.thb_portfolio_nav.style3 .inner.active {
+.vif_portfolio_nav.style3 .inner.active {
     display: block;
 }
 
-.thb_portfolio_nav.style4 {
+.vif_portfolio_nav.style4 {
     background: #fff;
     padding: 10vh 0 15vh;
 }
 
-.thb_portfolio_nav.style4 .row {
+.vif_portfolio_nav.style4 .row {
     position: relative;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link {
+.vif_portfolio_nav.style4 .post_nav_link {
     padding: 0;
     color: #090909;
     position: static;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link {
+.vif_portfolio_nav.style4 .post_nav_link {
     display: block;
     flex-direction: column;
     font-size: 14px;
@@ -1189,7 +1189,7 @@
     min-height: 18px;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link svg {
+.vif_portfolio_nav.style4 .post_nav_link svg {
     position: absolute;
     top: 50%;
     fill: rgba(9, 9, 9, 0.2);
@@ -1199,7 +1199,7 @@
     transition: all .15s linear;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link svg .bar {
+.vif_portfolio_nav.style4 .post_nav_link svg .bar {
     fill: #090909;
     -moz-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
@@ -1211,7 +1211,7 @@
     transition: all .15s linear;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link strong {
+.vif_portfolio_nav.style4 .post_nav_link strong {
     display: block;
     margin-bottom: 3px;
     text-transform: uppercase;
@@ -1220,14 +1220,14 @@
     color: #aaa;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link strong,
-.thb_portfolio_nav.style4 .post_nav_link span {
+.vif_portfolio_nav.style4 .post_nav_link strong,
+.vif_portfolio_nav.style4 .post_nav_link span {
     display: none;
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style4 .post_nav_link strong,
-    .thb_portfolio_nav.style4 .post_nav_link span {
+    .vif_portfolio_nav.style4 .post_nav_link strong,
+    .vif_portfolio_nav.style4 .post_nav_link span {
         display: block;
         overflow: hidden;
         white-space: nowrap;
@@ -1235,11 +1235,11 @@
     }
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.prev {
+.vif_portfolio_nav.style4 .post_nav_link.prev {
     padding-left: 13px;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.prev svg {
+.vif_portfolio_nav.style4 .post_nav_link.prev svg {
     left: 27px;
     -moz-transform: translate3d(0%, -50%, 0);
     -webkit-transform: translate3d(0%, -50%, 0);
@@ -1247,31 +1247,31 @@
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style4 .post_nav_link.prev svg {
+    .vif_portfolio_nav.style4 .post_nav_link.prev svg {
         left: 37px;
     }
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.prev svg .bar {
+.vif_portfolio_nav.style4 .post_nav_link.prev svg .bar {
     transform-origin: 100% 0;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.prev:hover {
+.vif_portfolio_nav.style4 .post_nav_link.prev:hover {
     padding-left: 22px;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.prev:hover svg {
+.vif_portfolio_nav.style4 .post_nav_link.prev:hover svg {
     -moz-transform: translate3d(-20%, -50%, 0);
     -webkit-transform: translate3d(-20%, -50%, 0);
     transform: translate3d(-20%, -50%, 0);
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.next {
+.vif_portfolio_nav.style4 .post_nav_link.next {
     text-align: right;
     padding-right: 13px;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.next svg {
+.vif_portfolio_nav.style4 .post_nav_link.next svg {
     right: 27px;
     -moz-transform: translate3d(0%, -50%, 0);
     -webkit-transform: translate3d(0%, -50%, 0);
@@ -1279,26 +1279,26 @@
 }
 
 @media only screen and (min-width: 640px) {
-    .thb_portfolio_nav.style4 .post_nav_link.next svg {
+    .vif_portfolio_nav.style4 .post_nav_link.next svg {
         right: 37px;
     }
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.next:hover {
+.vif_portfolio_nav.style4 .post_nav_link.next:hover {
     padding-right: 22px;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link.next:hover svg {
+.vif_portfolio_nav.style4 .post_nav_link.next:hover svg {
     -moz-transform: translate3d(20%, -50%, 0);
     -webkit-transform: translate3d(20%, -50%, 0);
     transform: translate3d(20%, -50%, 0);
 }
 
-.thb_portfolio_nav.style4 .post_nav_link:hover svg {
+.vif_portfolio_nav.style4 .post_nav_link:hover svg {
     fill: #090909;
 }
 
-.thb_portfolio_nav.style4 .post_nav_link:hover svg .bar {
+.vif_portfolio_nav.style4 .post_nav_link:hover svg .bar {
     opacity: 1;
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);

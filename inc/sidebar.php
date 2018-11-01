@@ -1,6 +1,6 @@
 <?php
-function thb_register_sidebars() {
-	if ( thb_wc_supported() ) {
+function vif_register_sidebars() {
+	if ( vif_wc_supported() ) {
 		register_sidebar(array('name' => esc_html__('Shop Sidebar', 'viftech'), 'id' => 'vif-shop-filters', 'description' => esc_html__('Sidebar used for filters on the Shop page', 'viftech'), 'before_widget' => '<div id="%1$s" class="widget woo cf %2$s">', 'after_widget' => '</div></div>', 'before_title' => '<h6>', 'after_title' => '</h6><div class="widget_content">'));
 	}
 	register_sidebar(array('name' => esc_html__('Blog Sidebar', 'viftech'), 'id' => 'blog', 'description' => esc_html__('Blog', 'viftech'), 'before_widget' => '<div id="%1$s" class="widget cf %2$s">', 'after_widget' => '</div>', 'before_title' => '<h6>', 'after_title' => '</h6>'));
@@ -26,10 +26,10 @@ function thb_register_sidebars() {
 	register_sidebar(array('name' => esc_html__('Header - Style 8 - Column 3', 'viftech'), 'id' => 'header-style8-3', 'description' => esc_html__('Header - Style 8 - third column', 'viftech'), 'before_widget' => '<div id="%1$s" class="widget cf %2$s">', 'after_widget' => '</div>', 'before_title' => '<h6>', 'after_title' => '</h6>'));
 	
 }
-add_action( 'widgets_init', 'thb_register_sidebars' );
+add_action( 'widgets_init', 'vif_register_sidebars' );
 
-function thb_remove_recent_comments_style() {
+function vif_remove_recent_comments_style() {
     global $wp_widget_factory;
     remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
 }
-add_action('widgets_init', 'thb_remove_recent_comments_style');
+add_action('widgets_init', 'vif_remove_recent_comments_style');

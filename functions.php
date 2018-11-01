@@ -106,7 +106,7 @@ add_action( 'load-network.php', function()
     } );
 } );
 function get_all_icons(){
-    $icons = thb_getIconArray();
+    $icons = vif_getIconArray();
     echo '<div class="row">';
     foreach($icons as $icon){
         

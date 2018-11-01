@@ -1,6 +1,6 @@
 <?php 
-	$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
-	$logo_light = ot_get_option('logo_light', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo-light.png');
+	$logo = ot_get_option('logo', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo.png');
+	$logo_light = ot_get_option('logo_light', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo-light.png');
 	
 	$header_style = ot_get_option('header_style', 'light');
 	$class[] = 'style1';
@@ -37,16 +37,16 @@
 						<?php echo do_shortcode($mobile_menu_footer); ?>
 					</div>
 				<?php } ?>
-				<?php do_action( 'thb_social_links', ot_get_option('mobile_menu_social_link') ); ?>
+				<?php do_action( 'vif_social_links', ot_get_option('mobile_menu_social_link') ); ?>
 			</div>
 		</div>
 	<?php } else { ?>
 		<div class="custom_scroll" id="menu-scroll">
 			<div class="mobile-menu-top">
-				<?php do_action( 'thb_language_switcher_mobile' ); ?>
+				<?php do_action( 'vif_language_switcher_mobile' ); ?>
 				<?php 
 					if (has_nav_menu('nav-menu')) {
-						wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 3, 'container' => false, 'menu_class' => 'vif-mobile-menu', 'walker' => new thb_mobileDropdown ) ); 
+						wp_nav_menu( array( 'theme_location' => 'nav-menu', 'depth' => 3, 'container' => false, 'menu_class' => 'vif-mobile-menu', 'walker' => new vif_mobileDropdown ) ); 
 					}
 				?>
 				<?php if (has_nav_menu('secondary-menu')) {  ?>
@@ -62,12 +62,12 @@
 						<?php echo do_shortcode($mobile_menu_footer); ?>
 					</div>
 				<?php } ?>
-				<?php do_action( 'thb_social_links', ot_get_option('mobile_menu_social_link') ); ?>
+				<?php do_action( 'vif_social_links', ot_get_option('mobile_menu_social_link') ); ?>
 			</div>
 		</div>
 		<?php 
 			if ( 'style7' === $header_style ) {
-				do_action( 'thb_mobile_toggle', false); 
+				do_action( 'vif_mobile_toggle', false); 
 			}
 		?>
 	<?php } ?>

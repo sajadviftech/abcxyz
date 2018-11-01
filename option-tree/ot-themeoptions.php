@@ -2,7 +2,7 @@
 /**
  * Initialize the options before anything else. 
  */
-add_action( 'admin_init', 'thb_custom_theme_options', 1 );
+add_action( 'admin_init', 'vif_custom_theme_options', 1 );
 
 /**
  * Theme Mode demo code of all the available option types.
@@ -12,7 +12,7 @@ add_action( 'admin_init', 'thb_custom_theme_options', 1 );
  * @access    private
  * @since     2.0
  */
-function thb_custom_theme_options() {
+function vif_custom_theme_options() {
   
   /**
    * Get a copy of the saved settings array. 
@@ -146,7 +146,7 @@ function thb_custom_theme_options() {
     	),
     	array(
     		'label'       => esc_html__('Number of Columns', 'viftech' ),
-    	  'id'          => 'thb_blog_columns',
+    	  'id'          => 'vif_blog_columns',
     	  'std'         => '4',
     	  'type'        => 'numeric-slider',
     	  'section'     => 'blog',
@@ -747,7 +747,7 @@ function thb_custom_theme_options() {
       ),
       array(
         'label'       => esc_html__('Header Full Width', 'viftech'),
-        'id'          => 'thb_header_full_width',
+        'id'          => 'vif_header_full_width',
         'type'        => 'on_off',
         'desc'        => esc_html__('By default, the header on viftech is limited to the grid, you can make it full width here.', 'viftech'),
         'std'         => 'off',
@@ -876,7 +876,7 @@ function thb_custom_theme_options() {
       ),
       array(
         'label'       => esc_html__('Language Switcher', 'viftech'),
-        'id'          => 'thb_ls',
+        'id'          => 'vif_ls',
         'type'        => 'on_off',
         'desc'        => esc_html__('You can toggle the language switcher here. Requires that you have WPML or PolyLang installed.', 'viftech'),
         'std'         => 'off',
@@ -2150,7 +2150,7 @@ function thb_custom_theme_options() {
       ),
       array(
         'label'       => esc_html__('Preloading Type', 'viftech' ),
-        'id'          => 'thb_preload_type',
+        'id'          => 'vif_preload_type',
         'type'        => 'radio',
         'desc'        => esc_html__('This is the hexagon preloader you see on some areas.', 'viftech'),
         'choices'     => array(
@@ -2195,7 +2195,7 @@ function thb_custom_theme_options() {
       ),
       array(
         'label'       => esc_html__('Google Theme Color', 'viftech'),
-        'id'          => 'thb_google_theme_color',
+        'id'          => 'vif_google_theme_color',
         'type'        => 'colorpicker',
         'desc'        => esc_html__('Applied only on Android mobile devices, click <a href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android" target="_blank">here</a> to learn more about this', 'viftech'),
         'section'     => 'customization'

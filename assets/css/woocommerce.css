@@ -672,11 +672,11 @@ div.quantity .minus {
     width: 100%;
 }
 
-.products .product .product_thumbnail.thb_hover {
+.products .product .product_thumbnail.vif_hover {
     position: relative;
 }
 
-.products .product .product_thumbnail.thb_hover .product_thumbnail_hover {
+.products .product .product_thumbnail.vif_hover .product_thumbnail_hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -690,7 +690,7 @@ div.quantity .minus {
     background-position: center;
 }
 
-.products .product .product_thumbnail.thb_hover:hover .product_thumbnail_hover {
+.products .product .product_thumbnail.vif_hover:hover .product_thumbnail_hover {
     opacity: 1;
 }
 

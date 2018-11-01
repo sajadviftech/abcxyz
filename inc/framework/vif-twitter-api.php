@@ -11,7 +11,7 @@ License: GPL2
 */
 
 
-class thb_TwitterAPIExchange {
+class vif_TwitterAPIExchange {
 
 	/** @var string OAuth access token */
 	private $oauth_access_token;
@@ -176,7 +176,7 @@ class thb_TwitterAPIExchange {
 		// encode consumer and token secret keys and subsequently combine them using & to a query component
 		$hash_hmac_key = rawurlencode( $this->consumer_secret ) . '&' . rawurlencode( $this->oauth_access_token_secret );
 
-		$oauth_signature = thb_encode( hash_hmac( 'sha1', $data, $hash_hmac_key, true ) );
+		$oauth_signature = vif_encode( hash_hmac( 'sha1', $data, $hash_hmac_key, true ) );
 
 		return $oauth_signature;
 	}

@@ -221,7 +221,7 @@
     margin-bottom: 25px;
 }
 
-.widget.widget_mc4wp_form_widget .thb_single_email {
+.widget.widget_mc4wp_form_widget .vif_single_email {
     display: inline-flex;
     border-radius: 3px 0 0 3px;
     flex: 1;
@@ -229,11 +229,11 @@
     border-right-width: 0;
 }
 
-.widget.widget_mc4wp_form_widget .thb_single_email:not(:focus) {
+.widget.widget_mc4wp_form_widget .vif_single_email:not(:focus) {
     border-color: rgba(0, 0, 0, 0.17);
 }
 
-.widget.widget_mc4wp_form_widget .thb_single_email+input[type="submit"] {
+.widget.widget_mc4wp_form_widget .vif_single_email+input[type="submit"] {
     display: inline-flex;
     border-radius: 0 3px 3px 0;
     padding: 0 25px
@@ -244,30 +244,30 @@
     margin-bottom: 20px;
 }
 
-.widget.widget_thb_twitterwidget .thb_tweet {
+.widget.widget_vif_twitterwidget .vif_tweet {
     margin-bottom: 20px;
 }
 
-.widget.widget_thb_twitterwidget .thb_tweet .thb_tweet_time {
+.widget.widget_vif_twitterwidget .vif_tweet .vif_tweet_time {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 500;
 }
 
-.light .widget.widget_thb_twitterwidget .thb_tweet .thb_tweet_time {
+.light .widget.widget_vif_twitterwidget .vif_tweet .vif_tweet_time {
     color: #343434;
 }
 
-.widget.widget_thb_twitterwidget p {
+.widget.widget_vif_twitterwidget p {
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.widget.widget_thb_twitterwidget p a {
+.widget.widget_vif_twitterwidget p a {
     font-weight: 500;
 }
 
-.light .widget.widget_thb_twitterwidget p a {
+.light .widget.widget_vif_twitterwidget p a {
     color: #343434;
 }
 

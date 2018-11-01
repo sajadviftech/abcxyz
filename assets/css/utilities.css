@@ -64,7 +64,7 @@
 .vif-tabs,
 .vif-flip-box .vif-flip-box-side,
 .vif-portfolio-slider.vif-portfolio-slider-style4 .portfolio-slide .slide-bg,
-.products .product .product_thumbnail.thb_hover .product_thumbnail_hover,
+.products .product .product_thumbnail.vif_hover .product_thumbnail_hover,
 .products .product .product_after_title .button:after,
 .products .product.product-category a div span {
     -moz-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -103,10 +103,10 @@ a,
 .scroll-bottom.style3>div:before,
 .scroll-bottom.style3>div:after,
 .share_container .product_copy form,
-.thb_post_nav.style1,
-.thb_post_nav.style2 .post_nav_link .inner,
-.thb_post_nav.style2 .post_nav_link div:not(.inner) span,
-.thb_post_nav.style2 .post_nav_link div:not(.inner) em,
+.vif_post_nav.style1,
+.vif_post_nav.style2 .post_nav_link .inner,
+.vif_post_nav.style2 .post_nav_link div:not(.inner) span,
+.vif_post_nav.style2 .post_nav_link div:not(.inner) em,
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -163,9 +163,9 @@ input[type="submit"].style4:before,
 .vif-portfolio-filter.style2 .select2-dropdown .select2-results__options .select2-results__option span:before,
 .vif-portfolio-share,
 .vif-portfolio-share strong span,
-.thb_portfolio_nav .post_nav_link div:not(.inner) span,
-.thb_portfolio_nav .post_nav_link div:not(.inner) em,
-.thb_portfolio_nav.style3 ul li a:before,
+.vif_portfolio_nav .post_nav_link div:not(.inner) span,
+.vif_portfolio_nav .post_nav_link div:not(.inner) em,
+.vif_portfolio_nav.style3 ul li a:before,
 .vif-carousel .slick-dots li .portrait_bullet,
 .mfp-close-btn-in button.mfp-close,
 .mfp-zoom-in .mfp-with-anim,
@@ -174,14 +174,14 @@ input[type="submit"].style4:before,
 .mfp-zoom-in.mfp-bg,
 .mfp-zoom-out .mfp-with-anim,
 .mfp-zoom-out.mfp-bg,
-.thb_image_link img,
+.vif_image_link img,
 .expand,
 #scroll_to_top svg,
 .instagram-row figure:after,
 .instagram-row figure span,
 .wpb_text_column a:after,
 .vif-tabs.style1 .vc_tta-panel-heading h4 a:before,
-.thb_location_container.row .thb_location,
+.vif_location_container.row .vif_location,
 .vif-client-row.vif-opacity.with-accent .vif-client,
 .vif-client-row .vif-client img,
 .vif-fancy-box .vif-fancy-hover,
@@ -247,10 +247,10 @@ input[type="submit"].style3:before,
 .post .post-gallery img,
 .post.style5 .post-gallery .wp-post-image,
 .post.style5 .post-gallery .overlay:after,
-.thb_portfolio_nav .inner,
-.thb_portfolio_nav.style1 .post_nav_link strong,
-.thb_portfolio_nav.style1 .post_nav_link strong .title,
-.thb_portfolio_nav.style1 .post_nav_link strong .title:before,
+.vif_portfolio_nav .inner,
+.vif_portfolio_nav.style1 .post_nav_link strong,
+.vif_portfolio_nav.style1 .post_nav_link strong .title,
+.vif_portfolio_nav.style1 .post_nav_link strong .title:before,
 #scroll_to_top .vif-animated-arrow.circular,
 .vif-accordion .vc_tta-panel-heading h4 a:after,
 .vif-client-row .vif-client .client-title,
@@ -276,7 +276,7 @@ input[type="submit"].style3:before,
 .general-shadow-styles.small-shadow,
 .columns .small-shadow.vc_column-inner,
 .small-shadow.row,
-.thb_image_link img.small-shadow,
+.vif_image_link img.small-shadow,
 .small-shadow.vif-video-lightbox {
     -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
@@ -286,7 +286,7 @@ input[type="submit"].style3:before,
 .general-shadow-styles.medium-shadow,
 .columns .medium-shadow.vc_column-inner,
 .medium-shadow.row,
-.thb_image_link img.medium-shadow,
+.vif_image_link img.medium-shadow,
 .medium-shadow.vif-video-lightbox {
     -moz-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
@@ -296,7 +296,7 @@ input[type="submit"].style3:before,
 .general-shadow-styles.large-shadow,
 .columns .large-shadow.vc_column-inner,
 .large-shadow.row,
-.thb_image_link img.large-shadow,
+.vif_image_link img.large-shadow,
 .large-shadow.vif-video-lightbox {
     -moz-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
@@ -306,7 +306,7 @@ input[type="submit"].style3:before,
 .general-shadow-styles.xlarge-shadow,
 .columns .xlarge-shadow.vc_column-inner,
 .xlarge-shadow.row,
-.thb_image_link img.xlarge-shadow,
+.vif_image_link img.xlarge-shadow,
 .xlarge-shadow.vif-video-lightbox {
     -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
     -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
@@ -355,8 +355,8 @@ input[type="submit"].style3:before,
 
 .cover-bg,
 .post.style5 .post-gallery,
-.thb_post_nav.style2 .post_nav_link .inner,
-.thb_portfolio_nav .inner,
+.vif_post_nav.style2 .post_nav_link .inner,
+.vif_portfolio_nav .inner,
 .vif-carousel .slick-dots li .portrait_bullet,
 .vif-fancy-box .vif-fancy-content {
     flex-direction: column;
@@ -915,8 +915,8 @@ input[type="submit"].style3:before,
     opacity: 0.3;
 }
 
-.lazyload.thb_3dimage,
-.lazyloading.thb_3dimage {
+.lazyload.vif_3dimage,
+.lazyloading.vif_3dimage {
     opacity: 1;
 }
 

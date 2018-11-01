@@ -1,8 +1,8 @@
 <?php
-require Theme_Config::$thb_theme_directory . 'inc/admin/plugins/class-tgm-plugin-activation.php';
+require Theme_Config::$vif_theme_directory . 'inc/admin/plugins/class-tgm-plugin-activation.php';
 
-function thb_register_required_plugins() {
-	$data = Theme_Config()->thb_check_for_update_plugins();
+function vif_register_required_plugins() {
+	$data = Theme_Config()->vif_check_for_update_plugins();
 
 	if (isset($data->plugins)) {
 		foreach ($data->plugins as $plugin) {
@@ -21,20 +21,20 @@ function thb_register_required_plugins() {
 				'version' => $plugin->version,
 				'required' => true,
 				'external_url'	 => '',
-				'image_url' => Theme_Config::$thb_theme_directory_uri .'assets/img/admin/plugins/'.esc_attr($slug).'.png'
+				'image_url' => Theme_Config::$vif_theme_directory_uri .'assets/img/admin/plugins/'.esc_attr($slug).'.png'
 			);
 		}
 	} else {
 		$plugins[] = array(
 			'name'			=> 'WPBakery Visual Composer', // The plugin name
 			'slug'			=> 'js_composer', // The plugin slug (typically the folder name)
-			'source'			=> Theme_Config::$thb_theme_directory_uri . 'inc/admin/plugins/plugins/codecanyon-242431-visual-composer-page-builder-for-wordpress-wordpress-plugin.zip', 
+			'source'			=> Theme_Config::$vif_theme_directory_uri . 'inc/admin/plugins/plugins/codecanyon-242431-visual-composer-page-builder-for-wordpress-wordpress-plugin.zip', 
 			'version'				=> '5.1.1',
 			'force_activation' => false,
 			'force_deactivation' => false,
 			'external_url' 	=> '',
 			'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-			'image_url' => Theme_Config::$thb_theme_directory_uri .'assets/img/admin/plugins/js_composer.png'
+			'image_url' => Theme_Config::$vif_theme_directory_uri .'assets/img/admin/plugins/js_composer.png'
 		);
 	}
 	
@@ -60,4 +60,4 @@ function thb_register_required_plugins() {
 	);
 	tgmpa($plugins, $config);
 }
-add_action('tgmpa_register', 'thb_register_required_plugins');
+add_action('tgmpa_register', 'vif_register_required_plugins');

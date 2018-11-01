@@ -11,28 +11,28 @@ function wpex_vc_remove_welcome_page() {
 add_action( 'admin_menu', 'wpex_vc_remove_welcome_page', 999 );
 
 // Set As Theme
-add_action( 'vc_before_init', 'thb_vcSetAsTheme' );
-function thb_vcSetAsTheme() {
+add_action( 'vc_before_init', 'vif_vcSetAsTheme' );
+function vif_vcSetAsTheme() {
     vc_manager()->disableUpdater(true);
 		vc_set_as_theme();
 }
 
 // Remove IE & MetaData
-add_action( 'init', 'thb_VC_init' );
-function thb_VC_init() {
+add_action( 'init', 'vif_VC_init' );
+function vif_VC_init() {
 	if (function_exists('visual_composer')) {
 		remove_action('wp_head', array(visual_composer(), 'addMetaData'));
 		remove_action('wp_head', array(visual_composer(), 'addIEMinimalSupport'));
 	}
 }
 
-add_action( 'init', 'thb_TheShortcodesForVC' );
-function thb_TheShortcodesForVC() {
+add_action( 'init', 'vif_TheShortcodesForVC' );
+function vif_TheShortcodesForVC() {
 	if (function_exists('visual_composer')) {
 		if(function_exists('vc_set_default_editor_post_types')) { vc_set_default_editor_post_types( array('page', 'portfolio') ); }
 		
-		add_filter( 'vc_load_default_templates', 'thb_custom_template_modify_array' );
-		function thb_custom_template_modify_array( $data ) {
+		add_filter( 'vc_load_default_templates', 'vif_custom_template_modify_array' );
+		function vif_custom_template_modify_array( $data ) {
 		    return array();
 		}
 		
@@ -49,7 +49,7 @@ function thb_TheShortcodesForVC() {
 		
 		
 		// Offsets
-		function thb_column_offset_class_merge($class_string, $tag) {
+		function vif_column_offset_class_merge($class_string, $tag) {
 	
 			if($tag === 'vc_column' || $tag === 'vc_column_inner') {
 
@@ -74,7 +74,7 @@ function thb_TheShortcodesForVC() {
 			}
 			return $class_string;
 		}
-		add_filter('vc_shortcodes_css_class', 'thb_column_offset_class_merge', 10, 2);
+		add_filter('vc_shortcodes_css_class', 'vif_column_offset_class_merge', 10, 2);
 		
 		// Add Page parameter to loop
 		require_once vc_path_dir( 'PARAMS_DIR', '/loop/loop.php' );
@@ -85,7 +85,7 @@ function thb_TheShortcodesForVC() {
 		}
 		
 		// Add Radio Image option
-		function thb_radio_images( $param, $value ) {
+		function vif_radio_images( $param, $value ) {
 			$unique_id = uniqid();
 			$options = isset($param['options']) ? $param['options'] : '';
 	
@@ -97,10 +97,10 @@ function thb_TheShortcodesForVC() {
 			foreach ( $options as $key => $key_value ) {
 				$checked = $value == $key ? 'checked' : '';
 
-				$param_line .= '<li for="thb_radio_image_' . esc_attr($unique_id .'_'.$i).'"><label>
-					<input type="radio" class="thb_radio_image_val" value="'. esc_attr($key) .'" name="thb_radio_image_' . esc_attr($unique_id) . '" ' . esc_attr($checked) . ' id="thb_radio_image_' . esc_attr($unique_id .'_'.$i).'" />
-					<div class="thb_radio_image"><img src="'. esc_url($key_value) .'" alt="'. esc_attr($name).'" /></div>
-					<span class="thb_radio_image_title">'.esc_html($name).'</span>
+				$param_line .= '<li for="vif_radio_image_' . esc_attr($unique_id .'_'.$i).'"><label>
+					<input type="radio" class="vif_radio_image_val" value="'. esc_attr($key) .'" name="vif_radio_image_' . esc_attr($unique_id) . '" ' . esc_attr($checked) . ' id="vif_radio_image_' . esc_attr($unique_id .'_'.$i).'" />
+					<div class="vif_radio_image"><img src="'. esc_url($key_value) .'" alt="'. esc_attr($name).'" /></div>
+					<span class="vif_radio_image_title">'.esc_html($name).'</span>
 				</label></li>';
 				$i++;
 			}
@@ -111,6 +111,6 @@ function thb_TheShortcodesForVC() {
 
       return $param_line;
 		}
-		vc_add_shortcode_param( 'thb_radio_image', 'thb_radio_images' );
+		vc_add_shortcode_param( 'vif_radio_image', 'vif_radio_images' );
 	}
 }

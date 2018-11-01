@@ -11,92 +11,92 @@
     </custom-types>
     <shortcodes>
         <shortcode>
-            <tag>thb_autotype</tag>
+            <tag>vif_autotype</tag>
             <attributes>
                 <attribute>typed_text</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_button</tag>
+            <tag>vif_button</tag>
             <attributes>
                 <attribute>link</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_button_text</tag>
+            <tag>vif_button_text</tag>
             <attributes>
                 <attribute>link</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_fadetype</tag>
+            <tag>vif_fadetype</tag>
             <attributes>
                 <attribute>fade_text</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_gradienttype</tag>
+            <tag>vif_gradienttype</tag>
             <attributes>
                 <attribute>gradient_text</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_iconbox</tag>
+            <tag>vif_iconbox</tag>
             <attributes>
                 <attribute>heading</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_label</tag>
+            <tag>vif_label</tag>
             <attributes>
                 <attribute>content</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_team</tag>
+            <tag>vif_team</tag>
             <attributes>
                 <attribute>sub_title</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_team</tag>
+            <tag>vif_team</tag>
             <attributes>
                 <attribute>sub_title</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_pricing_column</tag>
+            <tag>vif_pricing_column</tag>
             <attributes>
                 <attribute>title</attribute>
                 <attribute>sub_title</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_progressbar</tag>
+            <tag>vif_progressbar</tag>
             <attributes>
                 <attribute>title</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_searchfield</tag>
+            <tag>vif_searchfield</tag>
             <attributes>
                 <attribute>placeholder</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_slidetype</tag>
+            <tag>vif_slidetype</tag>
             <attributes>
                 <attribute>slide_text</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_stroketype</tag>
+            <tag>vif_stroketype</tag>
             <attributes>
                 <attribute>slide_text</attribute>
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_testimonial</tag>
+            <tag>vif_testimonial</tag>
             <attributes>
                 <attribute>quote</attribute>
                 <attribute>author_title</attribute>
@@ -104,7 +104,7 @@
             </attributes>
         </shortcode>
         <shortcode>
-            <tag>thb_video_lightbox</tag>
+            <tag>vif_video_lightbox</tag>
             <attributes>
                 <attribute>video_text</attribute>
             </attributes>

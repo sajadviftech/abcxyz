@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Shortcode class
  * @var $this WPBakeryShortCode_VC_Column
  */
-$el_class = $width = $css = $offset = $animation = $thb_color = '';
+$el_class = $width = $css = $offset = $animation = $vif_color = '';
 $output = '';
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
@@ -30,7 +30,7 @@ $css_classes = array(
 	'vc_column_container',
 	$animation,
 	$width,
-	$thb_color
+	$vif_color
 );
 
 if ( vc_shortcode_custom_css_has_property( $css, array(
@@ -95,8 +95,8 @@ if ( ! empty( $el_id ) ) {
 
 $inner_attributes[] = 'class="vc_column-inner ' .esc_attr(	$box_shadow ). ' ' . esc_attr($fixed) . ' ' . esc_attr( trim( vc_shortcode_custom_css_class( $css ) ) ) . '"';
 
-if ($thb_border_radius) {
-	$inner_attributes[] = 'style="border-radius:'.esc_attr($thb_border_radius).'"';		
+if ($vif_border_radius) {
+	$inner_attributes[] = 'style="border-radius:'.esc_attr($vif_border_radius).'"';		
 }
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
 $output .= '<div ' . implode( ' ', $inner_attributes ) . '>';

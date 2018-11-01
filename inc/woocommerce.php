@@ -1,9 +1,9 @@
 <?php
-if(!thb_wc_supported()) {
+if(!vif_wc_supported()) {
 	return;	
 }
 /* Product Masonry Sizes */
-function thb_get_product_size($style = 'style2', $i = 0) {
+function vif_get_product_size($style = 'style2', $i = 0) {
 	$size = '';
 	if ($style == 'style2') {
 		$i = in_array($i, array('3','4','5','6','10','11','12','13','17','18','19','20')) ? 1 : 2;
@@ -79,24 +79,24 @@ function thb_get_product_size($style = 'style2', $i = 0) {
 	return $size;
 }
 /* Breadcrumbs */
-function thb_change_breadcrumb_delimiter( $defaults ) {
+function vif_change_breadcrumb_delimiter( $defaults ) {
 	// Change the breadcrumb delimeter from '/' to '>'
 	$defaults['delimiter'] = ' <i>/</i> ';
 	return $defaults;
 }
-add_filter( 'woocommerce_breadcrumb_defaults', 'thb_change_breadcrumb_delimiter' );
+add_filter( 'woocommerce_breadcrumb_defaults', 'vif_change_breadcrumb_delimiter' );
 
 /* Pagination */
-function thb_woocommerce_pagination_args( $defaults ) {
+function vif_woocommerce_pagination_args( $defaults ) {
 	$defaults['prev_text'] = '&larr; '.esc_html__( "Prev", 'viftech' );
 	$defaults['next_text'] = esc_html__( "Next", 'viftech' ).' &rarr;';
 	
 	return $defaults;
 }
-add_filter( 'woocommerce_pagination_args', 'thb_woocommerce_pagination_args' );
+add_filter( 'woocommerce_pagination_args', 'vif_woocommerce_pagination_args' );
 
 /* Shop Filters */
-function thb_shop_filters() {
+function vif_shop_filters() {
 	if (is_shop() || is_product_category() || is_product_tag() ) {
 	 	?>
 	 	<div id="side-filters" class="side-panel">
@@ -111,10 +111,10 @@ function thb_shop_filters() {
 		<?php
 	}
 }
-add_action( 'thb_shop_filters', 'thb_shop_filters' );
+add_action( 'vif_shop_filters', 'vif_shop_filters' );
 
 /* Side Cart */
-function thb_side_cart() {
+function vif_side_cart() {
 	if ( !is_cart() && !is_checkout() ) {
 	?>
 	 	<nav id="side-cart" class="side-panel">
@@ -129,10 +129,10 @@ function thb_side_cart() {
 	<?php
 	}
 }
-add_action( 'thb_side_cart', 'thb_side_cart',3 );
+add_action( 'vif_side_cart', 'vif_side_cart',3 );
 
 /* Quick Shop */
-function thb_quick_shop() {
+function vif_quick_shop() {
 	
 	if (ot_get_option('quick_shop', 'on') === 'on') {
 		$quick_shop_categories = ot_get_option('quick_shop_categories', 'on');
@@ -160,7 +160,7 @@ function thb_quick_shop() {
 					<select id="vif-quick-shop-categories">
 						<option value=""><?php echo esc_html_e('Categories', 'viftech'); ?></option>
 						<?php
-							$categories = thb_productCategories();
+							$categories = vif_productCategories();
 							foreach ($categories as $category => $slug) {
 								?>
 								<option value="<?php echo esc_attr($slug); ?>"><?php echo esc_html($category); ?></option>
@@ -172,11 +172,11 @@ function thb_quick_shop() {
 				<div class="product_container custom_scroll">
 					<ul class="products row">
 					<?php 
-						set_query_var( 'thb_columns', 'medium-6');
+						set_query_var( 'vif_columns', 'medium-6');
 		 				if ($quick_products->have_posts()) :  while ($quick_products->have_posts()) : $quick_products->the_post();
 		 					wc_get_template_part( 'content', 'product' );
 		 				endwhile; else : endif; 
-		 				set_query_var( 'thb_columns', false);
+		 				set_query_var( 'vif_columns', false);
 		 			?>
 		 			</ul>
 	 			</div>
@@ -185,10 +185,10 @@ function thb_quick_shop() {
 		<?php
 	}
 }
-add_action( 'thb_quick_shop', 'thb_quick_shop', 10 );
+add_action( 'vif_quick_shop', 'vif_quick_shop', 10 );
 
 /* Header Cart */
-function thb_quick_cart() {
+function vif_quick_cart() {
 	if ('on' === ot_get_option('header_cart', 'on') ) {
 	?>
 		<div id="quick_cart" data-target="open-cart" title="<?php esc_attr_e('Cart','viftech'); ?>">
@@ -197,10 +197,10 @@ function thb_quick_cart() {
 	<?php
 	}
 }
-add_action( 'thb_quick_cart', 'thb_quick_cart',3 );
+add_action( 'vif_quick_cart', 'vif_quick_cart',3 );
 
 /* Out of Stock Check */
-function thb_out_of_stock() {
+function vif_out_of_stock() {
   global $post;
   $id = $post->ID;
   $status = get_post_meta($id, '_stock_status',true);
@@ -213,9 +213,9 @@ function thb_out_of_stock() {
 }
 
 /* Product Badges */
-function thb_product_badge() {
+function vif_product_badge() {
  global $post, $product;
- 	if (thb_out_of_stock()) {
+ 	if (vif_out_of_stock()) {
 		echo '<span class="badge out-of-stock">' . esc_html__( 'Out of Stock', 'viftech' ) . '</span>';
 	} else if ( $product->is_on_sale() ) {
 		if (ot_get_option('shop_sale_badge', 'text') == 'discount') {
@@ -253,10 +253,10 @@ function thb_product_badge() {
 		
 	}
 }
-add_action( 'thb_product_badge', 'thb_product_badge',3 );
+add_action( 'vif_product_badge', 'vif_product_badge',3 );
 
 /* WOOCOMMERCE CART LINK */
-function thb_woocomerce_ajax_cart_update($fragments) {
+function vif_woocomerce_ajax_cart_update($fragments) {
 	ob_start();
 	?>
 		<span class="float_count"><?php echo esc_html(WC()->cart->get_cart_contents_count()); ?></span>
@@ -264,13 +264,13 @@ function thb_woocomerce_ajax_cart_update($fragments) {
 	$fragments['.float_count'] = ob_get_clean();
 	return $fragments;
 }
-add_filter('woocommerce_add_to_cart_fragments', 'thb_woocomerce_ajax_cart_update');
+add_filter('woocommerce_add_to_cart_fragments', 'vif_woocomerce_ajax_cart_update');
 
 /* Image Dimensions */
 global $pagenow;
-if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ) add_action( 'init', 'thb_woocommerce_image_dimensions', 1 );
+if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ) add_action( 'init', 'vif_woocommerce_image_dimensions', 1 );
 
-function thb_woocommerce_image_dimensions() {
+function vif_woocommerce_image_dimensions() {
   $catalog = array(
 		'width' 	=> '600',	// px
 		'height'	=> '750',	// px
@@ -295,7 +295,7 @@ function thb_woocommerce_image_dimensions() {
 	update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
 }
 /* WishList Button*/
-function thb_wishlist_button() {
+function vif_wishlist_button() {
 	if ( class_exists( 'YITH_WCWL_UI' ) )  {
 		global $product; 
 		$url = YITH_WCWL()->get_wishlist_url();
@@ -319,12 +319,12 @@ function thb_wishlist_button() {
     
     $html .= $exists ? ' hide" style="display:none;"' : ' show"';
     
-    $html .= '><a href="' . esc_url( add_query_arg( 'add_to_wishlist', $product->get_id() ) ) . '" data-product-id="' . esc_attr($product->get_id()) . '" data-product-type="' . esc_attr($product_type) . '" class="' . esc_attr($classes) . '"><span class="text">'.esc_html__( "Add To Wishlist", 'viftech' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a>';
+    $html .= '><a href="' . esc_url( add_query_arg( 'add_to_wishlist', $product->get_id() ) ) . '" data-product-id="' . esc_attr($product->get_id()) . '" data-product-type="' . esc_attr($product_type) . '" class="' . esc_attr($classes) . '"><span class="text">'.esc_html__( "Add To Wishlist", 'viftech' ).'</span>'.vif_load_template_part('assets/img/svg/wishlist.svg').'</a>';
     $html .= '</div>';
 		
-		$html .= '<div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><a href="' . esc_url(esc_url($url)) . '"><span class="text">'.esc_html__( "Added to Wishlist", 'viftech' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
+		$html .= '<div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;"><a href="' . esc_url(esc_url($url)) . '"><span class="text">'.esc_html__( "Added to Wishlist", 'viftech' ).'</span>'.vif_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
 		
-		$html .= '<div class="yith-wcwl-wishlistexistsbrowse ' . ( $exists ? 'show' : 'hide' ) . '" style="display:' . ( $exists ? 'block' : 'none' ) . '"><a href="' . esc_url($url) . '"><span class="text">'.esc_html__( "View Wishlist", 'viftech' ).'</span>'.thb_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
+		$html .= '<div class="yith-wcwl-wishlistexistsbrowse ' . ( $exists ? 'show' : 'hide' ) . '" style="display:' . ( $exists ? 'block' : 'none' ) . '"><a href="' . esc_url($url) . '"><span class="text">'.esc_html__( "View Wishlist", 'viftech' ).'</span>'.vif_load_template_part('assets/img/svg/wishlist.svg').'</a></div>';
 		
 		$html .= '</div>';
 		
@@ -334,13 +334,13 @@ function thb_wishlist_button() {
 
 }
 /* Wishlist */
-add_action('woocommerce_single_product_summary', 'thb_wishlist_button', 38);
+add_action('woocommerce_single_product_summary', 'vif_wishlist_button', 38);
 
 /* Sharing */
-add_action('woocommerce_single_product_summary', 'thb_social_article_detail', 39);
+add_action('woocommerce_single_product_summary', 'vif_social_article_detail', 39);
 
 /* Sizing Guide */
-function thb_sizing_guide() {
+function vif_sizing_guide() {
 	$sizing_guide = get_post_meta(get_the_ID(), 'sizing_guide', true);
 	$sizing_guide_content = get_post_meta(get_the_ID(), 'sizing_guide_content', true);
 	
@@ -358,15 +358,15 @@ function thb_sizing_guide() {
 		<?php
 	}
 }
-add_action('woocommerce_single_product_summary', 'thb_sizing_guide', 37);
+add_action('woocommerce_single_product_summary', 'vif_sizing_guide', 37);
 
 /* Menu Icon Modification */
-function thb_new_menu_items( $items ) {
+function vif_new_menu_items( $items ) {
 		unset($items['dashboard']);
     return $items;
 }
 
-add_filter( 'woocommerce_account_menu_items', 'thb_new_menu_items' );
+add_filter( 'woocommerce_account_menu_items', 'vif_new_menu_items' );
 
 /* Shop Headers */
 add_action( 'woocommerce_before_main_content', function() { 
@@ -378,33 +378,33 @@ add_action( 'woocommerce_before_main_content', function() {
 /* Shop Page - Remove orderby & breadcrumb */
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-add_action( 'thb_before_shop_loop_result_count', 'woocommerce_result_count', 20 );
-add_action( 'thb_before_shop_loop_catalog_ordering', 'woocommerce_catalog_ordering', 30 );
+add_action( 'vif_before_shop_loop_result_count', 'woocommerce_result_count', 20 );
+add_action( 'vif_before_shop_loop_catalog_ordering', 'woocommerce_catalog_ordering', 30 );
 
 /* Shop Page - Remove Breadcrumb */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
-add_action( 'thb_breadcrumbs', 'woocommerce_breadcrumb', 20);
+add_action( 'vif_breadcrumbs', 'woocommerce_breadcrumb', 20);
 
 /* Category Text */
-function thb_before_subcategory_title() {
+function vif_before_subcategory_title() {
 	echo '<div>';
 }
-add_action( 'woocommerce_before_subcategory_title', 'thb_before_subcategory_title', 15 );
-function thb_subcategory_title() {
+add_action( 'woocommerce_before_subcategory_title', 'vif_before_subcategory_title', 15 );
+function vif_subcategory_title() {
 	echo '<span>'.esc_html__('Explore Now','viftech').'</span>';
 }
-add_action( 'woocommerce_shop_loop_subcategory_title', 'thb_subcategory_title', 15 );
-function thb_after_subcategory_title() {
+add_action( 'woocommerce_shop_loop_subcategory_title', 'vif_subcategory_title', 15 );
+function vif_after_subcategory_title() {
 	echo '</div>';
 }
-add_action( 'woocommerce_after_subcategory_title', 'thb_after_subcategory_title', 15 );
-function thb_subcategory_count_html($markup, $category) {
+add_action( 'woocommerce_after_subcategory_title', 'vif_after_subcategory_title', 15 );
+function vif_subcategory_count_html($markup, $category) {
 	return '<mark class="count">' . $category->count . '</mark>';
 }
-add_filter( 'woocommerce_subcategory_count_html', 'thb_subcategory_count_html', 10, 2 );
+add_filter( 'woocommerce_subcategory_count_html', 'vif_subcategory_count_html', 10, 2 );
 
 /* Change Category Thumbnail Size */
-function thb_template_loop_category_link_open($category) {
+function vif_template_loop_category_link_open($category) {
 	$thumbnail_id  			= get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true  );
 	if ( $thumbnail_id ) {
 		$image = wp_get_attachment_image_src( $thumbnail_id, 'full'  );
@@ -416,7 +416,7 @@ function thb_template_loop_category_link_open($category) {
 }
 remove_action( 'woocommerce_before_subcategory_title', 'woocommerce_subcategory_thumbnail', 10 );
 remove_action( 'woocommerce_before_subcategory', 'woocommerce_template_loop_category_link_open', 10);
-add_action( 'woocommerce_before_subcategory', 'thb_template_loop_category_link_open', 10);
+add_action( 'woocommerce_before_subcategory', 'vif_template_loop_category_link_open', 10);
 
 /* Cart Page - Move Crosssells */
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );

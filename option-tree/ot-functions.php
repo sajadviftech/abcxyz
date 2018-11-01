@@ -1,5 +1,5 @@
 <?php
-function thb_bgecho($array, $setting = false) {
+function vif_bgecho($array, $setting = false) {
 	if(!empty($array)) {
 		if (array_key_exists('background-color', $array) || $setting == 'background-color') { 
 			echo "background-color: " . $array['background-color'] . " !important;\n";
@@ -24,7 +24,7 @@ function thb_bgecho($array, $setting = false) {
 	}
 }
 
-function thb_paddingecho($array) {
+function vif_paddingecho($array) {
 	if(!empty($array)) {
 		$unit = array_key_exists('unit',$array) ? $array['unit'] : 'px';
 
@@ -43,7 +43,7 @@ function thb_paddingecho($array) {
 	}
 }
 
-function thb_borderecho($array) {
+function vif_borderecho($array) {
 	if(!empty($array)) {
 		$return = '';
 		$unit = array_key_exists('unit',$array) ? $array['unit'] : 'px';
@@ -64,7 +64,7 @@ function thb_borderecho($array) {
 	}
 }
 
-function thb_linkcolorecho($array, $start = '') {
+function vif_linkcolorecho($array, $start = '') {
 	if(!empty($array)) {
 
 		if (array_key_exists('link', $array) && !empty($array['link'])) { 
@@ -85,10 +85,10 @@ function thb_linkcolorecho($array, $start = '') {
 	}
 }
 
-$thb_fontlist = array();
+$vif_fontlist = array();
 
-function thb_google_webfont() {
-		global $thb_fontlist;
+function vif_google_webfont() {
+		global $vif_fontlist;
 		$options = array( 
 			array( 
 					'option' => "primary_font", 
@@ -135,22 +135,22 @@ function thb_google_webfont() {
 		foreach($options as $option) {
 			$array = ot_get_option($option['option']);
 			if (!empty($array['font-family'])) { 
-				if (!in_array($array['font-family'], $thb_fontlist)) {
+				if (!in_array($array['font-family'], $vif_fontlist)) {
 					if (in_array($array['font-family'], $google_fonts)) {
 						$font = $array['font-family'].$weights;
-						array_push($thb_fontlist, $font);
+						array_push($vif_fontlist, $font);
 					}
 				}
 			} else if ($option['default']) {
-				if (!in_array($option['default'], $thb_fontlist)) {
+				if (!in_array($option['default'], $vif_fontlist)) {
 					if (in_array($option['default'], $google_fonts)) {
 						$font = $option['default'].$weights;
-						array_push($thb_fontlist, $font);
+						array_push($vif_fontlist, $font);
 					}
 				}
 			}
 		}
-		$font_list = array_unique($thb_fontlist);
+		$font_list = array_unique($vif_fontlist);
 
 		if ($font_list) {
 			$cssfont = urlencode(implode('|', $font_list));
@@ -163,8 +163,8 @@ function thb_google_webfont() {
 		}
 }
 
-function thb_typeecho($array, $important = false, $default = false) {
-	global $thb_fontlist;
+function vif_typeecho($array, $important = false, $default = false) {
+	global $vif_fontlist;
 	
 	if(!empty($array)) {
 		
@@ -211,7 +211,7 @@ function thb_typeecho($array, $important = false, $default = false) {
 	}
 }
 
-function thb_spacingecho($array, $std = false, $type = 'padding') {
+function vif_spacingecho($array, $std = false, $type = 'padding') {
 	if(!empty($array)) {
 		$unit = array_key_exists('unit', $array) ? $array['unit'] : 'px';
 		if (array_key_exists('top', $array)) {
@@ -234,13 +234,13 @@ function thb_spacingecho($array, $std = false, $type = 'padding') {
 	
 }
 
-function thb_measurementecho($array) {
+function vif_measurementecho($array) {
 	if(!empty($array)) {
 		echo $array[0] . $array[1];
 	}
 }
 
-function thb_hex2rgb($hex) {
+function vif_hex2rgb($hex) {
 
    $hex = str_replace("#", "", $hex);
 
@@ -263,7 +263,7 @@ function thb_hex2rgb($hex) {
    return implode(",", $rgb); // returns the rgb values separated by commas
 
 }
-function thb_adjustColorLightenDarken($color_code,$percentage_adjuster = 0) {
+function vif_adjustColorLightenDarken($color_code,$percentage_adjuster = 0) {
     $percentage_adjuster = round($percentage_adjuster/100,2);
     if(is_array($color_code)) {
         $r = $color_code["r"] - (round($color_code["r"])*$percentage_adjuster);
@@ -289,7 +289,7 @@ function thb_adjustColorLightenDarken($color_code,$percentage_adjuster = 0) {
 
     }
 }
-function thb_catcolorecho($array) {
+function vif_catcolorecho($array) {
 	if(!empty($array)) {
 		foreach ($array as $cat => $color) {
 			$cat = get_category($cat);

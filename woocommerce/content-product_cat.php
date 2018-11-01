@@ -25,7 +25,7 @@ $shop_product_listing_layout = ot_get_option('shop_product_listing_layout', 'sty
 
 if ( is_shop() || is_product_category() || is_product_tag() ) {
 	if (in_array($shop_product_listing_layout, array('style2', 'style3', 'style4', 'style5', 'style6', 'style7', 'style8'))) {
-		$columns = thb_get_product_size($shop_product_listing_layout, $woocommerce_loop['loop']);
+		$columns = vif_get_product_size($shop_product_listing_layout, $woocommerce_loop['loop']);
 	} else {
 		$columns = isset($_GET['products_per_row']) ? $_GET['products_per_row'] : ot_get_option('products_per_row', 'large-3');
 	}

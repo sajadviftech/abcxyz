@@ -1,5 +1,5 @@
 <?php
-function thb_get_masonry_size($size = '') {
+function vif_get_masonry_size($size = '') {
 	$class_image = array();
 	switch($size) {
 		case 'large':
@@ -24,7 +24,7 @@ function thb_get_masonry_size($size = '') {
 }
 
 /* Portfolio Categories Array */
-function thb_portfolioCategories(){
+function vif_portfolioCategories(){
 	$portfolio_categories = get_terms('portfolio-category', array('hide_empty' => false));
 	$out = array();
 	if (empty($portfolio_categories->errors)) {
@@ -36,7 +36,7 @@ function thb_portfolioCategories(){
 }
 
 /* Header Filter */
-function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array = false) {
+function vif_portfolio_categories($categories, $id, $style, $portfolio_id_array = false) {
 	
 	if (!empty($categories) || $categories) { 
 		$portfolio_id_array = $portfolio_id_array ? $portfolio_id_array : array();
@@ -95,11 +95,11 @@ function thb_portfolio_categories($categories, $id, $style, $portfolio_id_array 
 		<?php
 	}
 }
-add_action( 'vif-render-filter', 'thb_portfolio_categories', 1, 4 );
+add_action( 'vif-render-filter', 'vif_portfolio_categories', 1, 4 );
 
 
 /* Portfolio Attributes */
-function thb_portfolio_attributes($style, $columns, $animation) {
+function vif_portfolio_attributes($style, $columns, $animation) {
 	$id = get_the_ID();
 	$client_more = get_post_meta($id, 'client_more', true);
 	
@@ -130,10 +130,10 @@ function thb_portfolio_attributes($style, $columns, $animation) {
 	<?php
 	}
 }
-add_action( 'thb_portfolio_attributes', 'thb_portfolio_attributes', 3, 3 );
+add_action( 'vif_portfolio_attributes', 'vif_portfolio_attributes', 3, 3 );
 
 /* Social Sharing */
-function thb_social_article_detail() {
+function vif_social_article_detail() {
 	$id = get_the_ID();
 	$sharing_type = ot_get_option('sharing_buttons', array());
 ?>
@@ -141,7 +141,7 @@ function thb_social_article_detail() {
 <aside class="share_wrapper">
 	<a href="#" class="share-post-link"><?php get_template_part('assets/img/svg/share.svg'); ?><span><?php esc_html_e('Share', 'viftech'); ?></span></a>
 	<?php
-	function thb_add_shareform($id) { 
+	function vif_add_shareform($id) { 
 		$permalink = get_permalink($id);
 		$title = the_title_attribute(array('echo' => 0, 'post' => $id) );
 		$image_id = get_post_thumbnail_id($id);
@@ -194,16 +194,16 @@ function thb_social_article_detail() {
 		</div>
 	<?php
 	}
-	add_action( 'wp_footer', 'thb_add_shareform', 100, 1 );
+	add_action( 'wp_footer', 'vif_add_shareform', 100, 1 );
 	?>
 </aside>
 <?php } ?>
 <?php
 }
-add_action( 'thb_social_article_detail', 'thb_social_article_detail', 3, 3 );
+add_action( 'vif_social_article_detail', 'vif_social_article_detail', 3, 3 );
 
 /* Portfolio Share */
-function thb_portfolio_share($widget_title,$sharing_type, $thb_alignment) {
+function vif_portfolio_share($widget_title,$sharing_type, $vif_alignment) {
 	$id = get_the_ID();
 	$permalink = get_permalink($id);
 	$title = the_title_attribute(array('echo' => 0, 'post' => $id) );
@@ -211,7 +211,7 @@ function thb_portfolio_share($widget_title,$sharing_type, $thb_alignment) {
 	$image = wp_get_attachment_image_src($image_id,'full');
 	$twitter_user = ot_get_option('twitter_bar_username', 'anteksiler');
 	?>
-	<div class="vif-share-icons <?php echo esc_attr($thb_alignment); ?>">
+	<div class="vif-share-icons <?php echo esc_attr($vif_alignment); ?>">
 		<?php if ($widget_title) { ?><h6><?php echo esc_html($widget_title); ?></h6><?php } ?>
 		<ul>
 			<?php if (in_array('facebook',$sharing_type)) { ?>
@@ -246,10 +246,10 @@ function thb_portfolio_share($widget_title,$sharing_type, $thb_alignment) {
 	</div>
 	<?php
 }
-add_action( 'thb_portfolio_share', 'thb_portfolio_share', 3, 3 );
+add_action( 'vif_portfolio_share', 'vif_portfolio_share', 3, 3 );
 
 /* Article Prev/Next */
-function thb_portfolio_nav() {
+function vif_portfolio_nav() {
 
 	if ('on' !== ot_get_option('portfolio_nav', 'on')) { return; }
 	
@@ -258,7 +258,7 @@ function thb_portfolio_nav() {
 	$prev = get_adjacent_post( $in_same_term, false, true, 'portfolio-category' );
 	$next = get_adjacent_post( $in_same_term, false, false, 'portfolio-category' );	
 	?>
-	<div class="thb_portfolio_nav <?php echo esc_attr($portfolio_nav_style); ?>">
+	<div class="vif_portfolio_nav <?php echo esc_attr($portfolio_nav_style); ?>">
 		<?php if ('style1' === $portfolio_nav_style) { ?>
 			<div class="row full-width-row no-row-padding no-padding">
 				<div class="small-12 columns">
@@ -381,10 +381,10 @@ function thb_portfolio_nav() {
 	</div>
 	<?php
 }
-add_action( 'thb_portfolio_nav', 'thb_portfolio_nav' );
+add_action( 'vif_portfolio_nav', 'vif_portfolio_nav' );
 
 /* Portfolio Video Header */
-function thb_portfolio_video() {
+function vif_portfolio_video() {
 	$id = get_the_ID();
 	$portfolio_header_video = get_post_meta($id, 'portfolio_header_video', true);
 	$portfolio_header_video_url = wp_get_attachment_url($portfolio_header_video);
@@ -405,7 +405,7 @@ function thb_portfolio_video() {
 }
 
 /* Disable GIF Sizes */
-function thb_disable_gif_sizes( $sizes, $metadata ) {
+function vif_disable_gif_sizes( $sizes, $metadata ) {
 
     // Get filetype data.
     $filetype = wp_check_filetype($metadata['file']);
@@ -419,4 +419,4 @@ function thb_disable_gif_sizes( $sizes, $metadata ) {
     // Return sizes you want to create from image (None if image is gif.)
     return $sizes;
 }   
-add_filter('intermediate_image_sizes_advanced', 'thb_disable_gif_sizes', 10, 2); 
+add_filter('intermediate_image_sizes_advanced', 'vif_disable_gif_sizes', 10, 2); 

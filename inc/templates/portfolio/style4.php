@@ -1,8 +1,8 @@
 <?php
 	$vars = $wp_query->query_vars;
-	$thb_size = array_key_exists('thb_size', $vars) ? $vars['thb_size'] : false;
-	$thb_animation = array_key_exists('thb_animation', $vars) ? $vars['thb_animation'] : false;
-	$thb_aspect = array_key_exists('thb_aspect', $vars) ? $vars['thb_aspect'] : false;
+	$vif_size = array_key_exists('vif_size', $vars) ? $vars['vif_size'] : false;
+	$vif_animation = array_key_exists('vif_animation', $vars) ? $vars['vif_animation'] : false;
+	$vif_aspect = array_key_exists('vif_aspect', $vars) ? $vars['vif_aspect'] : false;
 	
 	$id = get_the_ID();
 	$element_class = uniqid('portfolio-id-'.$id.'-');
@@ -29,8 +29,8 @@
 	$class[] = 'columns';
 	$class[] = 'type-portfolio';
 	$class[] = 'style4';
-	$class[] = $thb_size;
-	$class[] = $thb_animation;
+	$class[] = $vif_size;
+	$class[] = $vif_animation;
 	$class[] = $cats;
 	$class[] = $element_class;
 	
@@ -46,7 +46,7 @@
 	}
 	
 	// Image sizes
-	$image_size = $thb_aspect ? 'viftech-masonry-x2' : 'viftech-square-x2';
+	$image_size = $vif_aspect ? 'viftech-masonry-x2' : 'viftech-square-x2';
 ?>
 <div <?php post_class($class); ?> id="portfolio-<?php the_ID(); ?>">	
 	<div class="portfolio-holder">
@@ -64,7 +64,7 @@
 	<?php if ($main_color) { ?>
 	<style>
 		.<?php echo esc_attr($element_class) ?>.style4 .vif-portfolio-hover {
-			<?php echo esc_html(thb_css_gradient($main_color[0], $main_color[1], "0", true)); ?>
+			<?php echo esc_html(vif_css_gradient($main_color[0], $main_color[1], "0", true)); ?>
 		}
 	</style>
 	<?php } ?>

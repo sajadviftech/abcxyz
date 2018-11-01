@@ -1,8 +1,8 @@
 <?php
 /* Thb Tweets */
-function thb_gettweets($count = 5) {
+function vif_gettweets($count = 5) {
 	
-	$cache = get_transient( 'thb_twitter_'. ot_get_option('twitter_bar_accesstoken') .'_'.$count);
+	$cache = get_transient( 'vif_twitter_'. ot_get_option('twitter_bar_accesstoken') .'_'.$count);
 	
 	switch (ot_get_option('twitter_cache', '1')) {
 		case '1h':
@@ -34,7 +34,7 @@ function thb_gettweets($count = 5) {
 			'consumer_secret' => ot_get_option('twitter_bar_consumersecret')
 		);
 		
-		$connection 		= new thb_TwitterAPIExchange($settings);
+		$connection 		= new vif_TwitterAPIExchange($settings);
 		$url            = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
 		$getfield       = '?screen_name='.ot_get_option('twitter_bar_username').'&count='.$count;
 		$request_method = 'GET';
@@ -53,12 +53,12 @@ function thb_gettweets($count = 5) {
 		} else {
 	    foreach($response as $tweet) { 
 	    	$tweets[] =  array( 
-	    		'tweet' => $connection->getHelper()->thb_getTweetText($tweet),
-	    		'url' => $connection->getHelper()->thb_getTweetURL($tweet),
-	    		'time' => $connection->getHelper()->thb_getTweetTime($tweet)
+	    		'tweet' => $connection->getHelper()->vif_getTweetText($tweet),
+	    		'url' => $connection->getHelper()->vif_getTweetURL($tweet),
+	    		'time' => $connection->getHelper()->vif_getTweetTime($tweet)
 	    	);
 	    }
-	    set_transient( 'thb_twitter_'. ot_get_option('twitter_bar_accesstoken') .'_'.$count, $tweets, $cache_time );
+	    set_transient( 'vif_twitter_'. ot_get_option('twitter_bar_accesstoken') .'_'.$count, $tweets, $cache_time );
 	    return $tweets;
 	  }	
 	} else {
@@ -67,7 +67,7 @@ function thb_gettweets($count = 5) {
 }
 
 class ThbTwitterHelper {
-  public function thb_getTweetText($tweet) {
+  public function vif_getTweetText($tweet) {
     $protocol = is_ssl() ? 'https' : 'http';
     
     if(!empty($tweet['text'])) {
@@ -88,28 +88,28 @@ class ThbTwitterHelper {
     	return '';
     }
   }
-  public function thb_getTweetTime($tweet) {
+  public function vif_getTweetTime($tweet) {
     if(!empty($tweet['created_at'])) {
         return human_time_diff(strtotime($tweet['created_at']), current_time('timestamp') ).' '.esc_html__('ago', 'viftech');
     } else {
     	return '';
     }
   }
-  public function thb_getTweetURL($tweet) {
+  public function vif_getTweetURL($tweet) {
     if(!empty($tweet['id_str']) && $tweet['user']['screen_name']) {
       return 'https://twitter.com/'.$tweet['user']['screen_name'].'/statuses/'.$tweet['id_str'];
     } else {
     	return '#';
     }
   }
-  public function thb_getTweetUserScreenName($tweet) {
+  public function vif_getTweetUserScreenName($tweet) {
     if(!empty($tweet['id_str']) && $tweet['user']['screen_name']) {
         return $tweet['user']['screen_name'];
     } else {
     	return '#';
     }
   }
-  public function thb_getTweetUserName($tweet) {
+  public function vif_getTweetUserName($tweet) {
     if(!empty($tweet['id_str']) && $tweet['user']['name']) {
         return $tweet['user']['name'];
     } else {

@@ -1,8 +1,8 @@
 <?php
 
 /* Adding Lazyload Class */
-function thb_add_lazy_class( $html = '', $new_class ) {
-	if ('lazyload' === ot_get_option('thb_preload_type', 'preloader')) {
+function vif_add_lazy_class( $html = '', $new_class ) {
+	if ('lazyload' === ot_get_option('vif_preload_type', 'preloader')) {
 		$pattern = '/class="([^"]*)"/';
 	
 		// Class attribute set.
@@ -24,8 +24,8 @@ function thb_add_lazy_class( $html = '', $new_class ) {
 }
 
 /* Filter Images */
-function thb_lazy_images_filter( $content ) {
-	if ('lazyload' === ot_get_option('thb_preload_type', 'preloader')) {
+function vif_lazy_images_filter( $content ) {
+	if ('lazyload' === ot_get_option('vif_preload_type', 'preloader')) {
 		if ( is_feed()
 			|| intval( get_query_var( 'print' ) ) === 1
 			|| intval( get_query_var( 'printpage' ) ) === 1
@@ -51,7 +51,7 @@ function thb_lazy_images_filter( $content ) {
 				$replace_html = preg_replace( '/<img(.*?)src=/i', '<img$1src="' . $placeholder . '" data-src=', $img_html );
 				$replace_html = preg_replace( '/srcset=/i', $resp_replace, $replace_html );
 	
-				$replace_html = thb_add_lazy_class( $replace_html, 'lazyload' );
+				$replace_html = vif_add_lazy_class( $replace_html, 'lazyload' );
 	
 				array_push( $search, $img_html );
 				array_push( $replace, $replace_html );
@@ -64,8 +64,8 @@ function thb_lazy_images_filter( $content ) {
 }
 
 /* Change source to low quality */
-function thb_lazy_low_quality( $attr, $attachment, $size ) {
-	if ('lazyload' === ot_get_option('thb_preload_type', 'preloader')) {
+function vif_lazy_low_quality( $attr, $attachment, $size ) {
+	if ('lazyload' === ot_get_option('vif_preload_type', 'preloader')) {
 		$placeholder = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 	
 		// Low Quality Image Placeholders.
@@ -100,6 +100,6 @@ function thb_lazy_low_quality( $attr, $attachment, $size ) {
  * Filters
  */
 if ( !is_admin() ) {
-	add_filter( 'the_content', 'thb_lazy_images_filter', 200 );
-	add_filter( 'wp_get_attachment_image_attributes', 'thb_lazy_low_quality', 10, 3 );
+	add_filter( 'the_content', 'vif_lazy_images_filter', 200 );
+	add_filter( 'wp_get_attachment_image_attributes', 'vif_lazy_low_quality', 10, 3 );
 }

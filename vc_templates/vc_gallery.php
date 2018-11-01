@@ -44,11 +44,11 @@ $slides_wrap_end = '';
 $el_class = $this->getExtraClass( $el_class );
 if ( 'grid' === $gallery_type ) {
 	
-	$slides_wrap_start = '<div class="row '.$lightbox.' '.$thb_margins.'">';
+	$slides_wrap_start = '<div class="row '.$lightbox.' '.$vif_margins.'">';
 	$slides_wrap_end = '</div>';
 } else if ( 'vif-portfolio' === $gallery_type) {
 	
-	$slides_wrap_start = '<div class="vif-portfolio masonry variable-height row '.$lightbox.' '.$thb_margins.'" data-layoutmode="packery" data-vif-animation="vif-vertical-flip">';
+	$slides_wrap_start = '<div class="vif-portfolio masonry variable-height row '.$lightbox.' '.$vif_margins.'" data-layoutmode="packery" data-vif-animation="vif-vertical-flip">';
 	$slides_wrap_end = '</div>';
 
 }
@@ -84,16 +84,16 @@ $output .= '<div class="wpb_gallery_slides">' . $slides_wrap_start;
 // Start Image Output
 foreach ( $images as $i => $image ) {
 	// Columns
-	$el_start = '<div class="'.$thb_columns.' columns"><div class="'.$animation.'">';
+	$el_start = '<div class="'.$vif_columns.' columns"><div class="'.$animation.'">';
 	$el_end = '</div></div>';
 	$attachment_meta = get_post_custom($image);
 
 	if ( 'vif-portfolio' === $gallery_type) {
 		$masonry_image_size = !empty($attachment_meta['vif-masonry-image-size']) ? $attachment_meta['vif-masonry-image-size'][0] : 'masonry-small';
 		
-		$thb_masonry_size = thb_get_masonry_size($masonry_image_size);
-		$masonry_class = $thb_masonry_size['class'];
-		$img_size = $thb_masonry_size['image_size'];
+		$vif_masonry_size = vif_get_masonry_size($masonry_image_size);
+		$masonry_class = $vif_masonry_size['class'];
+		$img_size = $vif_masonry_size['image_size'];
 		
 		$el_start = '<div class="'.$masonry_class.' columns"><div class="'.$animation.'">';
 	}

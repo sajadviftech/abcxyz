@@ -16,14 +16,14 @@
 	?>
 </head>
 <body <?php body_class(); ?>>
-<?php do_action('thb_before_wrapper'); ?>
+<?php do_action('vif_before_wrapper'); ?>
  <!-- Start Wrapper -->
 <div id="wrapper" class="vif-page-transition-<?php echo esc_attr(ot_get_option('page_transition', 'on')); ?>">
-	<?php do_action('thb_mobile_menu'); ?>
+	<?php do_action('vif_mobile_menu'); ?>
 	
-	<?php do_action( 'thb_side_cart' ); ?>
+	<?php do_action( 'vif_side_cart' ); ?>
 	
-	<?php do_action( 'thb_shop_filters' ); ?>
+	<?php do_action( 'vif_shop_filters' ); ?>
 	
 	<?php get_template_part( 'inc/templates/header/'.ot_get_option('header_style', 'style1').''); ?>
 	

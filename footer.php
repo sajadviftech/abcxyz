@@ -7,7 +7,7 @@
 	
 	$cond = ($footer === 'on' && $footer_portfolio === 'on' && $footer_article === 'on' && $disable_footer !== 'on')
 ?>
-		<?php if ($cond) { do_action('thb_footer_bar'); } ?>
+		<?php if ($cond) { do_action('vif_footer_bar'); } ?>
 	</div> <!-- End Main -->
 	
 	<div class="fixed-footer-container">
@@ -23,6 +23,6 @@
 	?>
 	
 </div> <!-- End Wrapper -->
-<?php do_action('thb_after_wrapper'); ?>
+<?php do_action('vif_after_wrapper'); ?>
 </body>
 </html>

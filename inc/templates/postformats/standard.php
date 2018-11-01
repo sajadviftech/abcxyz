@@ -1,13 +1,13 @@
 <?php
-	$thb_id = get_the_ID();
-	$post_header_bg = get_post_meta($thb_id, 'post_header_bg', true);
+	$vif_id = get_the_ID();
+	$post_header_bg = get_post_meta($vif_id, 'post_header_bg', true);
 ?>
 <figure class="post-gallery parallax post-gallery-detail">
 	<div class="parallax_bg">
 		<?php if ($post_header_bg) { ?>
 			<style>
-				.post-<?php echo esc_attr($thb_id); ?> .parallax_bg {
-					<?php thb_bgecho($post_header_bg); ?>
+				.post-<?php echo esc_attr($vif_id); ?> .parallax_bg {
+					<?php vif_bgecho($post_header_bg); ?>
 				}
 			</style>
 		<?php } else { the_post_thumbnail('viftech-wide-3x'); }?>

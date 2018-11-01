@@ -1,7 +1,7 @@
 <?php
 
 // Utilities
-$thb_animation_array = array(
+$vif_animation_array = array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Animation", 'viftech'),
 	"param_name" => "animation",
@@ -19,7 +19,7 @@ $thb_animation_array = array(
 		"Fade" => "animation fade-in"
 	)
 );
-$thb_column_array = array(
+$vif_column_array = array(
 	'1 Column'  => "1",
 	'2 Columns' => "medium-6",
 	'3 Columns' => "medium-4",
@@ -27,20 +27,20 @@ $thb_column_array = array(
 	'5 Columns' => "vif-5",
 	'6 Columns' => "medium-2"
 );
-$thb_filter_array = array(
+$vif_filter_array = array(
 	'Style 1 - Default' => "style1",
 	'Style 1 - Default (Static)' => "style1 alt",
 	'Style 2 - Regular' => "style2",
 	'Style 3 - With Counts' => "style3",
 	'Style 4 - Menu Items' => "style4"
 );
-$thb_button_style_array = array(
+$vif_button_style_array = array(
 	'Style 1' => "style1",
 	'Style 2' => 'style2',
 	'Style 3' => "style3",
 	'Style 4' => "style4"
 );
-$thb_offset_array = array(
+$vif_offset_array = array(
 	'-100%' => '-100%',
 	'-95%' => '-95%',
 	'-90%' => '-90%',
@@ -84,7 +84,7 @@ $thb_offset_array = array(
 	'100%' => '100%'
 );
 
-function thb_vc_gradient_color1( $group_name = 'Styling' ) {
+function vif_vc_gradient_color1( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
 		'heading' => esc_html__( 'Background Gradient Color 1', 'viftech' ),
@@ -96,7 +96,7 @@ function thb_vc_gradient_color1( $group_name = 'Styling' ) {
 	);
 }
 
-function thb_vc_gradient_color2( $group_name = 'Styling' ) {
+function vif_vc_gradient_color2( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
 		'heading' => esc_html__( 'Background Gradient Color 2', 'viftech' ),
@@ -108,7 +108,7 @@ function thb_vc_gradient_color2( $group_name = 'Styling' ) {
 	);
 }
 
-function thb_vc_gradient_color3( $group_name = 'Styling' ) {
+function vif_vc_gradient_color3( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
 		'heading' => esc_html__( 'Background Gradient Color 1', 'viftech' ),
@@ -120,7 +120,7 @@ function thb_vc_gradient_color3( $group_name = 'Styling' ) {
 	);
 }
 
-function thb_vc_gradient_color4( $group_name = 'Styling' ) {
+function vif_vc_gradient_color4( $group_name = 'Styling' ) {
 	return array(
 		'type' => 'colorpicker',
 		'heading' => esc_html__( 'Background Gradient Color 2', 'viftech' ),
@@ -133,8 +133,8 @@ function thb_vc_gradient_color4( $group_name = 'Styling' ) {
 }
 
 // Shortcodes 
-$shortcodes = Theme_Config::$thb_theme_directory. 'vc_templates/';
-$files = glob($shortcodes.'thb_?*.php');
+$shortcodes = Theme_Config::$vif_theme_directory. 'vc_templates/';
+$files = glob($shortcodes.'vif_?*.php');
 foreach ($files as $filename) {
 	require get_theme_file_path('vc_templates/'.basename($filename));
 }
@@ -153,7 +153,7 @@ vc_remove_param( "vc_row", "parallax_speed_video" );
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
 	"heading" => esc_html__("Enable Full Width", 'viftech'),
-	"param_name" => "thb_full_width",
+	"param_name" => "vif_full_width",
 	"value" => array(
 		"Yes" => "true"
 	),
@@ -173,7 +173,7 @@ vc_add_param("vc_row", array(
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
 	"heading" => esc_html__("Disable Row Padding", 'viftech'),
-	"param_name" => "thb_row_padding",
+	"param_name" => "vif_row_padding",
 	"value" => array(
 		"Yes" => "true"
 	),
@@ -183,7 +183,7 @@ vc_add_param("vc_row", array(
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
 	"heading" => esc_html__("Disable Column Padding", 'viftech'),
-	"param_name" => "thb_column_padding",
+	"param_name" => "vif_column_padding",
 	"value" => array(
 		"Yes" => "true"
 	),
@@ -193,14 +193,14 @@ vc_add_param("vc_row", array(
 vc_add_param("vc_row", array(
 	"type" => "textfield",
 	"heading" => esc_html__("Video Background", 'viftech'),
-	"param_name" => "thb_video_bg",
+	"param_name" => "vif_video_bg",
 	'weight' => 1,
 	"description" => esc_html__("You can specify a video background file here (mp4). Row Background Image will be used as Poster.", 'viftech'),
 ));
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
 	"heading" => esc_html__("Background Overlay Color", 'viftech'),
-	"param_name" => "thb_video_overlay_color",
+	"param_name" => "vif_video_overlay_color",
 	'weight' => 1,
 	"description" => esc_html__("If you want, you can select an overlay color.", 'viftech'),
 ));
@@ -208,7 +208,7 @@ vc_add_param("vc_row", array(
 vc_add_param("vc_row", array(
 	"type" => "checkbox",
 	"heading" => esc_html__("Display Scroll to Bottom Arrow?", 'viftech'),
-	"param_name" => "thb_scroll_bottom",
+	"param_name" => "vif_scroll_bottom",
 	"value" => array(
 		"Yes" => "true"
 	),
@@ -217,7 +217,7 @@ vc_add_param("vc_row", array(
 vc_add_param("vc_row", array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Scroll to Bottom Arrow Style", 'viftech'),
-	"param_name" => "thb_scroll_bottom_style",
+	"param_name" => "vif_scroll_bottom_style",
 	"value" => array(
 		"Line" => "style1",
 		"Mouse" => "style2",
@@ -225,23 +225,23 @@ vc_add_param("vc_row", array(
 		"Radius" => "style4"
 	),
 	"description" => esc_html__("This changes the shape of the arrow", 'viftech'),
-	"dependency" => Array('element' => "thb_scroll_bottom", 'value' => array('true'))
+	"dependency" => Array('element' => "vif_scroll_bottom", 'value' => array('true'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Scroll to Bottom Arrow Color", 'viftech'),
-	"param_name" => "thb_scroll_bottom_color",
+	"param_name" => "vif_scroll_bottom_color",
 	"value" => array(
 		"Dark" => "dark",
 		"Light" => "light"
 	),
 	"description" => esc_html__("Color of the scroll to bottom arrow", 'viftech'),
-	"dependency" => Array('element' => "thb_scroll_bottom", 'value' => array('true'))
+	"dependency" => Array('element' => "vif_scroll_bottom", 'value' => array('true'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "textfield",
 	"heading" => esc_html__("Border Radius", 'viftech'),
-	"param_name" => "thb_border_radius",
+	"param_name" => "vif_border_radius",
 	'weight' => 1,
 	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 ));
@@ -261,47 +261,47 @@ vc_add_param("vc_row", array(
 	"type" => "checkbox",
 	"group" => esc_html__("Dividers", 'viftech'),
 	"heading" => esc_html__("Enable Dividers?", 'viftech'),
-	"param_name" => "thb_shape_divider",
+	"param_name" => "vif_shape_divider",
 	"value" => array(
 		"Yes" => "true"
 	),
 	
 ));
 vc_add_param("vc_row", array(
-	"type" => "thb_radio_image",
+	"type" => "vif_radio_image",
 	"heading" => esc_html__("Divider Shape", 'viftech'),
 	"param_name" => "divider_shape",
 	"group" => esc_html__("Dividers", 'viftech'),
 	"options" => array(
-		'curve' 				=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/curve.png",
-		'tilt_v2' 				=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt_v2.png",
-		'tilt' 					=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/tilt.png",
-		'triangle' 			=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/triangle.png",
-		'waves_alt' 			=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_alt.png",
-		'waves_v2' 			=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_v2.png",
-		'waves' 				=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves.png",
-		'waves_opacity'	=> Theme_Config::$thb_theme_directory_uri."/assets/img/admin/dividers/waves_opacity.png"
+		'curve' 				=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/curve.png",
+		'tilt_v2' 				=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/tilt_v2.png",
+		'tilt' 					=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/tilt.png",
+		'triangle' 			=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/triangle.png",
+		'waves_alt' 			=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/waves_alt.png",
+		'waves_v2' 			=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/waves_v2.png",
+		'waves' 				=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/waves.png",
+		'waves_opacity'	=> Theme_Config::$vif_theme_directory_uri."/assets/img/admin/dividers/waves_opacity.png"
 	),
-	"dependency" => Array('element' => "thb_shape_divider", 'value' => array('true'))
+	"dependency" => Array('element' => "vif_shape_divider", 'value' => array('true'))
 ));
 
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
 	"heading" => esc_html__("Divider Color", 'viftech'),
-	"param_name" => "thb_divider_color",
+	"param_name" => "vif_divider_color",
 	"group" => esc_html__("Dividers", 'viftech'),
 ));
 vc_add_param("vc_row", array(
 	"type" => "colorpicker",
 	"heading" => esc_html__("Divider 2 Color", 'viftech'),
-	"param_name" => "thb_divider_color_2",
+	"param_name" => "vif_divider_color_2",
 	"group" => esc_html__("Dividers", 'viftech'),
-	"dependency" => Array('element' => "thb_divider_position", 'value' => array('both'))
+	"dependency" => Array('element' => "vif_divider_position", 'value' => array('both'))
 ));
 vc_add_param("vc_row", array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Divider Position", 'viftech'),
-	"param_name" => "thb_divider_position",
+	"param_name" => "vif_divider_position",
 	"group" => esc_html__("Dividers", 'viftech'),
 	"value" => array(
 		"Bottom" => "bottom",
@@ -313,7 +313,7 @@ vc_add_param("vc_row", array(
 	"type" => "textfield",
 	"group" => esc_html__("Dividers", 'viftech'),
 	"heading" => esc_html__("Divider Height", 'viftech'),
-	"param_name" => "thb_divider_height",
+	"param_name" => "vif_divider_height",
 	"description" => esc_html__('Enter a custom height for your shape divider in pixels without the "px"', 'viftech')
 ));
 
@@ -325,7 +325,7 @@ vc_remove_param( "vc_row_inner", "css_animation" );
 vc_add_param("vc_row_inner", array(
 	"type" => "checkbox",
 	"heading" => esc_html__("Enable Max Width", 'viftech'),
-	"param_name" => "thb_max_width",
+	"param_name" => "vif_max_width",
 	"value" => array(
 		"Yes" => "max_width"
 	),
@@ -337,7 +337,7 @@ vc_add_param("vc_row_inner", array(
 vc_add_param("vc_row_inner", array(
 	"type" => "checkbox",
 	"heading" => esc_html__("Disable Column Padding", 'viftech'),
-	"param_name" => "thb_column_padding",
+	"param_name" => "vif_column_padding",
 	"value" => array(
 		"Yes" => "true"
 	),
@@ -347,7 +347,7 @@ vc_add_param("vc_row_inner", array(
 vc_add_param("vc_row_inner", array(
 	"type" => "textfield",
 	"heading" => esc_html__("Border Radius", 'viftech'),
-	"param_name" => "thb_border_radius",
+	"param_name" => "vif_border_radius",
 	'weight' => 1,
 	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 ));
@@ -368,7 +368,7 @@ vc_remove_param( "vc_column", "css_animation" );
 vc_add_param("vc_column", array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Column Content Color", 'viftech'),
-	"param_name" => "thb_color",
+	"param_name" => "vif_color",
 	"value" => array(
 		"Dark" => "vif-dark-column",
 		"Light" => "vif-light-column"
@@ -399,7 +399,7 @@ vc_add_param("vc_column", array(
 vc_add_param("vc_column_inner", array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Column Content Color", 'viftech'),
-	"param_name" => "thb_color",
+	"param_name" => "vif_color",
 	"value" => array(
 		"Dark" => "vif-dark-column",
 		"Light" => "vif-light-column"
@@ -420,7 +420,7 @@ vc_add_param("vc_column_inner", array(
 vc_add_param("vc_column", array(
 	"type" => "textfield",
 	"heading" => esc_html__("Border Radius", 'viftech'),
-	"param_name" => "thb_border_radius",
+	"param_name" => "vif_border_radius",
 	'weight' => 1,
 	"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 ));
@@ -436,19 +436,19 @@ vc_add_param("vc_column", array(
 		'X-Large' => "xlarge-shadow",
 	)
 ));
-vc_add_param("vc_column", $thb_animation_array);
-vc_add_param("vc_column_inner", $thb_animation_array);
+vc_add_param("vc_column", $vif_animation_array);
+vc_add_param("vc_column_inner", $vif_animation_array);
 
 // Text Area
 vc_remove_param("vc_column_text", "css_animation");
-vc_add_param("vc_column_text", $thb_animation_array);
+vc_add_param("vc_column_text", $vif_animation_array);
 
 // Toggle Accordion
 vc_map( array(
 	"name" => esc_html__("Toggle / Accordion", 'viftech'),
-	"base" => "thb_accordion",
-	"icon" => "thb_vc_ico_accordion",
-	"class" => "thb_vc_sc_accordion wpb_vc_accordion wpb_vc_tta_accordion",
+	"base" => "vif_accordion",
+	"icon" => "vif_vc_ico_accordion",
+	"class" => "vif_vc_sc_accordion wpb_vc_accordion wpb_vc_tta_accordion",
 	"show_settings_on_create" => false,
 	'as_parent' => array(
 		'only' => 'vc_tta_section',
@@ -498,37 +498,37 @@ vc_map( array(
 
 VcShortcodeAutoloader::getInstance()->includeClass( 'WPBakeryShortCode_VC_Tta_Accordion' );
 
-class WPBakeryShortCode_thb_accordion extends WPBakeryShortCode_VC_Tta_Accordion { }
+class WPBakeryShortCode_vif_accordion extends WPBakeryShortCode_VC_Tta_Accordion { }
 
 // Attributes
 vc_map( array(
 	"name" => esc_html__( "Attributes", 'viftech'),
-	"base" => "thb_portfolio_attribute",
-	"icon" => "thb_vc_ico_portfolio_attribute",
-	"class" => "thb_vc_sc_portfolio_attribute",
+	"base" => "vif_portfolio_attribute",
+	"icon" => "vif_vc_ico_portfolio_attribute",
+	"class" => "vif_vc_sc_portfolio_attribute",
 	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
 	    "type" => "dropdown",
 	    "heading" => esc_html__("Columns", "viftech"),
-	    "param_name" => "thb_columns",
+	    "param_name" => "vif_columns",
 	    "admin_label" => true,
-	    "value" => $thb_column_array,
+	    "value" => $vif_column_array,
 	    "description" => esc_html__("Changes the column layout of the attributes.", "viftech")
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 	),
 	"description" => esc_html__("Show your Attributes on this page.", "viftech")
 ) );
 
 // AutoType
 vc_map( array(
-	'base'  => 'thb_autotype',
+	'base'  => 'vif_autotype',
 	'name' => esc_html__('Auto Type', 'viftech'),
 	"description" => esc_html__("Animated text typing", "viftech"),
 	'category' => esc_html__('by Viftech Themes', 'viftech'),
-	"icon" => "thb_vc_ico_autotype",
-	"class" => "thb_vc_sc_autotype",
+	"icon" => "vif_vc_ico_autotype",
+	"class" => "vif_vc_sc_autotype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
@@ -544,7 +544,7 @@ vc_map( array(
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Animated Text Color", "viftech"),
-			"param_name" => "thb_animated_color",
+			"param_name" => "vif_animated_color",
 			"description" => esc_html__("Uses the accent color by default", "viftech")
 		),
 		array(
@@ -583,9 +583,9 @@ vc_map( array(
 // Blog Posts
 vc_map( array(
 	"name" => esc_html__("Blog Posts", 'viftech'),
-	"base" => "thb_post",
-	"icon" => "thb_vc_ico_post",
-	"class" => "thb_vc_sc_post",
+	"base" => "vif_post",
+	"icon" => "vif_vc_ico_post",
+	"class" => "vif_vc_sc_post",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 	  array(
@@ -610,11 +610,11 @@ vc_map( array(
 	  		'Style 7' => "style7",
 	  	),
 	  ),
-	  $thb_animation_array,
+	  $vif_animation_array,
 	  array(
 	  	"type" => "checkbox",
 	  	"heading" => esc_html__("Use Carousel?", "viftech"),
-	  	"param_name" => "thb_carousel",
+	  	"param_name" => "vif_carousel",
 	  	"value" => array(
 	  		"Yes" => "true"
 	  	),
@@ -645,7 +645,7 @@ vc_map( array(
 	  		"Yes" => "true"
 	  	),
 	  	"description" => esc_html__("If enabled, the carousel will autoplay.", "viftech"),
-	  	"dependency" => Array('element' => "thb_carousel", 'value' => array('true'))
+	  	"dependency" => Array('element' => "vif_carousel", 'value' => array('true'))
 	  ),
 	  array(
 	  	"type" => "textfield",
@@ -658,7 +658,7 @@ vc_map( array(
 	  array(
 	  	"type" => "checkbox",
 	  	"heading" => esc_html__("Display Category?", "viftech"),
-	  	"param_name" => "thb_cat",
+	  	"param_name" => "vif_cat",
 	  	"value" => array(
 	  		"Yes" => "true"
 	  	),
@@ -669,7 +669,7 @@ vc_map( array(
 	  array(
 	  	"type" => "checkbox",
 	  	"heading" => esc_html__("Display Excerpt?", "viftech"),
-	  	"param_name" => "thb_excerpt",
+	  	"param_name" => "vif_excerpt",
 	  	"value" => array(
 	  		"Yes" => "true"
 	  	),
@@ -680,7 +680,7 @@ vc_map( array(
 	  array(
 	  	"type" => "checkbox",
 	  	"heading" => esc_html__("Display Date?", "viftech"),
-	  	"param_name" => "thb_date",
+	  	"param_name" => "vif_date",
 	  	"value" => array(
 	  		"Yes" => "true"
 	  	),
@@ -694,16 +694,16 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__( "Button", 'viftech'),
-	"base" => "thb_button",
-	"icon" => "thb_vc_ico_button",
-	"class" => "thb_vc_sc_button",
+	"base" => "vif_button",
+	"icon" => "vif_vc_ico_button",
+	"class" => "vif_vc_sc_button",
 	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Style", "viftech"),
 		  "param_name" => "style",
-		  "value" => $thb_button_style_array,
+		  "value" => $vif_button_style_array,
 		  "description" => esc_html__("This changes the look of the button", "viftech")
 		),
 		array(
@@ -725,7 +725,7 @@ vc_map( array(
 			"description" => esc_html__("If enabled, will show an arrow on hover.", "viftech"),
 			"dependency" => Array('element' => "style", 'value' => array('style1', 'style2', 'style3', 'style4'))
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Extra Class Name", "viftech"),
@@ -797,25 +797,25 @@ vc_map( array(
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Add Shadow on Hover?", "viftech"),
-			"param_name" => "thb_shadow",
+			"param_name" => "vif_shadow",
 			"group"			 => 'Styling',
 			'edit_field_class' => 'vc_col-sm-6',
 			"value" => array(
-				"Yes" => "thb_shadow"
+				"Yes" => "vif_shadow"
 			),
 			"description" => esc_html__("If enabled, this will add a shadow to the button", "viftech"),
 		),
 	),
 	"description" => esc_html__("Add an animated button", "viftech")
 ) );
-vc_add_param( "thb_button", thb_vc_gradient_color1() );
-vc_add_param( "thb_button", thb_vc_gradient_color2() );
+vc_add_param( "vif_button", vif_vc_gradient_color1() );
+vc_add_param( "vif_button", vif_vc_gradient_color2() );
 
 vc_map( array(
 	"name" => esc_html__( "Text Button", 'viftech'),
-	"base" => "thb_button_text",
-	"icon" => "thb_vc_ico_button_text",
-	"class" => "thb_vc_sc_button_text",
+	"base" => "vif_button_text",
+	"icon" => "vif_vc_ico_button_text",
+	"class" => "vif_vc_sc_button_text",
 	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
@@ -838,7 +838,7 @@ vc_map( array(
 		  "description" => esc_html__("Set your url & text for your button", "viftech"),
 		  "admin_label" => true,
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Extra Class Name", "viftech"),
@@ -851,24 +851,24 @@ vc_map( array(
 // Cascading Images
 vc_map( array(
 	"name" => esc_html__("Cascading Images", 'viftech'),
-	"base" => "thb_cascading_parent",
-	"icon" => "thb_vc_ico_cascading",
-	"class" => "thb_vc_sc_cascading",
+	"base" => "vif_cascading_parent",
+	"icon" => "vif_vc_ico_cascading",
+	"class" => "vif_vc_sc_cascading",
 	"content_element"	=> true,
 	"show_settings_on_create" => false,
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_parent" => array('only' => 'thb_cascading'),
+	"as_parent" => array('only' => 'vif_cascading'),
 	"description" => esc_html__("Insert a cascading Image", 'viftech' ),
 	"js_view" => 'VcColumnView'
 ) );
 
 vc_map( array(
 	"name" => esc_html__("Single Image", 'viftech'),
-	"base" => "thb_cascading",
-	"icon" => "thb_vc_ico_cascading",
-	"class" => "thb_vc_sc_cascading",
+	"base" => "vif_cascading",
+	"icon" => "vif_vc_ico_cascading",
+	"class" => "vif_vc_sc_cascading",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_child"         => array('only' => 'thb_cascading_parent'),
+	"as_child"         => array('only' => 'vif_cascading_parent'),
 	"params"           => array(
 		array(
 			'type'           => 'attach_image',
@@ -880,14 +880,14 @@ vc_map( array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Offset X", "viftech"),
 		  "param_name" => "image_x",
-		  "value" => $thb_offset_array,
+		  "value" => $vif_offset_array,
 		  "std" => "0%"
 		),
 		array(
 		  "type" => "dropdown",
 		  "heading" => __("Offset Y", "viftech"),
 		  "param_name" => "image_y",
-		  "value" => $thb_offset_array,
+		  "value" => $vif_offset_array,
 		  "std" => "0%"
 		),
 		array(
@@ -899,7 +899,7 @@ vc_map( array(
 			),
 			"description" => esc_html__("If selected, the image will be display half-size, so it looks crisps on retina screens. Full Width setting will override this.", "viftech")
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 	    "type" => "textfield",
 	    "heading" => esc_html__("Add Border Radius?", "viftech"),
@@ -910,9 +910,9 @@ vc_map( array(
 		array(
 		  "type" => "checkbox",
 		  "heading" => esc_html__("Add Box Shadow?", "viftech"),
-		  "param_name" => "thb_box_shadow",
+		  "param_name" => "vif_box_shadow",
 		  "value" => array(
-		  	"Yes" => "thb_box_shadow"
+		  	"Yes" => "vif_box_shadow"
 		  ),
 		  "group"					 => 'Styling',
 		  "description" => esc_html__("You can add a Box Shadow to your image.", "viftech")
@@ -920,23 +920,23 @@ vc_map( array(
 	)
 ) );
 
-class WPBakeryShortCode_thb_cascading_parent extends WPBakeryShortCodesContainer {}
-class WPBakeryShortCode_thb_cascading extends WPBakeryShortCode {}
+class WPBakeryShortCode_vif_cascading_parent extends WPBakeryShortCodesContainer {}
+class WPBakeryShortCode_vif_cascading extends WPBakeryShortCode {}
 
 // Clients Parent
 vc_map( array(
 	"name" => esc_html__("Clients", 'viftech'),
-	"base" => "thb_clients_parent",
-	"icon" => "thb_vc_ico_clients",
-	"class" => "thb_vc_sc_clients",
+	"base" => "vif_clients_parent",
+	"icon" => "vif_vc_ico_clients",
+	"class" => "vif_vc_sc_clients",
 	"content_element"	=> true,
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_parent" => array('only' => 'thb_clients'),
+	"as_parent" => array('only' => 'vif_clients'),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
 		    "heading" => esc_html__("Style", "viftech"),
-		    "param_name" => "thb_style",
+		    "param_name" => "vif_style",
 		    "admin_label" => true,
 		    "value" => array(
 		    	'Style 1 (Grid)' => "style1",
@@ -948,7 +948,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Columns", "viftech"),
-			"param_name" => "thb_columns",
+			"param_name" => "vif_columns",
 			"admin_label" => true,
 			"value" => array(
 				'2 Columns' => "small-6 large-6",
@@ -958,29 +958,29 @@ vc_map( array(
 				'6 Columns' => "small-6 large-2"
 			)
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Image Borders", "viftech"),
-			"param_name" => "thb_image_borders",
+			"param_name" => "vif_image_borders",
 			"value" => array(
 				"Yes" => "true"
 			),
 			"description" => esc_html__("If you enable this, the logos will have border", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'vif-carousel'))
+			"dependency" => Array('element' => "vif_style", 'value' => array('style1', 'vif-carousel'))
 		),
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Border Color", "viftech"),
-			"param_name" => "thb_border_color",
+			"param_name" => "vif_border_color",
 			"admin_label" => true,
 			"value" => "#f0f0f0",
-			"dependency" => Array('element' => "thb_image_borders", 'value' => array('true'))
+			"dependency" => Array('element' => "vif_image_borders", 'value' => array('true'))
 		),
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Hover Effect", "viftech"),
-			"param_name" => "thb_hover_effect",
+			"param_name" => "vif_hover_effect",
 			"admin_label" => true,
 			"value" => array(
 				'None' => "",
@@ -988,7 +988,7 @@ vc_map( array(
 				'Grayscale' => "vif-grayscale",
 				'Opacity with Accent hover' => "vif-opacity with-accent"
 			),
-			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'vif-carousel'))
+			"dependency" => Array('element' => "vif_style", 'value' => array('style1', 'vif-carousel'))
 		),
 		array(
 			"type" => "checkbox",
@@ -998,7 +998,7 @@ vc_map( array(
 				"Yes" => "true"
 			),
 			"description" => esc_html__("If enabled, the carousel will autoplay.", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('vif-carousel'))
+			"dependency" => Array('element' => "vif_style", 'value' => array('vif-carousel'))
 		),
 		array(
 			"type" => "textfield",
@@ -1015,11 +1015,11 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__("Client", 'viftech'),
-	"base" => "thb_clients",
-	"icon" => "thb_vc_ico_clients",
-	"class" => "thb_vc_sc_clients",
+	"base" => "vif_clients",
+	"icon" => "vif_vc_ico_clients",
+	"class" => "vif_vc_sc_clients",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_child" => array('only' => 'thb_clients_parent'),
+	"as_child" => array('only' => 'vif_clients_parent'),
 	"params"	=> array(
 		array(
 			'type'           => 'attach_image',
@@ -1038,18 +1038,18 @@ vc_map( array(
 	),
 	"description" => esc_html__("Single Client", "viftech")
 ) );
-class WPBakeryShortCode_thb_clients_parent extends WPBakeryShortCodesContainer {}
-class WPBakeryShortCode_thb_clients extends WPBakeryShortCode {}
+class WPBakeryShortCode_vif_clients_parent extends WPBakeryShortCodesContainer {}
+class WPBakeryShortCode_vif_clients extends WPBakeryShortCode {}
 
 // Contact Map
 vc_map( array(
 	"name" => esc_html__("Contact Map Parent", 'viftech'),
-	"base" => "thb_map_parent",
-	"icon" => "thb_vc_ico_contactmap",
-	"class" => "thb_vc_sc_contactmap",
+	"base" => "vif_map_parent",
+	"icon" => "vif_vc_ico_contactmap",
+	"class" => "vif_vc_sc_contactmap",
 	"content_element"	=> true,
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_parent" => array('only' => 'thb_map'),
+	"as_parent" => array('only' => 'vif_map'),
 	"params" => array(
 		array(
 		  "type" => "textfield",
@@ -1129,11 +1129,11 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__("Contact Map Location", 'viftech'),
-	"base" => "thb_map",
-	"icon" => "thb_vc_ico_contactmap",
-	"class" => "thb_vc_sc_contactmap",
+	"base" => "vif_map",
+	"icon" => "vif_vc_ico_contactmap",
+	"class" => "vif_vc_sc_contactmap",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_child"         => array('only' => 'thb_map_parent'),
+	"as_child"         => array('only' => 'vif_map_parent'),
 	"params"           => array(
 		array(
 			'type'           => 'attach_image',
@@ -1177,16 +1177,16 @@ vc_map( array(
 	)
 ) );
 
-class WPBakeryShortCode_thb_map_parent extends WPBakeryShortCodesContainer {}
-class WPBakeryShortCode_thb_map extends WPBakeryShortCode {}
+class WPBakeryShortCode_vif_map_parent extends WPBakeryShortCodesContainer {}
+class WPBakeryShortCode_vif_map extends WPBakeryShortCode {}
 
 // Content Carousel Shortcode
 vc_map( array(
 	"name" => esc_html__("Content Carousel", 'viftech'),
-	"base" => "thb_content_carousel",
-	"icon" => "thb_vc_ico_content_carousel",
-	"class" => "thb_vc_sc_content_carousel",
-	"as_parent" => array('except' => 'thb_content_carousel'),
+	"base" => "vif_content_carousel",
+	"icon" => "vif_vc_ico_content_carousel",
+	"class" => "vif_vc_sc_content_carousel",
+	"as_parent" => array('except' => 'vif_content_carousel'),
 	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"show_settings_on_create" => true,
 	"content_element" => true,
@@ -1194,14 +1194,14 @@ vc_map( array(
 		array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Columns", "viftech"),
-		  "param_name" => "thb_columns",
-		  "value" => $thb_column_array,
+		  "param_name" => "vif_columns",
+		  "value" => $vif_column_array,
 		  "description" => esc_html__("Select the layout.", "viftech" )
 		),
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Display Slider Pagination", "viftech"),
-			"param_name" => "thb_pagination",
+			"param_name" => "vif_pagination",
 			"value" => array(
 				"Yes" => "true"
 			),
@@ -1227,7 +1227,7 @@ vc_map( array(
 		array(
 	    "type" => "dropdown",
 	    "heading" => esc_html__("Margins between items", "viftech"),
-	    "param_name" => "thb_margins",
+	    "param_name" => "vif_margins",
 	    "group" => "Styling",
 	    "std"=> "regular-padding",
 	    "value" => array(
@@ -1241,7 +1241,7 @@ vc_map( array(
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Overflow Visible?", "viftech"),
-			"param_name" => "thb_overflow",
+			"param_name" => "vif_overflow",
 			"value" => array(
 				"Yes" => "overflow-visible-only"
 			),
@@ -1257,15 +1257,15 @@ vc_map( array(
 	"description" => esc_html__("Display your content in a carousel", 'viftech')
 ) );
 
-class WPBakeryShortCode_Thb_Content_Carousel extends WPBakeryShortCodesContainer { }
+class WPBakeryShortCode_vif_Content_Carousel extends WPBakeryShortCodesContainer { }
 
 
 // Counter shortcode
 vc_map( array(
 	"name" => esc_html__("Counter", 'viftech'),
-	"base" => "thb_counter",
-	"icon" => "thb_vc_ico_counter",
-	"class" => "thb_vc_sc_counter",
+	"base" => "vif_counter",
+	"icon" => "vif_vc_ico_counter",
+	"class" => "vif_vc_sc_counter",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params" => array(
 		array(
@@ -1283,7 +1283,7 @@ vc_map( array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Icon", "viftech"),
 			"param_name" => "icon",
-			"value" => thb_getIconArray(),
+			"value" => vif_getIconArray(),
 			"dependency" => Array('element' => "style", 'value' => array('counter-style1', 'counter-style3')),
 		),
 		array(
@@ -1313,19 +1313,19 @@ vc_map( array(
 		array(
 			"type" 					 => "colorpicker",
 			"heading" 			 => esc_html__("Counter Color", "viftech"),
-			"param_name" 		 => "thb_counter_color",
+			"param_name" 		 => "vif_counter_color",
 			"group"					 => 'Styling',
 		),
 		array(
 			"type" 					 => "colorpicker",
 			"heading" 			 => esc_html__("Icon Color", "viftech"),
-			"param_name" 		 => "thb_icon_color",
+			"param_name" 		 => "vif_icon_color",
 			"group"					 => 'Styling',
 		),
 		array(
 			"type" 					 => "colorpicker",
 			"heading" 			 => esc_html__("Heading Color", "viftech"),
-			"param_name" 		 => "thb_heading_color",
+			"param_name" 		 => "vif_heading_color",
 			"group"					 => 'Styling',
 		),
 		array(
@@ -1360,9 +1360,9 @@ vc_map( array(
 // Countdown shortcode
 vc_map(array(
   "name" => esc_html__("Event Countdown", "viftech"),
-  "base" => "thb_countdown",
-  "icon" => "thb_vc_ico_event_countdown",
-  "class" => "thb_vc_sc_event_countdown",
+  "base" => "vif_countdown",
+  "icon" => "vif_vc_ico_event_countdown",
+  "class" => "vif_vc_sc_event_countdown",
   'description' => esc_html__('Countdown module for your events.', 'viftech'),
   "category" => esc_html__("by Viftech Themes", "viftech"),
   "params" => array(
@@ -1410,12 +1410,12 @@ vc_map(array(
 
 // Fade Type
 vc_map( array(
-	'base'  => 'thb_fadetype',
+	'base'  => 'vif_fadetype',
 	'name' => esc_html__('Fade Type', 'viftech'),
 	"description" => esc_html__("Faded letter typing", "viftech"),
 	'category' => esc_html__('by Viftech Themes', 'viftech'),
-	"icon" => "thb_vc_ico_fadetype",
-	"class" => "thb_vc_sc_fadetype",
+	"icon" => "vif_vc_ico_fadetype",
+	"class" => "vif_vc_sc_fadetype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
@@ -1437,9 +1437,9 @@ vc_map( array(
 // Fancy Box
 vc_map( array(
 	"name" => esc_html__("Fancy Box", 'viftech'),
-	"base" => "thb_fancybox",
-	"icon" => "thb_vc_ico_fancybox",
-	"class" => "thb_vc_sc_fancybox",
+	"base" => "vif_fancybox",
+	"icon" => "vif_vc_ico_fancybox",
+	"class" => "vif_vc_sc_fancybox",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 	  array(
@@ -1473,7 +1473,7 @@ vc_map( array(
 	  	"heading" => esc_html__("Icon", "viftech"),
 	  	"param_name" => "icon",
 	  	'description'    => esc_html__( 'If you would like to include an icon, select it here.', 'viftech' ),
-	  	"value" => thb_getIconArray()
+	  	"value" => vif_getIconArray()
 	  ),
 	  array(
 	  	'type'           => 'textarea_html',
@@ -1484,7 +1484,7 @@ vc_map( array(
 	  array(
 	  	"type" 					 => "dropdown",
 	  	"heading" 			 => esc_html__("Description Alignment", 'viftech'),
-	  	"param_name" 		 => "thb_text_alignment",
+	  	"param_name" 		 => "vif_text_alignment",
 	  	"value" => array(
 	  		"Top Left" 				=> "vif-top-left",
 	  		"Center" 					=> "vif-center",
@@ -1501,11 +1501,11 @@ vc_map( array(
 	    "description" 	=> esc_html__("Please enter the minimum height you would like for your box. Default is 300px. You can use other values such as 10vh, etc.", "viftech"),
 	    'group' 				=> 'Styling'
 	  ),
-	  $thb_animation_array,
+	  $vif_animation_array,
 	  array(
 	  	"type" 					 => "dropdown",
 	  	"heading" 			 => esc_html__("Text Color", 'viftech'),
-	  	"param_name" 		 => "thb_text_color",
+	  	"param_name" 		 => "vif_text_color",
 	  	"value" => array(
 	  		"Dark" => "fancy-dark",
 	  		"Light" => "fancy-light"
@@ -1542,22 +1542,22 @@ vc_map( array(
 	),
 	"description" => esc_html__("Display a Fancy Box", "viftech")
 ) );
-vc_add_param( "thb_fancybox", thb_vc_gradient_color1() );
-vc_add_param( "thb_fancybox", thb_vc_gradient_color2() );
+vc_add_param( "vif_fancybox", vif_vc_gradient_color1() );
+vc_add_param( "vif_fancybox", vif_vc_gradient_color2() );
 
 // Flip Box shortcode
 vc_map( array(
 	"name" => esc_html__("Flip Box", "viftech"),
-	"base" => "thb_flipbox",
-	"icon" => "thb_vc_ico_flipbox",
-	"class" => "thb_vc_sc_flipbox",
+	"base" => "vif_flipbox",
+	"icon" => "vif_vc_ico_flipbox",
+	"class" => "vif_vc_sc_flipbox",
 	"category" => esc_html__('by Viftech Themes', "viftech"),
 	"params" => array(
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Icon", "viftech"),
 			"param_name" => "icon_front",
-			"value" => thb_getIconArray(),
+			"value" => vif_getIconArray(),
 			"group" => esc_html__("Front Side", "viftech")
 		),
 		array(
@@ -1587,7 +1587,7 @@ vc_map( array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Icon", "viftech"),
 			"param_name" => "icon_back",
-			"value" => thb_getIconArray(),
+			"value" => vif_getIconArray(),
 			"group" => esc_html__("Back Side", "viftech")
 		),
 		array(
@@ -1627,17 +1627,17 @@ vc_map( array(
 	),
 	"description" => esc_html__("Add a Flip Box", "viftech")
 ) );
-vc_add_param( "thb_flipbox", thb_vc_gradient_color1("Front Side") );
-vc_add_param( "thb_flipbox", thb_vc_gradient_color2("Front Side") );
-vc_add_param( "thb_flipbox", thb_vc_gradient_color3("Back Side") );
-vc_add_param( "thb_flipbox", thb_vc_gradient_color4("Back Side") );
+vc_add_param( "vif_flipbox", vif_vc_gradient_color1("Front Side") );
+vc_add_param( "vif_flipbox", vif_vc_gradient_color2("Front Side") );
+vc_add_param( "vif_flipbox", vif_vc_gradient_color3("Back Side") );
+vc_add_param( "vif_flipbox", vif_vc_gradient_color4("Back Side") );
 
 /* Food Menu Item */
 vc_map( array(
 	"name" => esc_html__("Food Menu Item", 'viftech'),
-	"base" => "thb_menu_item",
-	"icon" => "thb_vc_ico_menu_item",
-	"class" => "thb_vc_sc_menu_item",
+	"base" => "vif_menu_item",
+	"icon" => "vif_vc_ico_menu_item",
+	"class" => "vif_vc_sc_menu_item",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -1666,9 +1666,9 @@ vc_map( array(
 // Free Scroll
 vc_map( array(
 	"name" => esc_html__("Free Scroll", "viftech"),
-	"base" => "thb_freescroll",
-	"icon" => "thb_vc_ico_freescroll",
-	"class" => "thb_vc_sc_freescroll",
+	"base" => "vif_freescroll",
+	"icon" => "vif_vc_ico_freescroll",
+	"class" => "vif_vc_sc_freescroll",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -1732,7 +1732,7 @@ vc_map( array(
 		array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Columns", "viftech"),
-		  "param_name" => "thb_columns",
+		  "param_name" => "vif_columns",
 		  "value" => array(
 		  	'Single Column' => "small-12",
 		  	'Two Columns' => "small-12 medium-6",
@@ -1754,12 +1754,12 @@ vc_map( array(
 
 // Gradient Type
 vc_map( array(
-	'base'  => 'thb_gradienttype',
+	'base'  => 'vif_gradienttype',
 	'name' => esc_html__('Gradient Type', 'viftech'),
 	"description" => esc_html__("Text with Gradient Color", "viftech"),
 	'category' => esc_html__('by Viftech Themes', 'viftech'),
-	"icon" => "thb_vc_ico_gradienttype",
-	"class" => "thb_vc_sc_gradienttype",
+	"icon" => "vif_vc_ico_gradienttype",
+	"class" => "vif_vc_sc_gradienttype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
@@ -1769,7 +1769,7 @@ vc_map( array(
 			'description'=> 'Enter the content to display with gradient.',
 			"admin_label" => true
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Extra Class Name", "viftech"),
@@ -1777,21 +1777,21 @@ vc_map( array(
 		),
 	)
 ) );
-vc_add_param( "thb_gradienttype", thb_vc_gradient_color1() );
-vc_add_param( "thb_gradienttype", thb_vc_gradient_color2() );
+vc_add_param( "vif_gradienttype", vif_vc_gradient_color1() );
+vc_add_param( "vif_gradienttype", vif_vc_gradient_color2() );
 
 // Horizontal List
 vc_map( array(
 	"name" => esc_html__("Horizontal List", 'viftech'),
-	"base" => "thb_horizontal_list",
-	"icon" => "thb_vc_ico_horizontal_list",
-	"class" => "thb_vc_sc_horizontal_list",
+	"base" => "vif_horizontal_list",
+	"icon" => "vif_vc_ico_horizontal_list",
+	"class" => "vif_vc_sc_horizontal_list",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params" => array(
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Column Layout", "viftech"),
-			"param_name" => "thb_columns",
+			"param_name" => "vif_columns",
 			"value" => array(
 				"Single Column" => "1",
 				"2 Columns" 			=> "2",
@@ -1812,7 +1812,7 @@ vc_map( array(
 				"30% | 70%" => "size2_30_70",
 				"20% | 80%" => "size2_20_80",
 			),
-			"dependency" => Array('element' => "thb_columns", 'value' => array('2')),
+			"dependency" => Array('element' => "vif_columns", 'value' => array('2')),
 		),
 		array(
 			"type" => "dropdown",
@@ -1825,7 +1825,7 @@ vc_map( array(
 				"25% | 50% | 25%" => "size3_25_50_25",
 				"25% | 25% | 50%" => "size3_25_25_50",	
 			),
-			"dependency" => Array('element' => "thb_columns", 'value' => array('3')),
+			"dependency" => Array('element' => "vif_columns", 'value' => array('3')),
 		),
 		array(
 			"type" => "dropdown",
@@ -1838,7 +1838,7 @@ vc_map( array(
 				"35% | 15% | 35% | 15%" => "size4_35_15_35_15",
 				"15% | 35% | 15% | 35%" => "size4_15_35_15_35",
 			),
-			"dependency" => Array('element' => "thb_columns", 'value' => array('4')),
+			"dependency" => Array('element' => "vif_columns", 'value' => array('4')),
 		),
 		array(
 			"type" => "dropdown",
@@ -1861,7 +1861,7 @@ vc_map( array(
 				"Center" => "text-center",
 				"Right" => "text-right"
 			),
-			"dependency" => Array('element' => "thb_columns", 'value' => array('2','3','4')),
+			"dependency" => Array('element' => "vif_columns", 'value' => array('2','3','4')),
 		),
 		array(
 			"type" => "dropdown",
@@ -1873,7 +1873,7 @@ vc_map( array(
 				"Center" => "text-center",
 				"Right" => "text-right"
 			),
-			"dependency" => Array('element' => "thb_columns", 'value' => array('3','4')),
+			"dependency" => Array('element' => "vif_columns", 'value' => array('3','4')),
 		),
 		array(
 			"type" => "dropdown",
@@ -1885,7 +1885,7 @@ vc_map( array(
 				"Center" => "text-center",
 				"Right" => "text-right"
 			),
-			"dependency" => Array('element' => "thb_columns", 'value' => array('4')),
+			"dependency" => Array('element' => "vif_columns", 'value' => array('4')),
 		),
 		array(
       "type" => "textarea_safe",
@@ -1900,7 +1900,7 @@ vc_map( array(
       "param_name" => "column_2_content",
       "admin_label" => true,
       "description" => esc_html__("Enter your column text here", "viftech"),
-      "dependency" => Array('element' => "thb_columns", 'value' => array('2','3','4')),
+      "dependency" => Array('element' => "vif_columns", 'value' => array('2','3','4')),
     ),
 	  array(
       "type" => "textarea_safe",
@@ -1908,7 +1908,7 @@ vc_map( array(
       "param_name" => "column_3_content",
       "admin_label" => true,
       "description" => esc_html__("Enter your column text here", "viftech"),
-      "dependency" => Array('element' => "thb_columns", 'value' => array('3','4')),
+      "dependency" => Array('element' => "vif_columns", 'value' => array('3','4')),
     ),
 	  array(
       "type" => "textarea_safe",
@@ -1916,7 +1916,7 @@ vc_map( array(
       "param_name" => "column_4_content",
       "admin_label" => true,
       "description" => esc_html__("Enter your column text here", "viftech"),
-      "dependency" => Array('element' => "thb_columns", 'value' => array('4')),
+      "dependency" => Array('element' => "vif_columns", 'value' => array('4')),
     ),
     array(
       "type" => "vc_link",
@@ -1936,12 +1936,12 @@ vc_map( array(
       'description' => esc_html__( 'Hover Color for this item', 'viftech' ),
       "group" => "Styling"
     ),
-    $thb_animation_array,
+    $vif_animation_array,
     array(
       "type" => "dropdown",
       "heading" => esc_html__("Style", "viftech"),
       "param_name" => "style",
-      "value" => $thb_button_style_array,
+      "value" => $vif_button_style_array,
       "description" => esc_html__("This changes the look of the button", "viftech"),
       "group" => "CTA Buttons"
     ),
@@ -2036,8 +2036,8 @@ vc_map( array(
 	),
 	"description" => esc_html__("Show your data in a horizontal list", "viftech")
 ));
-vc_add_param( "thb_horizontal_list", thb_vc_gradient_color1('CTA Styling') );
-vc_add_param( "thb_horizontal_list", thb_vc_gradient_color2('CTA Styling') );
+vc_add_param( "vif_horizontal_list", vif_vc_gradient_color1('CTA Styling') );
+vc_add_param( "vif_horizontal_list", vif_vc_gradient_color2('CTA Styling') );
 
 // VC Gallery
 vc_remove_param("vc_gallery", "type");
@@ -2065,7 +2065,7 @@ vc_add_param("vc_gallery", array(
 vc_add_param("vc_gallery", array(
 	"type" => "dropdown",
 	"heading" => esc_html__("Columns", "viftech"),
-	"param_name" => "thb_columns",
+	"param_name" => "vif_columns",
 	"admin_label" => true,
 	"value" => array(
 		'2 Columns' => "small-6 large-6",
@@ -2081,7 +2081,7 @@ vc_add_param("vc_gallery", array(
 vc_add_param("vc_gallery", array(
     "type" => "dropdown",
     "heading" => esc_html__("Margins between items", "viftech"),
-    "param_name" => "thb_margins",
+    "param_name" => "vif_margins",
     "group" => "Styling",
     "std"=> "regular-padding",
     "value" => array(
@@ -2105,14 +2105,14 @@ vc_add_param("vc_gallery", array(
 	"description" => esc_html__("Images will link to their large versions using Lightbox.", "viftech" )
 ));
 
-vc_add_param("vc_gallery",$thb_animation_array );
+vc_add_param("vc_gallery",$vif_animation_array );
 
 // Iconbox
 vc_map( array(
 	"name" => esc_html__("Iconbox", 'viftech'),
-	"base" => "thb_iconbox",
-	"icon" => "thb_vc_ico_iconbox",
-	"class" => "thb_vc_sc_iconbox",
+	"base" => "vif_iconbox",
+	"icon" => "vif_vc_ico_iconbox",
+	"class" => "vif_vc_sc_iconbox",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params" => array(
 		array(
@@ -2145,21 +2145,21 @@ vc_map( array(
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Box Background", "viftech"),
-			"param_name" => "thb_box_color",
+			"param_name" => "vif_box_color",
 			"group"					 => 'Styling',
 			"dependency" => Array('element' => "type", 'value' => array('box box-style1', 'box box-style2', 'box box-style3'))
 		),
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Icon Background", "viftech"),
-			"param_name" => "thb_icon_bgcolor",
+			"param_name" => "vif_icon_bgcolor",
 			"group"					 => 'Styling',
 		),
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Icon", "viftech"),
 			"param_name" => "icon",
-			"value" => thb_getIconArray()
+			"value" => vif_getIconArray()
 		),
 		array(
 			'type'           => 'attach_image',
@@ -2209,27 +2209,27 @@ vc_map( array(
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("SVG Icon Color", "viftech"),
-			"param_name" => "thb_icon_color",
+			"param_name" => "vif_icon_color",
 			"group"					 => 'Styling',
 		),
 		array(
 			"type" => "colorpicker",
 			"heading" 			 => esc_html__("Heading Color", 'viftech'),
-			"param_name" 		 => "thb_heading_color",
+			"param_name" 		 => "vif_heading_color",
 			"group"					 => 'Styling',
 			"description" 	 => esc_html__("Color of the heading", 'viftech')
 		),
 		array(
 			"type" => "colorpicker",
 			"heading" 			 => esc_html__("Text Color", 'viftech'),
-			"param_name" 		 => "thb_text_color",
+			"param_name" 		 => "vif_text_color",
 			"group"					 => 'Styling',
 			"description" 	 => esc_html__("Color of the text", 'viftech')
 		),
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Hover SVG Icon Color", "viftech"),
-			"param_name" => "thb_icon_color_hover",
+			"param_name" => "vif_icon_color_hover",
 			"group"					 => 'Hover Styling',
 		),
 		array(
@@ -2242,14 +2242,14 @@ vc_map( array(
 		array(
 			"type" => "colorpicker",
 			"heading" 			 => esc_html__("Hover Heading Color", 'viftech'),
-			"param_name" 		 => "thb_heading_color_hover",
+			"param_name" 		 => "vif_heading_color_hover",
 			"group"					 => 'Hover Styling',
 			"description" 	 => esc_html__("Color of the heading", 'viftech')
 		),
 		array(
 			"type" => "colorpicker",
 			"heading" 			 => esc_html__("Hover Text Color", 'viftech'),
-			"param_name" 		 => "thb_text_color_hover",
+			"param_name" 		 => "vif_text_color_hover",
 			"group"					 => 'Hover Styling',
 			"description" 	 => esc_html__("Color of the text", 'viftech')
 		),
@@ -2286,9 +2286,9 @@ vc_map( array(
 // Image shortcode
 vc_map( array(
 	"name" => "Image",
-	"base" => "thb_image",
-	"icon" => "thb_vc_ico_image",
-	"class" => "thb_vc_sc_image wpb_vc_single_image",
+	"base" => "vif_image",
+	"icon" => "vif_vc_ico_image",
+	"class" => "vif_vc_sc_image wpb_vc_single_image",
 	"category" => esc_html__('by Viftech Themes', 'viftech'),
 	"params" => array(
 		array(
@@ -2339,7 +2339,7 @@ vc_map( array(
 			),
 			"description" => esc_html__("If selected, the image will always fill its container", 'viftech')
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 		  "type" => "textfield",
 		  "heading" => esc_html__("Image size", 'viftech'),
@@ -2376,7 +2376,7 @@ vc_map( array(
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Border Radius", 'viftech'),
-			"param_name" => "thb_border_radius",
+			"param_name" => "vif_border_radius",
 			'group' 				=> 'Styling',
 			"description" => esc_html__("You can add your own border-radius code here. For ex: 2px 2px 4px 4px", 'viftech')
 		),
@@ -2419,9 +2419,9 @@ vc_map( array(
 // Image Slider
 vc_map( array(
 	"name" => esc_html__("Image Slider", "viftech"),
-	"base" => "thb_image_slider",
-	"icon" => "thb_vc_ico_image_slider",
-	"class" => "thb_vc_sc_image_slider",
+	"base" => "vif_image_slider",
+	"icon" => "vif_vc_ico_image_slider",
+	"class" => "vif_vc_sc_image_slider",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -2432,7 +2432,7 @@ vc_map( array(
 		array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Columns", "viftech"),
-		  "param_name" => "thb_columns",
+		  "param_name" => "vif_columns",
 		  "value" => array(
 		  	'Single Column' => "1",
 		  	'Two Columns' => "small-12 medium-6",
@@ -2452,7 +2452,7 @@ vc_map( array(
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Center Images", "viftech"),
-			"param_name" => "thb_center",
+			"param_name" => "vif_center",
 			"value" => array(
 				"Yes" => "true"
 			)
@@ -2460,7 +2460,7 @@ vc_map( array(
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Use Pagination", "viftech"),
-			"param_name" => "thb_pagination",
+			"param_name" => "vif_pagination",
 			"value" => array(
 				"Yes" => "true"
 			),
@@ -2469,7 +2469,7 @@ vc_map( array(
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Display Prev/Next Slides ?", "viftech"),
-			"param_name" => "thb_next_slides",
+			"param_name" => "vif_next_slides",
 			"value" => array(
 				"Yes" => "overflow-visible"
 			),
@@ -2499,9 +2499,9 @@ vc_map( array(
 // Instagram
 vc_map( array(
 	"name" => esc_html__("Instagram", 'viftech'),
-	"base" => "thb_instagram",
-	"icon" => "thb_vc_ico_instagram",
-	"class" => "thb_vc_sc_instagram",
+	"base" => "vif_instagram",
+	"icon" => "vif_vc_ico_instagram",
+	"class" => "vif_vc_sc_instagram",
 	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"params"	=> array(
 	  array(
@@ -2515,7 +2515,7 @@ vc_map( array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Columns", 'viftech'),
 			"param_name" => "columns",
-			"value" => $thb_column_array
+			"value" => $vif_column_array
 		),
 		array(
 	    "type" => "checkbox",
@@ -2544,9 +2544,9 @@ vc_map( array(
 // Label
 vc_map( array(
 	"name" => esc_html__("Label", 'viftech'),
-	"base" => "thb_label",
-	"icon" => "thb_vc_ico_label",
-	"class" => "thb_vc_sc_label",
+	"base" => "vif_label",
+	"icon" => "vif_vc_ico_label",
+	"class" => "vif_vc_sc_label",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params" => array(
 		array(
@@ -2555,7 +2555,7 @@ vc_map( array(
 			"param_name" 		 => "content",
 			"group"					 => 'Content',
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 			"type" => "textfield",
 			"heading" => esc_html__("Extra Class Name", "viftech"),
@@ -2574,9 +2574,9 @@ vc_map( array(
 // Like Button
 vc_map( array(
 	"name" => esc_html__("Like Button", "viftech"),
-	"base" => "thb_like_button",
-	"icon" => "thb_vc_ico_like_button",
-	"class" => "thb_vc_sc_like_button",
+	"base" => "vif_like_button",
+	"icon" => "vif_vc_ico_like_button",
+	"class" => "vif_vc_sc_like_button",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -2598,11 +2598,11 @@ vc_map( array(
 // Office Locations Shortcode
 vc_map( array(
 	"name" => esc_html__('Office Locations', 'viftech'),
-	"base" => "thb_location_parent",
-	"icon" => "thb_vc_ico_location",
-	"class" => "thb_vc_sc_location",
+	"base" => "vif_location_parent",
+	"icon" => "vif_vc_ico_location",
+	"class" => "vif_vc_sc_location",
 	"category" => esc_html__("by Viftech Themes", 'viftech'),
-	"as_parent" => array('only' => 'thb_location'),
+	"as_parent" => array('only' => 'vif_location'),
 	"show_settings_on_create" => true,
 	"params" => array(
 		array(
@@ -2674,9 +2674,9 @@ vc_map( array(
 
 vc_map( array(
   "name" => esc_html__("Office Location", 'viftech'),
-  "base" => "thb_location",
-  "icon" => "thb_vc_ico_location_single",
-  "as_child" => array('only' => 'thb_location_parent'),
+  "base" => "vif_location",
+  "icon" => "vif_vc_ico_location_single",
+  "as_child" => array('only' => 'vif_location_parent'),
   "content_element" => true,
   "params" => array(
     array(
@@ -2721,15 +2721,15 @@ vc_map( array(
   "description" => esc_html__("Display your office locations", 'viftech')
 ));
 
-class WPBakeryShortCode_thb_location_parent extends WPBakeryShortCodesContainer { }
-class WPBakeryShortCode_thb_location extends WPBakeryShortCode { }
+class WPBakeryShortCode_vif_location_parent extends WPBakeryShortCodesContainer { }
+class WPBakeryShortCode_vif_location extends WPBakeryShortCode { }
 
 // Portfolio Masonry
 vc_map( array(
 	"name" => esc_html__("Portfolio Masonry", 'viftech'),
-	"base" => "thb_portfolio",
-	"icon" => "thb_vc_ico_portfolio",
-	"class" => "thb_vc_sc_portfolio",
+	"base" => "vif_portfolio",
+	"icon" => "vif_vc_ico_portfolio",
+	"class" => "vif_vc_sc_portfolio",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -2754,7 +2754,7 @@ vc_map( array(
 	  array(
 	      "type" => "dropdown",
 	      "heading" => esc_html__("Margins between items", "viftech"),
-	      "param_name" => "thb_margins",
+	      "param_name" => "vif_margins",
 	      "group" => "Styling",
 	      "std"=> "regular-padding",
 	      "value" => array(
@@ -2793,7 +2793,7 @@ vc_map( array(
 	      "type" => "checkbox",
 	      "heading" => esc_html__("Filter Categories", "viftech"),
 	      "param_name" => "filter_categories",
-	      "value" => thb_portfolioCategories(),
+	      "value" => vif_portfolioCategories(),
 	      "group" => "Filters",
 	      "description" => esc_html__("Select which categories you want to filter", "viftech"),
 	      "dependency" => Array('element' => "add_filters", 'value' => array('true'))
@@ -2824,9 +2824,9 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__("Portfolio Grid", 'viftech'),
-	"base" => "thb_portfolio_grid",
-	"icon" => "thb_vc_ico_portfolio_grid",
-	"class" => "thb_vc_sc_portfolio_grid",
+	"base" => "vif_portfolio_grid",
+	"icon" => "vif_vc_ico_portfolio_grid",
+	"class" => "vif_vc_sc_portfolio_grid",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -2876,7 +2876,7 @@ vc_map( array(
 	  array(
 	      "type" => "dropdown",
 	      "heading" => esc_html__("Margins between items", "viftech"),
-	      "param_name" => "thb_margins",
+	      "param_name" => "vif_margins",
 	      "group" => "Styling",
 	      "std"=> "regular-padding",
 	      "value" => array(
@@ -2915,7 +2915,7 @@ vc_map( array(
 	      "type" => "checkbox",
 	      "heading" => esc_html__("Filter Categories", "viftech"),
 	      "param_name" => "filter_categories",
-	      "value" => thb_portfolioCategories(),
+	      "value" => vif_portfolioCategories(),
 	      "group" => "Filters",
 	      "description" => esc_html__("Select which categories you want to filter", "viftech"),
 	      "dependency" => Array('element' => "add_filters", 'value' => array('true'))
@@ -2947,9 +2947,9 @@ vc_map( array(
 // Portfolio Carousel
 vc_map( array(
 	"name" => esc_html__("Portfolio Carousel", 'viftech'),
-	"base" => "thb_portfolio_carousel",
-	"icon" => "thb_vc_ico_portfolio_carousel",
-	"class" => "thb_vc_sc_portfolio_carousel",
+	"base" => "vif_portfolio_carousel",
+	"icon" => "vif_vc_ico_portfolio_carousel",
+	"class" => "vif_vc_sc_portfolio_carousel",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -2978,7 +2978,7 @@ vc_map( array(
 		array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Columns", "viftech"),
-		  "param_name" => "thb_columns",
+		  "param_name" => "vif_columns",
 		  "value" => array(
 		  	'Single Column' => "small-12",
 		  	'Two Columns' => "small-12 medium-6",
@@ -2990,7 +2990,7 @@ vc_map( array(
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Display Slider Pagination", "viftech"),
-			"param_name" => "thb_pagination",
+			"param_name" => "vif_pagination",
 			"value" => array(
 				"Yes" => "true"
 			),
@@ -3016,7 +3016,7 @@ vc_map( array(
 	  array(
 	  	"type" => "checkbox",
 	  	"heading" => esc_html__("Overflow Visible?", "viftech"),
-	  	"param_name" => "thb_overflow",
+	  	"param_name" => "vif_overflow",
 	  	"group" => "Styling",
 	  	"value" => array(
 	  		"Yes" => "overflow-visible"
@@ -3030,9 +3030,9 @@ vc_map( array(
 // Portfolio Slider
 vc_map( array(
 	"name" => esc_html__("Portfolio Slider", 'viftech'),
-	"base" => "thb_portfolio_slider",
-	"icon" => "thb_vc_ico_portfolio_slider",
-	"class" => "thb_vc_sc_portfolio_slider",
+	"base" => "vif_portfolio_slider",
+	"icon" => "vif_vc_ico_portfolio_slider",
+	"class" => "vif_vc_sc_portfolio_slider",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -3088,17 +3088,17 @@ vc_map( array(
 // Pricing Table Parent
 vc_map( array(
 	"name" => esc_html__("Pricing Table", 'viftech'),
-	"base" => "thb_pricing_table",
-	"icon" => "thb_vc_ico_pricing_table",
-	"class" => "thb_vc_sc_pricing_table",
+	"base" => "vif_pricing_table",
+	"icon" => "vif_vc_ico_pricing_table",
+	"class" => "vif_vc_sc_pricing_table",
 	"content_element"	=> true,
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_parent" => array('only' => 'thb_pricing_column'),
+	"as_parent" => array('only' => 'vif_pricing_column'),
 	"params"	=> array(
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Columns", "viftech"),
-			"param_name" => "thb_pricing_columns",
+			"param_name" => "vif_pricing_columns",
 			"admin_label" => true,
 			"value" => array(
 				'2 Columns' => "large-6",
@@ -3115,10 +3115,10 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__("Pricing Table Column", 'viftech'),
-	"base" => "thb_pricing_column",
-	"icon" => "thb_vc_ico_pricing_table",
-	"class" => "thb_vc_sc_pricing_table",
-	"as_child" => array('only' => 'thb_pricing_table'),
+	"base" => "vif_pricing_column",
+	"icon" => "vif_vc_ico_pricing_table",
+	"class" => "vif_vc_sc_pricing_table",
+	"as_child" => array('only' => 'vif_pricing_table'),
 	"params"	=> array(
 		array(
 			"type" => "dropdown",
@@ -3215,15 +3215,15 @@ vc_map( array(
 	"description" => esc_html__("Add a pricing table", "viftech")
 ) );
 
-class WPBakeryShortCode_thb_pricing_table extends WPBakeryShortCodesContainer {}
-class WPBakeryShortCode_thb_pricing_column extends WPBakeryShortCode {}
+class WPBakeryShortCode_vif_pricing_table extends WPBakeryShortCodesContainer {}
+class WPBakeryShortCode_vif_pricing_column extends WPBakeryShortCode {}
 
 // Products
 vc_map( array(
 	"name" => esc_html__("Products", 'viftech'),
-	"base" => "thb_product",
-	"icon" => "thb_vc_ico_product",
-	"class" => "thb_vc_sc_product",
+	"base" => "vif_product",
+	"icon" => "vif_vc_ico_product",
+	"class" => "vif_vc_sc_product",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 	  array(
@@ -3245,7 +3245,7 @@ vc_map( array(
 	      "type" => "checkbox",
 	      "heading" => esc_html__("Product Category", "viftech"),
 	      "param_name" => "cat",
-	      "value" => thb_productCategories(),
+	      "value" => vif_productCategories(),
 	      "description" => esc_html__("Select the order of the products you'd like to show.", "viftech"),
 	      "dependency" => Array('element' => "product_sort", 'value' => array('by-category'))
 	  ),
@@ -3264,11 +3264,11 @@ vc_map( array(
 	      "description" => esc_html__("The number of products to show.", "viftech"),
 	      "dependency" => Array('element' => "product_sort", 'value' => array('by-category', 'sale-products', 'top-rated', 'latest-products', 'best-sellers', 'featured-products'))
 	  ),
-	  $thb_animation_array,
+	  $vif_animation_array,
 	  array(
 	  	"type" => "checkbox",
 	  	"heading" => esc_html__("Use Carousel?", "viftech"),
-	  	"param_name" => "thb_carousel",
+	  	"param_name" => "vif_carousel",
 	  	"value" => array(
 	  		"Yes" => "true"
 	  	),
@@ -3297,7 +3297,7 @@ vc_map( array(
 	  		"Yes" => "true"
 	  	),
 	  	"description" => esc_html__("If enabled, the carousel will autoplay.", "viftech"),
-	  	"dependency" => Array('element' => "thb_carousel", 'value' => array('true'))
+	  	"dependency" => Array('element' => "vif_carousel", 'value' => array('true'))
 	  ),
 	  array(
 	  	"type" => "textfield",
@@ -3314,9 +3314,9 @@ vc_map( array(
 // Product List
 vc_map( array(
 	"name" => esc_html__("Product List", 'viftech'),
-	"base" => "thb_product_list",
-	"icon" => "thb_vc_ico_product_list",
-	"class" => "thb_vc_sc_product_list",
+	"base" => "vif_product_list",
+	"icon" => "vif_vc_ico_product_list",
+	"class" => "vif_vc_sc_product_list",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
@@ -3362,16 +3362,16 @@ vc_map( array(
 // Shop Grid
 vc_map( array(
 	"name" => esc_html__("Product Category Grid", 'viftech'),
-	"base" => "thb_product_category_grid",
-	"icon" => "thb_vc_ico_grid",
-	"class" => "thb_vc_sc_grid",
+	"base" => "vif_product_category_grid",
+	"icon" => "vif_vc_ico_grid",
+	"class" => "vif_vc_sc_grid",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 		array(
 		  "type" => "checkbox",
 		  "heading" => esc_html__("Product Category", "viftech"),
 		  "param_name" => "cat",
-		  "value" => thb_productCategories(),
+		  "value" => vif_productCategories(),
 		  "description" => esc_html__("Select the categories you would like to display", "viftech")
 		),
 		array(
@@ -3393,16 +3393,16 @@ vc_map( array(
 // Product Categories
 vc_map( array(
 	"name" => esc_html__("Product Categories", 'viftech'),
-	"base" => "thb_product_categories",
-	"icon" => "thb_vc_ico_product_categories",
-	"class" => "thb_vc_sc_product_categories",
+	"base" => "vif_product_categories",
+	"icon" => "vif_vc_ico_product_categories",
+	"class" => "vif_vc_sc_product_categories",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 	  array(
 	      "type" => "checkbox",
 	      "heading" => esc_html__("Product Category", "viftech"),
 	      "param_name" => "cat",
-	      "value" => thb_productCategories(),
+	      "value" => vif_productCategories(),
 	      "description" => esc_html__("Select the categories you would like to display", "viftech")
 	  ),
 	  array(
@@ -3424,9 +3424,9 @@ vc_map( array(
 // Progress Bar Shortcode
 vc_map( array(
 	"name" => esc_html__("Progress Bar", 'viftech'),
-	"base" => "thb_progressbar",
-	"icon" => "thb_vc_ico_progressbar",
-	"class" => "thb_vc_sc_progressbar",
+	"base" => "vif_progressbar",
+	"icon" => "vif_vc_ico_progressbar",
+	"class" => "vif_vc_sc_progressbar",
 	"category" => esc_html__("by Viftech Themes", 'viftech'),
 	"params" => array(
 		array(
@@ -3448,7 +3448,7 @@ vc_map( array(
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Bar Color", "viftech"),
-			"param_name" => "thb_bar_color",
+			"param_name" => "vif_bar_color",
 			"description" => esc_html__("Uses the accent color by default", "viftech")
 		),
 	),
@@ -3457,12 +3457,12 @@ vc_map( array(
 
 // Search Field
 vc_map( array(
-	'base'  => 'thb_searchfield',
+	'base'  => 'vif_searchfield',
 	'name' => esc_html__('Search Field', 'viftech'),
 	"description" => esc_html__("Adds a search form with different sizes", "viftech"),
 	'category' => esc_html__('by Viftech Themes', 'viftech'),
-	"icon" => "thb_vc_ico_searchfield",
-	"class" => "thb_vc_sc_searchfield",
+	"icon" => "vif_vc_ico_searchfield",
+	"class" => "vif_vc_sc_searchfield",
 	'params' => array(
 		array(
 			"type" => "textfield",
@@ -3484,7 +3484,7 @@ vc_map( array(
 		array(
 		  "type" => "checkbox",
 		  "heading" => esc_html__("Add Border Radius?", "viftech"),
-		  "param_name" => "thb_border_radius",
+		  "param_name" => "vif_border_radius",
 		  "value" => array(
 		  	"Yes" => "border_radius"
 		  ),
@@ -3551,15 +3551,15 @@ vc_map( array(
 // Share shortcode
 vc_map( array(
 	"name" => esc_html__("Share", 'viftech'),
-	"base" => "thb_share",
-	"icon" => "thb_vc_ico_share",
-	"class" => "thb_vc_sc_share",
+	"base" => "vif_share",
+	"icon" => "vif_vc_ico_share",
+	"class" => "vif_vc_sc_share",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params" => array(
 		array(
 			"type" 					 => "dropdown",
 			"heading" 			 => esc_html__("Alignment", 'viftech'),
-			"param_name" 		 => "thb_alignment",
+			"param_name" 		 => "vif_alignment",
 			"value" => array(
 				"Left" 				=> "vif-left",
 				"Center" 					=> "vif-center",
@@ -3652,12 +3652,12 @@ vc_map( array(
 
 // stroke type
 vc_map( array(
-	'base'  => 'thb_stroketype',
+	'base'  => 'vif_stroketype',
 	'name' => esc_html__('Stroke Type', 'viftech'),
 	"description" => esc_html__("Text with Stroke style", "viftech"),
 	'category' => esc_html__('by Viftech Themes', 'viftech'),
-	"icon" => "thb_vc_ico_stroketype",
-	"class" => "thb_vc_sc_stroketype",
+	"icon" => "vif_vc_ico_stroketype",
+	"class" => "vif_vc_sc_stroketype",
 	'params' => array(
 		array(
 			'type'       => 'textarea_safe',
@@ -3670,7 +3670,7 @@ vc_map( array(
 		array(
 			"type" => "colorpicker",
 			"heading" => esc_html__("Text Color", "viftech"),
-			"param_name" => "thb_color",
+			"param_name" => "vif_color",
 			"description" => esc_html__("Select text color", "viftech")
 		),
 		array(
@@ -3685,16 +3685,16 @@ vc_map( array(
 			"heading" => esc_html__("Extra Class Name", "viftech"),
 			"param_name" => "extra_class",
 		),
-		$thb_animation_array
+		$vif_animation_array
 	)
 ) );
 
 // Tabs
 vc_map( array(
 	"name" => esc_html__("Tabs", 'viftech'),
-	"base" => "thb_tabs",
-	"icon" => "thb_vc_ico_thb_tabs",
-	"class" => "thb_vc_sc_thb_tabs wpb_vc_tabs wpb_vc_tta_tabs",
+	"base" => "vif_tabs",
+	"icon" => "vif_vc_ico_vif_tabs",
+	"class" => "vif_vc_sc_vif_tabs wpb_vc_tabs wpb_vc_tta_tabs",
 	"show_settings_on_create" => false,
 	'as_parent' => array(
 		'only' => 'vc_tta_section',
@@ -3739,22 +3739,22 @@ vc_map( array(
 
 VcShortcodeAutoloader::getInstance()->includeClass( 'WPBakeryShortCode_VC_Tta_Tabs' );
 
-class WPBakeryShortCode_thb_tabs extends WPBakeryShortCode_VC_Tta_Accordion { }
+class WPBakeryShortCode_vif_tabs extends WPBakeryShortCode_VC_Tta_Accordion { }
 
 // Team Member Parent
 vc_map( array(
 	"name" => esc_html__("Team Members", 'viftech'),
-	"base" => "thb_team_parent",
-	"icon" => "thb_vc_ico_team",
-	"class" => "thb_vc_sc_team",
+	"base" => "vif_team_parent",
+	"icon" => "vif_vc_ico_team",
+	"class" => "vif_vc_sc_team",
 	"content_element"	=> true,
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_parent" => array('only' => 'thb_team, thb_team_addnew'),
+	"as_parent" => array('only' => 'vif_team, vif_team_addnew'),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
 		    "heading" => esc_html__("Layout", "viftech"),
-		    "param_name" => "thb_style",
+		    "param_name" => "vif_style",
 		    "admin_label" => true,
 		    "value" => array(
 		    	'Style 1 (Grid)' => "style1",
@@ -3765,7 +3765,7 @@ vc_map( array(
 		array(
 		  "type" => "dropdown",
 		  "heading" => esc_html__("Margins between items", "viftech"),
-		  "param_name" => "thb_margins",
+		  "param_name" => "vif_margins",
 		  "group" => "Styling",
 		  "std"=> "regular-padding",
 		  "value" => array(
@@ -3775,12 +3775,12 @@ vc_map( array(
 		  	'None' => "no-padding"
 		  ),
 		  "description" => esc_html__("This will change the margins between team members.", "viftech" ),
-		  "dependency" => Array('element' => "thb_style", 'value' => array('style1'))
+		  "dependency" => Array('element' => "vif_style", 'value' => array('style1'))
 		),
 		array(
 		    "type" => "dropdown",
 		    "heading" => esc_html__("Team Member Style", "viftech"),
-		    "param_name" => "thb_member_style",
+		    "param_name" => "vif_member_style",
 		    "value" => array(
 		    	'Style 1 (Title under Image)' => "member_style1",
 		    	'Style 2 (Title over Image)' => "member_style2",
@@ -3791,7 +3791,7 @@ vc_map( array(
 		array(
 			"type" => "dropdown",
 			"heading" => esc_html__("Columns", "viftech"),
-			"param_name" => "thb_columns",
+			"param_name" => "vif_columns",
 			"admin_label" => true,
 			"value" => array(
 				'2 Columns' => "large-6",
@@ -3801,11 +3801,11 @@ vc_map( array(
 				'6 Columns' => "medium-4 large-2"
 			)
 		),
-		$thb_animation_array,
+		$vif_animation_array,
 		array(
 			"type" 					 => "dropdown",
 			"heading" 			 => esc_html__("Text Color", 'viftech'),
-			"param_name" 		 => "thb_text_color",
+			"param_name" 		 => "vif_text_color",
 			"value" => array(
 				"Dark" => "team-dark",
 				"Light" => "team-light"
@@ -3822,7 +3822,7 @@ vc_map( array(
 				"Yes" => "true"
 			),
 			"description" => esc_html__("If enabled, the carousel will autoplay.", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('vif-carousel'))
+			"dependency" => Array('element' => "vif_style", 'value' => array('vif-carousel'))
 		),
 		array(
 			"type" => "textfield",
@@ -3839,10 +3839,10 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__("Team Member", 'viftech'),
-	"base" => "thb_team",
-	"icon" => "thb_vc_ico_team",
-	"class" => "thb_vc_sc_team",
-	"as_child" => array('only' => 'thb_team_parent'),
+	"base" => "vif_team",
+	"icon" => "vif_vc_ico_team",
+	"class" => "vif_vc_sc_team",
+	"as_child" => array('only' => 'vif_team_parent'),
 	"params"	=> array(
 		array(
 			'type'           => 'attach_image',
@@ -3900,9 +3900,9 @@ vc_map( array(
 	),
 	"description" => esc_html__("Single Team Member", "viftech")
 ) );
-vc_add_param( "thb_team_parent", thb_vc_gradient_color1() );
-vc_add_param( "thb_team_parent", thb_vc_gradient_color2() );
-vc_add_param( "thb_team_parent", array(
+vc_add_param( "vif_team_parent", vif_vc_gradient_color1() );
+vc_add_param( "vif_team_parent", vif_vc_gradient_color2() );
+vc_add_param( "vif_team_parent", array(
 	'type' => 'colorpicker',
 	'heading' => esc_html__( 'Shadow Color for Style 3', 'viftech' ),
 	'param_name' => 'box_shadow',
@@ -3910,23 +3910,23 @@ vc_add_param( "thb_team_parent", array(
 	'group' => 'Styling'
 ) );
 
-class WPBakeryShortCode_thb_team_parent extends WPBakeryShortCodesContainer {}
-class WPBakeryShortCode_thb_team extends WPBakeryShortCode {}
+class WPBakeryShortCode_vif_team_parent extends WPBakeryShortCodesContainer {}
+class WPBakeryShortCode_vif_team extends WPBakeryShortCode {}
 
 // Testimonial Parent
 vc_map( array(
 	"name" => esc_html__("Testimonials", 'viftech'),
-	"base" => "thb_testimonial_parent",
-	"icon" => "thb_vc_ico_testimonial",
-	"class" => "thb_vc_sc_testimonial",
+	"base" => "vif_testimonial_parent",
+	"icon" => "vif_vc_ico_testimonial",
+	"class" => "vif_vc_sc_testimonial",
 	"content_element"	=> true,
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_parent" => array('only' => 'thb_testimonial'),
+	"as_parent" => array('only' => 'vif_testimonial'),
 	"params"	=> array(
 		array(
 		    "type" => "dropdown",
 		    "heading" => esc_html__("Style", "viftech"),
-		    "param_name" => "thb_style",
+		    "param_name" => "vif_style",
 		    "admin_label" => true,
 		    "value" => array(
 		    	'Single Column Slider - Style 1 (avatars)' => "style1",
@@ -3942,19 +3942,19 @@ vc_map( array(
 		    "type" => "dropdown",
 		    "heading" => esc_html__("Columns", "viftech"),
 		    "param_name" => "columns",
-		    "value" => $thb_column_array,
+		    "value" => $vif_column_array,
 		    "description" => esc_html__("This changes the column counts of the carousel or grid", "viftech"),
-		    "dependency" => Array('element' => "thb_style", 'value' => array('style3', 'style6'))
+		    "dependency" => Array('element' => "vif_style", 'value' => array('style3', 'style6'))
 		),
 		array(
 			"type" => "checkbox",
 			"heading" => esc_html__("Display Slider Pagination", "viftech"),
-			"param_name" => "thb_pagination",
+			"param_name" => "vif_pagination",
 			"value" => array(
 				"Yes" => "true"
 			),
 			"std" => "true",
-			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'style2', 'style3', 'style4'))
+			"dependency" => Array('element' => "vif_style", 'value' => array('style1', 'style2', 'style3', 'style4'))
 		),
 		array(
 			"type" => "checkbox",
@@ -3971,7 +3971,7 @@ vc_map( array(
 			"param_name" => "autoplay_speed",
 			"value" => "4000",
 			"description" => esc_html__("Speed of the autoplay, default 4000 (4 seconds)", "viftech"),
-			"dependency" => Array('element' => "thb_style", 'value' => array('style1', 'style2', 'style3', 'style4', 'style5'))
+			"dependency" => Array('element' => "vif_style", 'value' => array('style1', 'style2', 'style3', 'style4', 'style5'))
 		),
 	),
 	"description" => esc_html__("Testimonials Slider or Grid", "viftech"),
@@ -3980,11 +3980,11 @@ vc_map( array(
 
 vc_map( array(
 	"name" => esc_html__("Testimonial", 'viftech'),
-	"base" => "thb_testimonial",
-	"icon" => "thb_vc_ico_testimonial",
-	"class" => "thb_vc_sc_testimonial",
+	"base" => "vif_testimonial",
+	"icon" => "vif_vc_ico_testimonial",
+	"class" => "vif_vc_sc_testimonial",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
-	"as_child" => array('only' => 'thb_testimonial_parent'),
+	"as_child" => array('only' => 'vif_testimonial_parent'),
 	"params"	=> array(
 		array(
 			'type'           => 'textfield',
@@ -4003,7 +4003,7 @@ vc_map( array(
 		array(
 			"type" 					 => "checkbox",
 			"heading" 			 => esc_html__("Enable Review Stars", 'viftech'),
-			"param_name" 		 => "thb_review",
+			"param_name" 		 => "vif_review",
 			"value" => array(
 				"Yes" => "true"
 			),
@@ -4013,7 +4013,7 @@ vc_map( array(
 		array(
 			"type" 					 => "dropdown",
 			"heading" 			 => esc_html__("Review", 'viftech'),
-			"param_name" 		 => "thb_review_stars",
+			"param_name" 		 => "vif_review_stars",
 			"value" => array(
 				"5 Stars" => "5",
 				"4 Stars" => "4",
@@ -4024,7 +4024,7 @@ vc_map( array(
 			),
 			'group'					 => esc_html__( 'Quote', 'viftech' ),
 			"description" 		=> esc_html__("Star rating of this review.", 'viftech'),
-			"dependency" 			=> Array('element' => "thb_review", 'value' => array('true'))
+			"dependency" 			=> Array('element' => "vif_review", 'value' => array('true'))
 		),
 		array(
 			'type'           => 'attach_image',
@@ -4065,15 +4065,15 @@ vc_map( array(
 	),
 	"description" => esc_html__("Single Testimonial", "viftech")
 ) );
-class WPBakeryShortCode_thb_testimonial_parent extends WPBakeryShortCodesContainer {}
-class WPBakeryShortCode_thb_testimonial extends WPBakeryShortCode {}
+class WPBakeryShortCode_vif_testimonial_parent extends WPBakeryShortCodesContainer {}
+class WPBakeryShortCode_vif_testimonial extends WPBakeryShortCode {}
 
 // Twitter shortcode
 vc_map( array(
 	"name" => esc_html__("Twitter", 'viftech'),
-	"base" => "thb_twitter",
-	"icon" => "thb_vc_ico_twitter",
-	"class" => "thb_vc_sc_twitter",
+	"base" => "vif_twitter",
+	"icon" => "vif_vc_ico_twitter",
+	"class" => "vif_vc_sc_twitter",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params" => array(
 		array(
@@ -4099,9 +4099,9 @@ vc_map( array(
 // Video Lightbox
 vc_map( array(
 	"name" => esc_html__("Video Lightbox", 'viftech'),
-	"base" => "thb_video_lightbox",
-	"icon" => "thb_vc_ico_video_lightbox",
-	"class" => "thb_vc_sc_video_lightbox",
+	"base" => "vif_video_lightbox",
+	"icon" => "vif_vc_ico_video_lightbox",
+	"class" => "vif_vc_sc_video_lightbox",
 	"category" => esc_html__("by Viftech Themes", "viftech"),
 	"params"	=> array(
 	  array(
@@ -4167,7 +4167,7 @@ vc_map( array(
 	  	'description'    => esc_html__( 'Select image from media library.', 'viftech' ),
 	  	"dependency" 		 => Array('element' => "style", 'value' => array('lightbox-style2'))
 	  ),
-	  $thb_animation_array,
+	  $vif_animation_array,
 	  array(
 	  	"type" 						=> "dropdown",
 	  	"heading" 				=> esc_html__("Image Hover Style", "viftech"),

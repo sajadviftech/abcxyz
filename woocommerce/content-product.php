@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $product, $woocommerce_loop;
 
 $vars = $wp_query->query_vars;
-$thb_animation = array_key_exists('thb_animation', $vars) ? $vars['thb_animation'] : false;
+$vif_animation = array_key_exists('vif_animation', $vars) ? $vars['vif_animation'] : false;
 
 // Ensure visibility
 if ( empty( $product ) || ! $product->is_visible() ) {
@@ -36,16 +36,16 @@ $columns = isset($_GET['products_per_row']) ? $_GET['products_per_row'] : ot_get
 $vars = $wp_query->query_vars;
 
 if ( in_array($shop_product_listing_layout, array('style2', 'style3', 'style4', 'style5', 'style6', 'style7', 'style8' )) && is_shop()) {
-	$columns = thb_get_product_size($shop_product_listing_layout, $woocommerce_loop['loop']);
+	$columns = vif_get_product_size($shop_product_listing_layout, $woocommerce_loop['loop']);
 }
 
 
-$columns = array_key_exists('thb_columns', $vars) && $vars['thb_columns'] ? $vars['thb_columns'] : $columns;
+$columns = array_key_exists('vif_columns', $vars) && $vars['vif_columns'] ? $vars['vif_columns'] : $columns;
 
 $classes[] = 'small-6';
 $classes[] = $columns;
 $classes[] = 'columns';
-$classes[] = $thb_animation;
+$classes[] = $vif_animation;
 $classes[] = 'vif-listing-'.$shop_product_listing;
 
 ?>
@@ -68,7 +68,7 @@ $classes[] = 'vif-listing-'.$shop_product_listing;
 	$style = $class = '';
 	if (isset($thumbnail_second[0])) {            
 		$style = 'background-image:url(' . $thumbnail_second[0] . ')';
-		$thumbnail_class = 'thb_hover';     
+		$thumbnail_class = 'vif_hover';     
 	}
 ?>
 <li <?php post_class($classes); ?>>
@@ -81,8 +81,8 @@ $classes[] = 'vif-listing-'.$shop_product_listing;
 		do_action( 'woocommerce_before_shop_loop_item' );
 	?>
 	<figure class="product_thumbnail <?php echo esc_attr($thumbnail_class); ?>">	
-		<?php do_action( 'thb_product_badge'); ?>
-		<?php if ($shop_product_listing === 'style1') { thb_wishlist_button(); } ?>
+		<?php do_action( 'vif_product_badge'); ?>
+		<?php if ($shop_product_listing === 'style1') { vif_wishlist_button(); } ?>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			<?php if ($shop_product_hover === 'on') { ?>
 			<span class="product_thumbnail_hover" style="<?php echo esc_attr($style); ?>"></span>
@@ -98,7 +98,7 @@ $classes[] = 'vif-listing-'.$shop_product_listing;
 	</figure>
 	<h3>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-		<?php if ($shop_product_listing === 'style2') { thb_wishlist_button(); } ?>
+		<?php if ($shop_product_listing === 'style2') { vif_wishlist_button(); } ?>
 	</h3>
 	<div class="product_after_title">
 		<div class="product_after_shop_loop_price">

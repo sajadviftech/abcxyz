@@ -22,15 +22,15 @@ $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 
 $el_class = $this->getExtraClass( $el_class );
-$thb_column_padding = $thb_column_padding ? 'no-column-padding': '';
+$vif_column_padding = $vif_column_padding ? 'no-column-padding': '';
 $css_classes = array(
 	'vc_row',
 	'wpb_row', //deprecated
 	'vc_inner',
 	'vc_row-fluid',
 	$box_shadow,
-	$thb_max_width,
-	$thb_column_padding,
+	$vif_max_width,
+	$vif_column_padding,
 	$el_class,
 	vc_shortcode_custom_css_class( $css ),
 );
@@ -73,8 +73,8 @@ if ( ! empty( $el_id ) ) {
 $css_class = preg_replace( '/\s+/', ' ', apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, implode( ' ', array_filter( array_unique( $css_classes ) ) ), $this->settings['base'], $atts ) );
 $wrapper_attributes[] = 'class="' . esc_attr( trim( $css_class ) ) . '"';
 
-if ($thb_border_radius) {
-	$wrapper_attributes[] = 'style="border-radius:'.esc_attr($thb_border_radius).'"';		
+if ($vif_border_radius) {
+	$wrapper_attributes[] = 'style="border-radius:'.esc_attr($vif_border_radius).'"';		
 }
 
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';

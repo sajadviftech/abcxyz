@@ -11,5 +11,5 @@
 </footer>
 <?php } ?>
 <?php if (ot_get_option('article_author', 'on') == 'on') { ?> 
-	<?php do_action('thb_author'); ?>
+	<?php do_action('vif_author'); ?>
 <?php } ?>

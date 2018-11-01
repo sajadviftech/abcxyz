@@ -1,10 +1,10 @@
 <?php
 
-function thb_center_nav_menu_items($items, $args) {
+function vif_center_nav_menu_items($items, $args) {
 	if ( $args->theme_location == 'nav-menu') {
 		if (is_array($items) || is_object($items)) {
-			$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
-			$logo_light = ot_get_option('logo_light', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo-light.png');
+			$logo = ot_get_option('logo', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo.png');
+			$logo_light = ot_get_option('logo_light', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo-light.png');
 			
 			ob_start();
 			?>
@@ -48,7 +48,7 @@ function thb_center_nav_menu_items($items, $args) {
  * @since       1.0 
  * @return      void
 */
-class thb_mobileDropdown extends Walker_Nav_Menu {
+class vif_mobileDropdown extends Walker_Nav_Menu {
 	/**
 	 * Start the element output.
 	 *
@@ -188,7 +188,7 @@ class thb_mobileDropdown extends Walker_Nav_Menu {
 	}
 }
 /* Full Menu */
-class thb_fullmenu extends Walker_Nav_Menu {
+class vif_fullmenu extends Walker_Nav_Menu {
 
 	/**
 	 * Starts the element output.
@@ -340,7 +340,7 @@ class thb_fullmenu extends Walker_Nav_Menu {
 }
 
 /* Mega Background */
-class thb_custom_menu {
+class vif_custom_menu {
 
     /*--------------------------------------------*
      * Constructor
@@ -353,13 +353,13 @@ class thb_custom_menu {
 
         
         // add custom menu fields to menu
-        add_filter( 'wp_setup_nav_menu_item', array( $this, 'thb_add_custom_nav_fields' ) );
+        add_filter( 'wp_setup_nav_menu_item', array( $this, 'vif_add_custom_nav_fields' ) );
 
         // save menu custom fields
-        add_action( 'wp_update_nav_menu_item', array( $this, 'thb_update_custom_nav_fields'), 10, 3 );
+        add_action( 'wp_update_nav_menu_item', array( $this, 'vif_update_custom_nav_fields'), 10, 3 );
         
         // edit menu walker
-        add_filter( 'wp_edit_nav_menu_walker', array( $this, 'thb_edit_walker'), 10, 2 );
+        add_filter( 'wp_edit_nav_menu_walker', array( $this, 'vif_edit_walker'), 10, 2 );
 
     } // end constructor
     
@@ -372,7 +372,7 @@ class thb_custom_menu {
      * @since       1.0 
      * @return      void
     */
-    function thb_add_custom_nav_fields( $menu_item ) {
+    function vif_add_custom_nav_fields( $menu_item ) {
     
       $menu_item->menubg = get_post_meta( $menu_item->ID, '_menu_item_menubg', true );
 			$menu_item->menuanchor = get_post_meta( $menu_item->ID, '_menu_item_menuanchor', true );
@@ -388,7 +388,7 @@ class thb_custom_menu {
      * @since       1.0 
      * @return      void
     */
-    function thb_update_custom_nav_fields( $menu_id, $menu_item_db_id, $args ) {
+    function vif_update_custom_nav_fields( $menu_id, $menu_item_db_id, $args ) {
 
 	    // Check if element is properly sent
 	    if (!empty($_REQUEST['menu-item-menubg'])) {
@@ -414,13 +414,13 @@ class thb_custom_menu {
      * @since       1.0 
      * @return      void
     */
-    function thb_edit_walker($walker,$menu_id) {
-        return 'thb_Nav_Menu_Edit_Custom'; 
+    function vif_edit_walker($walker,$menu_id) {
+        return 'vif_Nav_Menu_Edit_Custom'; 
     }
 }
 
 // instantiate plugin's class
-$GLOBALS['thb_custom_menu'] = new thb_custom_menu();
+$GLOBALS['vif_custom_menu'] = new vif_custom_menu();
 
 /**
  *  /!\ This is a copy of Walker_Nav_Menu_Edit class in core
@@ -431,12 +431,12 @@ $GLOBALS['thb_custom_menu'] = new thb_custom_menu();
  * @since 3.0.0
  * @uses Walker_Nav_Menu
  */
-class thb_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
+class vif_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 
-	var $thb_icons;
+	var $vif_icons;
 	
 	function __construct() {
-	    $this->thb_icons = thb_getIconArray();
+	    $this->vif_icons = vif_getIconArray();
 	}
 	
 	/**
@@ -593,7 +593,7 @@ class thb_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 	            </label>
 	        </p>
 			
-			<p class="field-menuanchor description-wide thb_menu_options">
+			<p class="field-menuanchor description-wide vif_menu_options">
 	        	<label for="edit-menu-item-menuanchor-<?php echo esc_attr($item_id); ?>">
 	        		<strong><?php _e( 'Fullwidth Menu Class', 'viftech' ); ?></strong><br />
 	        		<input type="text" id="edit-menu-item-widthclass<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-widthclass" name="menu-item-widthclass[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->widthclass ); ?>" />
@@ -602,14 +602,14 @@ class thb_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 	        </p>
 
 
-	        <p class="field-menubg description-wide thb_menu_options">
+	        <p class="field-menubg description-wide vif_menu_options">
 	        	<label for="edit-menu-item-menubg-<?php echo esc_attr($item_id); ?>">
 	        		<strong><?php _e( 'Menu Background', 'viftech' ); ?></strong><br />
 	        		<textarea id="edit-menu-item-menubg-<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-menubg" rows="3" cols="20" name="menu-item-menubg[<?php echo esc_attr($item_id); ?>]"><?php echo esc_html( $item->menubg ); ?></textarea>
 	        		<span class="description"><?php _e('The menu background will be used when possible. Enter an image url here.', 'viftech'); ?></span>
 	        	</label>
 	        </p>
-	        <p class="field-menuanchor description-wide thb_menu_options">
+	        <p class="field-menuanchor description-wide vif_menu_options">
 	        	<label for="edit-menu-item-menuanchor-<?php echo esc_attr($item_id); ?>">
 	        		<strong><?php _e( 'Menu Anchor', 'viftech' ); ?></strong><br />
 	        		<input type="text" id="edit-menu-item-menuanchor-<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-menuanchor" name="menu-item-menuanchor[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->menuanchor ); ?>" />

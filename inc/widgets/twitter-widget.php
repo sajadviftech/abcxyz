@@ -1,14 +1,14 @@
 <?php
 // Twitter Widget
-class widget_thb_twitterwidget extends WP_Widget {
+class widget_vif_twitterwidget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
-			'classname'   => 'widget_thb_twitterwidget',
+			'classname'   => 'widget_vif_twitterwidget',
 			'description' => __('Display your Tweets','viftech')
 		);
 		
 		parent::__construct(
-			'thb_thb_twitterwidget_widget',
+			'vif_vif_twitterwidget_widget',
 			__( 'Viftech Themes - Twitter' , 'viftech' ),
 			$widget_ops
 		);
@@ -21,7 +21,7 @@ class widget_thb_twitterwidget extends WP_Widget {
 		$title = apply_filters('widget_title', $instance['title']);
 		$show = $instance['show'];
 		
-		$tweets = thb_gettweets($show);
+		$tweets = vif_gettweets($show);
 		echo $before_widget;
 		echo ($title ? $before_title . $title . $after_title : '');
 		
@@ -31,9 +31,9 @@ class widget_thb_twitterwidget extends WP_Widget {
 			<?php
 			foreach ($tweets as $tweet) {
 				?>
-				<li class="thb_tweet">
+				<li class="vif_tweet">
 					<p><?php echo wp_kses_post($tweet['tweet']); ?></p>
-					<a href="<?php echo esc_url($tweet['url']); ?>" class="thb_tweet_time" target="_blank"><?php echo wp_kses_post($tweet['time']); ?></a>
+					<a href="<?php echo esc_url($tweet['url']); ?>" class="vif_tweet_time" target="_blank"><?php echo wp_kses_post($tweet['time']); ?></a>
 				</li>
 				<?php
 			}
@@ -70,7 +70,7 @@ class widget_thb_twitterwidget extends WP_Widget {
 	<?php
 	}
 }
-function widget_thb_twitterwidget_init() {
-	register_widget('widget_thb_twitterwidget');
+function widget_vif_twitterwidget_init() {
+	register_widget('widget_vif_twitterwidget');
 }
-add_action('widgets_init', 'widget_thb_twitterwidget_init');
+add_action('widgets_init', 'widget_vif_twitterwidget_init');

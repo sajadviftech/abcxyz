@@ -1,11 +1,11 @@
 <?php 
-	$thb_id = get_queried_object_id();
-	$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
-	$logo_light = ot_get_option('logo_light', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo-light.png');
+	$vif_id = get_queried_object_id();
+	$logo = ot_get_option('logo', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo.png');
+	$logo_light = ot_get_option('logo_light', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo-light.png');
 	
 	$fixed_header_color = ot_get_option('fixed_header_color', 'dark-header');
 	$fixed_header_shadow = ot_get_option('fixed_header_shadow');
-	$header_color = thb_get_header_color($thb_id);
+	$header_color = vif_get_header_color($vif_id);
 	
 	$header_class[] = 'header style2';
 	$header_class[] = $fixed_header_shadow;
@@ -24,7 +24,7 @@
 			</div>
 			<div>
 				<?php get_template_part( 'inc/templates/header/full-menu' ); ?> 
-				<?php do_action( 'thb_secondary_area' ); ?>
+				<?php do_action( 'vif_secondary_area' ); ?>
 			</div>
 		</div>
 	</div>

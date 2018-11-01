@@ -1,5 +1,5 @@
 <?php
-	add_filter( 'excerpt_length', 'thb_supershort_excerpt_length' );
+	add_filter( 'excerpt_length', 'vif_supershort_excerpt_length' );
 	$id = get_the_ID();
 	$image_id = get_post_thumbnail_id($id);
 	$image_url = wp_get_attachment_image_src($image_id, 'full');

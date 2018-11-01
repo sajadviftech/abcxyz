@@ -26,7 +26,7 @@ Shortcode attributes
 	}
 */
 $el_class = $full_height = $parallax_speed_bg = $parallax_speed_video = $full_width = $equal_height = $flex_row = $columns_placement = $content_placement = $parallax = $parallax_image = $css = $el_id = $video_bg = $video_bg_url = $video_bg_parallax = '';
-$disable_element = $thb_scroll_to_bottom = $thb_color = $thb_video_bg = $bg_video_overlay = $thb_scroll_bottom_style = '';
+$disable_element = $vif_scroll_to_bottom = $vif_color = $vif_video_bg = $bg_video_overlay = $vif_scroll_bottom_style = '';
 $output = $after_output = '';
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
@@ -34,22 +34,22 @@ extract( $atts );
 wp_enqueue_script( 'wpb_composer_front_js' );
 
 $el_class = $this->getExtraClass( $el_class );
-$thb_column_padding = $thb_column_padding ? 'no-column-padding': '';
-$thb_row_padding = $thb_row_padding ? 'no-row-padding' : ''; 
-$thb_full_width = $thb_full_width ? 'full-width-row' : '';
-$thb_scroll_bottom_class = $thb_scroll_bottom == 'true' ? 'vif-arrow-enabled' : '';
-$thb_shape_divider_class = $thb_shape_divider == 'true' ? 'vif-divider-enabled' : '';
+$vif_column_padding = $vif_column_padding ? 'no-column-padding': '';
+$vif_row_padding = $vif_row_padding ? 'no-row-padding' : ''; 
+$vif_full_width = $vif_full_width ? 'full-width-row' : '';
+$vif_scroll_bottom_class = $vif_scroll_bottom == 'true' ? 'vif-arrow-enabled' : '';
+$vif_shape_divider_class = $vif_shape_divider == 'true' ? 'vif-divider-enabled' : '';
 $css_classes = array(
 	'vc_row',
 	'wpb_row', //deprecated
 	'vc_row-fluid',
 	$box_shadow,
 	$el_class,
-	$thb_row_padding,
-	$thb_full_width,
-	$thb_column_padding,
-	$thb_scroll_bottom_class,
-	$thb_shape_divider_class,
+	$vif_row_padding,
+	$vif_full_width,
+	$vif_column_padding,
+	$vif_scroll_bottom_class,
+	$vif_shape_divider_class,
 	vc_shortcode_custom_css_class( $css ),
 );
 
@@ -160,13 +160,13 @@ if ( ! $parallax && $has_video_bg ) {
 }
 
 /* Video BG */
-if ( $thb_video_bg !== '') {
+if ( $vif_video_bg !== '') {
 	$bg_type = '';
-	$video_type = wp_check_filetype( $thb_video_bg, wp_get_mime_types() );
+	$video_type = wp_check_filetype( $vif_video_bg, wp_get_mime_types() );
 	$pattern = '/background-image:\s*url\(\s*([\'"]*)(?P<file>[^\1]+)\1\s*\)/i';
 	preg_match($pattern, $css, $bg_image);
 
-	$wrapper_attributes[] = 'data-vide-bg="'.$video_type['ext'].': '.esc_attr($thb_video_bg). ( isset($bg_image[2]) ? ', poster: '.esc_attr($bg_image[2]) : '').'"';
+	$wrapper_attributes[] = 'data-vide-bg="'.$video_type['ext'].': '.esc_attr($vif_video_bg). ( isset($bg_image[2]) ? ', poster: '.esc_attr($bg_image[2]) : '').'"';
 		
 	if (isset($bg_image[2])) {
 		$bg_url = strtok($bg_image[2], '?');
@@ -174,21 +174,21 @@ if ( $thb_video_bg !== '') {
 	}
 	
 	$wrapper_attributes[] = 'data-vide-options="posterType: '.( isset($bg_image[2]) ? esc_attr($bg_type['ext']) : 'none').', loop: true, muted: true, position: 50% 50%, resizing: true"';
-	if ( $thb_video_overlay_color != '' ) {
-		$bg_video_overlay = '<div class="thb_video_overlay" style="background-color: '.esc_attr($thb_video_overlay_color) .';"></div>';
+	if ( $vif_video_overlay_color != '' ) {
+		$bg_video_overlay = '<div class="vif_video_overlay" style="background-color: '.esc_attr($vif_video_overlay_color) .';"></div>';
 	}
 	
-	$css_classes[] = 'thb_video_bg';
+	$css_classes[] = 'vif_video_bg';
 }
-if(!empty($thb_video_overlay_color)) {
+if(!empty($vif_video_overlay_color)) {
 	$css_classes[] = 'bg-overlay';
 	
 }
 $css_class = preg_replace( '/\s+/', ' ', apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, implode( ' ', array_filter( array_unique( $css_classes ) ) ), $this->settings['base'], $atts ) );
 $wrapper_attributes[] = 'class="' . esc_attr( trim( $css_class ) ) . '"';
 
-if ($thb_border_radius) {
-	$wrapper_attributes[] = 'style="border-radius:'.esc_attr($thb_border_radius).'"';		
+if ($vif_border_radius) {
+	$wrapper_attributes[] = 'style="border-radius:'.esc_attr($vif_border_radius).'"';		
 }
 
 
@@ -196,33 +196,33 @@ if ($thb_border_radius) {
 
 
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
-if(!empty($thb_video_overlay_color)) {
-	$output .= '<div class="overlay" style="background: '.$thb_video_overlay_color.'"></div>';
+if(!empty($vif_video_overlay_color)) {
+	$output .= '<div class="overlay" style="background: '.$vif_video_overlay_color.'"></div>';
 }
 $output .= wpb_js_remove_wpautop( $content );
 $output .= $bg_video_overlay;
-if ($thb_scroll_bottom == 'true') {
-	$output .= '<div class="scroll-bottom '.esc_attr($thb_scroll_bottom_color.' '.$thb_scroll_bottom_style).'"><div></div></div>';	
+if ($vif_scroll_bottom == 'true') {
+	$output .= '<div class="scroll-bottom '.esc_attr($vif_scroll_bottom_color.' '.$vif_scroll_bottom_style).'"><div></div></div>';	
 }
-if ($thb_shape_divider == 'true') {
+if ($vif_shape_divider == 'true') {
 	$divider_id = uniqid();
-	$thb_divider_height = empty($thb_divider_height) ? '50' : $thb_divider_height;
-	$thb_divider_position = empty($thb_divider_position) ? 'bottom' : $thb_divider_position;
-	$thb_divider_shape = thb_load_template_part('assets/img/svg/dividers/'.$divider_shape.'.svg');
+	$vif_divider_height = empty($vif_divider_height) ? '50' : $vif_divider_height;
+	$vif_divider_position = empty($vif_divider_position) ? 'bottom' : $vif_divider_position;
+	$vif_divider_shape = vif_load_template_part('assets/img/svg/dividers/'.$divider_shape.'.svg');
 	
-	$output .= '<div id="vif-divider-id-'.esc_attr($divider_id).'-first" class="vif-divider-container '.esc_attr($divider_shape).'" style="height: '.esc_attr($thb_divider_height).'px;" data-position="'.esc_attr($thb_divider_position).'">'.$thb_divider_shape.'</div>';
-	if ($thb_divider_position == 'both') {
-		$output .= '<div id="vif-divider-id-'.esc_attr($divider_id).'-second" class="vif-divider-container '.esc_attr($divider_shape).' second" style="height: '.esc_attr($thb_divider_height).'px;" data-position="'.esc_attr($thb_divider_position).'">'.$thb_divider_shape.'</div>';
+	$output .= '<div id="vif-divider-id-'.esc_attr($divider_id).'-first" class="vif-divider-container '.esc_attr($divider_shape).'" style="height: '.esc_attr($vif_divider_height).'px;" data-position="'.esc_attr($vif_divider_position).'">'.$vif_divider_shape.'</div>';
+	if ($vif_divider_position == 'both') {
+		$output .= '<div id="vif-divider-id-'.esc_attr($divider_id).'-second" class="vif-divider-container '.esc_attr($divider_shape).' second" style="height: '.esc_attr($vif_divider_height).'px;" data-position="'.esc_attr($vif_divider_position).'">'.$vif_divider_shape.'</div>';
 	}
-	if ($thb_divider_color) {
+	if ($vif_divider_color) {
 		$output .= '<style>
 			#vif-divider-id-'.esc_attr($divider_id).'-first .vif-svg-divider {
-				fill: '.esc_attr($thb_divider_color).';
+				fill: '.esc_attr($vif_divider_color).';
 			}';
-		if ($thb_divider_position == 'both') {
+		if ($vif_divider_position == 'both') {
 			$output .= '
 				#vif-divider-id-'.esc_attr($divider_id).'-second .vif-svg-divider {
-					fill: '.esc_attr($thb_divider_color_2).';
+					fill: '.esc_attr($vif_divider_color_2).';
 				}';
 		}
 		$output .= '</style>';

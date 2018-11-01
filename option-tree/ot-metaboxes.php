@@ -2,7 +2,7 @@
 /**
  * Initialize the meta boxes. 
  */
-add_action( 'admin_init', 'thb_custom_meta_boxes' );
+add_action( 'admin_init', 'vif_custom_meta_boxes' );
 
 /**
  * Meta Boxes demo code.
@@ -17,7 +17,7 @@ add_action( 'admin_init', 'thb_custom_meta_boxes' );
  */
 
 
-function thb_custom_meta_boxes() {
+function vif_custom_meta_boxes() {
 
   /**
    * Create a custom meta boxes array that we pass to 

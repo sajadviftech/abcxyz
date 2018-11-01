@@ -1,8 +1,8 @@
 <?php 
-	$thb_id = get_queried_object_id();
-	$logo = ot_get_option('logo', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo.png');
-	$logo_light = ot_get_option('logo_light', Theme_Config::$thb_theme_directory_uri. 'assets/img/logo-light.png');
-	$header_color = thb_get_header_color($thb_id);
+	$vif_id = get_queried_object_id();
+	$logo = ot_get_option('logo', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo.png');
+	$logo_light = ot_get_option('logo_light', Theme_Config::$vif_theme_directory_uri. 'assets/img/logo-light.png');
+	$header_color = vif_get_header_color($vif_id);
 	
 	$header_class[] = 'header style7';
 	$header_class[] = $header_color;
@@ -18,7 +18,7 @@
 				</a>
 			</div>
 			<div>
-				<?php do_action( 'thb_mobile_toggle', false); ?>
+				<?php do_action( 'vif_mobile_toggle', false); ?>
 			</div>
 		</div>
 	</div>

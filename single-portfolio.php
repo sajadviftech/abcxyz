@@ -5,7 +5,7 @@
 			<?php the_content(); ?>
 		</div>
 		<?php if ( comments_open() || get_comments_number() ) { comments_template('', true); } ?>
-		<?php do_action( 'thb_portfolio_nav' ); ?>
+		<?php do_action( 'vif_portfolio_nav' ); ?>
 	<?php } ?>
 <?php endwhile; else : endif; ?>
 <?php get_footer(); ?>

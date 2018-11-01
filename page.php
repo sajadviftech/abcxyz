@@ -9,11 +9,11 @@
 	<?php 
 	if ( post_password_required() ) { 
 		get_template_part( 'inc/templates/password-protected' ); 
-	} else if ($VC && !thb_is_woocommerce()) { ?>
+	} else if ($VC && !vif_is_woocommerce()) { ?>
 		<div <?php post_class($classes); ?>>
 			<?php the_content(); ?>
 		</div>
-	<?php } else if (thb_is_woocommerce()){ ?>
+	<?php } else if (vif_is_woocommerce()){ ?>
 		<div <?php post_class('page-padding'); ?>>
 			<div class="row">
 				<div class="small-12 columns">

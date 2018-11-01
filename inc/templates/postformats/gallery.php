@@ -1,6 +1,6 @@
 <?php
-	$thb_id = get_the_ID();
-	$post_gallery_photos = get_post_meta($thb_id, 'post-gallery-photos', true);
+	$vif_id = get_the_ID();
+	$post_gallery_photos = get_post_meta($vif_id, 'post-gallery-photos', true);
 	if ($post_gallery_photos) {
 		$post_gallery_photos_arr = explode(',', $post_gallery_photos);
 		$count = sizeof($post_gallery_photos_arr);

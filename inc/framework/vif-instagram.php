@@ -1,7 +1,7 @@
 <?php
 
 // Get Instagram Photos
-function thb_getInstagramPhotos($number = 6) {
+function vif_getInstagramPhotos($number = 6) {
 	$username = ot_get_option('instagram_username');
 	$access_token = ot_get_option('instagram_accesstoken');
 	

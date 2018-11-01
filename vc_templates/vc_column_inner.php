@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Shortcode class
  * @var $this WPBakeryShortCode_VC_Column_Inner
  */
-$el_class = $width = $css = $offset = $animation = $thb_color = '';
+$el_class = $width = $css = $offset = $animation = $vif_color = '';
 $output = '';
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
@@ -28,7 +28,7 @@ $css_classes = array(
 	'vc_column_container',
 	$animation,
 	$width,
-	$thb_color
+	$vif_color
 );
 
 if ( vc_shortcode_custom_css_has_property( $css, array(

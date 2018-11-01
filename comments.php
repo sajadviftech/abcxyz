@@ -10,13 +10,13 @@
 if ( post_password_required() ) {
 	return;
 }
-function thb_add_svg_to_reply($args, $comment, $post){
-  $args['reply_text'] = thb_load_template_part('assets/img/svg/reply.svg'). $args['reply_text'];
+function vif_add_svg_to_reply($args, $comment, $post){
+  $args['reply_text'] = vif_load_template_part('assets/img/svg/reply.svg'). $args['reply_text'];
   
   return $args;
 }
 
-add_filter('comment_reply_link_args', 'thb_add_svg_to_reply', 420, 4);
+add_filter('comment_reply_link_args', 'vif_add_svg_to_reply', 420, 4);
 
 ?>
 <div class="row align-center">

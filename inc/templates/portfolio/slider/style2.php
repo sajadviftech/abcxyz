@@ -1,5 +1,5 @@
 <?php
-	add_filter( 'excerpt_length', 'thb_supershort_excerpt_length' );
+	add_filter( 'excerpt_length', 'vif_supershort_excerpt_length' );
 	$id = get_the_ID();
 	$image_id = get_post_thumbnail_id($id);
 	$image_url = wp_get_attachment_image_src($image_id, 'full');
@@ -20,7 +20,7 @@
 		<div class="small-12 medium-10 large-7 columns">
 			<h1 class="animation fade-in"><a href="<?php echo esc_url($permalink); ?>"><?php the_title(); ?></a></h1>
 			<div class="animation fade-in excerpt"><p><?php echo esc_html(get_the_excerpt()); ?></p></div>
-			<?php do_action( 'thb_portfolio_attributes', 'style2', 'medium-3', 'animation fade-in'); ?>
+			<?php do_action( 'vif_portfolio_attributes', 'style2', 'medium-3', 'animation fade-in'); ?>
 			<a href="<?php echo esc_url($permalink); ?>" class="btn style4 small white animation fade-in"><span><?php esc_html_e('Learn More', 'viftech'); ?></span></a>
 		</div>
 	</div>
